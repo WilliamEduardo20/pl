@@ -16,6 +16,7 @@ body {
 }
 @media screen and (max-width: 760px) {
     body { height: 100vh; }
+    .selecao-universo { width: 600px; }
 }
 
 .direita { margin-left: auto; }
