@@ -13,7 +13,7 @@
     position: relative; 
 }
 @media screen and (max-width: 760px) {
-    .art-clip-art { width: 100%; }
+    .art-clip-art { width: auto; }
 }
 
 .art-clip-art::before {
