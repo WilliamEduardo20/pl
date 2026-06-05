@@ -273,6 +273,6 @@ hr {
 
 @media screen and (max-width: 760px) {
     body { height: 100vh; }
-    .modal { width: auto; }
-    .selecao-universo { width: 600px; }
+    .modal { width: 100%; }
+    .selecao-universo { width: 100%; }
 }
