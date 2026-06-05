@@ -274,5 +274,5 @@ hr {
 @media screen and (max-width: 760px) {
     body { height: fit-content; }
     .modal { width: auto; }
-    .selecao-universo { width: 400px; }
+    .selecao-universo { width: 402px; }
 }
