@@ -177,7 +177,7 @@ hr {
     border: 2px solid #a2d2ff;
     box-shadow: 0 0 30px rgba(0, 210, 255, 0.6), inset 0 0 20px rgba(255, 204, 0, 0.05);
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     max-height: 99vh;
     display: flex;
     flex-direction: column;
