@@ -40,4 +40,11 @@ export const universeItens = {
             desc: "" 
         },
     ],
+    3: [ // Universo 3: Solo Leveling
+        { 
+            name: "", 
+            rank: "", 
+            desc: "" 
+        },
+    ],
 };
