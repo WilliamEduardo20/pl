@@ -1,0 +1,100 @@
+/* Container Principal com Elementos Decorativos */
+.ui-container {
+    position: relative;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Partículas Quadradas Superiores e Inferiores */
+.particle {
+    position: absolute;
+    background-color: #e2e8f0;
+    opacity: 0.7;
+    border-radius: 1px;
+}
+.p1 { width: 14px; height: 18px; top: -45px; left: 15%; }
+.p2 { width: 10px; height: 10px; top: -20px; right: 25%; }
+.p3 { width: 16px; height: 14px; top: -55px; right: 10%; }
+.p4 { width: 12px; height: 16px; bottom: -40px; left: 20%; }
+.p5 { width: 18px; height: 14px; bottom: -50px; right: 15%; }
+
+/* Suporte/Aba Chanfrada Superior */
+.top-bracket {
+    width: 180px;
+    height: 14px;
+    background-color: #e2e8f0;
+    margin-bottom: -4px;
+    z-index: 2;
+    clip-path: polygon(15px 0%, calc(100% - 15px) 0%, 100% 100%, 0% 100%);
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Moldura Externa Branca / Cinza Claro (Chanfrada) */
+.card-outer {
+    width: 100%;
+    background-color: #e2e8f0; /* Cor da borda externa */
+    padding: 6px;
+    box-sizing: border-box;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Moldura Interna de Destaque */
+.card-middle {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4px;
+    box-sizing: border-box;
+    clip-path: polygon(38px 0%, calc(100% - 38px) 0%, 100% 38px, 100% calc(100% - 38px), calc(100% - 38px) 100%, 38px 100%, 0% calc(100% - 38px), 0% 38px);
+}
+
+/* Corpo de Conteúdo Principal (Paleta Branca) */
+.card-inner {
+    width: 100%;
+    background-color: #f8fafc; /* Fundo esbranquiçado limpo */
+    padding: 55px 40px;
+    box-sizing: border-box;
+    clip-path: polygon(35px 0%, calc(100% - 35px) 0%, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0% calc(100% - 35px), 0% 35px);
+}
+
+/* Estilização dos Textos Gêmeos à Imagem */
+.skill-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.skill-rank {
+    font-size: 20px;
+    font-weight: 700;
+    color: #334155;
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+.skill-description {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.7;
+    text-align: justify;
+    text-transform: uppercase; /* Mantém o padrão de caixa alta da imagem */
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+/* Alinhamento de blocos de texto separados */
+.text-block { margin-bottom: 30px; }
+        
+.text-block:last-child { margin-bottom: 0; }
+
+/* Cor de destaque para rótulos como "EFEITO:" */
+.label-highlight {
+    color: #0f172a;
+    font-weight: 800;
+}

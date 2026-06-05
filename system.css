@@ -1,0 +1,210 @@
+.art-clip-art {
+    /* Mantenha as variáveis do pai */
+    --w: 300px;
+    --h: 400px;
+    --c: 30px;
+    --t: 4px;
+    --mc: calc(var(--c) / 2); 
+            
+    height: fit-content;
+    width: 50%;
+    padding: 50px;
+    color: aliceblue;
+    position: relative; 
+}
+
+@media screen and (max-width: 560px) {
+    .art-clip-art { max-width: 100%; }
+}
+
+.art-clip-art::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+    background-color: aliceblue; /* A cor fica aqui agora */
+    z-index: 1; /* O fundo recortado fica atrás */
+    
+    /* Coloque todo o seu polígono aqui */
+    clip-path: polygon(
+        0 0,
+        var(--mc) 0,
+        var(--mc) var(--t),
+        var(--t) var(--t),
+        var(--t) calc(var(--c) - var(--t)),
+        calc(var(--c) - var(--t)) calc(var(--c) - var(--t)),
+        calc(var(--c) - var(--t)) var(--t),
+        var(--mc) var(--t),
+        var(--mc) 0,
+        var(--c) 0,
+        var(--c) calc(var(--c) - var(--t)),
+        50% calc(var(--c) - var(--t)),
+        50% var(--c),
+        var(--c) var(--c),
+        var(--c) calc(100% - var(--c)),
+        calc(100% - var(--c)) calc(100% - var(--c)),
+        calc(100% - var(--c)) var(--c),
+        50% var(--c),
+        50% calc(var(--c) - var(--t)),
+        calc(100% - var(--c)) calc(var(--c) - var(--t)),
+        calc(100% - var(--c)) 0,
+        calc(100% - var(--mc)) 0,
+        calc(100% - var(--mc)) var(--t),
+        calc(100% - var(--c) + var(--t)) var(--t),
+        calc(100% - var(--c) + var(--t)) calc(var(--c) - var(--t)),
+        calc(100% - var(--t)) calc(var(--c) - var(--t)),
+        calc(100% - var(--t)) var(--t),
+        calc(100% - var(--mc)) var(--t),
+        calc(100% - var(--mc)) 0,
+        100% 0,
+        100% var(--c),
+        calc(100% - var(--c) + var(--t)) var(--c),
+        calc(100% - var(--c) + var(--t)) calc(100% - var(--c)),
+        100% calc(100% - var(--c)),
+        100% 100%,
+        calc(100% - var(--mc)) 100%,
+        calc(100% - var(--mc)) calc(100% - var(--t)),
+        calc(100% - var(--t)) calc(100% - var(--t)),
+        calc(100% - var(--t)) calc(100% - var(--c) + var(--t)),
+        calc(100% - var(--c) + var(--t)) calc(100% - var(--c) + var(--t)),
+        calc(100% - var(--c) + var(--t)) calc(100% - var(--t)),
+        calc(100% - var(--mc)) calc(100% - var(--t)),
+        calc(100% - var(--mc)) 100%,
+        calc(100% - var(--c)) 100%,
+        calc(100% - var(--c)) calc(100% - var(--c) + var(--t)),
+        var(--c) calc(100% - var(--c) + var(--t)),
+        var(--c) 100%,
+        var(--mc) 100%,
+        var(--mc) calc(100% - var(--t)),
+        calc(var(--c) - var(--t)) calc(100% - var(--t)),
+        calc(var(--c) - var(--t)) calc(100% - var(--c) + var(--t)),
+        var(--t) calc(100% - var(--c) + var(--t)),
+        var(--t) calc(100% - var(--t)),
+        var(--mc) calc(100% - var(--t)),
+        var(--mc) 100%,
+        0 100%,
+        0 calc(100% - var(--c)),
+        calc(var(--c) - var(--t)) calc(100% - var(--c)),
+        calc(var(--c) - var(--t)) var(--c),
+        0 var(--c)
+    );
+}
+
+.art-clip-art > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Moldura Habilidade */
+.moldura-habilidade {
+    position: relative;
+    max-width: 600px;
+
+    /* Margem necessária para os cantos saltados não cortarem na tela */
+    margin: 50px; 
+
+    /* Medidas da moldura */
+    --espessura: 4px;
+    --tamanho-quad: 40px;
+    
+    --deslocamento-externo: calc((var(--tamanho-quad) * -1) + var(--espessura));
+}
+/* O RETÂNGULO PRINCIPAL (Ajustado para ditar a altura do elemento) */
+.linha-principal {
+    position: relative;
+    width: 100%;
+    border: var(--espessura) solid aliceblue;
+    box-sizing: border-box;
+    padding: 25px;
+    color: #e2e8f0;
+    border-radius: 2px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+/* OS CANTOS (totalmente vazados) */
+.canto {
+    position: absolute;
+    width: var(--tamanho-quad);
+    height: var(--tamanho-quad);
+    border: var(--espessura) solid aliceblue;
+    background-color: transparent;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+.tl { 
+    top: var(--deslocamento-externo); 
+    left: var(--deslocamento-externo);
+    border-radius: 0 50% 0 50%; 
+}
+.tr { 
+    top: var(--deslocamento-externo); 
+    right: var(--deslocamento-externo);
+    border-radius: 50% 0 50% 0; 
+}
+.bl { 
+    bottom: var(--deslocamento-externo); 
+    left: var(--deslocamento-externo);
+    border-radius: 50% 0 50% 0; 
+} 
+.br { 
+    bottom: var(--deslocamento-externo); 
+    right: var(--deslocamento-externo);
+    border-radius: 0 50% 0 50%; 
+}
+
+/* Moldura de Escolha 2 */
+.frame {
+    position: relative;
+    max-width: 600px;
+    margin: 50px;
+    
+    /* Variáveis de medida */
+    --espessura-linha: 5px;
+    --tamanho-canto: 44px;
+    --raio-arredondado: 22px; 
+    --cor-linha: aliceblue;
+
+    --deslocamento: calc((var(--tamanho-canto) - var(--espessura-linha)) * -1);
+}
+.frame .moldura-principal {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border: var(--espessura-linha) solid var(--cor-linha);
+    background-color: transparent; 
+    box-sizing: border-box;
+}
+
+/* OS CANTOS (Vazados, 3 pontas arredondadas e colados) */
+.frame .canto {
+    position: absolute;
+    width: var(--tamanho-canto);
+    height: var(--tamanho-canto);
+    border: var(--espessura-linha) solid var(--cor-linha);
+    background-color: transparent; 
+    box-sizing: border-box;
+}
+.frame .tl { 
+    top: var(--deslocamento);
+    left: var(--deslocamento);
+    border-radius: var(--raio-arredondado) var(--raio-arredondado) 0 var(--raio-arredondado); 
+}
+.frame .tr { 
+    top: var(--deslocamento);
+    right: var(--deslocamento);
+    border-radius: var(--raio-arredondado) var(--raio-arredondado) var(--raio-arredondado) 0; 
+}
+.frame .bl { 
+    bottom: var(--deslocamento);
+    left: var(--deslocamento);
+    border-radius: var(--raio-arredondado) 0 var(--raio-arredondado) var(--raio-arredondado); 
+}
+.frame .br { 
+    bottom: var(--deslocamento);
+    right: var(--deslocamento);
+    border-radius: 0 var(--raio-arredondado) var(--raio-arredondado) var(--raio-arredondado); 
+}
+
+
+
