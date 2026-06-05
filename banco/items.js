@@ -10,7 +10,7 @@ export const universeItens = {
         {
             name: "Poção de Aumento de Reação",
             rank: "Mítico",
-            desc: "Está sentindo isso? Sua cabeça parece que vai explodir? Parece que consegue contar cada fio de cabelo em sua cabeça?. A poção aumenta sua percepção da realidade ao extremo. ※ Mas cuidado para não exagerar, seus sentidos ficam aguçados, mas seu corpo continua com os mesmos limites."
+            desc: "Está sentindo isso? Sua cabeça parece que vai explodir? Parece que consegue contar cada fio de cabelo em sua cabeça?. \nA poção aumenta sua percepção da realidade ao extremo. \n\n※ Cuidado para não exagerar, seus sentidos ficam aguçados, mas seu corpo continua com os mesmos limites."
         },
         { 
             name: "Soma de Morango", 
