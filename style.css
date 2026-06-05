@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 @media screen and (max-width: 760px) {
-    body { height: 100%; }
+    body { height: 100vh; }
 }
 
 .direita { margin-left: auto; }
