@@ -14,10 +14,6 @@ body {
     background-image: radial-gradient(circle at center, #111a33 0%, #050811 100%);
     padding: 20px;
 }
-@media screen and (max-width: 760px) {
-    body { height: 100vh; }
-    .selecao-universo { width: 600px; }
-}
 
 .direita { margin-left: auto; }
 
@@ -275,6 +271,8 @@ hr {
     text-align: center;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 760px) {
+    body { height: 100vh; }
     .modal { width: auto; }
+    .selecao-universo { width: 600px; }
 }
