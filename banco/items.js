@@ -7,6 +7,11 @@ export const universeItens = {
         },
     ],
     1: [ // Universo 2: SSS Class Revival Hunter
+        {
+            name: "Poção de Aumento de Reação",
+            rank: "Mítico",
+            desc: "Está sentindo isso? Sua cabeça parece que vai explodir? Parece que consegue contar cada fio de cabelo em sua cabeça?. A poção aumenta sua percepção da realidade ao extremo. ※ Mas cuidado para não exagerar, seus sentidos ficam aguçados, mas seu corpo continua com os mesmos limites."
+        },
         { 
             name: "Soma de Morango", 
             rank: "Mítico", 
@@ -32,6 +37,26 @@ export const universeItens = {
             rank: "Único", 
             desc: "Por mais que tenha um sabor amargo, bebê-la curará até mesmo as feridas mais letais. É claro, os efeitos colaterais da cura ainda acontecerão. \nDe qualquer forma, criar uma poção como essa já é incrível por si só!" 
         },
+        {
+            name: "Fígado de um Porco-Coelho",
+            rank: "Comum",
+            desc: "O fígado de um porco-coelho é um item comum. Ele pode ser usado para criar poções"
+        },
+        {
+            name: "Olhos de um Gato Balão",
+            rank: "Comum",
+            desc: "Os olhos de um gato balão são um item comum. Ele pode ser usado para criar poções"
+        },
+        {
+            name: "Pele de Verme Gigante do Deserto",
+            rank: "Comum",
+            desc: "A pele de um verme gigante é um item comum. Ela pode ser usada para criar poções"
+        },
+        {
+            name: "Calda de um Lagarto da Lama",
+            rank: "Comum",
+            desc: "O caldo do lagarto da lama é um item comum. Ele pode ser usado para criar poções"
+        }
     ],
     2: [ // Universo 3: Time Stop Ability / Climbing Tower
         { 
