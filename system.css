@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 760px) {
-    .art-clip-art { max-width: 100%; }
+    .art-clip-art { width: 100%; }
 }
 
 .art-clip-art::before {
