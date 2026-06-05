@@ -126,30 +126,76 @@ renderizarMenuUniverso();
 function renderizarMenuHabilidades() {
     const menu = document.getElementById("menu-habilidades");
     if (!menu) return;
-
     menu.innerHTML = ""; 
 
     const universoAtual = universosSelecionados[coluna];
     const universoIndex = universos.indexOf(universoAtual);
     const listaHabilidades = universeSkills[universoIndex];
+    
+    const equipados = obterEquipados(); // NOVO: Puxa a lista de bloqueio
 
     if (listaHabilidades && listaHabilidades.length > 0) {
         for (let i = 0; i < listaHabilidades.length; i++) {
             const habilidade = listaHabilidades[i];
             if (!habilidade.name) continue; 
 
-            // Alterado para passar o nome e o rank como parâmetros de texto (escapando aspas simples caso existam)
             const nomeTratado = habilidade.name.replace(/'/g, "\\'");
             let classeRank = habilidade.rank.replace(/[+\-]/g, '').trim();
-            if (classeRank === '???' || classeRank === '??' || classeRank === '?') classeRank = 'Desconecido';
+            if (classeRank === '???') classeRank = 'Desconecido';
 
-            menu.innerHTML += `
-                <p class="habilidade" onclick="sincronizarHabilidade('${nomeTratado}', '${habilidade.rank}')">
-                    ${habilidade.name} <strong class="rank${classeRank} direita">[${habilidade.rank}]</strong>
-                </p>`;
+            // NOVO: Verifica se já está em uso
+            if (equipados.includes(habilidade.name)) {
+                menu.innerHTML += `
+                    <p class="habilidade" style="opacity: 0.4; cursor: not-allowed;">
+                        ${habilidade.name} <strong class="direita" style="color: #94a3b8;">[Equipado]</strong>
+                    </p>`;
+            } else {
+                menu.innerHTML += `
+                    <p class="habilidade" onclick="sincronizarHabilidade('${nomeTratado}', '${habilidade.rank}')">
+                        ${habilidade.name} <strong class="rank${classeRank} direita">[${habilidade.rank}]</strong>
+                    </p>`;
+            }
         }
     } else {
         menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">Nenhuma habilidade cadastrada para este universo ainda.</p>`;
+    }
+}
+
+function renderizarMenuItems() {
+    const menu = document.getElementById("menu-habilidades"); 
+    if (!menu) return;
+    menu.innerHTML = ""; 
+
+    const universoAtual = universosSelecionados[coluna];
+    const universoIndex = universos.indexOf(universoAtual);
+    const listaItens = universeItens[universoIndex];
+    
+    const equipados = obterEquipados(); // NOVO: Puxa a lista de bloqueio
+
+    if (listaItens && listaItens.length > 0) {
+        for (let i = 0; i < listaItens.length; i++) {
+            const item = listaItens[i];
+            if (!item.name) continue; 
+
+            const nomeTratado = item.name.replace(/'/g, "\\'");
+            let classeRank = item.rank.replace(/[+\-]/g, '').trim();
+            if (classeRank === '???') classeRank = 'Desconecido';
+
+            // NOVO: Verifica se já está em uso
+            if (equipados.includes(item.name)) {
+                menu.innerHTML += `
+                    <p class="habilidade" style="opacity: 0.4; cursor: not-allowed;">
+                        ${item.name} <strong class="direita" style="color: #94a3b8;">[Equipado]</strong>
+                    </p>`;
+            } else {
+                menu.innerHTML += `
+                    <p class="habilidade" onclick="sincronizarItem('${nomeTratado}', '${item.rank}')">
+                        ${item.name} <strong class="rank${classeRank} direita">[${item.rank}]</strong>
+                    </p>`;
+            }
+        }
+    } else {
+        menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">Nenhum item cadastrado para este universo ainda.</p>`;
     }
 }
 
@@ -159,6 +205,7 @@ function sincronizarHabilidade(nomeHabilidade, rank) {
     
     if (slotElemento) {
         slotElemento.classList.add('preenchido');
+        slotElemento.setAttribute('data-nome', nomeHabilidade);
 
         // Tratamento de aspas para evitar quebra no JavaScript
         const nomeTratado = nomeHabilidade.replace(/'/g, "\\'");
@@ -176,6 +223,19 @@ function sincronizarHabilidade(nomeHabilidade, rank) {
     document.getElementById('escHabilidade').classList.remove('ativo');
 }
 window.sincronizarHabilidade = sincronizarHabilidade;
+
+function obterEquipados() {
+    const equipados = [];
+    for (let c = 1; c <= 3; c++) {
+        for (let l = 1; l <= 3; l++) {
+            const slot = document.getElementById(`col${c}-habilidade${l}`);
+            if (slot && slot.hasAttribute('data-nome')) {
+                equipados.push(slot.getAttribute('data-nome'));
+            }
+        }
+    }
+    return equipados;
+}
 
 // --- NOVAS FUNÇÕES: VER DETALHES E DESVINCULAR ---
 function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
@@ -308,15 +368,11 @@ window.fecharModalDetalhes = fecharModalDetalhes;
 function desvincularHabilidade(c, l) {
     const slotId = `col${c}-habilidade${l}`;
     const slotElemento = document.getElementById(slotId);
-    
+
     if (slotElemento) {
-        // 1. Remove os efeitos visuais (fundo, borda neon)
         slotElemento.classList.remove('preenchido');
-        
-        // 2. Devolve o texto padrão para a célula
+        slotElemento.removeAttribute('data-nome'); // LINHA NOVA
         slotElemento.innerHTML = '[Selecionar]';
-        
-        // 3. Devolve a função original para a célula (abrir o menu de escolha)
         slotElemento.setAttribute('onclick', `openModal('escCoisa', 'col${c}', ${l})`);
     }
     
@@ -325,40 +381,13 @@ function desvincularHabilidade(c, l) {
 }
 window.desvincularHabilidade = desvincularHabilidade;
 
-function renderizarMenuItems() {
-    const menu = document.getElementById("menu-habilidades"); // Reaproveita a div do modal
-    if (!menu) return;
-    menu.innerHTML = ""; 
-
-    const universoAtual = universosSelecionados[coluna];
-    const universoIndex = universos.indexOf(universoAtual);
-    const listaItens = universeItens[universoIndex];
-
-    if (listaItens && listaItens.length > 0) {
-        for (let i = 0; i < listaItens.length; i++) {
-            const item = listaItens[i];
-            if (!item.name) continue; 
-
-            const nomeTratado = item.name.replace(/'/g, "\\'");
-            let classeRank = item.rank.replace(/[+\-]/g, '').trim();
-            if (classeRank === '???') classeRank = 'Desconecido';
-
-            menu.innerHTML += `
-                <p class="habilidade" onclick="sincronizarItem('${nomeTratado}', '${item.rank}')">
-                    ${item.name} <strong class="rank${classeRank} direita">[${item.rank}]</strong>
-                </p>`;
-        }
-    } else {
-        menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">Nenhum item cadastrado para este universo ainda.</p>`;
-    }
-}
-
 function sincronizarItem(nomeItem, rank) {
     const slotId = `col${coluna}-habilidade${linha}`; 
     const slotElemento = document.getElementById(slotId);
     
     if (slotElemento) {
         slotElemento.classList.add('preenchido');
+        slotElemento.setAttribute('data-nome', nomeItem);
         const nomeTratado = nomeItem.replace(/'/g, "\\'");
 
         let classeRank = rank.replace(/[+\-]/g, '').trim();
