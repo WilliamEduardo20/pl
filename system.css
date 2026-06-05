@@ -12,7 +12,6 @@
     color: aliceblue;
     position: relative; 
 }
-
 @media screen and (max-width: 760px) {
     .art-clip-art { width: 100%; }
 }
