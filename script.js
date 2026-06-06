@@ -287,7 +287,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                 </div>
             </div>
         `;
-    } else if (universoAtual === "Climbing Tower With a Time Stop Ability") {
+    } else if (universoAtual === "Climbing The Tower With a Time Stop Ability") {
         // Formata dinamicamente as palavras-chave do banco de dados para ficarem em destaque e com a linha tracejada
         let descClimbing = descFormatada
             .replace(/EFEITO:/g, '<span style="color: #0f172a; font-weight: 800;">EFEITO:</span>')
