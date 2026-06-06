@@ -388,6 +388,11 @@ export const universeSkills = {
             "desc": "Sem Mana Necessária \nVocê pode Controlar Objetos sem Tocar Neles."
         },
         {
+            "name": "Autoridade do Monarca",
+            "rank": "Lv.MAX",
+            "desc": "Sem Mana Necessária \nVocê pode Controlar Objetos sem Tocar Neles. ※ Quanto mais forte for usuário, Mais forte será o controle. Permitindo levantar grandes Estruturas."
+        },
+        {
             "name": "Extração de Sombra",
             "rank": "Nv.1",
             "desc": "Sem Custo de Mana \n\nUm Soldado das Sombras é Criado de um Corpo sem Vida Absorvendo sua Mana. A Chance de Falha Aumenta com o Quão Alto os Atributos do Alvo são, E Quanto mais Tempo Tenha se Pessado Desde a Morte do Alvo. \n\n※ Alvos com a Mana Contaminada não podem ser extraídos. \n※ Sombras Possíveis de Serem Extraídas: 0/30"
@@ -396,6 +401,11 @@ export const universeSkills = {
             "name": "Salvamento de Sombra",
             "rank": "Lv.1",
             "desc": "Sem Custo de Mana \n\nVocê Absorve os Soldados das Sombras Criados e os Salva. Soldados Salvos Podem ser Invocados e Reabsorvidos Onde e Quando o Invocador Desejar. \n\n※ Sombras Salvas: 0/30"
+        },
+        {
+            "name": "Salvamento de Sombras",
+            "rank": "Lv.2",
+            "desc": "Os Saldados das Sombras que Foram Despertados, Serão Alocados em Sua Própria Sombra. \n - Efeito: 'Compartilhamento Sensorial' Lv.2  Você pode Compartilhar o que Está Sentindo com Uma Sombra Específica. \n\n※ Sombras Salvas: 0/840"
         },
         {
             "name": "Troca de Sombras",
@@ -411,6 +421,11 @@ export const universeSkills = {
             "name": "Grito Provocador",
             "rank": "Lv.1",
             "desc": "Os Alvos Serão Provocados e Atraidos até o Usuário."
+        },
+        {
+            "name": "Fogo de Dragão",
+            "rank": "Lv.MAX",
+            "desc": "Um rugido da Alma que Incapacita Todos e os Faz Cair em Desespero. ※ Indiferentemente se são Aliados ou Inimigos."
         },
     ],
 };

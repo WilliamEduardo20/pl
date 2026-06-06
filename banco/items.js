@@ -67,6 +67,11 @@ export const universeItens = {
     ],
     3: [ // Universo 3: Solo Leveling
         {
+            "name": "Ira de Kamish",
+            "rank": "??",
+            "desc": "Tipo: Adaga \nAtaque: +1.500 \nAdagas de alta qualidade criada da presa mais afiada de um dragão. O seu poder se assimila a força do usuário e é capaz de detectar quantias de mana. Além disso, é uma arma incrível, dependendo da habilidade do usuário."
+        },
+        {
             "name": "Fragmento da Árvore do Mundo",
             "rank": "??",
             "desc": "Um pedaço de madeira que foi obtido pela remoção das partes corrompidas do 'Bastão do Vulcan' que foi criado dos ramos da Árvore do Mundo. \n\nMadeiras da Árvore do Mundo contém uma magia poderosa e pode ser utilizada como ingrediente de itens mágicos da mais alta qualidade."
@@ -97,12 +102,17 @@ export const universeItens = {
             "desc": "Uma permissão de entrar no 81º andar do Castelo Demoníaco. Utilize em um círculo mágico de movimentação no 80º andar."
         },
         {
-            "name": "Chave de ??",
+            "name": "Chave do Templo de Cartenon",
             "rank": "??",
-            "desc": "??"
+            "desc": "Chave que Abre o Templo de Cartenon pode Ser usada em um Portal. \nA localização Específica será Informada Após um certa quantidade de Tempo. \nTempo Restante: 48 Horas, 00 Minutos, e 00 Segundos"
         },
         {
-            "name": "Poção Misteriosa", 
+            "name": "Maça do Dragão das Chamas Negras",
+            "rank": "S+",
+            "desc": "Requisito: LV. 90 \nCategoria: Arma Branca \nAtaque +400 \nEfeito: Após atacar, ativa 'Presa da Escuridão'."
+        },
+        {
+            "name": "Água Sagrada da Vida", 
             "rank": "S",
             "desc": "Uma poção misteriosa que pode curar qualquer doença com uma magia poderosa. O efeito só ativará quando toda a poção for consumida."
         },
@@ -117,14 +127,19 @@ export const universeItens = {
             "desc": "Ataque +220 \n\nAdagas obtida de Baran, o Rei Demônio. \n\nUm efeito de conjunto ativará se ambas as 'Adagas do Rei Demônio' forem equipadas juntas. \n\nEfeito de Conjunto: 'Dois por Um': Dano adicional será aplicado a cada adaga pela quantia do atributo de Força."
         },
         {
-            name: "Chave do Castelo Demoniaco",
-            rank: "S",
-            desc: "Uma chave que permite entrar na dungeon: Castelo Demoníaco. \nPode ser usada na Torre de Song Pa Gu."
+            "name": "Chave do Castelo Demoniaco",
+            "rank": "S",
+            "desc": "Uma chave que permite entrar na dungeon: Castelo Demoníaco. \nPode ser usada na Torre de Song Pa Gu."
         },
         {
-            name: "Elmo do Cavaleiro Vermelho",
-            rank: "S",
-            desc: "+15% de Redução de Dano Físico \n+20 de Vitalidade, +20 de Força"
+            "name": "Elmo do Cavaleiro Vermelho",
+            "rank": "S",
+            "desc": "+15% de Redução de Dano Físico \n+20 de Vitalidade, +20 de Força"
+        },
+        {
+            "name": "Manto do Cavaleiro Carmesim",
+            "rank": "S",
+            "desc": "Um manto resistente e imbuído com a aura de um cavaleiro de elite. \n+15% de Redução de Dano Mágico, +20 de Agilidade."
         },
         {
             "name": "Brinco do Governante Demoníaco",
@@ -142,29 +157,94 @@ export const universeItens = {
             "desc": "+20 Sentido +20 Inteligência \nO efeito de conjunto será ativado caso este item seja equipado junto com: \n-Brinco com Monarca Demoníaco (Equipado) \n - Anel do Monarca Demoníaco (Equipado) \n - Colar do Monarca Demoníaco (Equipado) \n\nEfeito de Conjunto 1. +5 em todos os atributos. \nEfeito de Conjunto 2. +10 em todos os atributos."
         },
         {
+            "name": "Manoplas Flamejantes do Fantasma da Luta",
+            "rank": "S-",
+            "desc": "Diz a lenda que estas manoplas pertenceram a um guerreiro invencível, cuja fúria de batalha era tão intensa que se materializava como chamas. \n+230 de Ataque \n - Efeito: Inimigos em 'Chamas' recebem +70% de Dano Adicional."
+        },
+        {
+            "name": "Espada Longa do Rei Demônio (Imitação)",
+            "rank": "A+",
+            "desc": "Requisito: LV. 60 \nCategoria: Espada \nAtaque +170 \nEfeito: Depois de atacar, ativa o efeito da 'Tempestade de Chamas Brancas'."
+        },
+        {
+            "name": "Martelo do Ferreiro dos Anões",
+            "rank": "A+",
+            "desc": "Requisito: LV. 60 \nCategoria: Arma Branca \nAtaque +400"
+        },
+        {
             "name": "Orbe da Avareza",
             "rank": "A",
             "desc": "Um orbe criado pelo endurecimento do sangue do demônio de alto nível, Vulcan.\nEle irá amplificar os efeitos de magias para que deem mais danos.\n\nEfeito:\n'Desejo pela Destruição': Dano mágico duplicado."
         },
-        { 
-            name: "Veneno da Rasaka",
-            rank: "A",
-            desc: "Uma bolsa que contém o veneno purificado de Rasaka. Obtido ao derrotar Rasaka. Taxa de drope baixo. Bebe-lo lhe dará uma pele endurecida mas enfaquecerá sua força. \n\n- Efeito 'Escamas de Ferro da Rasaka': -20% de dano físico recebido \n- Penalidade 'Músculos Enfraquecidos': -35 de força."
+        {
+            "name": "Cajado da Ganância do Tusk (Imitação)",
+            "rank": "A",
+            "desc": "Requisito: LV. 50 \nCategoria: Arma Mágica \nEfeito: 'Desejo pela Destruição': Dano mágico aumentado em 2x"
         },
         { 
-            name: "Adaga de Baruka",
-            rank: "A",
-            desc: "Uma adaga portada pelo grande guerreiro 'Baruka'. O encantamento de 'Peso Leve' irá fazer o portador mais ágil. \n+110 Ataque, +10 Agilidade"
+            "name": "Veneno da Rasaka",
+            "rank": "A",
+            "desc": "Uma bolsa que contém o veneno purificado de Rasaka. Obtido ao derrotar Rasaka. Taxa de drope baixo. Bebe-lo lhe dará uma pele endurecida mas enfaquecerá sua força. \n\n- Efeito 'Escamas de Ferro da Rasaka': -20% de dano físico recebido \n- Penalidade 'Músculos Enfraquecidos': -35 de força."
         },
         { 
-            name: "Colar de Guardião", 
-            rank: "A", 
-            desc: "Agilidade +20,  Sentidos +20" 
+            "name": "Adaga de Baruka",
+            "rank": "A",
+            "desc": "Uma adaga portada pelo grande guerreiro 'Baruka'. O encantamento de 'Peso Leve' irá fazer o portador mais ágil. \n+110 Ataque, +10 Agilidade"
+        },
+        {
+            "name": "Colar do Vigia",
+            "rank": "A",
+            "desc": "Sentidos +25"
+        },
+        {
+            "name": "Anel Superior do Mago",
+            "rank": "A",
+            "desc": "+30% de Mana"
+        },
+        { 
+            "name": "Colar de Guardião", 
+            "rank": "A", 
+            "desc": "Agilidade +20,  Sentidos +20" 
         },
         {
             "name": "Chave da Porta do Castelo",
             "rank": "A",
             "desc": "Uma chave que pode abrir a porta do Castelo Demoníaco. Obtido por matar o guardião do portão."
+        },
+        {
+            "name": "Manto de Vento",
+            "rank": "A",
+            "desc": "Um manto Encantado com Mágia de Vento para Ressistir a Altas Temperatura. \n+70% de Ressitência a Fogo"
+        },
+        {
+            "name": "Anel sem Nome",
+            "rank": "A",
+            "desc": "Um anel Encantado com Atributo de Água para Ressistir a Altas Temperatura. \n+40% de Ressitência a Fogo"
+        },
+        {
+            "name": "Manoplas do Grande Guerreiro",
+            "rank": "A",
+            "desc": "+10% de Redução de Dano Físico. \nManoplas forjadas com aço temperado para proteger os punhos de impactos devastadores e facilitar o manuseio de armas pesadas."
+        },
+        {
+            "name": "Calças do Grande Guerreiro",
+            "rank": "A",
+            "desc": "+10% de Redução de Dano Físico. \nCalças reforçadas com malha incrivelmente resistente, oferecendo uma união perfeita entre proteção e mobilidade para combate corpo a corpo."
+        },
+        {
+            "name": "Botas do Grande Guerreiro",
+            "rank": "A",
+            "desc": "+15 de Agilidade. \nBotas de combate bem ajustadas que garantem estabilidade no solo, permitindo movimentos bruscos e investidas em alta velocidade."
+        },
+        {
+            "name": "Tridente Reforçado da Naja",
+            "rank": "A-",
+            "desc": "Requisito: LV. 40 \nCategoria: Lança \nAtaque +270"
+        },
+        {
+            "name": "Espada de Quatro Marcações do 12º Príncipe",
+            "rank": "B+",
+            "desc": "Requisito: LV. 30 \nCategoria: Grande Espada \nAtaque +150"
         },
         {
             "name": "Peitoral do Grande Cavaleiro",
@@ -191,20 +271,65 @@ export const universeItens = {
             "rank": "B",
             "desc": "+75 de Ataque \n- Efeito 'Matadora de Cavaleiros': Se usada contra Oponentes com Armadura Pesada, seus ataques causarão 25% de dano adicional."
         },
+        {
+            "name": "Assassina de Cavaleiros (V)",
+            "rank": "B",
+            "desc": "Requisito: Lv. 25. \nCategoria: Adaga. \nAtaque +75. \n - Efeito: 25% de dano adicional contra armaduras pesadas."
+        },
+        {
+            "name": "Grande Espada do Extermínio",
+            "rank": "B",
+            "desc": "Requisito: Lv. 25. \nCategoria: Grande Espada. \nAtaque +180."
+        },
+        {
+            "name": "Alabarda do Trovão",
+            "rank": "B-",
+            "desc": "Requisitos: Lv. 20. \nCategoria: Machado. \nAtaque +160. \n - Efeito: Causa dano de raio caso seja usado mana."
+        },
+        {
+            "name": "Carapaça da Centopeia de Areia",
+            "rank": "C+",
+            "desc": "Requisito: Lv. 15. \nCategoria: Escudo. \nRedução de dano corpo-a-corpo +10%, Vitalidade +3, Força +3."
+        },
+        {
+            "name": "Manoplas dos Punhos Espinhosos",
+            "rank": "C+",
+            "desc": "Requisito: Lv. 15. \nCategoria: Manopla. \nAtaque +27, Chance de Crítico +10%."
+        },
         { 
-            name: "Presa de Rakasa",
-            rank: "C",
-            desc: "Uma adaga feita da presa de Rakasa. Capaz de paralizar devido ao resquício de veneno. Garante o efeito de sangramento. Pode ser equipado, guardado ou vendido. \n\n- Efeito 'Paralizia': Possui a chance de fazer inimigos atacados imóveis. \n- Efeito 'Sangramento': Inimigos atacados perdem 1% de sua vida a cada 1 segundo."
+            "name": "Presa de Rakasa",
+            "rank": "C",
+            "desc": "Uma adaga feita da presa de Rakasa. Capaz de paralizar devido ao resquício de veneno. Garante o efeito de sangramento. Pode ser equipado, guardado ou vendido. \n\n- Efeito 'Paralizia': Possui a chance de fazer inimigos atacados imóveis. \n- Efeito 'Sangramento': Inimigos atacados perdem 1% de sua vida a cada 1 segundo."
         },
         {
             "name": "Luvas de Arqueiro",
             "rank": "C",
             "desc": "+10 de Agilidade \nLuvas leves que aumentam a precisão e a flexibilidade dos movimentos do portador."
         },
+        {
+            "name": "Espada Longa para os Fortes",
+            "rank": "C-",
+            "desc": "Requisito: LV. 8 \nCategoria: Espada \nAtaque +32"
+        },
+        {
+            "name": "Martelo da Fúria",
+            "rank": "D",
+            "desc": "Requisito: LV. 5 \nCategoria: Arma Branca \nAtaque +20"
+        },
+        {
+            "name": "Espada de Ferro",
+            "rank": "E",
+            "desc": "Requisito: LV. 1 \nCategoria: Espada \nAtaque +10"
+        },
+        {
+            "name": "Manoplas de Ataque",
+            "rank": "E",
+            "desc": "Requisito: LV. 1 \nCategoria: Manopla \nAtaque +4"
+        },
         { 
-            name: "Poção de Mana",
-            rank: "E",
-            desc: "Uma poção que restaura mana. \nRestaura 500 de mana após ser consumida."
+            "name": "Poção de Mana",
+            "rank": "E",
+            "desc": "Uma poção que restaura mana. \nRestaura 500 de mana após ser consumida."
         },
         {
             "name": "Saco de Couro",
@@ -212,19 +337,19 @@ export const universeItens = {
             "desc": "Tipo: Depósito. Um saco que é usado para guardar dinheiro. \nContém 1,500,000 de gold."
         },
         { 
-            name: "Chave de Dungeon", 
-            rank: "E", 
-            desc: "Uma chave que lhe permite criar uma dungeon instantânea. \nVocê deve usá-la na terceira entrada da estação de Hapjung." 
+            "name": "Chave de Dungeon", 
+            "rank": "E", 
+            "desc": "Uma chave que lhe permite criar uma dungeon instantânea. \nVocê deve usá-la na terceira entrada da estação de Hapjung." 
         },
         { 
-            name: "Casaco de Pele Quente", 
-            rank: "Inútil", 
-            desc: "Se torna Extremamente Quente Depois de Desgastado." 
+            "name": "Casaco de Pele Quente", 
+            "rank": "Inútil", 
+            "desc": "Se torna Extremamente Quente Depois de Desgastado." 
         },
         { 
-            name: "Presa de Raikan", 
-            rank: "Inútil", 
-            desc: "Uma Presa Larga e Afiada de um Raikan." 
+            "name": "Presa de Raikan", 
+            "rank": "Inútil", 
+            "desc": "Uma Presa Larga e Afiada de um Raikan." 
         },
         {
             "name": "Chifre de Demônio de Baixo Nível",
