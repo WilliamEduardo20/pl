@@ -2,6 +2,7 @@ import { staticSkills } from './banco/my.js';
 import { universos } from './banco/univeros.js';
 import { universeSkills } from './banco/skills.js'; 
 import { universeItens } from './banco/items.js';
+import { universeConstitution } from './banco/const.js';
 
 var coluna = 0;
 var linha = 0; // Nova variável global para controlar a linha selecionada
@@ -16,7 +17,6 @@ function openModal(tipo, escolha, numLinha) {
     if (tipo === 'descHabilidade') {
         const modalElement = document.getElementById('descHabilidade');
         
-        // SEGURANÇA: Se a janela do "SSS Class Revival" estiver montada, nós restauramos o design original antes de tentar colocar texto.
         if (!document.getElementById('titulo-habilidade')) {
             modalElement.innerHTML = `
                 <div class="moldura-habilidade">
@@ -38,7 +38,7 @@ function openModal(tipo, escolha, numLinha) {
         document.getElementById('extra-habilidade').innerHTML = staticSkills[escolha].extra;
         
         modalElement.classList.add('ativo');
-    }
+    } 
     else if (tipo === 'escUniverso') {
         coluna = colunaAlvo; 
         document.getElementById('escUniverso').classList.toggle('ativo');
@@ -47,51 +47,52 @@ function openModal(tipo, escolha, numLinha) {
     } 
     else if (tipo === 'escCoisa') {
         coluna = colunaAlvo; 
-        linha = numLinha; // Guarda dinamicamente a linha clicada (1, 2 ou 3)
+        linha = numLinha; 
 
-        if (!universosSelecionados[coluna]) {
-            return; // Bloqueio silencioso sem alertas caso não tenha universo definido
-        }
+        if (!universosSelecionados[coluna]) return;
         document.getElementById('escCoisa').classList.toggle('ativo');
     } 
     else if (tipo === 'escHabilidade') {
         coluna = colunaAlvo; 
-        if (!universosSelecionados[coluna]) {
-            return; 
-        }
+        if (!universosSelecionados[coluna]) return; 
 
-        // 1. Pega o nome do universo salvo para esta coluna
         const universoAtual = universosSelecionados[coluna];
-
-        // 2. Modifica dinamicamente o título e descrição internos do modal de habilidades
-        document.getElementById('titulo-universo').textContent = `${universoAtual}`;
+        document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
         document.getElementById('descricao-escolha').textContent = `Selecione uma habilidade do registro para a linha [${linha}].`;
 
-        // Carrega as habilidades específicas do universo antes de mostrar a tela
         renderizarMenuHabilidades();
 
-        // Fecha o menu de escolha ("Habilidades / Itens") e abre o de habilidades
         document.getElementById('escCoisa').classList.remove('ativo');
-        setTimeout(() => {
-            document.getElementById('escHabilidade').classList.add('ativo');
-        }, 180);
-    } 
+        setTimeout(() => { document.getElementById('escHabilidade').classList.add('ativo'); }, 180);
+    }
     else if (tipo === 'escItens') {
         coluna = colunaAlvo; 
         if (!universosSelecionados[coluna]) return; 
 
         const universoAtual = universosSelecionados[coluna];
-        
-        // Reaproveitamos a janela do escHabilidade, mudando só os textos
         document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
         document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
 
-        renderizarMenuItems(); // Chama a nova função de itens
+        renderizarMenuItems();
+
+        document.getElementById('escCoisa').classList.remove('ativo');
+        setTimeout(() => { document.getElementById('escHabilidade').classList.add('ativo'); }, 180);
+    }
+    else if (tipo === 'escConstituicoes') {
+        coluna = colunaAlvo; 
+        if (!universosSelecionados[coluna]) return; 
+
+        const universoAtual = universosSelecionados[coluna];
+        document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
+        document.getElementById('descricao-escolha').textContent = `Selecione uma constituição do registro para a linha [${linha}].`;
+
+        renderizarMenuConstituicoes(); // Se o erro estiver aqui, é porque esta função não existe!
 
         document.getElementById('escCoisa').classList.remove('ativo');
         setTimeout(() => { document.getElementById('escHabilidade').classList.add('ativo'); }, 180);
     }
 }
+window.openModal = openModal;
 window.openModal = openModal;
 window.addEventListener('click', function(event) {
     if (event.target.classList.contains('modal')) {
@@ -242,22 +243,24 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     const universoAtual = universosSelecionados[c];
     const universoIndex = universos.indexOf(universoAtual);
     
-    // Busca do banco de Habilidades OU Itens, dependendo do clique
-    const listaAtual = tipoCoisa === 'item' ? universeItens[universoIndex] : universeSkills[universoIndex];
+    // Busca do banco correspondente ao clique
+    let listaAtual;
+    if (tipoCoisa === 'item') listaAtual = universeItens[universoIndex];
+    else if (tipoCoisa === 'constituicao') listaAtual = universeConstitution[universoIndex];
+    else listaAtual = universeSkills[universoIndex];
+
     const objeto = listaAtual.find(o => o.name === nomeCoisa);
 
     if (!objeto) return;
 
-    // TRUQUE: Chamamos o objeto de "habilidade" para que o seu HTML original continue funcionando sem precisar alterar variáveis!
     const habilidade = objeto; 
-    
     const descFormatada = habilidade.desc.replace(/\n/g, '<br>');
     
-    // Suporte para Ranks de Itens (Mítico, Lendário, Único)
+    // Suporte para Ranks
     let rankColor = "#C5A344"; 
     if (habilidade.rank === 'EX' || habilidade.rank === 'Mítico') rankColor = "#23EEC4";
     if (habilidade.rank === 'SSS' || habilidade.rank === 'SS' || habilidade.rank === 'Lendário') rankColor = "#FFD700";
-    if (habilidade.rank === 'Único') rankColor = "#D946EF"; // Cor para o Rank Único (Rosa Neon/Roxo)
+    if (habilidade.rank === 'Único') rankColor = "#D946EF"; 
 
     const modalWindow = document.getElementById('descHabilidade');
 
@@ -402,3 +405,66 @@ function sincronizarItem(nomeItem, rank) {
     document.getElementById('escHabilidade').classList.remove('ativo');
 }
 window.sincronizarItem = sincronizarItem;
+
+function renderizarMenuConstituicoes() {
+    const menu = document.getElementById("menu-habilidades"); 
+    if (!menu) return;
+    menu.innerHTML = ""; 
+
+    const universoAtual = universosSelecionados[coluna];
+    const universoIndex = universos.indexOf(universoAtual);
+    const listaConst = universeConstitution[universoIndex];
+    
+    const equipados = obterEquipados(); 
+
+    if (listaConst && listaConst.length > 0) {
+        for (let i = 0; i < listaConst.length; i++) {
+            const constituicao = listaConst[i];
+            if (!constituicao.name) continue; 
+
+            const nomeTratado = constituicao.name.replace(/'/g, "\\'");
+            let classeRank = constituicao.rank.replace(/[+\-]/g, '').trim();
+            if (classeRank === '???') classeRank = 'Desconecido';
+
+            // Se você usou o corte de letras no item (Javascript), use aqui também:
+            let nomeExibido = constituicao.name;
+            if (nomeExibido.length > 40) nomeExibido = nomeExibido.substring(0, 40) + "...";
+
+            if (equipados.includes(constituicao.name)) {
+                menu.innerHTML += `
+                    <p class="habilidade" style="opacity: 0.4; cursor: not-allowed;">
+                        ${nomeExibido} <strong class="direita" style="color: #94a3b8;">[Equipado]</strong>
+                    </p>`;
+            } else {
+                menu.innerHTML += `
+                    <p class="habilidade" onclick="sincronizarConstituicao('${nomeTratado}', '${constituicao.rank}')">
+                        ${nomeExibido} <strong class="rank${classeRank} direita">[${constituicao.rank}]</strong>
+                    </p>`;
+            }
+        }
+    } else {
+        menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">Nenhuma constituição cadastrada para este universo ainda.</p>`;
+    }
+}
+
+function sincronizarConstituicao(nomeConst, rank) {
+    const slotId = `col${coluna}-habilidade${linha}`; 
+    const slotElemento = document.getElementById(slotId);
+    
+    if (slotElemento) {
+        slotElemento.classList.add('preenchido');
+        slotElemento.setAttribute('data-nome', nomeConst); // Para o bloqueio de duplicadas
+        
+        const nomeTratado = nomeConst.replace(/'/g, "\\'");
+        let classeRank = rank.replace(/[+\-]/g, '').trim();
+        if (classeRank === '???') classeRank = 'Desconecido';
+
+        slotElemento.innerHTML = `<p>${nomeConst} <strong class="rank${classeRank}">${rank}</strong></p>`;
+        
+        // Passa o tipo 'constituicao' para a janela de detalhes
+        slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${linha}, '${nomeTratado}', 'constituicao')`);
+    }
+
+    document.getElementById('escHabilidade').classList.remove('ativo');
+}
+window.sincronizarConstituicao = sincronizarConstituicao;

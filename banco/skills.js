@@ -343,9 +343,74 @@ export const universeSkills = {
     ],
     3: [ // Universo 4: Solo Leveling 
         {
-            name: "",
-            rank: "",
-            desc: ""
-        }
+            "name": "Musculatura",
+            "rank": "Lv.1",
+            "desc": "Aumenta a força física e a resistência do usuário."
+        },
+        {
+            "name": "Arrancada",
+            "rank": "Lv.1",
+            "desc": "Aumenta a velocidade de movimento em 30%. \n-1 de Mana será Consumido a Cada Minuto."
+        },
+        {
+            "name": "Sede de Sangue",
+            "rank": "Lv.1",
+            "desc": "100 MANA \n - Usando uma Forte Energia, o Alvo Selecionado é posto em um Estado de Medo por 1 Minuto. \n - Vários Alvos Podem ser Selecionados. \n - Efeito 'Medo': Todas as Estatísticas -50%"
+        },
+        {
+            "name": "Artes Avançadas com Adagas",
+            "rank": "Lv.1",
+            "desc": "Apenas com Adagas \n - Por ter usado uma Adaga por um longo período de tempo, Agora você consegue usar Adagas de forma mais Eficiente. \n - Quando uma Adaga é usada, Os Ataques com ela Ganham 33% de Dano Adicional."
+        },
+        {
+            "name": "Ataque Vital",
+            "rank": "Lv.1",
+            "desc": "70 de Mana \nApenas com Adagas \n - Você Aprendeu a Atacar de Forma Eficiente. Você agora dá Dano Crítico quando Ataca as Partes Vitais de seus inimigos."
+        },
+        {
+            "name": "Combo Crítico",
+            "rank": "Lv.MAX",
+            "desc": "Sem Custo de Mana \nApenas com Adagas \n\nCausa Dano Crítico em Sequência."
+        },
+        {
+            "name": "Furtividade",
+            "rank": "Lv.1",
+            "desc": "200 de Mana \n - Sua Aparencia e Todos os Seus Traços Serão Escondidos Instantaneamente. \n -10 de Mana será Consumido a cada Segundo."
+        },
+        {
+            "name": "Arremesso de Adaga",
+            "rank": "Lv.1",
+            "desc": "30 de Mana \nApenas com Adagas \n\nCausa Dano por Arrmessar sua Adaga. Enquanto o Nível da Habilidade Aumenta, o Dano e a Precisão irão Aumentar."
+        },
+        {
+            "name": "Toque do Dominador",
+            "rank": "Lv.1",
+            "desc": "Sem Mana Necessária \nVocê pode Controlar Objetos sem Tocar Neles."
+        },
+        {
+            "name": "Extração de Sombra",
+            "rank": "Nv.1",
+            "desc": "Sem Custo de Mana \n\nUm Soldado das Sombras é Criado de um Corpo sem Vida Absorvendo sua Mana. A Chance de Falha Aumenta com o Quão Alto os Atributos do Alvo são, E Quanto mais Tempo Tenha se Pessado Desde a Morte do Alvo. \n\n※ Alvos com a Mana Contaminada não podem ser extraídos. \n※ Sombras Possíveis de Serem Extraídas: 0/30"
+        },
+        {
+            "name": "Salvamento de Sombra",
+            "rank": "Lv.1",
+            "desc": "Sem Custo de Mana \n\nVocê Absorve os Soldados das Sombras Criados e os Salva. Soldados Salvos Podem ser Invocados e Reabsorvidos Onde e Quando o Invocador Desejar. \n\n※ Sombras Salvas: 0/30"
+        },
+        {
+            "name": "Troca de Sombras",
+            "rank": "Lv.1",
+            "desc": "Sem Custo de Mana \n\nTroca de Lugar Entre o Usuário e Soldado das Sombras Selecionado. \n\n※ A Habilidade tem um cooldown de 3 horas. O cooldown irá mudar dependendo do nível da habilidade."
+        },
+        {
+            "name": "Domínio do Monarca",
+            "rank": "Lv.1",
+            "desc": "Soldados das Sombras lutando sobre o Domínio do Invocador terão seus status aumentados em 50%."
+        },
+        {
+            "name": "Grito Provocador",
+            "rank": "Lv.1",
+            "desc": "Os Alvos Serão Provocados e Atraidos até o Usuário."
+        },
     ],
 };

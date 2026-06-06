@@ -66,10 +66,170 @@ export const universeItens = {
         },
     ],
     3: [ // Universo 3: Solo Leveling
+        {
+            "name": "Fragmento da Árvore do Mundo",
+            "rank": "??",
+            "desc": "Um pedaço de madeira que foi obtido pela remoção das partes corrompidas do 'Bastão do Vulcan' que foi criado dos ramos da Árvore do Mundo. \n\nMadeiras da Árvore do Mundo contém uma magia poderosa e pode ser utilizada como ingrediente de itens mágicos da mais alta qualidade."
+        },
+        {
+            "name": "Água Nascente da Floresta Ecoante",
+            "rank": "??",
+            "desc": "Água pura e revitalizante que flui da Floresta Ecoante. \n\nPode ser utilizada como ingrediente em poções de cura e revitalização."
+        },
+        {
+            "name": "Sangue Purificado do Rei Demônio",
+            "rank": "??",
+            "desc": "Fluido criado pela purificação do sangue do Monarca dos Demônios. \n\nÉ uma forte energia mágica e radioativa, e apesar da purificação, ainda há um pouco de toxidade restante. Deve ser misturado com os itens 'Fragmento da Árvore do Mundo' e com 'Água Nascente da Floresta Ecoante' para ser usado como remédio."
+        },
+        {
+            "name": "Receita da Água Sagrada da Vida",
+            "rank": "??",
+            "desc": "Ao usada será aprendida a receita para criar a 'Água Sagrada da Vida'."
+        },
+        {
+            "name": "Permissão de Entrada",
+            "rank": "??",
+            "desc": "Uma permissão de entrar no 2º andar do Castelo Demoníaco. Utilize em um círculo mágico de movimentação no 1º andar."
+        },
+        {
+            "name": "Permissão de Entrada",
+            "rank": "??",
+            "desc": "Uma permissão de entrar no 81º andar do Castelo Demoníaco. Utilize em um círculo mágico de movimentação no 80º andar."
+        },
+        {
+            "name": "Chave de ??",
+            "rank": "??",
+            "desc": "??"
+        },
+        {
+            "name": "Poção Misteriosa", 
+            "rank": "S",
+            "desc": "Uma poção misteriosa que pode curar qualquer doença com uma magia poderosa. O efeito só ativará quando toda a poção for consumida."
+        },
+        {
+            "name": "Espada Longa do Rei Demônio",
+            "rank": "S",
+            "desc": "Ataque +350 \n\nEspada longa transbordando do poder do Rei Demônio. Cada vez que essa espada ataca, o efeito 'Tempestade das Chamas Brancas' será ativado. \n\nEfeito: 'Tempestade das Chamas Brancas': Invoque uma tempestade de relâmpagos sem fim em uma certa área."
+        },
+        {
+            "name": "Adagas do Rei Demônio",
+            "rank": "S",
+            "desc": "Ataque +220 \n\nAdagas obtida de Baran, o Rei Demônio. \n\nUm efeito de conjunto ativará se ambas as 'Adagas do Rei Demônio' forem equipadas juntas. \n\nEfeito de Conjunto: 'Dois por Um': Dano adicional será aplicado a cada adaga pela quantia do atributo de Força."
+        },
+        {
+            name: "Chave do Castelo Demoniaco",
+            rank: "S",
+            desc: "Uma chave que permite entrar na dungeon: Castelo Demoníaco. \nPode ser usada na Torre de Song Pa Gu."
+        },
+        {
+            name: "Elmo do Cavaleiro Vermelho",
+            rank: "S",
+            desc: "+15% de Redução de Dano Físico \n+20 de Vitalidade, +20 de Força"
+        },
+        {
+            "name": "Brinco do Governante Demoníaco",
+            "rank": "S",
+            "desc": "+20 de Força, +20 de Vitalidade \n- Efeitos de conjunto serão ativados se esse item for equipado juntamente com: \n - Colar do Governante Demoníaco \n - Anel do Governante Demoníaco \n\nEfeito de Conjunto 1. (Bloqueado) \nEfeito de Conjunto 2. (Bloqueado)"
+        },
+        {
+            "name": "Colar do Governante Demoníaco",
+            "rank": "S",
+            "desc": "+20 de Agilidade, +20 de Inteligência \n\nO efeito do set ativará se esse item for equipado junto com:\n - Brinco do Governante Demoníaco (Equipado)\n - Anel do Governante Demoníaco \n\nEfeito de Conjunto 1. (Travado) \nEfeito de Conjunto 2. (Travado)"
+        },
+        {
+            "name": "Anel do Monarca Demoníaco",
+            "rank": "S",
+            "desc": "+20 Sentido +20 Inteligência \nO efeito de conjunto será ativado caso este item seja equipado junto com: \n-Brinco com Monarca Demoníaco (Equipado) \n - Anel do Monarca Demoníaco (Equipado) \n - Colar do Monarca Demoníaco (Equipado) \n\nEfeito de Conjunto 1. +5 em todos os atributos. \nEfeito de Conjunto 2. +10 em todos os atributos."
+        },
+        {
+            "name": "Orbe da Avareza",
+            "rank": "A",
+            "desc": "Um orbe criado pelo endurecimento do sangue do demônio de alto nível, Vulcan.\nEle irá amplificar os efeitos de magias para que deem mais danos.\n\nEfeito:\n'Desejo pela Destruição': Dano mágico duplicado."
+        },
         { 
-            name: "", 
-            rank: "", 
-            desc: "" 
+            name: "Veneno da Rasaka",
+            rank: "A",
+            desc: "Uma bolsa que contém o veneno purificado de Rasaka. Obtido ao derrotar Rasaka. Taxa de drope baixo. Bebe-lo lhe dará uma pele endurecida mas enfaquecerá sua força. \n\n- Efeito 'Escamas de Ferro da Rasaka': -20% de dano físico recebido \n- Penalidade 'Músculos Enfraquecidos': -35 de força."
+        },
+        { 
+            name: "Adaga de Baruka",
+            rank: "A",
+            desc: "Uma adaga portada pelo grande guerreiro 'Baruka'. O encantamento de 'Peso Leve' irá fazer o portador mais ágil. \n+110 Ataque, +10 Agilidade"
+        },
+        { 
+            name: "Colar de Guardião", 
+            rank: "A", 
+            desc: "Agilidade +20,  Sentidos +20" 
+        },
+        {
+            "name": "Chave da Porta do Castelo",
+            "rank": "A",
+            "desc": "Uma chave que pode abrir a porta do Castelo Demoníaco. Obtido por matar o guardião do portão."
+        },
+        {
+            "name": "Peitoral do Grande Cavaleiro",
+            "rank": "B",
+            "desc": "Redução de 7% de dano físico \n(Diminue sua velocidade de movimento irá reduzir se sua força for menos que 80.)"
+        },
+        {
+            "name": "Manopola do Grande Cavaleiro",
+            "rank": "B",
+            "desc": "+3% de Redução de Dano Físico \n- Efeito Adicional: Previne machucados nas mãos. \n(Diminue sua velocidade de movimento irá reduzir se sua força for menos que 80.)"
+        },
+        {
+            "name": "Anel do Grande Mago",
+            "rank": "B",
+            "desc": "+15 de Mana \nUm anel imbuído de poder mágico que amplifica o fluxo de mana do usuário."
+        },
+        {
+            "name": "Botas de Assassino",
+            "rank": "B",
+            "desc": "+10 de Agilidade \nBotas leves projetadas para movimentos furtivos, aumentando consideravelmente a velocidade de locomoção."
+        },
+        {
+            "name": "Assasina de Cavaleiros",
+            "rank": "B",
+            "desc": "+75 de Ataque \n- Efeito 'Matadora de Cavaleiros': Se usada contra Oponentes com Armadura Pesada, seus ataques causarão 25% de dano adicional."
+        },
+        { 
+            name: "Presa de Rakasa",
+            rank: "C",
+            desc: "Uma adaga feita da presa de Rakasa. Capaz de paralizar devido ao resquício de veneno. Garante o efeito de sangramento. Pode ser equipado, guardado ou vendido. \n\n- Efeito 'Paralizia': Possui a chance de fazer inimigos atacados imóveis. \n- Efeito 'Sangramento': Inimigos atacados perdem 1% de sua vida a cada 1 segundo."
+        },
+        {
+            "name": "Luvas de Arqueiro",
+            "rank": "C",
+            "desc": "+10 de Agilidade \nLuvas leves que aumentam a precisão e a flexibilidade dos movimentos do portador."
+        },
+        { 
+            name: "Poção de Mana",
+            rank: "E",
+            desc: "Uma poção que restaura mana. \nRestaura 500 de mana após ser consumida."
+        },
+        {
+            "name": "Saco de Couro",
+            "rank": "E",
+            "desc": "Tipo: Depósito. Um saco que é usado para guardar dinheiro. \nContém 1,500,000 de gold."
+        },
+        { 
+            name: "Chave de Dungeon", 
+            rank: "E", 
+            desc: "Uma chave que lhe permite criar uma dungeon instantânea. \nVocê deve usá-la na terceira entrada da estação de Hapjung." 
+        },
+        { 
+            name: "Casaco de Pele Quente", 
+            rank: "Inútil", 
+            desc: "Se torna Extremamente Quente Depois de Desgastado." 
+        },
+        { 
+            name: "Presa de Raikan", 
+            rank: "Inútil", 
+            desc: "Uma Presa Larga e Afiada de um Raikan." 
+        },
+        {
+            "name": "Chifre de Demônio de Baixo Nível",
+            "rank": "Inútil",
+            "desc": "Dois chifres minúsculos da cabeça de um demônio de baixo nível. Chifres demoníacos são utilizados como materiais para magias de alto nível e possuem um alto preço."
         },
     ],
 };
