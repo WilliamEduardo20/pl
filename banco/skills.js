@@ -440,4 +440,56 @@ export const universeSkills = {
             "desc": "Um rugido da Alma que Incapacita Todos e os Faz Cair em Desespero. ※ Indiferentemente se são Aliados ou Inimigos."
         },
     ],
+    4: [ // Universo 5: Solo Leveling Ragnarok
+        {
+            name: "Corrida",
+            rank: "Nv.1",
+            desc: "CUSTO DE MANA: NENHUM \nVOCÊ SE TORNA HABILIDOSO EM Correr."
+        },
+        {
+            name: "Combate Corpo a Corpo",
+            rank: "Nv.1",
+            desc: "CUSTO DE MANA: NENHUM \nVOCÊ SE TORNA HABILIDOSO EM COMBATE CORPO A CORPO. \n\n - Efeito: VOCÊ CAUSARÁ 33% DE DANO ADICIONAL AOS OPONENTES QUANDO ATACAR USANDO SEU CORPO."
+        },
+        {
+            name: "Corte Tempestuoso",
+            rank: "Nv.1",
+            desc: "CUSTO DE MANA: 50 \nO PODER DOS VENTOS UIVANTES É IMBUÍDO NA SUA ESPADA. VOCÊ PODE ATACAR VÁRIOS INIMIGOS SIMULTANEAMENTE."
+        },
+        {
+            name: "Resiliência",
+            rank: "Nv.1",
+            desc: "Custo: NÃO REQUER MANA \n\nVOCÊ POSSUI UM NÍVEL DE RESILIÊNCIA INDOMÁVEL. \nDEFESA FÍSICA É AUMENTADA EM 20%."
+        },
+        {
+            name: "Autoridade do Governante",
+            rank: "Nv.1",
+            desc: "Custo: NÃO REQUER MANA \n\nVOCÊ É CAPAZ DE FISICAMENTE AFETAR OBJETOS SEM TOCÁ-LOS COM SUAS MÃOS."
+        },
+        {
+            name: "Habilidade de Vínculo: Possesão da Besta",
+            rank: "Nv.1",
+            desc: "CUSTO DE MANA: 1 POR SEGUNDO \nAO PERMITIR QUE O 'DESCENDENTE DA PRESA' HABITE SEU CORPO, SEU CORPO FÍSICO É APRIMORADO. \nSEUS SENTIDOS SE TORNAM TÃO AGUÇADOS QUANTO OS DE UMA BESTA."
+        },
+        {
+            name: "Habilidade de Vínculo: Explosão Demoníaca",
+            rank: "Nv.1",
+            desc: "[CARREGAMENTO: 0%] \nRECEBE A ENERGIA DA 'DESCENDENTE DAS CHAMAS BRANCAS' E DESCARREGA UMA PODEROSA EXPLOSÃO."
+        },
+        {
+            name: "Extração de Sombra",
+            rank: "Nv.1",
+            desc: "Custo: NÃO REQUER MANA \n\nEXTRAI A MANA DE UM CORPO CUJA A VIDA EXPIROU E TRANSFORMA-O EM UM SOLDADO DAS SOMBRAS. \nA TAXA DE FALHA DA EXTRAÇÃO AUMENTARÁ EM RELAÇÃO ÀS ESTATÍSTICAS DO ALVO E AO TEMPO DESDE A MORTE. \n\n※ NÚMERO DE POSSÍVEIS EXTRAÇÕES DE SOMBRA: 0/3"
+        },
+        {
+            name: "Extração de Sombra",
+            rank: "Nv.2",
+            desc: "REQUER AUTORIDADE DAS SOMBRAS \n\nCusto: NENHUMA MANA \n - Efeito 'Mudança de Forma': PODE ARBITRARIAMENTE MUDAR A FORMA DOS SOLDADOS DAS SOMBRAS."
+        },
+        {
+            name: "Ordens Rígidas",
+            rank: "Nv.MAX",
+            desc: "Aumenta os Status do Alvo Afetado em 50%. \nA HABILIDADE 'ORDENS RÍGIDAS' Aplica o Efeito DE INSANIDADE Como UM EFEITO COLATERAL. \n\n※ Necessita de Contato Físico para a Ativação."
+        },
+    ],
 };

@@ -115,11 +115,6 @@ export const universeItens = {
             desc: "Este é um brinco muito apreciado por Rosalia, a filha mais velha de uma prestigiosa casa nobre. \nA força de vontade aumenta em 20%."
         },
         {
-            name: "Pulseira Escama de Chama",
-            rank: "?",
-            desc: "Esta é uma pulseira que contém o poder de um Wyvern Vermelho. O poder das habilidades do atributo fogo aumenta em 70%."
-        },
-        {
             name: "Coração do Rei Demônio do Gelo",
             rank: "Exotico",
             desc: "Este é o coração do Rei Demônio do Gelo que congelou o mundo. Contém a Alma dele. ※ Cuidado ele Vai sair e Possuir Você"
@@ -160,24 +155,24 @@ export const universeItens = {
             desc: "Ao consumir este produto, a resistência ao frio aumenta. O poder regenerativo do corpo e todos os efeitos de regeneração recebidos pelo corpo também aumentam. Você não morrerá a menos que sua cabeça seja destruída ou seu pescoço seja decepado."
         },
         {
+            name: "Pulseira Escama de Chama",
+            rank: "Único",
+            desc: "Esta é uma pulseira que contém o poder de um Wyvern Vermelho. O poder das habilidades do atributo fogo aumenta em 70%."
+        },
+        {
             name: "Campo de Força",
-            rank: "?",
+            rank: "Único",
             desc: "Instala um campo de força em um ponto de rota escolhido para bloquear o movimento do golem. O campo de força dura 30 segundos."
         },
         {
             name: "Lento",
-            rank: "?",
+            rank: "Único",
             desc: "Aplica 50% de Lentidão aos golens na rota. A Lentidão dura 30 segundos."
         },
         {
             name: "Parar",
-            rank: "?",
+            rank: "Único",
             desc: "Impede a passagem de golens. A parada dura 30 segundos."
-        },
-        {
-            name: "Anel de Lupadupa",
-            rank: "?",
-            desc: "Um anel que contém a vontade da xamã amadora Lupadupa. Aumenta a velocidade de recuperação da Força de Vontade em 10%."
         },
         {
             name: "Pedra de Habilidade: Raio da Destruição",
@@ -186,12 +181,12 @@ export const universeItens = {
         },
         {
             name: "Caixa de Música Celestial",
-            rank: "?",
+            rank: "Épico+",
             desc: "Uma relíquia sagrada perdida da Ordem Paeli. Quando usada, toca uma melodia que acalma o corpo e a mente. Pode ser usada consumindo 1 ponto de Força de Vontade por segundo."
         },
         {
             name: "Tiara de São Landahil",
-            rank: "?",
+            rank: "Épico+",
             desc: "O Tiara de São Landahil é uma relíquia que se diz ter sido perdida pela Ordem Paeli em tempos remotos. A habilidade desta tiara é emitir um brilho vermelho quando uma entidade maligna está por perto."
         },
         {
@@ -201,7 +196,7 @@ export const universeItens = {
         },
         {
             name: "Adaga de Estilhaço de Gelo de Shelburn",
-            rank: "?",
+            rank: "Épico+",
             desc: "Uma adaga forjada com o frio cortante do gélido Shelburn. Ao consumir a lâmina, ela libera energia gélida. Uma lâmina consumida regenera-se completamente após 24 horas."
         },
         {
@@ -216,24 +211,29 @@ export const universeItens = {
         },
         { 
             name: "Colar de Sangue de Pligas", 
-            rank: "?", 
+            rank: "Épico", 
             desc: "Este colar contém o sangue de Pligas, um predador do Reino Demoníaco. Se você invocar Pligas para este mundo e derrotá-lo, poderá firmar um contrato de mestre-servo. Caso falhe, o colar será destruído. (Recomendado nível 50 ou superior)"
         }, 
         { 
             name: "Colar de Sangue de Pligas", 
-            rank: "?", 
+            rank: "Épico", 
             desc: "Um colar misturado com o sangue de Pligas, um predador do Reino Demoníaco. Você conseguiu invocar Pligas para este mundo, derrotá-lo e firmar um contrato de mestre-servo. Se Pligas sofrer danos graves, ele será invocado novamente. Você deverá então aguardar 24 horas antes de invocá-lo mais uma vez."
         }, 
         { 
             name: "Pulseira de Bandiul", 
-            rank: "?", 
+            rank: "Épico", 
             desc: "Uma pulseira habitada por Bandiul, um espírito maligno. À medida que sua afinidade com Bandiul aumenta, você pode extrair mais habilidades. \n\nHabilidade 1: Permite ao Usuário ver no Escuro \nHabilidade 2: Permite ao Usuário se Tornar Invísivel por um Periodo de Tempo \nHabilidade 3: Permite criar uma Zona onde Os Inimigos perdem os Sentidos e a Cordenação Motora, assim caindo e se debatendo."
         }, 
         { 
             name: "Anel da Casa Dapriya", 
-            rank: "?", 
+            rank: "Épico", 
             desc: "Um anel gravado com o brasão da Casa Dapriya. É a prova de que você conquistou o favor deles."
         }, 
+        {
+            name: "Anel de Lupadupa",
+            rank: "Raro+",
+            desc: "Um anel que contém a vontade da xamã amadora Lupadupa. Aumenta a velocidade de recuperação da Força de Vontade em 10%."
+        },
         { 
             name: "Grimório de Malfaders", 
             rank: "Raro+", 
@@ -565,6 +565,38 @@ export const universeItens = {
             "name": "Chifre de Demônio de Baixo Nível",
             "rank": "Inútil",
             "desc": "Dois chifres minúsculos da cabeça de um demônio de baixo nível. Chifres demoníacos são utilizados como materiais para magias de alto nível e possuem um alto preço."
+        },
+    ],
+    4: [ // Universo 5: Solo Leveling Ragnarok
+        {
+            name: "Chave da Masmorra das Sombras",
+            rank: "??",
+            desc: "ESSA É A CHAVE PARA ENTRAR NA MASMORRA DAS SOMBRAS. \n\nPODE SER USADA NA SOMBRA DE SUNG SUHO."
+        },
+        {
+            name: "Manopla - Lobo Presas-de-Aço das Sombras",
+            rank: "Nv.1",
+            desc: "LOBOS PRESAS-DE-AÇO DAS SOMBRAS NV.1 Transformado em uma MANOPLA, pela Autoridade das Sombras. \n\n※ Necessita da 'Autoridade das Sombras' para controlar o Lobo."
+        },
+        {
+            name: "Presa de Rakan",
+            rank: "??",
+            desc: "ATAQUE: +30, +5 (CORREÇÃO DE ESTATÍSTICAS)  \n\nUMA ESPADA FEITA DA PRESA DE RAKAN, REI DAS BESTAS. \n\nO ESPÍRITO DE RAKAN HABITA DENTRO DA ESPADA, E AQUELES DE BAIXO STATUS PODEM TER SEUS CORPOS TOMADOS SE A MANEJAREM. \n\n - EFEITO 'DESDÉM PELOS FRACOS': DEIXA O ALVO DESIGNADO EM UM ESTADO DE MEDO POR 1 MINUTO. (TODAS AS ESTATÍSTICAS -50%) \n - EFEITO 'FERIDA CRÍTICA': 15% DE CHANCE DE INFLIGIR DANO CRÍTICO DOBRADO."
+        },
+        {
+            name: "Chifre de Vulcan",
+            rank: "??",
+            desc: "ATAQUE +40 \n\nMANOPLAS CRIADAS COM O CHIFRE DE UM DEMÔNIO, O GANANCIOSO VULCAN. INFLIGE DANO DEVIDO A AUTORIDADE DE VULCAN DENTRO DELE.   \n\n - EFEITO 'DESEJO DE DESTRUIÇÃO': AUMENTA O DANO FÍSICO EM [30%]. \n - EFEITO 'DEVORADOR DE DEMÔNIOS': A AUTORIDADE DE VULCAN FICA MUITO MAIS FORTE CONFORME MAIS ALMAS DEMONÍACAS FOREM DEVORADAS. \n\n※ ALMAS DEMONÍACAS DEVORADAS: 0 \n※ O EFEITO DO 'DESEJO DA DESTRUIÇÃO' AUMENTA EM 1% A CADA ALMA"
+        },
+        {
+            name: "Trombeta",
+            rank: "E",
+            desc: "UMA TROMBETA USADA POR CENTURIÕES GOBLINS PARA CHAMAR SEUS SUBORDINADOS."
+        },
+        {
+            name: "Poção de Cura de Grau Baixo",
+            rank: "E",
+            desc: "UMA POÇÃO QUE CURA O PV. VOCÊ IRÁ LENTAMENTE RECUPERAR 500 DE PV COM O TEMPO SE BEBÊ-LA. ENQUANTO CONSEGUE MANTÊ-LA EM SEU INVENTÁRIO, NÃO PODE COMPARTILHAR COM OUTRAS PESSOAS."
         },
     ],
 };
