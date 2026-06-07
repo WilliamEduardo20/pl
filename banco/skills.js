@@ -301,9 +301,17 @@ export const universeSkills = {
             rank: "Raro", 
             desc: "EFEITO: DISPARA O PODER CONDENSADO DO RELÂMPAGO PARA A FRENTE. \n\n※ O LANÇAMENTO REQUER 20 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 100 \nTEMPO DE RECARGA: 30 SEGUNDOS" },
         { 
-            name: "Ataque Flamejante", 
+            name: "Golpe Flamejante", 
             rank: "Raro", 
             desc: "EFEITO: LANÇA CHAMAS CONDENSADAS PARA A FRENTE, CAUSANDO UMA EXPLOSÃO. \n\n※ A CONJURAÇÃO REQUER 20 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 100 \nTEMPO DE RECARGA: 30 SEGUNDOS" },
+        {   
+            name: "Golpe Flamejante (+1)",
+            rank: "Raro",
+            desc: "EFEITO: Lança duas chamas condensadas para a frente, causando explosões. \n\n※ O lançamento requer 0 segundos de concentração mental. \n\nCLASSIFICAÇÃO: Tipo Mágica \nCUSTO DE FORÇA DE VONTADE: 100 \nTEMPO DE RECARGA: 30 segundos"},
+        {   
+            name: "Golpe Flamejante (+2)",
+            rank: "Raro",
+            desc: "EFEITO: Lança três chamas condensadas que causam explosões. \n\n※ O lançamento requer 0 segundos de concentração mental. \n\nCLASSIFICAÇÃO: Tipo Mágica \nCUSTO DE FORÇA DE VONTADE: 100 \nTEMPO DE RECARGA: 30 segundos"},
         { 
             name: "Rajada de Lâminas", 
             rank: "Raro", 
@@ -324,6 +332,10 @@ export const universeSkills = {
             name: "Raio de Luz das Fadas", 
             rank: "Comum+", 
             desc: "EFEITO: DISPARA PEQUENOS PROJÉTEIS DE LUZ INFUNDIDOS COM O PODER DA LUZ. ATÉ TRÊS PROJÉTEIS PODEM SER CRIADOS. \n\n※ O CUSTO DE FORÇA DE VONTADE ACUMULA EM 5 PONTOS ADICIONAIS A CADA VEZ QUE OUTRO DISPARO É ADICIONADO. \n※ REQUER 10 SEGUNDOS DE CONCENTRAÇÃO MENTAL PARA CONJURAR. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 20, 45, 75 \nTEMPO DE RECARGA: 5 SEGUNDOS" },
+        { 
+            name: "Raio de Luz das Fadas (+1)", 
+            rank: "Comum+", 
+            desc: "Dispara pequenos projéteis de luz carregados com o poder da luz. Você pode gerar até cinco orbes, e o custo de Força de Vontade aumenta a cada orbe adicional. \n\n※ Requer 10 segundos de concentração mental para conjurar. \n\nCLASSIFICAÇÃO: Tipo Mágico \nCUSTO DE FORÇA DE VONTADE: 20, 45, 75, 110, 150 \nTEMPO DE RECARGA: 5 segundos" },
         { 
             name: "Bala de Gelo", 
             rank: "Comum", 

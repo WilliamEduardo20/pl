@@ -59,10 +59,220 @@ export const universeItens = {
         }
     ],
     2: [ // Universo 3: Time Stop Ability / Climbing Tower
+        {
+            name: "Espada Vermelha",
+            rank: "?",
+            desc: "Pode Rebater Flechas Vermelha sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Laranja",
+            rank: "?",
+            desc: "Pode Rebater Flechas Laranja sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Amarela",
+            rank: "?",
+            desc: "Pode Rebater Flechas Amarela sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Verde",
+            rank: "?",
+            desc: "Pode Rebater Flechas Verde sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Azul",
+            rank: "?",
+            desc: "Pode Rebater Flechas Azuil sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Anil",
+            rank: "?",
+            desc: "Pode Rebater Flechas Anil sem Ativar a Penalidade."
+        },
+        {
+            name: "Espada Violeta",
+            rank: "?",
+            desc: "Pode Rebater Flechas Violeta sem Ativar a Penalidade."
+        },
+        {
+            name: "Cidadania de Segunda Classe do Império Kalundi",
+            rank: "?",
+            desc: "Este é um título de Cidadania de Segunda Classe do Império Kalundi. Você adquire o direito de receber a proteção do Império como súdito do Império Kalundi. Ao ser usado, dois cavaleiros Kalundi são invocados por 30 minutos para escoltá-lo. Após um uso, pode ser usado novamente após 24 horas."
+        },
+        {
+            name: "Vassoura de Sitpi",
+            rank: "?",
+            desc: "Uma vassoura que pertence à bruxa travessa Sitpi. Você pode montá-la e voar. Às vezes, a vassoura age sozinha. \nPode ser usado consumindo 30 de Força de Vontade por segundo."
+        },
+        {
+            name: "Espelho Dourado de Dalphara",
+            rank: "?",
+            desc: "Uma ferramenta ritualística usada por Dalphara, sacerdotisa da Tribo Dyakaropine, em oferendas ao deus tribal. Quando usada, cria uma barreira refletora à sua frente que pode refletir o ataque de um oponente. Ataques mais fortes que a durabilidade do espelho não podem ser refletidos. Se a durabilidade do espelho se esgotar completamente, sua habilidade não poderá ser usada. A durabilidade se recupera em 1% por hora. \nDurabilidade: 100/100"
+        },
+        {
+            name: "Brinco de Rosalia",
+            rank: "?",
+            desc: "Este é um brinco muito apreciado por Rosalia, a filha mais velha de uma prestigiosa casa nobre. \nA força de vontade aumenta em 20%."
+        },
+        {
+            name: "Pulseira Escama de Chama",
+            rank: "?",
+            desc: "Esta é uma pulseira que contém o poder de um Wyvern Vermelho. O poder das habilidades do atributo fogo aumenta em 70%."
+        },
+        {
+            name: "Coração do Rei Demônio do Gelo",
+            rank: "Exotico",
+            desc: "Este é o coração do Rei Demônio do Gelo que congelou o mundo. Contém a Alma dele. ※ Cuidado ele Vai sair e Possuir Você"
+        },
+        {
+            name: "Bilhete de promoção de habilidade de 90%",
+            rank: "Exotico",
+            desc: "Selecione uma habilidade e promova-a para uma habilidade de nível superior da próxima categoria com 90% de chance de sucesso. Se falhar, a categoria da habilidade cai um nível. Desaparece após um único uso."
+        },
+        {
+            name: "Escalas da Vida",
+            rank: "Exotico",
+            desc: "Ofereça sua expectativa de vida e receba uma recompensa proporcional. Você pode oferecer de um mínimo de 1% a um máximo de 99% da sua expectativa de vida restante. Após um uso, a balança se quebra e sua expectativa de vida restante é exibida."
+        },
+        {
+            name: "Dispositivo de Dobra de Alta Qualidade",
+            rank: "Exotico",
+            desc: "Um dispositivo de dobra espacial que incorpora a tecnologia de engenharia mágica do Império Dateiano. \nPode ser ativada carregando Força de Vontade e permite mover-se 10 metros por ponto de Força de Vontade. Você pode se mover usando um ponto salvo ou definindo uma direção e usando-a. É possível salvar até um ponto. No entanto, o movimento entre o interior e o exterior da Torre é impossível. A ativação leva 10 minutos. \n\nCarga atual: 0/1.000.000"
+        },
+        {
+            name: "Pergaminho de Efeito de Habilidade 300%",
+            rank: "Exotico",
+            desc: "Selecione uma habilidade de qualquer tipo e aumente seu efeito em 300%. Pode ser usado rasgando o pergaminho. (Acumulável) \nAumento de 300% no efeito de uma habilidade."
+        },
+        {
+            name: "Peças de Anulação de Habilidade",
+            rank: "Exotico",
+            desc: "Anula todas as habilidades de uma unidade de golem. Pode ser usado fazendo com que as partes toquem o golem."
+        },
+        {
+            name: "Grande Interruptor de Incineração",
+            rank: "Exotico",
+            desc: "Pressione o botão para executar uma grande incineração. Chamas poderosas eliminarão todos os golens. E você também, é claro!"
+        },
+        {
+            name: "Sangue de Hidra Congelado",
+            rank: "Lendário",
+            desc: "Ao consumir este produto, a resistência ao frio aumenta. O poder regenerativo do corpo e todos os efeitos de regeneração recebidos pelo corpo também aumentam. Você não morrerá a menos que sua cabeça seja destruída ou seu pescoço seja decepado."
+        },
+        {
+            name: "Campo de Força",
+            rank: "?",
+            desc: "Instala um campo de força em um ponto de rota escolhido para bloquear o movimento do golem. O campo de força dura 30 segundos."
+        },
+        {
+            name: "Lento",
+            rank: "?",
+            desc: "Aplica 50% de Lentidão aos golens na rota. A Lentidão dura 30 segundos."
+        },
+        {
+            name: "Parar",
+            rank: "?",
+            desc: "Impede a passagem de golens. A parada dura 30 segundos."
+        },
+        {
+            name: "Anel de Lupadupa",
+            rank: "?",
+            desc: "Um anel que contém a vontade da xamã amadora Lupadupa. Aumenta a velocidade de recuperação da Força de Vontade em 10%."
+        },
+        {
+            name: "Pedra de Habilidade: Raio da Destruição",
+            rank: "Épico+",
+            desc: "Use para aprender 'Habilidade: Raio de Destruição (Épico+)'."
+        },
+        {
+            name: "Caixa de Música Celestial",
+            rank: "?",
+            desc: "Uma relíquia sagrada perdida da Ordem Paeli. Quando usada, toca uma melodia que acalma o corpo e a mente. Pode ser usada consumindo 1 ponto de Força de Vontade por segundo."
+        },
+        {
+            name: "Tiara de São Landahil",
+            rank: "?",
+            desc: "O Tiara de São Landahil é uma relíquia que se diz ter sido perdida pela Ordem Paeli em tempos remotos. A habilidade desta tiara é emitir um brilho vermelho quando uma entidade maligna está por perto."
+        },
+        {
+            name: "Canhão de Mana Comprimido de Ultra-Aniquilação",
+            rank: "Épico+",
+            desc: "Uma arma decisiva que é essencialmente o ápice da antiga engenharia mágica do Império dos Magos Rúnicos. Seu poder é tremendo, portanto, use com cautela. \n\nCusto de força de vontade: 600 \nTempo de recarga: Nenhum"
+        },
+        {
+            name: "Adaga de Estilhaço de Gelo de Shelburn",
+            rank: "?",
+            desc: "Uma adaga forjada com o frio cortante do gélido Shelburn. Ao consumir a lâmina, ela libera energia gélida. Uma lâmina consumida regenera-se completamente após 24 horas."
+        },
+        {
+            name: "Pedra de Habilidade: Subespaço",
+            rank: "Épico",
+            desc: "Use para aprender 'Habilidade: Subespaço (Épico)'."
+        },
+        {
+            name: "Pedra de Mana de Alta Qualidade",
+            rank: "Épico",
+            desc: "Esta é uma Pedra de Mana de qualidade superior"
+        },
         { 
-            name: "", 
-            rank: "", 
-            desc: "" 
+            name: "Colar de Sangue de Pligas", 
+            rank: "?", 
+            desc: "Este colar contém o sangue de Pligas, um predador do Reino Demoníaco. Se você invocar Pligas para este mundo e derrotá-lo, poderá firmar um contrato de mestre-servo. Caso falhe, o colar será destruído. (Recomendado nível 50 ou superior)"
+        }, 
+        { 
+            name: "Colar de Sangue de Pligas", 
+            rank: "?", 
+            desc: "Um colar misturado com o sangue de Pligas, um predador do Reino Demoníaco. Você conseguiu invocar Pligas para este mundo, derrotá-lo e firmar um contrato de mestre-servo. Se Pligas sofrer danos graves, ele será invocado novamente. Você deverá então aguardar 24 horas antes de invocá-lo mais uma vez."
+        }, 
+        { 
+            name: "Pulseira de Bandiul", 
+            rank: "?", 
+            desc: "Uma pulseira habitada por Bandiul, um espírito maligno. À medida que sua afinidade com Bandiul aumenta, você pode extrair mais habilidades. \n\nHabilidade 1: Permite ao Usuário ver no Escuro \nHabilidade 2: Permite ao Usuário se Tornar Invísivel por um Periodo de Tempo \nHabilidade 3: Permite criar uma Zona onde Os Inimigos perdem os Sentidos e a Cordenação Motora, assim caindo e se debatendo."
+        }, 
+        { 
+            name: "Anel da Casa Dapriya", 
+            rank: "?", 
+            desc: "Um anel gravado com o brasão da Casa Dapriya. É a prova de que você conquistou o favor deles."
+        }, 
+        { 
+            name: "Grimório de Malfaders", 
+            rank: "Raro+", 
+            desc: "Um grimório deixado pelo mago Malfaders. Ao usá-lo, você pode escolher e aprender uma das habilidades abaixo. \n\n[Habilidade: Controle Mental Menor (Rara+)] \n[Habilidade: Teletransporte (Rara+)] \n[Habilidade: Chama Corruptora (Rara+)] \n[Habilidade: Pântano Sombrio (Raro+)] \n[Habilidade: Drenagem de Vida (Rara+)]"
+        }, 
+        {
+            name: "Pedra de Habilidade: Regeneração Rápida",
+            rank: "Raro+",
+            desc: "Use para aprender 'Habilidade: Regeneração Rápida (Rara+)'."
+        },
+        {
+            name: "Pedra de Habilidade: Sexto Sentido",
+            rank: "Raro+",
+            desc: "Use para aprender 'Habilidade: Sexto Sentido (Rara+)'."
+        },
+        {
+            name: "Pedra de Aprimoramento de Habilidade",
+            rank: "Raro+",
+            desc: "Ao ser usada, você pode aprimorar uma habilidade de nível Raro+."
+        },
+        {
+            name: "Pedra de Habilidade: Golpe Flamejante",
+            rank: "Raro",
+            desc: "Ao usar isso, você poderá aprender a habilidade 'Golpe Flamejante (Raro)'."
+        },
+        {
+            name: "Pedra de Habilidade: Exaltação",
+            rank: "Raro",
+            desc: "Use para aprender 'Habilidade: Exaltação (Rara)'."
+        },
+        {
+            name: "Pedra rara de aprimoramento de habilidades",
+            rank: "Raro",
+            desc: "Pode aprimorar uma habilidade de nível Raro."
+        },
+        {
+            name: "Pedra de Aprimoramento de Habilidade",
+            rank: "Comum+",
+            desc: "Pode aprimorar uma habilidade de nível Comum+."
         },
     ],
     3: [ // Universo 3: Solo Leveling
