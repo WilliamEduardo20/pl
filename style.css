@@ -59,6 +59,8 @@ hr {
     box-shadow: 0 0 12px rgba(0, 210, 255, 0.2);
 }
 .habilidade p { font-size: 1.3em; }
+
+.rankLv { color: #a2d2ff; text-shadow: 0 0 8px rgba(0, 210, 255, 0.6); }
 .nivel {
     color: #a2d2ff;
     text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);
@@ -81,6 +83,7 @@ hr {
 .rankMítico { color: #C5A344; text-shadow: rgba(197, 163, 68, 0.5) 0px 0px 6px; }
 .rankLendário { color: #DE6E0E; text-shadow: rgba(255, 210, 0, 0.5) 0px 0px 6px; }
 .rankÚnico,
+.rankMAX,
 .rankÉpico { color: #8A2BE2; text-shadow: rgba(138, 43, 226, 0.5) 0px 0px 6px; }
 .rankRaro { color: #008DD4; text-shadow: rgba(0, 141, 212, 0.5) 0px 0px 6px; }
 .rankIncomum { color: #016604; text-shadow: rgba(1, 102, 4, 0.5) 0px 0px 6px; }

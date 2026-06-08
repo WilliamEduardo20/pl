@@ -142,7 +142,9 @@ function renderizarMenuHabilidades() {
 
             const nomeTratado = habilidade.name.replace(/'/g, "\\'");
             let classeRank = habilidade.rank.replace(/[+\-]/g, '').trim();
-            if (classeRank === '???') classeRank = 'Desconecido';
+            if (classeRank == '???' || classeRank == '??' || classeRank == '?') classeRank = 'Desconecido';
+            if (classeRank === 'Lv.1' || classeRank === 'Lv.2') classeRank = 'Lv';
+            if (classeRank  == 'Lv.MAX') classeRank = 'MAX';
 
             // NOVO: Verifica se já está em uso
             if (equipados.includes(habilidade.name)) {
@@ -213,7 +215,9 @@ function sincronizarHabilidade(nomeHabilidade, rank) {
 
         // HIGIENIZAÇÃO DO RANK
         let classeRank = rank.replace(/[+\-]/g, '').trim();
-        if (classeRank === '???' || classeRank === '??' || classeRank === '?') classeRank = 'Desconecido';
+        if (classeRank == '???' || classeRank == '??' || classeRank == '?') classeRank = 'Desconecido';
+        if (classeRank === 'Lv.1' || classeRank === 'Lv.2') classeRank = 'Lv';
+        if (classeRank  == 'Lv.MAX') classeRank = 'MAX';
 
         // Injeta o HTML e a classe
         slotElemento.innerHTML = `<p>${nomeHabilidade} <strong class="rank${classeRank}">${rank}</strong></p>`;
