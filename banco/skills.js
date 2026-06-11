@@ -487,9 +487,54 @@ export const universeSkills = {
             desc: "REQUER AUTORIDADE DAS SOMBRAS \n\nCusto: NENHUMA MANA \n - Efeito 'Mudança de Forma': PODE ARBITRARIAMENTE MUDAR A FORMA DOS SOLDADOS DAS SOMBRAS."
         },
         {
+            name: "Criação das Sombras",
+            rank: "Nv.1",
+            desc: "HABILIDADE EXCLUSIVA DE CLASSE \nCUSTO DE MANA: NENHUM \n\nTRANSFORMA UMA SOMBRA EM UMA CRIAÇÃO BASEADA NA IMAGINAÇÃO DO 'JOGADOR'. \n\nLISTA DE CRIAÇÕES POSSÍVEIS: \n - ITENS SOMBRIOS \n\t - ...  \n\n※ A SOMBRA USADA NA CRIAÇÃO NÃO PODERÁ MAIS RETORNAR À FORMA DE SOLDADO."
+        },
+        {
+            name: "Armazenamento de Item das Sombras",
+            rank: "Nv.1",
+            desc: "HABILIDADE EXCLUSIVA DE CLASSE \nNÃO REQUER MANA. \n\nABSORVE O ITEM DE SOMBRAS PARA A SOMBRA DO CONJURADOR E O ARMAZENA. OS ITENS DE SOMBRAS ARMAZENADOS PODEM SER INVOCADOS OU REABSORVIDOS A QUALQUER MOMENTO. \n\n※ CONTAGEM DE ITENS DAS SOMBRAS ARMAZENADOS 0/40"
+        },
+        {
+            name: "Contrato de Item das Sombras",
+            rank: "Nv.1",
+            desc: "HABILIDADE EXCLUSIVA DE CLASSE \nNÃO REQUER MANA. \n\nO PORTADOR DA HABILIDADE PODE IMBUIR UM ITEM DE SOMBRAS COM UM NOME ÚNICO PARA TRANSFORMÁ-LO EM UM ITEM QUE PODE SUBIR DE NÍVEL. (SÓ É APLICÁVEL A ITENS DE SOMBRAS QUE SÃO DE GRAU HEROICO OU ACIMA.) \n\n※ O PORTADOR DA HABILIDADE NÃO PODE EQUIPAR QUALQUER ITEM ALÉM DO ITEM DE SOMBRAS. \n※ VALOR DO AUMENTO DOS ATRIBUTOS DO ITEM DE SOMBRAS: 30%  "
+        },
+        {
             name: "Ordens Rígidas",
             rank: "Nv.MAX",
             desc: "Aumenta os Status do Alvo Afetado em 50%. \nA HABILIDADE 'ORDENS RÍGIDAS' Aplica o Efeito DE INSANIDADE Como UM EFEITO COLATERAL. \n\n※ Necessita de Contato Físico para a Ativação."
         },
+        {
+            name: "Aumento de Força",
+            rank: "Nv.1",
+            desc: "A FORÇA AUMENTA EM (20%)."
+        },
+        {
+            name: "Autoridade do Monarca",
+            rank: "Nv.MAX",
+            desc: "PODE EXERCER INFLUÊNCIA FÍSICA SOBRE OBJETOS SEM TOCÁ-LOS DIRETAMENTE."
+        },
+        {
+            name: "Balança da Troca Equivalente",
+            rank: "Nv.MAX",
+            desc: "UMA HABILIDADE QUE ME PERMITE TROCAR QUALQUER COISA QUE POSSUO POR ALGO DE VALOR EQUIVALENTE. \n\nCONVERTE A VIDA DOS FIÉIS AO REDOR EM ENERGIA MÁGICA."
+        },
+        {
+            "name": "Vento da Pradaria",
+            "rank": "Nv.1",
+            "desc": "CUSTO DE MANA: 50 \nVELOCIDADE DE MOVIMENTO E VELOCIDADE DE ATAQUE AUMENTARAM EM 30%. \n\n※ -1 de Mana será Consumido a Cada Minuto."
+        },
+        {
+            "name": "Armadura do Gigante",
+            "rank": "Nv.1",
+            "desc": "CUSTO DE MANA: 80 \nCONCEDE UM AUMENTO DE 40% NA DEFESA FÍSICA POR 1 MINUTO."
+        },
+        {
+            "name": "Corpo Fortificado",
+            "rank": "Nv.1",
+            "desc": "CUSTO DE MANA: 150 \nATAQUE E DEFESA São AMPLIFICADOS EM 25% POR 1 MINUTO."
+        }
     ],
 };

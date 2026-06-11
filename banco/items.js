@@ -584,9 +584,134 @@ export const universeItens = {
             desc: "ATAQUE: +30, +5 (CORREÇÃO DE ESTATÍSTICAS)  \n\nUMA ESPADA FEITA DA PRESA DE RAKAN, REI DAS BESTAS. \n\nO ESPÍRITO DE RAKAN HABITA DENTRO DA ESPADA, E AQUELES DE BAIXO STATUS PODEM TER SEUS CORPOS TOMADOS SE A MANEJAREM. \n\n - EFEITO 'DESDÉM PELOS FRACOS': DEIXA O ALVO DESIGNADO EM UM ESTADO DE MEDO POR 1 MINUTO. (TODAS AS ESTATÍSTICAS -50%) \n - EFEITO 'FERIDA CRÍTICA': 15% DE CHANCE DE INFLIGIR DANO CRÍTICO DOBRADO."
         },
         {
-            name: "Chifre de Vulcan",
+            name: "Chifre de Vulcan (Manoplas)",
             rank: "??",
             desc: "ATAQUE +40 \n\nMANOPLAS CRIADAS COM O CHIFRE DE UM DEMÔNIO, O GANANCIOSO VULCAN. INFLIGE DANO DEVIDO A AUTORIDADE DE VULCAN DENTRO DELE.   \n\n - EFEITO 'DESEJO DE DESTRUIÇÃO': AUMENTA O DANO FÍSICO EM [30%]. \n - EFEITO 'DEVORADOR DE DEMÔNIOS': A AUTORIDADE DE VULCAN FICA MUITO MAIS FORTE CONFORME MAIS ALMAS DEMONÍACAS FOREM DEVORADAS. \n\n※ ALMAS DEMONÍACAS DEVORADAS: 0 \n※ O EFEITO DO 'DESEJO DA DESTRUIÇÃO' AUMENTA EM 1% A CADA ALMA"
+        },
+        {
+            name: "Chifre de Vulcan (Espada)",
+            rank: "??",
+            desc: "ATAQUE +40 \n\nUma Espada CRIADA COM O CHIFRE DE UM DEMÔNIO, O GANANCIOSO VULCAN. INFLIGE DANO DEVIDO A AUTORIDADE DE VULCAN DENTRO DELE.   \n\n - EFEITO 'DESEJO DE DESTRUIÇÃO': AUMENTA O DANO FÍSICO EM [30%]. \n - EFEITO 'DEVORADOR DE DEMÔNIOS': A AUTORIDADE DE VULCAN FICA MUITO MAIS FORTE CONFORME MAIS ALMAS DEMONÍACAS FOREM DEVORADAS. \n\n※ ALMAS DEMONÍACAS DEVORADAS: 0 \n※ O EFEITO DO 'DESEJO DA DESTRUIÇÃO' AUMENTA EM 1% A CADA ALMA"
+        },
+        {
+            name: "Tocha (Nv.1)",
+            rank: "Heroico",
+            desc: "ACESSÓRIO (BRACELETE) \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO 10% \nPODER DE DEFESA +40, FORÇA +3, VIGOR +4, AGILIDADE +5, INTELIGÊNCIA +9, SENTIDOS +4 \n\n - Efeito: AUMENTO DO DANO DE FOGO +50%  \n\nHABILIDADE ATIVA: 'IGNIÇÃO RÁPIDA NV. 1' \nCUSTO DE MANA: 300 \nO TEMPO DE CONJURAÇÃO SERÁ REDUZIDO EM 30% POR 1 MINUTO."
+        },
+        {
+            name: "Tocha (Nv.16)",
+            rank: "Heroico",
+            desc: "ACESSÓRIO (BRACELETE) \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO 26% \nPODER DE DEFESA +40, FORÇA +8, VIGOR +12, AGILIDADE +12, INTELIGÊNCIA +23, SENTIDOS +10 \n\n - Efeito: AUMENTO DO DANO DE FOGO +50%  \n\nHABILIDADE ATIVA: 'IGNIÇÃO RÁPIDA NV. 1' \nCUSTO DE MANA: 300 \nO TEMPO DE CONJURAÇÃO SERÁ REDUZIDO EM 30% POR 1 MINUTO. \n\nHabilidade Ativa: 'QUEIMA RÁPIDA NV. 1' \nCUSTO DE MANA: 300 \nPOR 1 MINUTO, O TEMPO DE RECARGA DE HABILIDADES DE FOGO É REDUZIDO EM 30%."
+        },
+        {
+            name: "Imperador Demonio (Nv.12)",
+            rank: "Heroico",
+            desc: "ARMADURA (ESCUDO) \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO 22% \nDEFESA +175, FORÇA +15, VIGOR +20, AGILIDADE +9, INTELIGÊNCIA +7,  SENTIDOS +12 \n\nHabilidade Ativa 'FORMA DO TITÃ NV. 1' \nCusto de Mana: 10 \nCOBRE O USUÁRIO INTEIRO EM MANA E O TRANSFORMA EM UM GIGANTE. A MANA É REDUZIDA EM UM POR SEGUNDO ENQUANTO ESTÁ ATIVA."
+        },
+        {
+            name: "Gabot (Nv.11)",
+            rank: "Heroico",
+            desc: "ACESSÓRIO (CORPO) \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO 21% \nDEFESA +120, FORÇA +15, VIGOR +12, AGILIDADE +18, INTELIGÊNCIA +10, SENTIDOS +15 \n\nHabilidade Ativa 'O ATAQUE É A MELHOR DEFESA NV. 1': \nCusto de Mana: 100 \nCONVERTE A DEFESA EM PODER DE ATAQUE. ESSA HABILIDADE É DESATIVADA SE O USUÁRIO FOR ATINGIDO. \n(50% DE DEFESA ⮕ 30% DE PODER DE ATAQUE)"
+        },
+        {
+            name: "Balob (Nv.10)",
+            rank: "Heroico",
+            desc: "ARMA (GREVAS) \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO 20% \nPODER DE ATAQUE +120, FORÇA +10, VIGOR +10, AGILIDADE +12, INTELIGÊNCIA +6, SENTIDOS +8"
+        },
+        {
+            name: "Greed (Nv.1)",
+            rank: "Heroico",
+            desc: "MANOPLAS \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO: 10% \nPODER DE ATAQUE +280, FORÇA +14, VIGOR +11, AGILIDADE +10, INTELIGÊNCIA +7, SENTIDOS +10 \n\n- HABILIDADE ATIVA: 'ESMAGAR' \nCUSTO DE MANA: 400 \nDESFERE UM PODEROSO GOLPE QUE CAUSA DANO MASSIVO À ESTRUTURAS RESISTENTES.  (+200% DE DANO A OBJETOS SÓLIDOS)"
+        },
+        {
+            name: "Baekgu (Nv.1)",
+            rank: "Heroico",
+            desc: "MANOPLAs \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO: 10% \nPODER DE ATAQUE +130, FORÇA: +6, VIGOR: +4, AGILIDADE: +5, INTELIGÊNCIA +1, SENTIDOS +4  \n\n - HABILIDADE ATIVA: 'SURTO' \nCUSTO DE MANA: 120 \nREDUZ A DISTÂNCIA DO OPONENTE COM UM SALTO INSTANTÂNEO E INFLIGE DANO.  A VELOCIDADE DE MOVIMENTO É AUMENTADA EM 30% POR UM SEGUNDO DEPOIS QUE A HABILIDADE É USADA."
+        },
+        {
+            name: "Baekgu (Nv.2)",
+            rank: "Heroico",
+            desc: "MANOPLAs \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO: 11% \nPODER DE ATAQUE +130, FORÇA: +7, VIGOR: +4, AGILIDADE: +6, INTELIGÊNCIA +1, SENTIDOS +4  \n\n - HABILIDADE ATIVA: 'SURTO' \nCUSTO DE MANA: 120 \nREDUZ A DISTÂNCIA DO OPONENTE COM UM SALTO INSTANTÂNEO E INFLIGE DANO.  A VELOCIDADE DE MOVIMENTO É AUMENTADA EM 30% POR UM SEGUNDO DEPOIS QUE A HABILIDADE É USADA."
+        },
+        {
+            name: "Baekgu (Nv.20)",
+            rank: "Heroico",
+            desc: "MANOPLAs \nTAXA DE IMPLEMENTAÇÃO DE ATRIBUTO: 30% \nPODER DE ATAQUE +130, FORÇA: +25, VIGOR: +12, AGILIDADE: +18, INTELIGÊNCIA +3, SENTIDOS +12 \n\n - HABILIDADE ATIVA: 'SURTO' \nCUSTO DE MANA: 120 \nREDUZ A DISTÂNCIA DO OPONENTE COM UM SALTO INSTANTÂNEO E INFLIGE DANO.  A VELOCIDADE DE MOVIMENTO É AUMENTADA EM 30% POR UM SEGUNDO DEPOIS QUE A HABILIDADE É USADA."
+        },
+        {
+            name: "Kira (Nv.1)",
+            rank: "Heroico",
+            desc: "ACESSÓRIO (ANEL) \nATRIBUTOS COMPARTILHADOS: 10% \nFOR +3, VIG +3, AGI +13, INT +3, SENTIDOS +3 \n\n - Habilidade 'FURTIVIDADE NV. 1' \nCUSTO DE MANA: 200 \nDescrição: OCULTA A APARÊNCIA E PRESENÇA DO CONJURADOR. ENQUANTO MANTÉM A 'FURTIVIDADE', CONSOME 10 DE MANA POR SEGUNDO CONTINUAMENTE."
+        },
+        {
+            name: "Anel do Assasino (Bloqueado)",
+            rank: "Heroico",
+            desc: "ACESSÓRIO (ANEL) \nAGILIDADE: +10 \n\n - Habilidade 'FURTIVIDADE NV. 1' \nCUSTO DE MANA: 200 \nOCULTA A APARÊNCIA E PRESENÇA DO CONJURADOR. ENQUANTO MANTÉM A 'FURTIVIDADE', CONSOME 10 DE MANA POR SEGUNDO CONTINUAMENTE."
+        },
+        {
+            name: "Capacete de Minotauro",
+            rank: "Raro",
+            desc: "EQUIPAMENTO DE DEFESA (CAPACETE) \nDEFESA +35, FORÇA +8, VIGOR +5"
+        },
+        {
+            name: "Ombreira de Basilisco",
+            rank: "Raro",
+            desc: "EQUIPAMENTO DE DEFESA (OMBROS) \nDEFESA +25, SENTIDOS +6, INTELIGÊNCIA +4"
+        },
+        {
+            name: "Couraça de Juba Carmesim",
+            rank: "Raro",
+            desc: "EQUIPAMENTO DE DEFESA (PEITORAL) \nDEFESA +45, FORÇA +9, VIGOR +6"
+        },
+        {
+            name: "Botas de Homem Lagarto",
+            rank: "Raro",
+            desc: "EQUIPAMENTO DE DEFESA (PÉS) \nDEFESA +20, AGILIDADE +11, FORÇA +4, SENTIDOS +6, INTELIGÊNCIA +3"
+        },
+        {
+            name: "Espada do Guerreiro Naga das Sombras",
+            rank: "Raro",
+            desc: "ATAQUE: +55, AGILIDADE: +5 \n\n - EFEITO 'APRIMORAMENTO DA PERFURAÇÃO': IGNORA 10% DA DEFESA AO ATACAR."
+        },
+        {
+            name: "Armadura do Vigarista",
+            rank: "Raro",
+            desc: "EQUIPAMENTO DE DEFESA (ARMADURA) \nATAQUE: +30, VIGOR: +4"
+        },
+        {
+            name: "Cinto do Guerreiro Naga das Sombras",
+            rank: "Raro",
+            desc: "ARMADURA (CINTURA) \nDEFESA: +20, AGILIDADE: +4"
+        },
+        {
+            name: "Protetor de Ombro do Guerreiro Naga das Sombras",
+            rank: "Raro",
+            desc: "ARMADURA (PARTE SUPERIOR DO CORPO) \nDEFESA +28, ATAQUE +25"
+        },
+        {
+            name: "Presa Venenosa de Kasaka",
+            rank: "C",
+            desc: "PODER DE ATAQUE +25 \n\nUMA ADAGA FEITA DA PRESA VENENOSA DE KASAKA.  O VENENO DE KASAKA AINDA ESTÁ PRESENTE, CONCEDENDO EFEITOS DE PARALISIA E SANGRAMENTO AO ATACAR. \n\n - EFEITO 'PARALISIA': O ALVO ATACADO TEM UMA CHANCE DE FICAR INCAPACITADO. \n - EFEITO 'SANGRAMENTO': O ALVO ATACADO PERDE 1% DE VIDA POR SEGUNDO."
+        },
+        {
+            name: "Anel das Cinzas",
+            rank: "D",
+            desc: "Sentidos +5"
+        },
+        {
+            name: "Lança Curva do Guerreiro Naga Sombrio",
+            rank: "Comum",
+            desc: "PODER DE ATAQUE +40, FORÇA +3"
+        },
+        {
+            name: "Manoplas do Guerreiro Naga Sombrio",
+            rank: "Comum",
+            desc: "ARMADURA (BRAÇO) \nATAQUE +55, FORÇA +4"
+        },
+        {
+            name: "Bracelete do Guerreiro Naga Sombrio",
+            rank: "Comum",
+            desc: "ARMADURA (MÃOS) \nDEFESA +15, VITALIDADE +2"
         },
         {
             name: "Trombeta",
@@ -597,6 +722,11 @@ export const universeItens = {
             name: "Poção de Cura de Grau Baixo",
             rank: "E",
             desc: "UMA POÇÃO QUE CURA O PV. VOCÊ IRÁ LENTAMENTE RECUPERAR 500 DE PV COM O TEMPO SE BEBÊ-LA. ENQUANTO CONSEGUE MANTÊ-LA EM SEU INVENTÁRIO, NÃO PODE COMPARTILHAR COM OUTRAS PESSOAS."
+        },
+        {
+            name: "Manto Térmico",
+            rank: "Nenhuma",
+            desc: "ESTE MANTO BLOQUEIA PARTE DA LUZ SOLAR DIRETA E PROTEGE CONTRA O CALOR."
         },
     ],
 };

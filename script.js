@@ -155,7 +155,7 @@ function renderizarMenuHabilidades() {
             } else {
                 menu.innerHTML += `
                     <p class="habilidade" onclick="sincronizarHabilidade('${nomeTratado}', '${habilidade.rank}')">
-                        ${habilidade.name} <strong class="rank${classeRank} direita">[${habilidade.rank}]</strong>
+                        ${habilidade.name} <strong class="rank${classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico")} direita">[${habilidade.rank}]</strong>
                     </p>`;
             }
         }
@@ -193,7 +193,7 @@ function renderizarMenuItems() {
             } else {
                 menu.innerHTML += `
                     <p class="habilidade" onclick="sincronizarItem('${nomeTratado}', '${item.rank}')">
-                        ${item.name} <strong class="rank${classeRank} direita">[${item.rank}]</strong>
+                        ${item.name} <strong class="rank${classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico")} direita">[${item.rank}]</strong>
                     </p>`;
             }
         }
@@ -220,7 +220,7 @@ function sincronizarHabilidade(nomeHabilidade, rank) {
         if (classeRank  == 'Lv.MAX') classeRank = 'MAX';
 
         // Injeta o HTML e a classe
-        slotElemento.innerHTML = `<p>${nomeHabilidade} <strong class="rank${classeRank}">${rank}</strong></p>`;
+        slotElemento.innerHTML = `<p>${nomeHabilidade} <strong class="rank${classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico")}">${rank}</strong></p>`;
 
         // MUDANÇA: Altera o clique da célula para ABRIR OS DETALHES em vez de escolher uma nova
         slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${linha}, '${nomeTratado}', 'habilidade')`);
@@ -400,7 +400,7 @@ function sincronizarItem(nomeItem, rank) {
         let classeRank = rank.replace(/[+\-]/g, '').trim();
         if (classeRank === '???') classeRank = 'Desconecido';
 
-        slotElemento.innerHTML = `<p>${nomeItem} <strong class="rank${classeRank}">${rank}</strong></p>`;
+        slotElemento.innerHTML = `<p>${nomeItem} <strong class="rank${classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico")}">${rank}</strong></p>`;
         
         // Passa o tipo 'item' para o clique de detalhes
         slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${linha}, '${nomeTratado}', 'item')`);
