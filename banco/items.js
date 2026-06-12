@@ -741,6 +741,31 @@ export const universeItens = {
     ],
     5: [ // Universo 6: Auto Hunting
         {
+            name: "Pergaminho de Telepatia",
+            rank: "Raro",
+            desc: "Ao ser Usado Cria uma Conexão Mental com o Alvo Designado no Pergaminho."
+        },
+        {
+            name: "Pergaminho de Teletranporte",
+            rank: "Raro",
+            desc: "Ao ser Usado Cria um Portal para o Local Designado no Pergaminho."
+        },
+        {
+            name: "Veneno de Mana",
+            rank: "Raro",
+            desc: "Faz a Mana Fluir Fortemente Pelo Corpo \n\n※ ATENÇÃO: O Usuário Vai Explodir Pela Sobrecarga de Mana."
+        },
+        {
+            name: "Veneno de Cura",
+            rank: "Raro",
+            desc: "Regenera Ferimentos \n\n※ ATENÇÃO: Vai ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO Até a Morte."
+        },
+        {
+            name: "Espada Amaldiçoada",
+            rank: "Raro",
+            desc: "Uma Espada que Ao Empunhada Inunda a Mente do Portador com Uma Voz que A todo Momento Manda Matar \n\n※ ATENÇÃO: O Usuário Pode Entrar em Frenesi."
+        },
+        {
             name: "Joia de Força de Baixo Nível",
             rank: "Comum",
             desc: "UM CRISTAL COM O ATRIBUTO DE FORÇA. \nCOMO USAR: ABSORVA ATIVANDO A SUA MANA. Ou Coma. \nEFEITO: A FORÇA AUMENTA PERMANENTEMENTE EM 0,005. \n\n※ ATENÇÃO: O ALVO SE TRANSFORMA EM UM MONSTRO EVENTUALMENTE SE OS CRISTAIS FOREM USADOS EXCESSIVAMENTE."

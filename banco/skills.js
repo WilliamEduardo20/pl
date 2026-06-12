@@ -558,6 +558,11 @@ export const universeSkills = {
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 3  \n※ RECARGA: 24H"
         },
         {
+            name: "Clonagem (Nv.7)",
+            rank: "Nv.7",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 7  \n※ RECARGA: 24H"
+        },
+        {
             name: "Fortalecimento de Clone (Nv.1)",
             rank: "Nv.1",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 50%"
@@ -593,14 +598,44 @@ export const universeSkills = {
             desc: "MEDITA ESTABILIZANDO SUA MENTE \n\n※ A FADIGA MENTAL SERÁ LIGEIRAMENTE RESTAURADO. \n※ A VELOCIDADE DO AUMENTO DE MANA AUMENTA LIGEIRAMENTE. \n※ A VELOCIDADE DE RECUPERAÇÃO DA MANA AUMENTA LIGEIRAMENTE. \n※ O EFEITO DA RESPIRAÇÃO DE MANA É AUMENTADO."
         },
         {
-            name: "Familiar",
+            name: "Familiar (Nv.1)",
             rank: "Nv.1",
             desc: "COMPARTILHA SENTIDOS COM O ALVO ESCOLHIDO."
+        },
+        {
+            name: "Familiar (Nv.17)",
+            rank: "Nv.17",
+            desc: "VOCÊ NÃO APENAS COMPARTILHA TODOS OS SENTIDOS DO ALVO, MAS TAMBÉM O CONTROLA."
         },
         {
             name: "Transferência de Mana",
             rank: "Nv.1",
             desc: "COMPARTILHA Sua Mana COM Um ALVO ESCOLHIDO."
+        },
+        {
+            name: "Veneno (Nv.5)",
+            rank: "Nv.5",
+            desc: "CRIA UM ITEM COM VENENO. O NÚMERO DE RECEITAS AUMENTA DE ACORDO COM O NÍVEL. A PROFICIÊNCIA EM CADA RECEITA PODE SER AUMENTADA. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE REGENERAÇÃO> \nUTILIZA ENERGIA VITAL AO CONSUMIR O VENENO PARA REGENERAR A PARTE FERIDA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A ENERGIA VITAL CONSUMIDA. \n\n - EFEITO: REGENERAR \n - EFEITO COLATERAL: ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE FORÇA> \nAUMENTA A FORÇA ATIVANDO O CORPO COM VENENO. \n..."
+        },
+        {
+            name: "Devorar Monstro (Nv.12)",
+            rank: "Nv.5",
+            desc: "ABSORVE A ESSÊNCIA DE UM MONSTRO. \n\nABSORVE PARTE DAS ESTATÍSTICAS DO MONSTRO QUANDO MORTO COM 12% DE CHANCE."
+        },
+        {
+            name: "Invasor",
+            rank: "Nv.1",
+            desc: "Cria um Mapa do Local Mostrando a Localização de Inimigos como Pontos Vermelhos."
+        },
+        {
+            name: "Flecha Mágica",
+            rank: "Nv.1",
+            desc: "Cria uma Flecha com Mana e Dispara. \n\n※ Quanto Maior o Nível Mais Flechas Podem Ser Criados Simultaneamente."
+        },
+        {
+            name: "Bala Mágica",
+            rank: "Nv.11",
+            desc: "Tipo Conjuração. \nCARREGA SUAS BALAS COM MANA ANTES DE ATIRÁ-LAS."
         },
     ],
 };
