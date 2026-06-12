@@ -753,7 +753,12 @@ export const universeItens = {
         {
             name: "Veneno de Mana",
             rank: "Raro",
-            desc: "Faz a Mana Fluir Fortemente Pelo Corpo \n\n※ ATENÇÃO: O Usuário Vai Explodir Pela Sobrecarga de Mana."
+            desc: "Faz a Mana Fluir Fortemente Pelo Corpo \n\n※ ATENÇÃO: O Usuário Vai Ter Seu Corpo Explodido."
+        },
+        {
+            name: "Veneno de Força",
+            rank: "Raro",
+            desc: "Dobra a Sua Força \n\n※ ATENÇÃO: O Usuário Vai Ter Seus Musculos Derretidos."
         },
         {
             name: "Veneno de Cura",

@@ -637,5 +637,70 @@ export const universeSkills = {
             rank: "Nv.11",
             desc: "Tipo Conjuração. \nCARREGA SUAS BALAS COM MANA ANTES DE ATIRÁ-LAS."
         },
+        {
+            name: "Dimensão",
+            rank: "Nv.1",
+            desc: "Ativa \nINVOCA UM ESPAÇO DIMENSIONAL ONDE ORGANISMOS VIVOS E OBJETOS PODEM SER ARMAZENADOS. \n\nO ESPAÇO DA DIMENSÃO AUMENTA DEPENDENDO DO [NÍVEL DA SKILL]."
+        },
+        {
+            name: "Subespaço",
+            rank: "Nv.1",
+            desc: "CRIA UM SUBESPAÇO de 32m². \n\n - EXPANDE UM ESPAÇO EM PROPORÇÃO AO [NÍVEL DA SKILL]. \n - MANA É CONSUMIDA PARA MANTER O ESPAÇO.  \n\n※ RESTRIÇÃO DE ENTRADA: SE APLICA A TODAS AS CRIATURAS VIVAS, EXCETO AO DONO DA SKILL E SUAS INVOCAÇÕES. \n※ Se Usada Por Dois Clones ou Pessoa e Clone, Funciona como Um Portal."
+        },
+        {
+            name: "Arma Indestritível",
+            rank: "Nv.1",
+            desc: "Passiva \nA FORÇA, VELOCIDADE E DURABILIDADE DA ARMA É MULTIPLICADA PELO [NÍVEL DA SKILL]."
+        },
+        {
+            name: "Bola de Fogo (Nv.1)",
+            rank: "Nv.1",
+            desc: "REÚNE FOGO USANDO MANA E MOLDA NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Bola de Fogo (Nv.15)",
+            rank: "Nv.15",
+            desc: "REÚNE FOGO USANDO MANA E MOLDA NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Bola de Fogo (Nv.37)",
+            rank: "Nv.37",
+            desc: "REÚNE FOGO USANDO MANA E MOLDA NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Manipulação de Dano",
+            rank: "Nv.64",
+            desc: "TRANSFERE UMA QUANTIDADE ESPECÍFICA DO DANO TOMADO. \n\nA DISTÂNCIA E DANO TOMADO DEPENDEM DO [NÍVEL DE SKILL]."
+        },
+        {
+            name: "Teletransporte (2km)",
+            rank: "Nv.1",
+            desc: "ALCANCE - 2KM. \nCOOLDOWN - 72 HORAS. \nNÚMERO MÁX. DE PESSOAS - 1"
+        },
+        {
+            name: "Teletransporte (100m)",
+            rank: "Nv.1",
+            desc: "ALCANCE - 100M. \nCOOLDOWN - 20 HORAS. \nNÚMERO MÁX. DE PESSOAS - 1"
+        },
+        {
+            name: "Teletransporte (50m)",
+            rank: "Nv.1",
+            desc: "ALCANCE - 50M. \nCOOLDOWN - 48 HORAS. \nNÚMERO MÁX. DE PESSOAS - 3"
+        },
+        {
+            name: "Teletransporte (50m)",
+            rank: "Nv.1",
+            desc: "ALCANCE - 2M. \nCOOLDOWN - 5 MIN. \nNÚMERO MÁX. DE PESSOAS - 1"
+        },
+        {
+            name: "Mestre da Mana",
+            rank: "Nv.1",
+            desc: "ACUMULA MANA. \nA QUANTIDADE DE MANA CONTROLADA DEPENDE DO [NÍVEL DA SKILL]."
+        },
+        {
+            name: "Defesa Ampliada",
+            rank: "Nv.1",
+            desc: "COMPARTILHA UM BUFF DE DEFESA QUE É DIMENSIONADO PARA FORA DO SEU EQUIPAMENTO. \n\nESTATÍSTICA DE DEFESA E NÚMERO DE PESSOAS QUE PODEM SER AFETADAS DEPENDEM DO (NÍVEL DE SKILL)"
+        },
     ],
 };
