@@ -154,7 +154,6 @@ hr {
 /* Modal */
 .modal {
     position: fixed;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -166,7 +165,8 @@ hr {
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
+    margin-top: -20px;
     transition: opacity 0.25s ease;
 }
 .modal.ativo {
@@ -277,6 +277,23 @@ hr {
 
 @media screen and (max-width: 760px) {
     body { height: fit-content; }
-    .modal { width: auto; }
+    .modal { width: auto; margin-top: 0px; }
     .selecao-universo { width: 405px; }
+}
+
+.moldura-habilidade .descricao {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-gutter: stable;
+}
+.moldura-habilidade .descricao::-webkit-scrollbar { width: 3px; }
+.moldura-habilidade .descricao::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03); /* Fundo da barra quase invisível */
+    border-radius: 2px;
+}
+.moldura-habilidade .descricao::-webkit-scrollbar-thumb {
+    background: #f3f9ff;       /* Cor da barra igual às bordas do seu sistema */
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); /* Efeito de brilho leve */
 }

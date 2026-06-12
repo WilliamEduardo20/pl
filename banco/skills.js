@@ -573,6 +573,11 @@ export const universeSkills = {
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 53%"
         },
         {
+            name: "Clonagem Ilusória",
+            rank: "Nv.1",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA Ilusória IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Mas não Podem Interagir Fisicamente \n\n※ QUANTIDADE MÁXIMA DE Ilusões: 1"
+        },
+        {
             name: "Regeneração",
             rank: "Nv.1",
             desc: "REGENERAÇÃO: 0,401"
@@ -613,9 +618,9 @@ export const universeSkills = {
             desc: "COMPARTILHA Sua Mana COM Um ALVO ESCOLHIDO."
         },
         {
-            name: "Veneno (Nv.5)",
+            name: "Veneno",
             rank: "Nv.5",
-            desc: "CRIA UM ITEM COM VENENO. O NÚMERO DE RECEITAS AUMENTA DE ACORDO COM O NÍVEL. A PROFICIÊNCIA EM CADA RECEITA PODE SER AUMENTADA. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE REGENERAÇÃO> \nUTILIZA ENERGIA VITAL AO CONSUMIR O VENENO PARA REGENERAR A PARTE FERIDA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A ENERGIA VITAL CONSUMIDA. \n\n - EFEITO: REGENERAR \n - EFEITO COLATERAL: ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE FORÇA> \nAUMENTA A FORÇA ATIVANDO O CORPO COM VENENO. \n..."
+            desc: "CRIA UM ITEM COM VENENO. O NÚMERO DE RECEITAS AUMENTA DE ACORDO COM O NÍVEL. A PROFICIÊNCIA EM CADA RECEITA PODE SER AUMENTADA. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE REGENERAÇÃO> \nUTILIZA ENERGIA VITAL AO CONSUMIR O VENENO PARA REGENERAR A PARTE FERIDA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A ENERGIA VITAL CONSUMIDA. \n\n - EFEITO: REGENERAR \n - EFEITO COLATERAL: ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE FORÇA> \nAUMENTA A FORÇA ATIVANDO O CORPO COM VENENO. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, Menos os Musculos Vão Derreter. \n\n - EFEITO: Dobra sua Força \n - Efeito COLATERAL: Seus Musculos Derretem. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE MANA> ESTIMULA FORÇADAMENTE A CIRCULAÇÃO DE MANA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A Chance de Explosão. \n\n - EFEITO: Aumenta a Circulação De Mana \n - EFEITO COLATERAL: CAUSA DOR EXTREMA E Explode o Corpo"
         },
         {
             name: "Devorar Monstro (Nv.12)",
@@ -701,6 +706,71 @@ export const universeSkills = {
             name: "Defesa Ampliada",
             rank: "Nv.1",
             desc: "COMPARTILHA UM BUFF DE DEFESA QUE É DIMENSIONADO PARA FORA DO SEU EQUIPAMENTO. \n\nESTATÍSTICA DE DEFESA E NÚMERO DE PESSOAS QUE PODEM SER AFETADAS DEPENDEM DO (NÍVEL DE SKILL)"
+        },
+        {
+            name: "Fusão de Mana",
+            rank: "Nv.1",
+            desc: "Ativa \nTORCE E ESPALHA O FLUXO DE MANA"
+        },
+        {
+            name: "Desprezo Pelos Fracos",
+            rank: "Nv.1",
+            desc: "QUANTO MENOR FOREM AS ESTATÍSTICAS DO OPONENTE, MAIOR SERÃO AS SUAS ESTATÍSTICAS BASE. \n\n - Efeito 'Expansão': É Temporariamente Aplicado Mesmo a Oponentes com Maior Estátistica."
+        },
+        {
+            name: "Corpo Inquebrável",
+            rank: "Nv.1",
+            desc: "O CORPO DO USUÁRIO ENDURECE COMO UMA PEDRA. \n\n[PASSIVA] \nA DEFESA FÍSICA E RESISTÊNCIA À MAGIA AUMENTAM EM 50%. DIMINUI A DOR. \n\n[ATIVA] \nO EFEITO PASSIVO DOBRA TEMPORARIAMENTE."
+        },
+        {
+            name: "Corpo de Metal",
+            rank: "Nv.1",
+            desc: "O CORPO DO USUÁRIO ENDURECE COMO Metal."
+        },
+        {
+            name: "Osso Forte",
+            rank: "Nv.1",
+            desc: "Os Ossos do Usuário se Tornam Significativamente Mais Fortes."
+        },
+        {
+            name: "Velocidade",
+            rank: "Nv.1",
+            desc: "ESTATÍSTICAS DE REFLEXO E AGILIDADE AUMENTARÃO SIGNIFICATIVAMENTE Para o Alvo Escolhido."
+        },
+        {
+            name: "Lança de Bambu",
+            rank: "Nv.1",
+            desc: "IGNORA UM CERTO TANTO DE DEFESA FÍSICA NO PRÓXIMO ATAQUE. \nTEMPO DE ESPERA: 240 HORAS."
+        },
+        {
+            name: "Ataque em Cadeia",
+            rank: "Nv.1",
+            desc: "Quanto Mais Você Balança a Sua Arma, Mais sua Agilidade Aumenta \n\n - Habilidade 'LIBERAR': RESETA O ATAQUE EM CADEIA E AUMENTA GRANDEMENTE O PODER DE SEU PRÓXIMO ATAQUE."
+        },
+        {
+            name: "Muro de Gelo",
+            rank: "Nv.1",
+            desc: "CRIA UM ESPINHOS DE GELO ENORMES, MACHUCANDO E PRENDENDO O OPONENTE."
+        },
+        {
+            name: "Lâmina de Vento",
+            rank: "Nv.1",
+            desc: "CRIA Uma Lamina de Vento Cortante."
+        },
+        {
+            name: "Fogo Infernal",
+            rank: "Nv.1",
+            desc: "CRIA Uma Chama Infernal E MOLDA NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Propulsor de Pedra",
+            rank: "Nv.1",
+            desc: "CRIA Uma Pedra para Lança-la. \n\n※ Quanto Maior o Nível Mais Pedras Podem Ser Criados Simultaneamente."
+        },
+        {
+            name: "Campo de Força Suspenso",
+            rank: "Nv.1",
+            desc: "CRIA Um Campo de Força que Suspende o Inimigo no Ar. \n\n※ Quanto Maior o Nível Maior a Área de Ação e Mais Forte o Campo de Força."
         },
     ],
 };

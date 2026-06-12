@@ -741,6 +741,11 @@ export const universeItens = {
     ],
     5: [ // Universo 6: Auto Hunting
         {
+            name: "Poção de Enfraquecimento",
+            rank: "Épico",
+            desc: "Ao Ingerido Diminue os Status para o Nível de Um Rank E. \n\n※ Se a Ressistência a Veneno For Grande o Efeito Não é Aplicado"
+        },
+        {
             name: "Pergaminho de Telepatia",
             rank: "Raro",
             desc: "Ao ser Usado Cria uma Conexão Mental com o Alvo Designado no Pergaminho."
