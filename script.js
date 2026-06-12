@@ -163,7 +163,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
         // Formata dinamicamente as palavras-chave do banco de dados para ficarem em destaque e com a linha tracejada
         let descClimbing = descFormatada
             .replace(/EFEITO:/g, '<span style="color: #0f172a; font-weight: 800;">EFEITO:</span>')
-            .replace(/CLASSIFICAÇÃO:/g, '<div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #cbd5e1;"><span style="color: #0f172a; font-weight: 800;">CLASSIFICAÇÃO:</span>')
+            .replace(/<br><br>CLASSIFICAÇÃO:/g, '<div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #cbd5e1;"><span style="color: #0f172a; font-weight: 800;">CLASSIFICAÇÃO:</span>')
             .replace(/CUSTO DE FORÇA DE VONTADE:/g, '<span style="color: #0f172a; font-weight: 800;">CUSTO DE FORÇA DE VONTADE:</span>')
             .replace(/TEMPO DE RECARGA:/g, '<span style="color: #0f172a; font-weight: 800;">TEMPO DE RECARGA:</span>');
             
@@ -171,7 +171,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
         if (descClimbing.includes('border-top')) descClimbing += '</div>';
 
         modalWindow.innerHTML = `
-            <div class="system-window-wrapper" style="margin-top: -50px;">
+            <div class="system-window-wrapper">
                 <div class="top-tab-outer">
                     <div class="top-tab-middle">
                         <div class="top-tab-inner"></div>
@@ -186,7 +186,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                                     [SKILL: ${habilidade.name.toUpperCase()} <span>(${habilidade.rank.toUpperCase()})</span>]
                                 </div>
                                 
-                                <div class="skill-description" style="font-size: 14px; color: #475569; line-height: 1.7; text-align: justify; text-transform: uppercase; font-weight: 600; letter-spacing: 0.2px;">
+                                <div style="font-size: 14px; color: #475569; line-height: 1.7; text-align: justify; text-transform: uppercase; font-weight: 600; letter-spacing: 0.2px;">
                                     <div class="text-block" style="margin-bottom: 15px;">${descClimbing}</div>
 
                                     <div style="display: flex; gap: 10px; width: 100%; border-top: 1px dashed #cbd5e1; padding-top: 15px; margin-top: 15px;">

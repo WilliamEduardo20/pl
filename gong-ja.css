@@ -87,6 +87,22 @@
     font-weight: 600;
     letter-spacing: 0.2px;
 }
+.skill-description {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-gutter: stable;
+}
+.skill-description::-webkit-scrollbar { width: 3px; }
+.skill-description::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03); /* Fundo da barra quase invisível */
+    border-radius: 2px;
+}
+.skill-description::-webkit-scrollbar-thumb {
+    background: #e2e8f0;       /* Cor da barra igual às bordas do seu sistema */
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(91, 91, 91, 0.1); /* Efeito de brilho leve */
+}
 
 /* Alinhamento de blocos de texto separados */
 .text-block { margin-bottom: 30px; }
