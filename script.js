@@ -240,6 +240,61 @@ window.abrirDetalhes = abrirDetalhes;
 function fecharModalDetalhes() { document.getElementById('descHabilidade').classList.remove('ativo'); }
 window.fecharModalDetalhes = fecharModalDetalhes;
 
+// Função auxiliar: Lê o rank em formato de texto e transforma em números
+function obterPesosRank(rankStr) {
+    if (!rankStr) return { raridade: 0, nivel: 0 };
+    let texto = rankStr.toUpperCase(); 
+    let raridade = 0;
+    
+    if (texto.includes('???')) raridade = 28;
+    else if (texto.includes('??')) raridade = 27; 
+    else if (texto.includes('?')) raridade = 26;  
+    else if (texto.includes('EX') || texto.includes('EXOTICO') || texto.includes('EXÓTICO')) raridade = 25;
+    else if (texto.includes('SSS')) raridade = 24;
+    else if (texto.includes('SS')) raridade = 23;
+
+    // SEMPRE checar o + e o - antes da letra pura
+    else if (texto.includes('S+')) raridade = 22;
+    else if (texto.includes('S-')) raridade = 20;
+    else if (texto.match(/\bS\b/) || texto.includes('MÍTICO') || texto.includes('MITICO')) raridade = 21;
+
+    else if (texto.includes('A+') || texto.includes('LENDÁRIO+') || texto.includes('LENDARIO+')) raridade = 19;
+    else if (texto.includes('A-')) raridade = 17;
+    else if (texto.match(/\bA\b/) || texto.includes('LENDÁRIO') || texto.includes('LENDARIO') || texto.includes('HEROICO') || texto.includes('HERÓICO')) raridade = 18;
+    
+    else if (texto.includes('ÚNICO+') || texto.includes('UNICO+')) raridade = 16.6;
+    else if (texto.includes('ÚNICO') || texto.includes('UNICO')) raridade = 16.5;
+
+    else if (texto.includes('B+') || texto.includes('ÉPICO+') || texto.includes('EPICO+')) raridade = 16;
+    else if (texto.includes('B-')) raridade = 14;
+    else if (texto.match(/\bB\b/) || texto.includes('ÉPICO') || texto.includes('EPICO')) raridade = 15;
+
+    else if (texto.includes('C+')  || texto.includes('RARO+')) raridade = 13;
+    else if (texto.includes('C-')) raridade = 11;
+    else if (texto.match(/\bC\b/) || texto.includes('RARO')) raridade = 12;
+    
+    else if (texto.includes('D+')  || texto.includes('INCOMUM+')) raridade = 10;
+    else if (texto.includes('D-')) raridade = 8;
+    else if (texto.match(/\bD\b/) || texto.includes('INCOMUM')) raridade = 9;
+    
+    else if (texto.includes('E+')  || texto.includes('COMUM+')) raridade = 7;
+    else if (texto.includes('E-')) raridade = 5;
+    else if (texto.match(/\bE\b/) || texto.includes('COMUM')) raridade = 6;
+    
+    else if (texto.includes('FFF')) raridade = 4; 
+    else if (texto.includes('FF')) raridade = 3; 
+    else if (texto.match(/\bF\b/)) raridade = 2; 
+    
+    else if (texto.includes('NENHUMA') || texto.includes('NENHUM')) raridade = 1;
+
+    let nivel = 0;
+    let matchNivel = texto.match(/(NV|LV|NÍVEL|NIVEL)\.?\s*(\d+|MAX)/);
+    if (matchNivel) {
+        nivel = matchNivel[2] === 'MAX' ? 999 : parseInt(matchNivel[2], 10);
+    }
+    return { raridade, nivel };
+}
+
 //3 Passos
 function renderizarMenu(tipo) {
     // 1. LÓGICA EXCLUSIVA PARA O MENU DE UNIVERSOS
@@ -249,24 +304,23 @@ function renderizarMenu(tipo) {
         menu.innerHTML = ""; 
         const ocupados = Object.values(universosSelecionados);
 
+        // Universos organizados por ordem alfabética
         const universosOrdenados = [...universos].sort((a, b) => a.localeCompare(b));
 
-        for (let i = 0; i < universos.length; i++) {
+        for (let i = 0; i < universosOrdenados.length; i++) {
             const universo = universosOrdenados[i];
-            const nomeTratado = universo.replace(/'/g, "\\'"); // Tratamento de aspas
+            const nomeTratado = universo.replace(/'/g, "\\'");
 
             if (ocupados.includes(universo)) {
-                // Mantive o padrão visual das outras categorias para ficar harmonioso
                 menu.innerHTML += `
                     <p class="habilidade equipado" style="opacity: 0.4; cursor: not-allowed;">
                         ${universo} <strong class="direita" style="color: #94a3b8;">[Escolhido]</strong>
                     </p>`;
             } else {
-                // Chama a função unificada passando o tipo 'universo' (rank fica vazio)
                 menu.innerHTML += `<p class="habilidade" onclick="sincronizar('${nomeTratado}', '', 'universo')">${universo}</p>`;
             }
         }
-        return; // Encerra a função aqui para não rodar a lógica de itens/habilidades
+        return;
     }
 
     // 2. LÓGICA PARA HABILIDADES, ITENS E CONSTITUIÇÕES
@@ -306,10 +360,32 @@ function renderizarMenu(tipo) {
     const equipados = obterEquipados(); 
 
     if (listaElementos && listaElementos.length > 0) {
-        for (let i = 0; i < listaElementos.length; i++) {
-            const item = listaElementos[i];
-            if (!item.name) continue; 
+        
+        // ORDENAÇÃO APLICADA: 1º Raridade > 2º Nome > 3º Nível
+        const elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
+            const pesosA = obterPesosRank(a.rank);
+            const pesosB = obterPesosRank(b.rank);
+            
+            // 1° Regra: Por Raridade (Decrescente - EX > E)
+            if (pesosB.raridade !== pesosA.raridade) {
+                return pesosB.raridade - pesosA.raridade;
+            }
+            
+            // 2° Regra: Por Nome (Ordem Alfabética de A a Z)
+            const comparacaoNome = a.name.localeCompare(b.name);
+            if (comparacaoNome !== 0) {
+                return comparacaoNome;
+            }
+            
+            // 3° Regra: Por Nível (Decrescente - Nv.MAX > Nv.1)
+            // (Só chega aqui se a Raridade e o Nome forem exatamente iguais)
+            return pesosB.nivel - pesosA.nivel;
+        });
 
+        // Loop de renderização (usando a lista ordenada)
+        for (let i = 0; i < elementosOrdenados.length; i++) {
+            const item = elementosOrdenados[i];
+            
             const nomeTratado = item.name.replace(/'/g, "\\'");
             let nomeExibido = item.name;
             if (nomeExibido.length > 40) nomeExibido = nomeExibido.substring(0, 40) + "...";
