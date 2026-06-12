@@ -60,6 +60,16 @@ export const universeItens = {
     ],
     2: [ // Universo 3: Time Stop Ability / Climbing Tower
         {
+            name: "Gema do Sábio",
+            rank: "???",
+            desc: "Ao ser Usadas se Funde ao Usuário e Vira um Padrão na Palma. \n - Efeito: ?"
+        },
+        {
+            name: "Livro da Onisciência",
+            rank: "???",
+            desc: "O Livro da Onisciência é o registro do próprio universo. Contém toda a Informação do Universo."
+        },
+        {
             name: "Espada Vermelha",
             rank: "?",
             desc: "Pode Rebater Flechas Vermelha sem Ativar a Penalidade."
@@ -727,6 +737,13 @@ export const universeItens = {
             name: "Manto Térmico",
             rank: "Nenhuma",
             desc: "ESTE MANTO BLOQUEIA PARTE DA LUZ SOLAR DIRETA E PROTEGE CONTRA O CALOR."
+        },
+    ],
+    5: [ // Universo 6: Auto Hunting
+        {
+            name: "Joia de Força de Baixo Nível",
+            rank: "Comum",
+            desc: "UM CRISTAL COM O ATRIBUTO DE FORÇA. \nCOMO USAR: ABSORVA ATIVANDO A SUA MANA. Ou Coma. \nEFEITO: A FORÇA AUMENTA PERMANENTEMENTE EM 0,005. \n\n※ ATENÇÃO: O ALVO SE TRANSFORMA EM UM MONSTRO EVENTUALMENTE SE OS CRISTAIS FOREM USADOS EXCESSIVAMENTE."
         },
     ],
 };

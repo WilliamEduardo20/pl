@@ -229,6 +229,10 @@ export const universeSkills = {
             rank: "Épico+", 
             desc: "EFEITO: CONDENSA O PODER DA DESTRUIÇÃO E O DISPARA EM LINHA RETA. \n\n※ O USO DESSA HABILIDADE REQUER DE 30 A 300 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIS PODEROSA A HABILIDADE SE TORNA. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 1.000 \nTEMPO DE RECARGA: 3 MINUTOS" },
         { 
+            "name": "Erupção de Fogo Infernal", 
+            "rank": "Épico", 
+            "desc": "EFEITO: ECLODE UMA PODEROSA COLUNA DE FOGO INFERNAL EM UM RAIO DE 20 METROS. \n\n※ A CONJURAÇÃO REQUER DE 30 A 150 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIOR O PODER E O ALCANCE DA HABILIDADE. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 700 \nTEMPO DE RECARGA: 2 MINUTOS" },
+        { 
             name: "Rugido da Leão", 
             rank: "Épico", 
             desc: "EFEITO: EMITE UM RUGIDO QUE INCAPACITA INIMIGOS EM UM RAIO DE PELO MENOS 30 METROS. ALVOS COM NÍVEL MUITO INFERIOR AO DO CONJURADOR PODEM MORRER. \n\n※ QUANTO MAIS PRÓXIMO O ALVO ESTIVER, MAIS FORTE SERÁ O EFEITO IMPACTADO. \n※ QUANTO MAIS FORÇA DE VONTADE FOR CONSUMIDA, MAIOR SERÁ O ALCANCE E O EFEITO DA HABILIDADE. \n※ APÓS USAR A HABILIDADE, TODOS OS EFEITOS NEGATIVOS DE TIPO MENTAL QUE AFETAM O CONJURADOR SÃO REMOVIDOS E AS HABILIDADES FÍSICAS AUMENTAM EM 20% POR 5 MINUTOS. \n\nCLASSIFICAÇÃO: TIPO FÍSICO \nCUSTO DE FORÇA DE VONTADE: 300 ~ 900 \nTEMPO DE RECARGA: 10 MINUTOS" },
@@ -536,5 +540,67 @@ export const universeSkills = {
             "rank": "Nv.1",
             "desc": "CUSTO DE MANA: 150 \nATAQUE E DEFESA São AMPLIFICADOS EM 25% POR 1 MINUTO."
         }
+    ],
+    5: [ // Universo 6: Auto Hunting
+        {
+            name: "Clonagem (Nv.1)",
+            rank: "Nv.1",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 1  \n※ RECARGA: 24H"
+        },
+        {
+            name: "Clonagem (Nv.2)",
+            rank: "Nv.2",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 2  \n※ RECARGA: 24H"
+        },
+        {
+            name: "Clonagem (Nv.3)",
+            rank: "Nv.3",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 3  \n※ RECARGA: 24H"
+        },
+        {
+            name: "Fortalecimento de Clone (Nv.1)",
+            rank: "Nv.1",
+            desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 50%"
+        },
+        {
+            name: "Fortalecimento de Clone (Nv.6)",
+            rank: "Nv.6",
+            desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 53%"
+        },
+        {
+            name: "Regeneração",
+            rank: "Nv.1",
+            desc: "REGENERAÇÃO: 0,401"
+        },
+        {
+            name: "Golpe",
+            rank: "Nv.1",
+            desc: "APLICA TODA A SUA FORÇA EM UM ÚNICO GOLPE APÓS A ATIVAÇÃO."
+        },
+        {
+            name: "Arrancada",
+            rank: "Nv.1",
+            desc: "UM BUFF É APLICADO AUMENTANDO A VELOCIDADE DE MOVIMENTO DURANTE CERTO PERÍODO."
+        },
+        {
+            name: "Projétil",
+            rank: "Nv.1",
+            desc: "AUMENTA O PODER DE ATAQUE AO USAR UMA ARMA DO TIPO PISTOLA."
+        },
+        {
+            name: "Meditação",
+            rank: "Nv.1",
+            desc: "MEDITA ESTABILIZANDO SUA MENTE \n\n※ A FADIGA MENTAL SERÁ LIGEIRAMENTE RESTAURADO. \n※ A VELOCIDADE DO AUMENTO DE MANA AUMENTA LIGEIRAMENTE. \n※ A VELOCIDADE DE RECUPERAÇÃO DA MANA AUMENTA LIGEIRAMENTE. \n※ O EFEITO DA RESPIRAÇÃO DE MANA É AUMENTADO."
+        },
+        {
+            name: "Familiar",
+            rank: "Nv.1",
+            desc: "COMPARTILHA SENTIDOS COM O ALVO ESCOLHIDO."
+        },
+        {
+            name: "Transferência de Mana",
+            rank: "Nv.1",
+            desc: "COMPARTILHA Sua Mana COM Um ALVO ESCOLHIDO."
+        },
     ],
 };
