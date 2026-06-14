@@ -568,6 +568,16 @@ export const universeSkills = {
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 8  \n※ RECARGA: 24H"
         },
         {
+            name: "Clonagem (Nv.9)",
+            rank: "Nv.9",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 9  \n※ RECARGA: 24H"
+        },
+        {
+            name: "Clonagem (Nv.10)",
+            rank: "Nv.10",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 10  \n※ RECARGA: 24H"
+        },
+        {
             name: "Fortalecimento de Clone (Nv.1)",
             rank: "Nv.1",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 50%"
@@ -576,6 +586,21 @@ export const universeSkills = {
             name: "Fortalecimento de Clone (Nv.6)",
             rank: "Nv.6",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 53%"
+        },
+        {
+            name: "Fortalecimento de Clone (Nv.40)",
+            rank: "Nv.40",
+            desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 70%"
+        },
+        {
+            name: "Fortalecimento de Clone (Nv.60)",
+            rank: "Nv.60",
+            desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n - Efeito Adicional: O Clone Agora Consegue Replicar a Parte Superior da Armadura do Usuário \n\n ※TAXA DE ESPELHAMENTO ATUAL: 70%"
+        },
+        {
+            name: "Fortalecimento de Clone (Nv.70)",
+            rank: "Nv.70",
+            desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n - Efeito Adicional: O Clone Agora Consegue Replicar a Parte Superior da Armadura do Usuário \n - Efeito Adicional: O Clone Agora Consegue Replicar a Parte Inferior da Armadura do Usuário \n\n ※TAXA DE ESPELHAMENTO ATUAL: 70%"
         },
         {
             name: "Clonagem Ilusória",
@@ -805,7 +830,7 @@ export const universeSkills = {
         {
             name: "Circuito de Mana do Núcleo da Tempestade",
             rank: "Nv.1",
-            desc: "Mana é Condensada e Explodida Continuamente. Cirulando pelo Coração. \n\n - Habilidade 'Cem Nós': Permite Lançar Um Ataque de Estocada Usando o Poder da Tempestade. \n - Habilidade 'Corte Redemoinho': Permite Lançar Um Ataque Cortante Usando o Poder da Tempestade."
+            desc: "Mana é Condensada e Explodida Continuamente. Cirulando pelo Coração. \n\n - Habilidade 'Cem Nós': Permite Lançar Um Ataque de Estocada Usando o Poder da Tempestade. \n - Habilidade 'Corte Redemoinho': Permite Lançar Um Ataque Cortante Usando o Poder da Tempestade. \n - Habilidade 'Overclock': Acelera o Coração e Aumenta o Poder de Ataque. \n - Habilidade 'Mil Noites Fatais': Lança Multiplos Ataques em Cadeia com Poder Cortante."
         },
         {
             name: "Congelar",
@@ -821,6 +846,11 @@ export const universeSkills = {
             name: "Grande Sábio",
             rank: "Nv.1",
             desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO. \n\n - Penalidade 'SÁBIO FRACO': TODAS AS ESTATÍSTICAS SÃO FIXADAS EM 0,2. \n\n※ Se um Elixir for Consumido a Penalidade Desaparece."
+        },
+        {
+            name: "Grande Sábio Perfeito",
+            rank: "Nv.1",
+            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO."
         },
         {
             name: "Corpo Sagrado",
@@ -910,7 +940,7 @@ export const universeSkills = {
         {
             name: "Espelho",
             rank: "Nv.1",
-            desc: "Permite Criar Uma Cópia que Copia Todas as Suas Ações."
+            desc: "Permite Espelhar um Determinado Alvo, Criando uma Cópia do Alvo que Replica Cada Movimento. Quanto Maior o Nível de Maestria Maior o Alvo Poderá ser e Mais Vezes o Espelhamento Poderá ser Feito. \n\n※ Um Mesmo Alvo Pode Ser Espelhado Multiplas Vezes ao Mesmo Tempo em Diferentes Direções."
         },
         {
             name: "Escudo de Absorção de Dano de Alto Nível",
@@ -981,6 +1011,121 @@ export const universeSkills = {
             name: "Pequeno Gigante",
             rank: "Nv.1",
             desc: "Conprime Toda a Energia."
+        },
+        {
+            name: "Aceleração Infinita",
+            rank: "Nv.1",
+            desc: "Acelera um Determinado Alvo. \n\n※ Ao Acelerar Seu Sistema Nervoso e Circulatório é Possivel Fazer o Tempo de Recarga de Habilidade mais Rápido. \n※ Cuidado ao Acelerar Outras Pessoas Elas Podem não Aguentar e Morrer."
+        },
+        {
+            name: "Trampolim",
+            rank: "Nv.1",
+            desc: "Cria uma Plataforma de Rebote Feita de Mana."
+        },
+        {
+            name: "Onde de Luz Coletora de Calor",
+            rank: "Nv.1",
+            desc: "Atrai Dois Feixes de Luz Concentrada em Uma Trajetória Fixa."
+        },
+        {
+            name: "Campo de Distorção",
+            rank: "Nv.1",
+            desc: "Distorce o Espaço Para Criar um Mundo Separado."
+        },
+        {
+            name: "Gigantificação",
+            rank: "Nv.1",
+            desc: "Aumenta o Tamanho do Alvo. Não Funciona em Seres Vivos."
+        },
+        {
+            name: "Golpe Pesado",
+            rank: "Nv.1",
+            desc: "Aumenta a Densidade Muscular para Lançar Um Golpe Poderoso."
+        },
+        {
+            name: "Chama da Raposa",
+            rank: "Nv.1",
+            desc: "Lança Uma Bola de Fogo Azul."
+        },
+        {
+            name: "Brasa do Sol Negro",
+            rank: "Nv.1",
+            desc: "Lança Chamas Negras Contra um Alvo."
+        },
+        {
+            name: "Corte da Lua Cheia",
+            rank: "Nv.1",
+            desc: "Lança Um Grande Corte em 360 Graus."
+        },
+        {
+            name: "Raio Dividido",
+            rank: "Nv.1",
+            desc: "Lança Um Raio que se Dividi em Outros Para Acertar um ou Multiplos Alvos. \n\n※ A Quantidade de Vezes que o Raio se Divide Depende do Nível da Habilidade."
+        },
+        {
+            name: "Sobrecarga Catalisadora",
+            rank: "Nv.1",
+            desc: "SÓ SE ATIVA QUANDO UM CERTO NÍVEL DE IMPACTO É RECEBIDO. \n\nUSA A ENERGIA ABSORVIDA COMO COMBUSTÍVEL PARA AMPLIFICAR SIGNIFICATIVAMENTE AS HABILIDADES BÁSICAS DO USUÁRIO."
+        },
+        {
+            name: "Resistência a Veneno",
+            rank: "Nv.1",
+            desc: "Cria Resistencia a Venenos. \n\n※ O Nível de Resistencia Aumenta Junta com o Nível."
+        },
+        {
+            name: "Barreira Defensiva de Ataques Físicos",
+            rank: "Nv.1",
+            desc: "Cria Uma Barreira Contra Ataques Físicos."
+        },
+        {
+            name: "Aprimoramento de Performance da Conexão Neural",
+            rank: "Nv.1",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n※ PENALIDADE: O Uso Contínuo em Baixo Nível Pode Causar Enxaquecas e Sobrecarga no Sistema Nervoso."
+        },
+        {
+            name: "Aprimoramento de Performance da Conexão Neural (Nv.30)",
+            rank: "Nv.30",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas."
+        },
+        {
+            name: "Aprimoramento de Performance da Conexão Neural (Nv.60)",
+            rank: "Nv.60",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas. \n - Efeito Adicional 'Dilatação Perceptiva': Em Situações de Perigo Extremo, a Percepção de Tempo do Usuário se Altera Drasticamente, Fazendo o Mundo ao Redor Parecer Estar em Câmera Lenta."
+        },
+        {
+            name: "Transformação Escaldante",
+            rank: "Nv.1",
+            desc: "CONVERTE A MATÉRIA DE UM ALVO DESIGNADO EM ENERGIA TÉRMICA EXTREMA Levando a Combustão."
+        },
+        {
+            name: "Ruptura de Pressão",
+            rank: "Nv.1",
+            desc: "MANIPULA A PRESSÃO ATMOSFÉRICA EM UM PONTO ESPECÍFICO ATÉ CAUSAR UMA RUPTURA EXPLOSIVA."
+        },
+        {
+            name: "Prisão de Pedra",
+            rank: "Nv.1",
+            desc: "Cria uma Prisão de Pedra Usando o Terreno que Envolve e Prende o Alvo."
+        },
+        {
+            name: "Lança das Tempestades",
+            rank: "Nv.1",
+            desc: "Cria Lanças de Tempestade e Lança-as no Alvo Designado."
+        },
+        {
+            name: "Trovão Prismático",
+            rank: "Nv.1",
+            desc: "Cria um Prisma que Lança Raios no Alvo."
+        },
+        {
+            name: "Escudo Multicamas de Hiper-Escala",
+            rank: "Nv.100",
+            desc: "Cria um Escudo de Várias Camadas Hexagonais em Hiper-Escala."
+        },
+        {
+            name: "Barreira de Supressão Muscular",
+            rank: "Nv.1",
+            desc: "Cria Uma Barreira que Envolve o Alvo e Suprime Seus Movimentos."
         },
     ],
 };

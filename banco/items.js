@@ -743,42 +743,47 @@ export const universeItens = {
         {
             name: "Fragmento da Espada (SPC)",
             rank: "?",
-            desc: ""
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Fatiamento Espacial': Permite Cortar o Espaço Abrindo Fendas Para Percorrer Grandes Distâncias. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento da Cebaça (SPC)",
             rank: "?",
-            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Análise': AO ANALISAR A ESTRUTURA DA HABILIDADE, PODE-se DESMONTAR A CONEXÃO DE MANA E ANULÁ-LA. \n - Habilidade 'Raio Laser': Permite Lançar um Poderoso Raio Laser Pelos Olhos."
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Dispersar': AO ANALISAR A ESTRUTURA DA HABILIDADE, PODE-se DESMONTAR A CONEXÃO DE MANA E ANULÁ-LA. \n - Habilidade 'Raio Laser': Permite Lançar um Poderoso Raio Laser Pelos Olhos. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento do Torço (SPC)",
             rank: "?",
-            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Absorção e Adaptação': Capaz de Absorver e Manisfestar os Elementos ao Redor, Sendo Capaz de se Adaptar a Várias Situações. \n\n※ A Absorção Inclui Pessoas, Podendo Encarnar o Cerebro da Pessoa Absorvida para Usar as Suas Habilidades."
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Absorção e Adaptação': Capaz de Absorver e Manisfestar os Elementos ao Redor, Sendo Capaz de se Adaptar a Várias Situações. \n※ A Absorção Inclui Pessoas, Podendo Encarnar o Cerebro da Pessoa Absorvida para Usar as Suas Habilidades. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento do Braço Esquerdo (SPC)",
             rank: "?",
-            desc: "?"
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Compressão': Comprime um Determinado Alvo. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento do Braço Direito (SPC)",
             rank: "?",
-            desc: "?"
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Repulsão': Afasta um Determinado Alvo. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento da Perna Esquerda (SPC)",
             rank: "?",
-            desc: "?"
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Salto': Permite dar Meio Passo de Salto Percorrendo Grandes Distâncias. \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
         },
         {
             name: "Fragmento da Perna Direita (SPC)",
             rank: "?",
-            desc: "?"
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Salto': Permite dar Meio Passo de Salto Percorrendo Grandes Distâncias.  \n\n※ Permite Controlar o 'Vazio': O Vazio Consegue Substituir a Mana, Por Exemplo Aprimorando Habilidades de Ataque Físico o Efeito do Aprimoramento é Incomparavel."
+        },
+        {
+            name: "Colar da Regressão",
+            rank: "?",
+            desc: "Um Artefato que Dizem que não Tolera Falhas, um Artefato que Pode Corrigir Absolutamente Qualquer erro Independente da Escala. \nAo Coloca-lo Você não o Poderá Tirar, Ao Morrer o Usuário Retornará ao Momento em Que Colocou o Artefato. \n\n※ Pode ser Retirado Usando o Poder do SPC e de um Grande Mago."
         },
         {
             name: "Elixir",
-            rank: "?",
-            desc: "Dizems ser uma Poção Milagrosa que Cura Qualquer Coisa."
+            rank: "EX",
+            desc: "Dizem ser uma Poção Milagrosa que Cura Qualquer Coisa. \n\nReconstroi o Corpo de Quem Bebe, Zerando os Tempos de Reacarga Das Habilidades. \n\n※ A reconstrução Pode Mudar a Aparência de Alguem."
         },
         {
             name: "Terremoto",

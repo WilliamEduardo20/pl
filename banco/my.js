@@ -25,6 +25,10 @@ export const staticSkills = {
                 <li><strong>Escala Sábia:</strong> E &lt; D &lt; C &lt; B &lt; A &lt; S &lt; SS &lt; SSS &lt; EX</li>
             </ul>`
     },
+    sobre_clone: {
+        title: "Sobre a Habilidade de Clonagem",
+        desc: "1° Dores ou Danos Causados ao Clone não Afetam o Usuário \n2° Se o Clone Receber Danos Além de Seus Limites, ou Gastar Toda a Sua Energia, a Invocação será Desfeita. \n3° O Clone Evolui em Tempo Real, de Acordo com a Prórpria Evolução do Usuário e Vise e Versa. \n4° Comandos Podem ser Enviados Telepaticamente para o Clone Independente da Distância. \n5° O Clone Pode Usar a Técnica de Clonagem (No Nível Maximo da Habilidade) \n\n※ É Possivel Criar uma Cópia Perfeita do Usuário."
+    },
     passos: {
         title: "Passos Fantasma [Nv-1]",
         desc: "Habilidade passiva. Seus passos são leves como uma pluma e não emitem sons, mas pequenas vibrações podem ser detectadas.",
