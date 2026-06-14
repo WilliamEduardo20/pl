@@ -811,6 +811,21 @@ export const universeItens = {
             desc: "Permite Detectar Habilidades Mentais e de Disfarce."
         },
         {
+            name: "Esfera de Habilidade 'Subespaço'",
+            rank: "Único",
+            desc: "Uma Esfera de Habilidade, ao Ser Injetado Mana é Possivel Aprender a Habilidade Subespaço."
+        },
+        {
+            name: "Esfera de Habilidade 'Bola de Fogo'",
+            rank: "Único",
+            desc: "Uma Esfera de Habilidade, ao Ser Injetado Mana é Possivel Aprender a Habilidade Bola de Fogo."
+        },
+        {
+            name: "Esfera de Habilidade 'Congelar'",
+            rank: "Único",
+            desc: "Uma Esfera de Habilidade, ao Ser Injetado Mana é Possivel Aprender a Habilidade Congelar."
+        },
+        {
             name: "Poção de Enfraquecimento",
             rank: "Épico",
             desc: "Ao Ingerido Diminue os Status para o Nível de Um Rank E. \n\n※ Se a Ressistência a Veneno For Grande o Efeito Não é Aplicado"
