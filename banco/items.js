@@ -741,9 +741,89 @@ export const universeItens = {
     ],
     5: [ // Universo 6: Auto Hunting
         {
+            name: "Fragmento da Espada (SPC)",
+            rank: "?",
+            desc: ""
+        },
+        {
+            name: "Fragmento da Cebaça (SPC)",
+            rank: "?",
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Análise': AO ANALISAR A ESTRUTURA DA HABILIDADE, PODE-se DESMONTAR A CONEXÃO DE MANA E ANULÁ-LA. \n - Habilidade 'Raio Laser': Permite Lançar um Poderoso Raio Laser Pelos Olhos."
+        },
+        {
+            name: "Fragmento do Torço (SPC)",
+            rank: "?",
+            desc: "O SPC habita neste fragmento, ele Tentará Dominar o seu Corpo. \n\n - Habilidade 'Absorção e Adaptação': Capaz de Absorver e Manisfestar os Elementos ao Redor, Sendo Capaz de se Adaptar a Várias Situações. \n\n※ A Absorção Inclui Pessoas, Podendo Encarnar o Cerebro da Pessoa Absorvida para Usar as Suas Habilidades."
+        },
+        {
+            name: "Fragmento do Braço Esquerdo (SPC)",
+            rank: "?",
+            desc: "?"
+        },
+        {
+            name: "Fragmento do Braço Direito (SPC)",
+            rank: "?",
+            desc: "?"
+        },
+        {
+            name: "Fragmento da Perna Esquerda (SPC)",
+            rank: "?",
+            desc: "?"
+        },
+        {
+            name: "Fragmento da Perna Direita (SPC)",
+            rank: "?",
+            desc: "?"
+        },
+        {
+            name: "Elixir",
+            rank: "?",
+            desc: "Dizems ser uma Poção Milagrosa que Cura Qualquer Coisa."
+        },
+        {
+            name: "Terremoto",
+            rank: "S+",
+            desc: "Vinda de Tybern. A Espada do Antigo Rei de Eurensia, Que Dizem ser Capaz de Revirar o Solo Com um Único Golpe. \n\nTodo o Terreno Seguirá a Sua Vontade."
+        },
+        {
+            name: "Poção de Detecção de Habilidade (Veneno)",
+            rank: "S+",
+            desc: "Permite Detectar o uso de Habilidades com o Menor Traço Possivel. Sendo Possível Rastrear Alvos Pelos Resquicios da Habilidade. \n\n※ ATENÇÃO: APÓS O FIM DO EFEITO, Você Não Conseguirá Emitir Mana por 3 Horas, Em Outras Palavras Será Impossível Usar Habilidades que Requerem Mana."
+        },
+        {
+            name: "D.E.P. (Definitivo)",
+            rank: "S+",
+            desc: "Aumenta Todos os Status e Ganha Novas Habilidade de Defesa (Corpo Indestritível e Osso Forte)."
+        },
+        {
+            name: "D.E.P.",
+            rank: "S",
+            desc: "Aumenta Termendamento Todos os Status e Habilidade. Tornando-o em um Rank S. \n\n※ ATENÇÃO: AO usar Você se Transforma-ra em um Monstro sem Consciencia."
+        },
+        {
+            name: "Luneta de Detecção de Habilidade",
+            rank: "A+",
+            desc: "Permite Detectar Habilidades Mentais e de Disfarce."
+        },
+        {
             name: "Poção de Enfraquecimento",
             rank: "Épico",
             desc: "Ao Ingerido Diminue os Status para o Nível de Um Rank E. \n\n※ Se a Ressistência a Veneno For Grande o Efeito Não é Aplicado"
+        },
+        {
+            name: "Poção de Reset",
+            rank: "Épico",
+            desc: "Ao Ingerido Reseta os Status e as Memórias ao Estado Original."
+        },
+        {
+            name: "Poção de Vitalidade (Veneno)",
+            rank: "Raro+",
+            desc: "AUMENTA SEU STATUS DE VITALIDADE POR UM TEMPO PRÉ-DETERMINADO. \n\n※ ATENÇÃO: Após o Fim do Efeito, O usuário ficará Fraco."
+        },
+        {
+            name: "Poção Adaptativa (Veneno)",
+            rank: "Raro+",
+            desc: "AUMENTA A RESISTÊNCIA DO USUÁRIO DE ACORDO COM FATORES EXTERNOS DO AMBIENTE. \n\n※ ATENÇÃO: APÓS O FIM DO EFEITO, TODAS AS RESISTÊNCIAS SERÃO TEMPORARIAMENTE REDUZIDAS."
         },
         {
             name: "Pergaminho de Telepatia",
@@ -756,17 +836,17 @@ export const universeItens = {
             desc: "Ao ser Usado Cria um Portal para o Local Designado no Pergaminho."
         },
         {
-            name: "Veneno de Mana",
+            name: "Poção de Mana (Veneno)",
             rank: "Raro",
-            desc: "Faz a Mana Fluir Fortemente Pelo Corpo \n\n※ ATENÇÃO: O Usuário Vai Ter Seu Corpo Explodido."
+            desc: "Faz a Mana Fluir Fortemente Pelo Corpo \n\n※ ATENÇÃO: Após o Fim do Efeito, O Usuário Vai Ter Seu Corpo Explodido."
         },
         {
-            name: "Veneno de Força",
+            name: "Poção de Força (Veneno)",
             rank: "Raro",
-            desc: "Dobra a Sua Força \n\n※ ATENÇÃO: O Usuário Vai Ter Seus Musculos Derretidos."
+            desc: "Dobra a Sua Força \n\n※ ATENÇÃO: Após o Fim do Efeito, O Usuário Vai Ter Seus Musculos Derretidos."
         },
         {
-            name: "Veneno de Cura",
+            name: "Poção de Cura (Veneno)",
             rank: "Raro",
             desc: "Regenera Ferimentos \n\n※ ATENÇÃO: Vai ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO Até a Morte."
         },

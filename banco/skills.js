@@ -563,6 +563,11 @@ export const universeSkills = {
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 7  \n※ RECARGA: 24H"
         },
         {
+            name: "Clonagem (Nv.8)",
+            rank: "Nv.8",
+            desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 8  \n※ RECARGA: 24H"
+        },
+        {
             name: "Fortalecimento de Clone (Nv.1)",
             rank: "Nv.1",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 50%"
@@ -650,7 +655,7 @@ export const universeSkills = {
         {
             name: "Subespaço",
             rank: "Nv.1",
-            desc: "CRIA UM SUBESPAÇO de 32m². \n\n - EXPANDE UM ESPAÇO EM PROPORÇÃO AO [NÍVEL DA SKILL]. \n - MANA É CONSUMIDA PARA MANTER O ESPAÇO.  \n\n※ RESTRIÇÃO DE ENTRADA: SE APLICA A TODAS AS CRIATURAS VIVAS, EXCETO AO DONO DA SKILL E SUAS INVOCAÇÕES. \n※ Se Usada Por Dois Clones ou Pessoa e Clone, Funciona como Um Portal."
+            desc: "CRIA UM SUBESPAÇO de 32m². \n\n - EXPANDE UM ESPAÇO EM PROPORÇÃO AO [NÍVEL DA SKILL]. \n - MANA É CONSUMIDA PARA MANTER O ESPAÇO.  \n\n※ RESTRIÇÃO DE ENTRADA: SE APLICA A TODAS AS CRIATURAS VIVAS, EXCETO AO DONO DA SKILL E SUAS INVOCAÇÕES, Mana pode ser Transmitida Pelo Portal. \n※ Se Usada Por Dois Clones ou Pessoa e Clone, Funciona como Um Portal."
         },
         {
             name: "Arma Indestritível",
@@ -710,7 +715,7 @@ export const universeSkills = {
         {
             name: "Fusão de Mana",
             rank: "Nv.1",
-            desc: "Ativa \nTORCE E ESPALHA O FLUXO DE MANA"
+            desc: "Ativa \nTORCE E ESPALHA O FLUXO DE MANA. Podendo Cancelar a Ativação de Habilidades."
         },
         {
             name: "Desprezo Pelos Fracos",
@@ -771,6 +776,211 @@ export const universeSkills = {
             name: "Campo de Força Suspenso",
             rank: "Nv.1",
             desc: "CRIA Um Campo de Força que Suspende o Inimigo no Ar. \n\n※ Quanto Maior o Nível Maior a Área de Ação e Mais Forte o Campo de Força."
+        },
+        {
+            name: "Camaleão",
+            rank: "Nv.1",
+            desc: "Escolha um Alvo e Mude sua Aparência e Voz Enquanto Mantém os Mesmo Status."
+        },
+        {
+            name: "Proteção Mental",
+            rank: "Nv.1",
+            desc: "Protege o Usuário Contra Ataques Mentais."
+        },
+        {
+            name: "Grande Deslizamento",
+            rank: "Nv.1",
+            desc: "LIBERE MANA PARA DESTRUIR AS ÁREAS SELECIONADAS."
+        },
+        {
+            name: "Labyrinthos",
+            rank: "Nv.1",
+            desc: "DISTORCE O ESPAÇO EM UMA ÁREA DESIGNADA. \n\nTODAS AS HABILIDADES RELACIONADAS AO ESPAÇO, INCLUINDO TELETRANSPORTE, NÃO PODEM SER USADAS PARA VIAJAR ENTRE O ESPAÇO DISTORCIDO E A ÁREA EXTERNA, Enquanto A HABILIDADE LABYRINTHOS PERMANECE ATIVA."
+        },
+        {
+            name: "Permeação",
+            rank: "Nv.1",
+            desc: "PASSE POR TODA A MATÉRIA POR UM CURTO PERÍODO DE TEMPO."
+        },
+        {
+            name: "Circuito de Mana do Núcleo da Tempestade",
+            rank: "Nv.1",
+            desc: "Mana é Condensada e Explodida Continuamente. Cirulando pelo Coração. \n\n - Habilidade 'Cem Nós': Permite Lançar Um Ataque de Estocada Usando o Poder da Tempestade. \n - Habilidade 'Corte Redemoinho': Permite Lançar Um Ataque Cortante Usando o Poder da Tempestade."
+        },
+        {
+            name: "Congelar",
+            rank: "Nv.1",
+            desc: "Condensa Mana para Criar Gelo."
+        },
+        {
+            name: "Poder Sagrado",
+            rank: "Nv.1",
+            desc: "Concede um Buff de Poder Sagrado a um Alvo Designado."
+        },
+        {
+            name: "Grande Sábio",
+            rank: "Nv.1",
+            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO. \n\n - Penalidade 'SÁBIO FRACO': TODAS AS ESTATÍSTICAS SÃO FIXADAS EM 0,2. \n\n※ Se um Elixir for Consumido a Penalidade Desaparece."
+        },
+        {
+            name: "Corpo Sagrado",
+            rank: "Nv.1",
+            desc: "O PODER SAGRADO HABITARÁ NO CORPO."
+        },
+        {
+            name: "Clarividência",
+            rank: "Nv.1",
+            desc: "Permite ao Usuáro Enxergar Qualquer Lugar do Mundo."
+        },
+        {
+            name: "Hipnose da Raposa",
+            rank: "Nv.1",
+            desc: "VOCÊ ATRAI SEDUTORAMENTE A ATENÇÃO DO OPONENTE, Mostrando seu Tipo Ideal de Par Romântico."
+        },
+        {
+            name: "Bomba de Energia",
+            rank: "Nv.1",
+            desc: "EXPLODA UM OBJETO PREENCHIDO COM MANA."
+        },
+        {
+            name: "Hibernação",
+            rank: "Nv.1",
+            desc: "ENTRE EM UM ESTADO DE COMA INDUZIDO PARA PRESERVAR SUA VIDA QUANDO RECEBER UM DANO FATAL."
+        },
+        {
+            name: "Super Vibração Pulverizadora",
+            rank: "Nv.1",
+            desc: "VIBRA UM OBJETO IMBUÍDO COM MANA EM VELOCIDADES ULTRA ALTAS, ENFRAQUECENDO A ESTRUTURA DO ALVO QUE ENTRAR EM CONTATO COM O OBJETO."
+        },
+        {
+            name: "Multiconjuração",
+            rank: "Nv.1",
+            desc: "EXPANDE O ALCANCE DE HABILIDADES."
+        },
+        {
+            name: "Estrela de Compressão Termal",
+            rank: "Nv.1",
+            desc: "Comprime em Alta Temperatura um Alvo e Explode."
+        },
+        {
+            name: "Difusão de Impacto",
+            rank: "Nv.1",
+            desc: "Espalha a rajada de Impacto."
+        },
+        {
+            name: "Petrificação",
+            rank: "Nv.1",
+            desc: "Petrifica um Alvo Selecionado."
+        },
+        {
+            name: "Meteoros Múltiplos",
+            rank: "Nv.1",
+            desc: "Lança Multiplos Meteoros em um Local Designado."
+        },
+        {
+            name: "Laser Concentrado de Temperatura Ultra-Alta",
+            rank: "Nv.1",
+            desc: "Comprime e Lança um Laser de Temepratura Ultra-Alta."
+        },
+        {
+            name: "Explosão de Cinzas",
+            rank: "Nv.1",
+            desc: "Cria e Lança uma Explosão de Cinzas."
+        },
+        {
+            name: "Quebra de Percepção",
+            rank: "Nv.1",
+            desc: "DISTORCE E FRAGMENTA OS SENTIDOS DO ALVO, CAUSANDO DESORIENTAÇÃO."
+        },
+        {
+            name: "Canhão Celestial",
+            rank: "Nv.1",
+            desc: "Lança um Poderoso Feitiço de Cura em Área."
+        },
+        {
+            name: "Bola de Fogo Comprimida de Alta Temperatura",
+            rank: "Nv.1",
+            desc: "REÚNE FOGO em Alta Temperatura USANDO MANA e Comprime NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Lâmina Infernal",
+            rank: "Nv.1",
+            desc: "Envolve a Lâmina da Espada com Uma Chama Infernal."
+        },
+        {
+            name: "Espelho",
+            rank: "Nv.1",
+            desc: "Permite Criar Uma Cópia que Copia Todas as Suas Ações."
+        },
+        {
+            name: "Escudo de Absorção de Dano de Alto Nível",
+            rank: "Nv.1",
+            desc: "Cria um Escudo que Absorve o Dano. \n\nO EFEITO SE TORNA MAIS FORTE A CADA CAMADA ADICIONAL."
+        },
+        {
+            name: "Transferência de Mana",
+            rank: "Nv.1",
+            desc: "Transfere a Mana do Usuário a Outra Pessoa Via Contato Físico."
+        },
+        {
+            name: "Coringa Vermelho",
+            rank: "Nv.1",
+            desc: "Sobrecarga: TODAS AS CARTAS TÊM SEUS PODERES DOBRADOS POR UM TEMPO LIMITADO. \n\n※ PENALIDADE: O DANO ACUMULADO NÃO PODERÁ SER REGENERADO COM CARTAS DE COPAS."
+        },
+        {
+            name: "Copas",
+            rank: "Nv.1",
+            desc: "REGENERA os Ferimentos Corpo do Usuário."
+        },
+        {
+            name: "Aprimoramento de Lâmina",
+            rank: "Nv.1",
+            desc: "AUMENTA O PODER DE PERFURAÇÃO DA LÂMINA."
+        },
+        {
+            name: "Mestre",
+            rank: "Nv.1",
+            desc: "CONTROLA SERES VIVOS. \n\nO TEMPO NECESSÁRIO PARA TOMAR O CONTROLE DEPENDE DAS HABILIDADES MENTAIS DO ALVO. QUANTO MAIS FORTE MENTALMENTE, MAIS TEMPO LEVARÁ PARA CONTROLÁ-LO."
+        },
+        {
+            name: "Comando",
+            rank: "Nv.1",
+            desc: "CAUSA ALUCINAÇÕES VISUAIS E AUDITIVAS NO ALVO, CONFUNDINDO-O."
+        },
+        {
+            name: "Escaneamento",
+            rank: "Nv.100",
+            desc: "ESCANEIA UMA GRANDE ÁREA PARA LOCALIZAR O ALVO DESIGNADO."
+        },
+        {
+            name: "Manifestação do Herói",
+            rank: "Nv.1",
+            desc: "COMPRIME O PODER MASSIVO PARA QUE FLUA ATRAVÉS DO CORPO. \n\n※ PENALIDADE: A FORÇA TRIPLICA, MAS O DANO RECEBIDO TAMBÉM."
+        },
+        {
+            name: "Braço Direito do Herói",
+            rank: "Nv.1",
+            desc: "COMPRIME O PODER MASSIVO No Punho e Causa uma Explosão."
+        },
+        {
+            name: "Dominação",
+            rank: "Nv.1",
+            desc: "MAXIMIZA A ESSÊNCIA DO MESTRE PARA SOBRESCREVER COMPLETAMENTE O ALVO COM SUA PRÓPRIA PERSONALIDADE, MEMÓRIAS E HABILIDADES. \n\n※ PENALIDADE: SÓ PODE SER USADO UMA VEZ NA VIDA, E O INDIVÍDUO SOBRESCRITO NÃO PODERÁ USAR ESSA HABILIDADE NOVAMENTE."
+        },
+        {
+            name: "Transferência de Memórias",
+            rank: "Nv.1",
+            desc: "PERMITE QUE O USUÁRIO TRANSMITA SUAS MEMÓRIAS PARA QUALQUER SER SENCIENTE. \n\nA QUANTIDADE DE MEMÓRIAS TRANSFERÍVEIS É DETERMINADA PELO NÍVEL DE PROFICIÊNCIA."
+        },
+        {
+            name: "Desacelerar",
+            rank: "Nv.1",
+            desc: "PERMITE QUE O USUÁRIO Desacelere um Alvo Determinado."
+        },
+        {
+            name: "Pequeno Gigante",
+            rank: "Nv.1",
+            desc: "Conprime Toda a Energia."
         },
     ],
 };
