@@ -543,10 +543,302 @@ export const universeSkills = {
     ],
     5: [ // Universo 6: Auto Hunting
         {
-            name: "Clonagem (Nv.1)",
+            name: "Armas",
+            type: "Seraparação"
+        },
+        {
+            name: "Aprimoramento de Lâmina",
+            rank: "Nv.1",
+            desc: "AUMENTA O PODER DE PERFURAÇÃO DA LÂMINA."
+        },
+        {
+            name: "Arma Indestritível",
+            rank: "Nv.1",
+            desc: "Passiva \nA FORÇA, VELOCIDADE E DURABILIDADE DA ARMA É MULTIPLICADA PELO [NÍVEL DA SKILL]."
+        },
+        {
+            name: "Ataque em Cadeia",
+            rank: "Nv.1",
+            desc: "Quanto Mais Você Balança a Sua Arma, Mais sua Agilidade Aumenta \n\n - Habilidade 'LIBERAR': RESETA O ATAQUE EM CADEIA E AUMENTA GRANDEMENTE O PODER DE SEU PRÓXIMO ATAQUE."
+        },
+        {
+            name: "Corte da Lua Cheia",
+            rank: "Nv.1",
+            desc: "Lança Um Grande Corte em 360 Graus."
+        },
+        {
+            name: "Golpe",
+            rank: "Nv.1",
+            desc: "APLICA TODA A SUA FORÇA EM UM ÚNICO GOLPE APÓS A ATIVAÇÃO."
+        },
+        {
+            name: "Golpe Pesado",
+            rank: "Nv.1",
+            desc: "Aumenta a Densidade Muscular para Lançar Um Golpe Poderoso."
+        },
+        {
+            name: "Lança de Bambu",
+            rank: "Nv.1",
+            desc: "IGNORA UM CERTO TANTO DE DEFESA FÍSICA NO PRÓXIMO ATAQUE. \nTEMPO DE ESPERA: 240 HORAS."
+        },
+        {
+            name: "Armazenamento",
+            type: "Seraparação"
+        },
+        {
+            name: "Dimensão",
+            rank: "Nv.1",
+            desc: "Ativa \nINVOCA UM ESPAÇO DIMENSIONAL ONDE ORGANISMOS VIVOS E OBJETOS PODEM SER ARMAZENADOS. \n\nO ESPAÇO DA DIMENSÃO AUMENTA DEPENDENDO DO [NÍVEL DA SKILL]."
+        },
+        {
+            name: "Subespaço",
+            rank: "Nv.1",
+            desc: "CRIA UM SUBESPAÇO de 32m². \n\n - EXPANDE UM ESPAÇO EM PROPORÇÃO AO [NÍVEL DA SKILL]. \n - MANA É CONSUMIDA PARA MANTER O ESPAÇO.  \n\n※ RESTRIÇÃO DE ENTRADA: SE APLICA A TODAS AS CRIATURAS VIVAS, EXCETO AO DONO DA SKILL E SUAS INVOCAÇÕES, Mana pode ser Transmitida Pelo Portal. \n※ Se Usada Por Dois Clones ou Pessoa e Clone, Funciona como Um Portal."
+        },
+        {
+            name: "Auxiliar",
+            type: "Seraparação"
+        },
+        {
+            name: "Aprimoramento de Performance da Conexão Neural",
+            rank: "Nv.1",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n※ PENALIDADE: O Uso Contínuo em Baixo Nível Pode Causar Enxaquecas e Sobrecarga no Sistema Nervoso."
+        },
+        /*
+        {
+            name: "Aprimoramento de Performance da Conexão Neural (Nv.30)",
+            rank: "Nv.30",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas."
+        },
+        {
+            name: "Aprimoramento de Performance da Conexão Neural (Nv.60)",
+            rank: "Nv.60",
+            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas. \n - Efeito Adicional 'Dilatação Perceptiva': Em Situações de Perigo Extremo, a Percepção de Tempo do Usuário se Altera Drasticamente, Fazendo o Mundo ao Redor Parecer Estar em Câmera Lenta."
+        },
+        */
+        {
+            name: "Arrancada",
+            rank: "Nv.1",
+            desc: "UM BUFF É APLICADO AUMENTANDO A VELOCIDADE DE MOVIMENTO DURANTE CERTO PERÍODO."
+        },   
+        {
+            name: "Camaleão",
+            rank: "Nv.1",
+            desc: "Escolha um Alvo e Mude sua Aparência e Voz Enquanto Mantém os Mesmo Status."
+        },
+        {
+            name: "Canhão Celestial",
+            rank: "Nv.1",
+            desc: "Lança um Poderoso Feitiço de Cura em Área."
+        },
+        {
+            name: "Clarividência",
+            rank: "Nv.1",
+            desc: "Permite ao Usuáro Enxergar Qualquer Lugar do Mundo."
+        },
+        {
+            name: "Desacelerar",
+            rank: "Nv.1",
+            desc: "PERMITE QUE O USUÁRIO Desacelere um Alvo Determinado."
+        },
+        {
+            name: "Desprezo Pelos Fracos",
+            rank: "Nv.1",
+            desc: "QUANTO MENOR FOREM AS ESTATÍSTICAS DO OPONENTE, MAIOR SERÃO AS SUAS ESTATÍSTICAS BASE. \n\n - Efeito 'Expansão': É Temporariamente Aplicado Mesmo a Oponentes com Maior Estátistica."
+        },
+        {
+            name: "Devorar Monstro (Nv.12)",
+            rank: "Nv.5",
+            desc: "ABSORVE A ESSÊNCIA DE UM MONSTRO. \n\nABSORVE PARTE DAS ESTATÍSTICAS DO MONSTRO QUANDO MORTO COM 12% DE CHANCE."
+        },
+        {
+            name: "Escaneamento",
+            rank: "Nv.100",
+            desc: "ESCANEIA UMA GRANDE ÁREA PARA LOCALIZAR O ALVO DESIGNADO."
+        },
+        {
+            name: "Familiar",
+            rank: "Nv.1",
+            desc: "COMPARTILHA SENTIDOS COM O ALVO ESCOLHIDO."
+        },
+        /*
+        {
+            name: "Familiar (Nv.17)",
+            rank: "Nv.17",
+            desc: "VOCÊ NÃO APENAS COMPARTILHA TODOS OS SENTIDOS DO ALVO, MAS TAMBÉM O CONTROLA."
+        },
+        */
+        {
+            name: "Hibernação",
+            rank: "Nv.1",
+            desc: "ENTRE EM UM ESTADO DE COMA INDUZIDO PARA PRESERVAR SUA VIDA QUANDO RECEBER UM DANO FATAL."
+        },
+        {
+            name: "Invasor",
+            rank: "Nv.1",
+            desc: "Cria um Mapa do Local Mostrando a Localização de Inimigos como Pontos Vermelhos."
+        },
+        {
+            name: "Labyrinthos",
+            rank: "Nv.1",
+            desc: "DISTORCE O ESPAÇO EM UMA ÁREA DESIGNADA. \n\nTODAS AS HABILIDADES RELACIONADAS AO ESPAÇO, INCLUINDO TELETRANSPORTE, NÃO PODEM SER USADAS PARA VIAJAR ENTRE O ESPAÇO DISTORCIDO E A ÁREA EXTERNA, Enquanto A HABILIDADE LABYRINTHOS PERMANECE ATIVA."
+        },
+        {
+            name: "Meditação",
+            rank: "Nv.1",
+            desc: "MEDITA ESTABILIZANDO SUA MENTE \n\n※ A FADIGA MENTAL SERÁ LIGEIRAMENTE RESTAURADO. \n※ A VELOCIDADE DO AUMENTO DE MANA AUMENTA LIGEIRAMENTE. \n※ A VELOCIDADE DE RECUPERAÇÃO DA MANA AUMENTA LIGEIRAMENTE. \n※ O EFEITO DA RESPIRAÇÃO DE MANA É AUMENTADO."
+        },
+        {
+            name: "Multiconjuração",
+            rank: "Nv.1",
+            desc: "EXPANDE O ALCANCE DE HABILIDADES."
+        },
+        {
+            name: "Permeação",
+            rank: "Nv.1",
+            desc: "PASSE POR TODA A MATÉRIA POR UM CURTO PERÍODO DE TEMPO."
+        },
+        {
+            name: "Quebra de Percepção",
+            rank: "Nv.1",
+            desc: "DISTORCE E FRAGMENTA OS SENTIDOS DO ALVO, CAUSANDO DESORIENTAÇÃO."
+        },
+        {
+            name: "Regeneração",
+            rank: "Nv.1",
+            desc: "REGENERAÇÃO: 0,401"
+        },
+        {
+            name: "Transferência de Memórias",
+            rank: "Nv.1",
+            desc: "PERMITE QUE O USUÁRIO TRANSMITA SUAS MEMÓRIAS PARA QUALQUER SER SENCIENTE. \n\nA QUANTIDADE DE MEMÓRIAS TRANSFERÍVEIS É DETERMINADA PELO NÍVEL DE PROFICIÊNCIA."
+        },
+        {
+            name: "Velocidade",
+            rank: "Nv.1",
+            desc: "ESTATÍSTICAS DE REFLEXO E AGILIDADE AUMENTARÃO SIGNIFICATIVAMENTE Para o Alvo Escolhido."
+        },
+        {
+            name: "Cartas",
+            type: "Seraparação"
+        },
+        {
+            name: "Coringa Vermelho",
+            rank: "Nv.1",
+            desc: "Sobrecarga: TODAS AS CARTAS TÊM SEUS PODERES DOBRADOS POR UM TEMPO LIMITADO. \n\n※ PENALIDADE: O DANO ACUMULADO NÃO PODERÁ SER REGENERADO COM CARTAS DE COPAS."
+        },
+        {
+            name: "Copas",
+            rank: "Nv.1",
+            desc: "REGENERA os Ferimentos Corpo do Usuário."
+        }, 
+        {
+            name: "Contensão",
+            type: "Seraparação"
+        },
+        {
+            name: "Barreira de Supressão Muscular",
+            rank: "Nv.1",
+            desc: "Cria Uma Barreira que Envolve o Alvo e Suprime Seus Movimentos."
+        },
+        {
+            name: "Campo de Distorção",
+            rank: "Nv.1",
+            desc: "Distorce o Espaço Para Criar um Mundo Separado."
+        },
+        {
+            name: "Campo de Força Suspenso",
+            rank: "Nv.1",
+            desc: "CRIA Um Campo de Força que Suspende o Inimigo no Ar. \n\n※ Quanto Maior o Nível Maior a Área de Ação e Mais Forte o Campo de Força."
+        },
+        {
+            name: "Muro de Gelo",
+            rank: "Nv.1",
+            desc: "CRIA UM ESPINHOS DE GELO ENORMES, MACHUCANDO E PRENDENDO O OPONENTE."
+        },
+        {
+            name: "Prisão de Pedra",
+            rank: "Nv.1",
+            desc: "Cria uma Prisão de Pedra Usando o Terreno que Envolve e Prende o Alvo."
+        },
+        {
+            name: "Defesa",
+            type: "Seraparação"
+        },
+        {
+            name: "Barreira Defensiva de Ataques Físicos",
+            rank: "Nv.1",
+            desc: "Cria Uma Barreira Contra Ataques Físicos."
+        },
+        {
+            name: "Corpo de Metal",
+            rank: "Nv.1",
+            desc: "O CORPO DO USUÁRIO ENDURECE COMO Metal."
+        },
+        {
+            name: "Corpo Inquebrável",
+            rank: "Nv.1",
+            desc: "O CORPO DO USUÁRIO ENDURECE COMO UMA PEDRA. \n\n[PASSIVA] \nA DEFESA FÍSICA E RESISTÊNCIA À MAGIA AUMENTAM EM 50%. DIMINUI A DOR. \n\n[ATIVA] \nO EFEITO PASSIVO DOBRA TEMPORARIAMENTE."
+        },
+        {
+            name: "Defesa Ampliada",
+            rank: "Nv.1",
+            desc: "COMPARTILHA UM BUFF DE DEFESA QUE É DIMENSIONADO PARA FORA DO SEU EQUIPAMENTO. \n\nESTATÍSTICA DE DEFESA E NÚMERO DE PESSOAS QUE PODEM SER AFETADAS DEPENDEM DO (NÍVEL DE SKILL)"
+        },
+        {
+            name: "Escudo de Absorção de Dano de Alto Nível",
+            rank: "Nv.1",
+            desc: "Cria um Escudo que Absorve o Dano. \n\nO EFEITO SE TORNA MAIS FORTE A CADA CAMADA ADICIONAL."
+        },
+        {
+            name: "Escudo Multicamas de Hiper-Escala",
+            rank: "Nv.100",
+            desc: "Cria um Escudo de Várias Camadas Hexagonais em Hiper-Escala."
+        },
+        {
+            name: "Osso Forte",
+            rank: "Nv.1",
+            desc: "Os Ossos do Usuário se Tornam Significativamente Mais Fortes."
+        },
+        {
+            name: "Proteção Mental",
+            rank: "Nv.1",
+            desc: "Protege o Usuário Contra Ataques Mentais."
+        },
+        {
+            name: "Resistência a Veneno",
+            rank: "Nv.1",
+            desc: "Cria Resistencia a Venenos. \n\n※ O Nível de Resistencia Aumenta Junta com o Nível."
+        },
+        {
+            name: "Dominação",
+            type: "Seraparação"
+        },
+        {
+            name: "Comando",
+            rank: "Nv.1",
+            desc: "CAUSA ALUCINAÇÕES VISUAIS E AUDITIVAS NO ALVO, CONFUNDINDO-O."
+        },
+        {
+            name: "Dominação",
+            rank: "Nv.1",
+            desc: "MAXIMIZA A ESSÊNCIA DO MESTRE PARA SOBRESCREVER COMPLETAMENTE O ALVO COM SUA PRÓPRIA PERSONALIDADE, MEMÓRIAS E HABILIDADES. \n\n※ PENALIDADE: SÓ PODE SER USADO UMA VEZ NA VIDA, E O INDIVÍDUO SOBRESCRITO NÃO PODERÁ USAR ESSA HABILIDADE NOVAMENTE."
+        },
+        {
+            name: "Mestre",
+            rank: "Nv.1",
+            desc: "CONTROLA SERES VIVOS. \n\nO TEMPO NECESSÁRIO PARA TOMAR O CONTROLE DEPENDE DAS HABILIDADES MENTAIS DO ALVO. QUANTO MAIS FORTE MENTALMENTE, MAIS TEMPO LEVARÁ PARA CONTROLÁ-LO."
+        },  
+        {
+            name: "Duplucação",
+            type: "Seraparação"
+        },
+        {
+            name: "Clonagem",
             rank: "Nv.1",
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 1  \n※ RECARGA: 24H"
         },
+        /*
         {
             name: "Clonagem (Nv.2)",
             rank: "Nv.2",
@@ -577,11 +869,13 @@ export const universeSkills = {
             rank: "Nv.10",
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA EXATAMENTE IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. VOCÊ ESTÁ LIGADO AO SEU CLONE. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Eles Apredem as Coisas Instintivamente e Aprendem Rápido \n\n※ QUANTIDADE MÁXIMA DE INVOCAÇÕES: 10  \n※ RECARGA: 24H"
         },
+        */
         {
-            name: "Fortalecimento de Clone (Nv.1)",
+            name: "Fortalecimento de Clone",
             rank: "Nv.1",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n ※TAXA DE ESPELHAMENTO ATUAL: 50%"
         },
+        /*
         {
             name: "Fortalecimento de Clone (Nv.6)",
             rank: "Nv.6",
@@ -602,96 +896,56 @@ export const universeSkills = {
             rank: "Nv.70",
             desc: "DURAÇÃO: PERMANENTE \nAUMENTA A TAXA DE ESPELHAMENTO DO CLONE, QUE REFLETE OS STATUS DO CORPO ORIGINAL. \n\n - Efeito Adicional: O Clone Agora Consegue Replicar a Parte Superior da Armadura do Usuário \n - Efeito Adicional: O Clone Agora Consegue Replicar a Parte Inferior da Armadura do Usuário \n\n ※TAXA DE ESPELHAMENTO ATUAL: 70%"
         },
+        */
         {
             name: "Clonagem Ilusória",
             rank: "Nv.1",
             desc: "HABILIDADE DE INVOCAÇÃO \nCONSOME ENERGIA PARA INVOCAR UMA RÉPLICA Ilusória IGUAL AO INVOCADOR. \n\nO NÚMERO DE INVOCAÇÕES AUMENTA DE ACORDO COM O NÍVEL. \n\n※ Os Clones Podem Receber Ordem Mentalmente, Mas não Podem Interagir Fisicamente \n\n※ QUANTIDADE MÁXIMA DE Ilusões: 1"
         },
         {
-            name: "Regeneração",
+            name: "Espelho",
             rank: "Nv.1",
-            desc: "REGENERAÇÃO: 0,401"
+            desc: "Permite Espelhar um Determinado Alvo, Criando uma Cópia do Alvo que Replica Cada Movimento. Quanto Maior o Nível de Maestria Maior o Alvo Poderá ser e Mais Vezes o Espelhamento Poderá ser Feito. \n\n※ Um Mesmo Alvo Pode Ser Espelhado Multiplas Vezes ao Mesmo Tempo em Diferentes Direções."
         },
         {
-            name: "Golpe",
-            rank: "Nv.1",
-            desc: "APLICA TODA A SUA FORÇA EM UM ÚNICO GOLPE APÓS A ATIVAÇÃO."
+            name: "Especiais",
+            type: "Seraparação"
         },
         {
-            name: "Arrancada",
+            name: "Aceleração Infinita",
             rank: "Nv.1",
-            desc: "UM BUFF É APLICADO AUMENTANDO A VELOCIDADE DE MOVIMENTO DURANTE CERTO PERÍODO."
+            desc: "Acelera um Determinado Alvo. \n\n※ Ao Acelerar Seu Sistema Nervoso e Circulatório é Possivel Fazer o Tempo de Recarga de Habilidade mais Rápido. \n※ Cuidado ao Acelerar Outras Pessoas Elas Podem não Aguentar e Morrer."
         },
         {
-            name: "Projétil",
+            name: "Circuito de Mana do Núcleo da Tempestade",
             rank: "Nv.1",
-            desc: "AUMENTA O PODER DE ATAQUE AO USAR UMA ARMA DO TIPO PISTOLA."
+            desc: "Mana é Condensada e Explodida Continuamente. Cirulando pelo Coração. \n\n - Habilidade 'Cem Nós': Permite Lançar Um Ataque de Estocada Usando o Poder da Tempestade. \n - Habilidade 'Corte Redemoinho': Permite Lançar Um Ataque Cortante Usando o Poder da Tempestade. \n - Habilidade 'Overclock': Acelera o Coração e Aumenta o Poder de Ataque. \n - Habilidade 'Mil Noites Fatais': Lança Multiplos Ataques em Cadeia com Poder Cortante."
         },
         {
-            name: "Meditação",
+            name: "Grande Sábio",
             rank: "Nv.1",
-            desc: "MEDITA ESTABILIZANDO SUA MENTE \n\n※ A FADIGA MENTAL SERÁ LIGEIRAMENTE RESTAURADO. \n※ A VELOCIDADE DO AUMENTO DE MANA AUMENTA LIGEIRAMENTE. \n※ A VELOCIDADE DE RECUPERAÇÃO DA MANA AUMENTA LIGEIRAMENTE. \n※ O EFEITO DA RESPIRAÇÃO DE MANA É AUMENTADO."
+            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO. \n\n - Penalidade 'SÁBIO FRACO': TODAS AS ESTATÍSTICAS SÃO FIXADAS EM 0,2. \n\n※ Se um Elixir for Consumido a Penalidade Desaparece."
         },
         {
-            name: "Familiar (Nv.1)",
+            name: "Grande Sábio Perfeito",
             rank: "Nv.1",
-            desc: "COMPARTILHA SENTIDOS COM O ALVO ESCOLHIDO."
-        },
-        {
-            name: "Familiar (Nv.17)",
-            rank: "Nv.17",
-            desc: "VOCÊ NÃO APENAS COMPARTILHA TODOS OS SENTIDOS DO ALVO, MAS TAMBÉM O CONTROLA."
-        },
-        {
-            name: "Transferência de Mana",
-            rank: "Nv.1",
-            desc: "COMPARTILHA Sua Mana COM Um ALVO ESCOLHIDO."
+            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO."
         },
         {
             name: "Veneno",
             rank: "Nv.5",
             desc: "CRIA UM ITEM COM VENENO. O NÚMERO DE RECEITAS AUMENTA DE ACORDO COM O NÍVEL. A PROFICIÊNCIA EM CADA RECEITA PODE SER AUMENTADA. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE REGENERAÇÃO> \nUTILIZA ENERGIA VITAL AO CONSUMIR O VENENO PARA REGENERAR A PARTE FERIDA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A ENERGIA VITAL CONSUMIDA. \n\n - EFEITO: REGENERAR \n - EFEITO COLATERAL: ESGOTAR LENTAMENTE A ENERGIA VITAL DO USUÁRIO. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE FORÇA> \nAUMENTA A FORÇA ATIVANDO O CORPO COM VENENO. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, Menos os Musculos Vão Derreter. \n\n - EFEITO: Dobra sua Força \n - Efeito COLATERAL: Seus Musculos Derretem. \n\n<(CLASSE MAIS BAIXA) POÇÃO DE MANA> ESTIMULA FORÇADAMENTE A CIRCULAÇÃO DE MANA. QUANTO MAIOR SUA PROFICIÊNCIA FICAR, MENOR É A Chance de Explosão. \n\n - EFEITO: Aumenta a Circulação De Mana \n - EFEITO COLATERAL: CAUSA DOR EXTREMA E Explode o Corpo"
-        },
+        },   
         {
-            name: "Devorar Monstro (Nv.12)",
-            rank: "Nv.5",
-            desc: "ABSORVE A ESSÊNCIA DE UM MONSTRO. \n\nABSORVE PARTE DAS ESTATÍSTICAS DO MONSTRO QUANDO MORTO COM 12% DE CHANCE."
-        },
-        {
-            name: "Invasor",
-            rank: "Nv.1",
-            desc: "Cria um Mapa do Local Mostrando a Localização de Inimigos como Pontos Vermelhos."
-        },
-        {
-            name: "Flecha Mágica",
-            rank: "Nv.1",
-            desc: "Cria uma Flecha com Mana e Dispara. \n\n※ Quanto Maior o Nível Mais Flechas Podem Ser Criados Simultaneamente."
-        },
-        {
-            name: "Bala Mágica",
-            rank: "Nv.11",
-            desc: "Tipo Conjuração. \nCARREGA SUAS BALAS COM MANA ANTES DE ATIRÁ-LAS."
-        },
-        {
-            name: "Dimensão",
-            rank: "Nv.1",
-            desc: "Ativa \nINVOCA UM ESPAÇO DIMENSIONAL ONDE ORGANISMOS VIVOS E OBJETOS PODEM SER ARMAZENADOS. \n\nO ESPAÇO DA DIMENSÃO AUMENTA DEPENDENDO DO [NÍVEL DA SKILL]."
-        },
-        {
-            name: "Subespaço",
-            rank: "Nv.1",
-            desc: "CRIA UM SUBESPAÇO de 32m². \n\n - EXPANDE UM ESPAÇO EM PROPORÇÃO AO [NÍVEL DA SKILL]. \n - MANA É CONSUMIDA PARA MANTER O ESPAÇO.  \n\n※ RESTRIÇÃO DE ENTRADA: SE APLICA A TODAS AS CRIATURAS VIVAS, EXCETO AO DONO DA SKILL E SUAS INVOCAÇÕES, Mana pode ser Transmitida Pelo Portal. \n※ Se Usada Por Dois Clones ou Pessoa e Clone, Funciona como Um Portal."
-        },
-        {
-            name: "Arma Indestritível",
-            rank: "Nv.1",
-            desc: "Passiva \nA FORÇA, VELOCIDADE E DURABILIDADE DA ARMA É MULTIPLICADA PELO [NÍVEL DA SKILL]."
+            name: "Fogo",
+            type: "Seraparação"
         },
         {
             name: "Bola de Fogo (Nv.1)",
             rank: "Nv.1",
             desc: "REÚNE FOGO USANDO MANA E MOLDA NO FORMATO DE UMA ESFERA."
         },
+        /*
         {
             name: "Bola de Fogo (Nv.15)",
             rank: "Nv.15",
@@ -702,10 +956,184 @@ export const universeSkills = {
             rank: "Nv.37",
             desc: "REÚNE FOGO USANDO MANA E MOLDA NO FORMATO DE UMA ESFERA."
         },
+        */
+       {
+            name: "Bola de Fogo Comprimida de Alta Temperatura",
+            rank: "Nv.1",
+            desc: "REÚNE FOGO em Alta Temperatura USANDO MANA e Comprime NO FORMATO DE UMA ESFERA."
+        },
         {
-            name: "Manipulação de Dano",
-            rank: "Nv.64",
-            desc: "TRANSFERE UMA QUANTIDADE ESPECÍFICA DO DANO TOMADO. \n\nA DISTÂNCIA E DANO TOMADO DEPENDEM DO [NÍVEL DE SKILL]."
+            name: "Brasa do Sol Negro",
+            rank: "Nv.1",
+            desc: "Lança Chamas Negras Contra um Alvo."
+        },
+        {
+            name: "Estrela de Compressão Termal",
+            rank: "Nv.1",
+            desc: "Comprime em Alta Temperatura um Alvo e Explode."
+        },
+        {
+            name: "Fogo Infernal",
+            rank: "Nv.1",
+            desc: "CRIA Uma Chama Infernal E MOLDA NO FORMATO DE UMA ESFERA."
+        },
+        {
+            name: "Lâmina Infernal",
+            rank: "Nv.1",
+            desc: "Envolve a Lâmina da Espada com Uma Chama Infernal."
+        },
+        {
+            name: "Laser Concentrado de Temperatura Ultra-Alta",
+            rank: "Nv.1",
+            desc: "Comprime e Lança um Laser de Temepratura Ultra-Alta."
+        },
+        {
+            name: "Transformação Escaldante",
+            rank: "Nv.1",
+            desc: "CONVERTE A MATÉRIA DE UM ALVO DESIGNADO EM ENERGIA TÉRMICA EXTREMA Levando a Combustão."
+        },
+        {
+            name: "Herói",
+            type: "Seraparação"
+        },
+        {
+            name: "Manifestação do Herói",
+            rank: "Nv.1",
+            desc: "COMPRIME O PODER MASSIVO PARA QUE FLUA ATRAVÉS DO CORPO. \n\n※ PENALIDADE: A FORÇA TRIPLICA, MAS O DANO RECEBIDO TAMBÉM."
+        },
+        {
+            name: "Braço Direito do Herói",
+            rank: "Nv.1",
+            desc: "COMPRIME O PODER MASSIVO No Punho e Causa uma Explosão."
+        },
+        {
+            name: "Longa Distância",
+            type: "Seraparação"
+        },
+        {
+            name: "Bala Mágica",
+            rank: "Nv.11",
+            desc: "Tipo Conjuração. \nCARREGA SUAS BALAS COM MANA ANTES DE ATIRÁ-LAS."
+        },
+        {
+            name: "Flecha Mágica",
+            rank: "Nv.1",
+            desc: "Cria uma Flecha com Mana e Dispara. \n\n※ Quanto Maior o Nível Mais Flechas Podem Ser Criados Simultaneamente."
+        },
+        {
+            name: "Projétil",
+            rank: "Nv.1",
+            desc: "AUMENTA O PODER DE ATAQUE AO USAR UMA ARMA DO TIPO PISTOLA."
+        },
+        {
+            name: "Mágias",
+            type: "Seraparação"
+        }, 
+        {
+            name: "Bomba de Energia",
+            rank: "Nv.1",
+            desc: "EXPLODA UM OBJETO PREENCHIDO COM MANA."
+        },
+        {
+            name: "Congelar",
+            rank: "Nv.1",
+            desc: "Condensa Mana para Criar Gelo."
+        },
+        {
+            name: "Explosão de Cinzas",
+            rank: "Nv.1",
+            desc: "Cria e Lança uma Explosão de Cinzas."
+        },
+        {
+            name: "Grande Deslizamento",
+            rank: "Nv.1",
+            desc: "LIBERE MANA PARA DESTRUIR AS ÁREAS SELECIONADAS."
+        },
+        {
+            name: "Lâmina de Vento",
+            rank: "Nv.1",
+            desc: "CRIA Uma Lamina de Vento Cortante."
+        }, 
+        {
+            name: "Lança das Tempestades",
+            rank: "Nv.1",
+            desc: "Cria Lanças de Tempestade e Lança-as no Alvo Designado."
+        },
+        {
+            name: "Meteoros Múltiplos",
+            rank: "Nv.1",
+            desc: "Lança Multiplos Meteoros em um Local Designado."
+        },
+        {
+            name: "Onde de Luz Coletora de Calor",
+            rank: "Nv.1",
+            desc: "Atrai Dois Feixes de Luz Concentrada em Uma Trajetória Fixa."
+        },
+        {
+            name: "Propulsor de Pedra",
+            rank: "Nv.1",
+            desc: "CRIA Uma Pedra para Lança-la. \n\n※ Quanto Maior o Nível Mais Pedras Podem Ser Criados Simultaneamente."
+        },
+        {
+            name: "Raio Dividido",
+            rank: "Nv.1",
+            desc: "Lança Um Raio que se Dividi em Outros Para Acertar um ou Multiplos Alvos. \n\n※ A Quantidade de Vezes que o Raio se Divide Depende do Nível da Habilidade."
+        },
+        {
+            name: "Trovão Prismático",
+            rank: "Nv.1",
+            desc: "Cria um Prisma que Lança Raios no Alvo."
+        },
+        {
+            name: "Mana",
+            type: "Seraparação"
+        },
+        {
+            name: "Fusão de Mana",
+            rank: "Nv.1",
+            desc: "Ativa \nTORCE E ESPALHA O FLUXO DE MANA. Podendo Cancelar a Ativação de Habilidades."
+        },
+        {
+            name: "Mestre da Mana",
+            rank: "Nv.1",
+            desc: "ACUMULA MANA. \nA QUANTIDADE DE MANA CONTROLADA DEPENDE DO [NÍVEL DA SKILL]. \n\n※ Permite Lançar Bolas Feitas de Mana"
+        },
+        {
+            name: "Transferência de Mana",
+            rank: "Nv.1",
+            desc: "COMPARTILHA Sua Mana COM Um ALVO ESCOLHIDO."
+        },
+        {
+            name: "Raposa",
+            type: "Seraparação"
+        },
+        {
+            name: "Chama da Raposa",
+            rank: "Nv.1",
+            desc: "Lança Uma Bola de Fogo Azul."
+        },
+        {
+            name: "Hipnose da Raposa",
+            rank: "Nv.1",
+            desc: "VOCÊ ATRAI SEDUTORAMENTE A ATENÇÃO DO OPONENTE, Mostrando seu Tipo Ideal de Par Romântico."
+        },
+        {
+            name: "Sagrado",
+            type: "Seraparação"
+        },
+        {
+            name: "Corpo Sagrado",
+            rank: "Nv.1",
+            desc: "O PODER SAGRADO HABITARÁ NO CORPO."
+        },
+        {
+            name: "Poder Sagrado",
+            rank: "Nv.1",
+            desc: "Concede um Buff de Poder Sagrado a um Alvo Designado."
+        },
+        {
+            name: "Teletransporte",
+            type: "Seraparação"
         },
         {
             name: "Teletransporte (2km)",
@@ -723,174 +1151,23 @@ export const universeSkills = {
             desc: "ALCANCE - 50M. \nCOOLDOWN - 48 HORAS. \nNÚMERO MÁX. DE PESSOAS - 3"
         },
         {
-            name: "Teletransporte (50m)",
+            name: "Teletransporte (2m)",
             rank: "Nv.1",
             desc: "ALCANCE - 2M. \nCOOLDOWN - 5 MIN. \nNÚMERO MÁX. DE PESSOAS - 1"
         },
         {
-            name: "Mestre da Mana",
-            rank: "Nv.1",
-            desc: "ACUMULA MANA. \nA QUANTIDADE DE MANA CONTROLADA DEPENDE DO [NÍVEL DA SKILL]."
+            name: "Outros",
+            type: "Seraparação"
         },
         {
-            name: "Defesa Ampliada",
-            rank: "Nv.1",
-            desc: "COMPARTILHA UM BUFF DE DEFESA QUE É DIMENSIONADO PARA FORA DO SEU EQUIPAMENTO. \n\nESTATÍSTICA DE DEFESA E NÚMERO DE PESSOAS QUE PODEM SER AFETADAS DEPENDEM DO (NÍVEL DE SKILL)"
-        },
-        {
-            name: "Fusão de Mana",
-            rank: "Nv.1",
-            desc: "Ativa \nTORCE E ESPALHA O FLUXO DE MANA. Podendo Cancelar a Ativação de Habilidades."
-        },
-        {
-            name: "Desprezo Pelos Fracos",
-            rank: "Nv.1",
-            desc: "QUANTO MENOR FOREM AS ESTATÍSTICAS DO OPONENTE, MAIOR SERÃO AS SUAS ESTATÍSTICAS BASE. \n\n - Efeito 'Expansão': É Temporariamente Aplicado Mesmo a Oponentes com Maior Estátistica."
-        },
-        {
-            name: "Corpo Inquebrável",
-            rank: "Nv.1",
-            desc: "O CORPO DO USUÁRIO ENDURECE COMO UMA PEDRA. \n\n[PASSIVA] \nA DEFESA FÍSICA E RESISTÊNCIA À MAGIA AUMENTAM EM 50%. DIMINUI A DOR. \n\n[ATIVA] \nO EFEITO PASSIVO DOBRA TEMPORARIAMENTE."
-        },
-        {
-            name: "Corpo de Metal",
-            rank: "Nv.1",
-            desc: "O CORPO DO USUÁRIO ENDURECE COMO Metal."
-        },
-        {
-            name: "Osso Forte",
-            rank: "Nv.1",
-            desc: "Os Ossos do Usuário se Tornam Significativamente Mais Fortes."
-        },
-        {
-            name: "Velocidade",
-            rank: "Nv.1",
-            desc: "ESTATÍSTICAS DE REFLEXO E AGILIDADE AUMENTARÃO SIGNIFICATIVAMENTE Para o Alvo Escolhido."
-        },
-        {
-            name: "Lança de Bambu",
-            rank: "Nv.1",
-            desc: "IGNORA UM CERTO TANTO DE DEFESA FÍSICA NO PRÓXIMO ATAQUE. \nTEMPO DE ESPERA: 240 HORAS."
-        },
-        {
-            name: "Ataque em Cadeia",
-            rank: "Nv.1",
-            desc: "Quanto Mais Você Balança a Sua Arma, Mais sua Agilidade Aumenta \n\n - Habilidade 'LIBERAR': RESETA O ATAQUE EM CADEIA E AUMENTA GRANDEMENTE O PODER DE SEU PRÓXIMO ATAQUE."
-        },
-        {
-            name: "Muro de Gelo",
-            rank: "Nv.1",
-            desc: "CRIA UM ESPINHOS DE GELO ENORMES, MACHUCANDO E PRENDENDO O OPONENTE."
-        },
-        {
-            name: "Lâmina de Vento",
-            rank: "Nv.1",
-            desc: "CRIA Uma Lamina de Vento Cortante."
-        },
-        {
-            name: "Fogo Infernal",
-            rank: "Nv.1",
-            desc: "CRIA Uma Chama Infernal E MOLDA NO FORMATO DE UMA ESFERA."
-        },
-        {
-            name: "Propulsor de Pedra",
-            rank: "Nv.1",
-            desc: "CRIA Uma Pedra para Lança-la. \n\n※ Quanto Maior o Nível Mais Pedras Podem Ser Criados Simultaneamente."
-        },
-        {
-            name: "Campo de Força Suspenso",
-            rank: "Nv.1",
-            desc: "CRIA Um Campo de Força que Suspende o Inimigo no Ar. \n\n※ Quanto Maior o Nível Maior a Área de Ação e Mais Forte o Campo de Força."
-        },
-        {
-            name: "Camaleão",
-            rank: "Nv.1",
-            desc: "Escolha um Alvo e Mude sua Aparência e Voz Enquanto Mantém os Mesmo Status."
-        },
-        {
-            name: "Proteção Mental",
-            rank: "Nv.1",
-            desc: "Protege o Usuário Contra Ataques Mentais."
-        },
-        {
-            name: "Grande Deslizamento",
-            rank: "Nv.1",
-            desc: "LIBERE MANA PARA DESTRUIR AS ÁREAS SELECIONADAS."
-        },
-        {
-            name: "Labyrinthos",
-            rank: "Nv.1",
-            desc: "DISTORCE O ESPAÇO EM UMA ÁREA DESIGNADA. \n\nTODAS AS HABILIDADES RELACIONADAS AO ESPAÇO, INCLUINDO TELETRANSPORTE, NÃO PODEM SER USADAS PARA VIAJAR ENTRE O ESPAÇO DISTORCIDO E A ÁREA EXTERNA, Enquanto A HABILIDADE LABYRINTHOS PERMANECE ATIVA."
-        },
-        {
-            name: "Permeação",
-            rank: "Nv.1",
-            desc: "PASSE POR TODA A MATÉRIA POR UM CURTO PERÍODO DE TEMPO."
-        },
-        {
-            name: "Circuito de Mana do Núcleo da Tempestade",
-            rank: "Nv.1",
-            desc: "Mana é Condensada e Explodida Continuamente. Cirulando pelo Coração. \n\n - Habilidade 'Cem Nós': Permite Lançar Um Ataque de Estocada Usando o Poder da Tempestade. \n - Habilidade 'Corte Redemoinho': Permite Lançar Um Ataque Cortante Usando o Poder da Tempestade. \n - Habilidade 'Overclock': Acelera o Coração e Aumenta o Poder de Ataque. \n - Habilidade 'Mil Noites Fatais': Lança Multiplos Ataques em Cadeia com Poder Cortante."
-        },
-        {
-            name: "Congelar",
-            rank: "Nv.1",
-            desc: "Condensa Mana para Criar Gelo."
-        },
-        {
-            name: "Poder Sagrado",
-            rank: "Nv.1",
-            desc: "Concede um Buff de Poder Sagrado a um Alvo Designado."
-        },
-        {
-            name: "Grande Sábio",
-            rank: "Nv.1",
-            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO. \n\n - Penalidade 'SÁBIO FRACO': TODAS AS ESTATÍSTICAS SÃO FIXADAS EM 0,2. \n\n※ Se um Elixir for Consumido a Penalidade Desaparece."
-        },
-        {
-            name: "Grande Sábio Perfeito",
-            rank: "Nv.1",
-            desc: "VOCÊ APRENDE TODAS AS HABILIDADES MAIS RÁPIDO DO QUE QUALQUER UM. TODAS AS HABILIDADES QUE VOCÊ APRENDER SERÃO AUTOMATICAMENTE ELEVADAS AO NÍVEL MÁXIMO."
-        },
-        {
-            name: "Corpo Sagrado",
-            rank: "Nv.1",
-            desc: "O PODER SAGRADO HABITARÁ NO CORPO."
-        },
-        {
-            name: "Clarividência",
-            rank: "Nv.1",
-            desc: "Permite ao Usuáro Enxergar Qualquer Lugar do Mundo."
-        },
-        {
-            name: "Hipnose da Raposa",
-            rank: "Nv.1",
-            desc: "VOCÊ ATRAI SEDUTORAMENTE A ATENÇÃO DO OPONENTE, Mostrando seu Tipo Ideal de Par Romântico."
-        },
-        {
-            name: "Bomba de Energia",
-            rank: "Nv.1",
-            desc: "EXPLODA UM OBJETO PREENCHIDO COM MANA."
-        },
-        {
-            name: "Hibernação",
-            rank: "Nv.1",
-            desc: "ENTRE EM UM ESTADO DE COMA INDUZIDO PARA PRESERVAR SUA VIDA QUANDO RECEBER UM DANO FATAL."
+            name: "Manipulação de Dano",
+            rank: "Nv.64",
+            desc: "TRANSFERE UMA QUANTIDADE ESPECÍFICA DO DANO TOMADO. \n\nA DISTÂNCIA E DANO TOMADO DEPENDEM DO [NÍVEL DE SKILL]."
         },
         {
             name: "Super Vibração Pulverizadora",
             rank: "Nv.1",
             desc: "VIBRA UM OBJETO IMBUÍDO COM MANA EM VELOCIDADES ULTRA ALTAS, ENFRAQUECENDO A ESTRUTURA DO ALVO QUE ENTRAR EM CONTATO COM O OBJETO."
-        },
-        {
-            name: "Multiconjuração",
-            rank: "Nv.1",
-            desc: "EXPANDE O ALCANCE DE HABILIDADES."
-        },
-        {
-            name: "Estrela de Compressão Termal",
-            rank: "Nv.1",
-            desc: "Comprime em Alta Temperatura um Alvo e Explode."
         },
         {
             name: "Difusão de Impacto",
@@ -903,119 +1180,9 @@ export const universeSkills = {
             desc: "Petrifica um Alvo Selecionado."
         },
         {
-            name: "Meteoros Múltiplos",
-            rank: "Nv.1",
-            desc: "Lança Multiplos Meteoros em um Local Designado."
-        },
-        {
-            name: "Laser Concentrado de Temperatura Ultra-Alta",
-            rank: "Nv.1",
-            desc: "Comprime e Lança um Laser de Temepratura Ultra-Alta."
-        },
-        {
-            name: "Explosão de Cinzas",
-            rank: "Nv.1",
-            desc: "Cria e Lança uma Explosão de Cinzas."
-        },
-        {
-            name: "Quebra de Percepção",
-            rank: "Nv.1",
-            desc: "DISTORCE E FRAGMENTA OS SENTIDOS DO ALVO, CAUSANDO DESORIENTAÇÃO."
-        },
-        {
-            name: "Canhão Celestial",
-            rank: "Nv.1",
-            desc: "Lança um Poderoso Feitiço de Cura em Área."
-        },
-        {
-            name: "Bola de Fogo Comprimida de Alta Temperatura",
-            rank: "Nv.1",
-            desc: "REÚNE FOGO em Alta Temperatura USANDO MANA e Comprime NO FORMATO DE UMA ESFERA."
-        },
-        {
-            name: "Lâmina Infernal",
-            rank: "Nv.1",
-            desc: "Envolve a Lâmina da Espada com Uma Chama Infernal."
-        },
-        {
-            name: "Espelho",
-            rank: "Nv.1",
-            desc: "Permite Espelhar um Determinado Alvo, Criando uma Cópia do Alvo que Replica Cada Movimento. Quanto Maior o Nível de Maestria Maior o Alvo Poderá ser e Mais Vezes o Espelhamento Poderá ser Feito. \n\n※ Um Mesmo Alvo Pode Ser Espelhado Multiplas Vezes ao Mesmo Tempo em Diferentes Direções."
-        },
-        {
-            name: "Escudo de Absorção de Dano de Alto Nível",
-            rank: "Nv.1",
-            desc: "Cria um Escudo que Absorve o Dano. \n\nO EFEITO SE TORNA MAIS FORTE A CADA CAMADA ADICIONAL."
-        },
-        {
-            name: "Transferência de Mana",
-            rank: "Nv.1",
-            desc: "Transfere a Mana do Usuário a Outra Pessoa Via Contato Físico."
-        },
-        {
-            name: "Coringa Vermelho",
-            rank: "Nv.1",
-            desc: "Sobrecarga: TODAS AS CARTAS TÊM SEUS PODERES DOBRADOS POR UM TEMPO LIMITADO. \n\n※ PENALIDADE: O DANO ACUMULADO NÃO PODERÁ SER REGENERADO COM CARTAS DE COPAS."
-        },
-        {
-            name: "Copas",
-            rank: "Nv.1",
-            desc: "REGENERA os Ferimentos Corpo do Usuário."
-        },
-        {
-            name: "Aprimoramento de Lâmina",
-            rank: "Nv.1",
-            desc: "AUMENTA O PODER DE PERFURAÇÃO DA LÂMINA."
-        },
-        {
-            name: "Mestre",
-            rank: "Nv.1",
-            desc: "CONTROLA SERES VIVOS. \n\nO TEMPO NECESSÁRIO PARA TOMAR O CONTROLE DEPENDE DAS HABILIDADES MENTAIS DO ALVO. QUANTO MAIS FORTE MENTALMENTE, MAIS TEMPO LEVARÁ PARA CONTROLÁ-LO."
-        },
-        {
-            name: "Comando",
-            rank: "Nv.1",
-            desc: "CAUSA ALUCINAÇÕES VISUAIS E AUDITIVAS NO ALVO, CONFUNDINDO-O."
-        },
-        {
-            name: "Escaneamento",
-            rank: "Nv.100",
-            desc: "ESCANEIA UMA GRANDE ÁREA PARA LOCALIZAR O ALVO DESIGNADO."
-        },
-        {
-            name: "Manifestação do Herói",
-            rank: "Nv.1",
-            desc: "COMPRIME O PODER MASSIVO PARA QUE FLUA ATRAVÉS DO CORPO. \n\n※ PENALIDADE: A FORÇA TRIPLICA, MAS O DANO RECEBIDO TAMBÉM."
-        },
-        {
-            name: "Braço Direito do Herói",
-            rank: "Nv.1",
-            desc: "COMPRIME O PODER MASSIVO No Punho e Causa uma Explosão."
-        },
-        {
-            name: "Dominação",
-            rank: "Nv.1",
-            desc: "MAXIMIZA A ESSÊNCIA DO MESTRE PARA SOBRESCREVER COMPLETAMENTE O ALVO COM SUA PRÓPRIA PERSONALIDADE, MEMÓRIAS E HABILIDADES. \n\n※ PENALIDADE: SÓ PODE SER USADO UMA VEZ NA VIDA, E O INDIVÍDUO SOBRESCRITO NÃO PODERÁ USAR ESSA HABILIDADE NOVAMENTE."
-        },
-        {
-            name: "Transferência de Memórias",
-            rank: "Nv.1",
-            desc: "PERMITE QUE O USUÁRIO TRANSMITA SUAS MEMÓRIAS PARA QUALQUER SER SENCIENTE. \n\nA QUANTIDADE DE MEMÓRIAS TRANSFERÍVEIS É DETERMINADA PELO NÍVEL DE PROFICIÊNCIA."
-        },
-        {
-            name: "Desacelerar",
-            rank: "Nv.1",
-            desc: "PERMITE QUE O USUÁRIO Desacelere um Alvo Determinado."
-        },
-        {
             name: "Pequeno Gigante",
             rank: "Nv.1",
             desc: "Conprime Toda a Energia."
-        },
-        {
-            name: "Aceleração Infinita",
-            rank: "Nv.1",
-            desc: "Acelera um Determinado Alvo. \n\n※ Ao Acelerar Seu Sistema Nervoso e Circulatório é Possivel Fazer o Tempo de Recarga de Habilidade mais Rápido. \n※ Cuidado ao Acelerar Outras Pessoas Elas Podem não Aguentar e Morrer."
         },
         {
             name: "Trampolim",
@@ -1023,44 +1190,9 @@ export const universeSkills = {
             desc: "Cria uma Plataforma de Rebote Feita de Mana."
         },
         {
-            name: "Onde de Luz Coletora de Calor",
-            rank: "Nv.1",
-            desc: "Atrai Dois Feixes de Luz Concentrada em Uma Trajetória Fixa."
-        },
-        {
-            name: "Campo de Distorção",
-            rank: "Nv.1",
-            desc: "Distorce o Espaço Para Criar um Mundo Separado."
-        },
-        {
             name: "Gigantificação",
             rank: "Nv.1",
             desc: "Aumenta o Tamanho do Alvo. Não Funciona em Seres Vivos."
-        },
-        {
-            name: "Golpe Pesado",
-            rank: "Nv.1",
-            desc: "Aumenta a Densidade Muscular para Lançar Um Golpe Poderoso."
-        },
-        {
-            name: "Chama da Raposa",
-            rank: "Nv.1",
-            desc: "Lança Uma Bola de Fogo Azul."
-        },
-        {
-            name: "Brasa do Sol Negro",
-            rank: "Nv.1",
-            desc: "Lança Chamas Negras Contra um Alvo."
-        },
-        {
-            name: "Corte da Lua Cheia",
-            rank: "Nv.1",
-            desc: "Lança Um Grande Corte em 360 Graus."
-        },
-        {
-            name: "Raio Dividido",
-            rank: "Nv.1",
-            desc: "Lança Um Raio que se Dividi em Outros Para Acertar um ou Multiplos Alvos. \n\n※ A Quantidade de Vezes que o Raio se Divide Depende do Nível da Habilidade."
         },
         {
             name: "Sobrecarga Catalisadora",
@@ -1068,64 +1200,9 @@ export const universeSkills = {
             desc: "SÓ SE ATIVA QUANDO UM CERTO NÍVEL DE IMPACTO É RECEBIDO. \n\nUSA A ENERGIA ABSORVIDA COMO COMBUSTÍVEL PARA AMPLIFICAR SIGNIFICATIVAMENTE AS HABILIDADES BÁSICAS DO USUÁRIO."
         },
         {
-            name: "Resistência a Veneno",
-            rank: "Nv.1",
-            desc: "Cria Resistencia a Venenos. \n\n※ O Nível de Resistencia Aumenta Junta com o Nível."
-        },
-        {
-            name: "Barreira Defensiva de Ataques Físicos",
-            rank: "Nv.1",
-            desc: "Cria Uma Barreira Contra Ataques Físicos."
-        },
-        {
-            name: "Aprimoramento de Performance da Conexão Neural",
-            rank: "Nv.1",
-            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n※ PENALIDADE: O Uso Contínuo em Baixo Nível Pode Causar Enxaquecas e Sobrecarga no Sistema Nervoso."
-        },
-        {
-            name: "Aprimoramento de Performance da Conexão Neural (Nv.30)",
-            rank: "Nv.30",
-            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas."
-        },
-        {
-            name: "Aprimoramento de Performance da Conexão Neural (Nv.60)",
-            rank: "Nv.60",
-            desc: "OTIMIZA AS SINAPSES E A COMUNICAÇÃO ENTRE O CÉREBRO E O CORPO. \n\nA VELOCIDADE DE RACIOCÍNIO, PERCEPÇÃO E REFLEXOS SÃO AUMENTADOS. O TEMPO DE REAÇÃO DO USUÁRIO DIMINUI PROPORCIONALMENTE AO [NÍVEL DA SKILL]. \n\n - Efeito Adicional 'Processamento Paralelo': O Cérebro Agora Pode Dividir Focos de Atenção Perfeitamente. Aumenta a Sincronia e o Controle Preciso Sobre Múltiplos Clones e Múltiplas Conjurações Simultâneas. \n - Efeito Adicional 'Dilatação Perceptiva': Em Situações de Perigo Extremo, a Percepção de Tempo do Usuário se Altera Drasticamente, Fazendo o Mundo ao Redor Parecer Estar em Câmera Lenta."
-        },
-        {
-            name: "Transformação Escaldante",
-            rank: "Nv.1",
-            desc: "CONVERTE A MATÉRIA DE UM ALVO DESIGNADO EM ENERGIA TÉRMICA EXTREMA Levando a Combustão."
-        },
-        {
             name: "Ruptura de Pressão",
             rank: "Nv.1",
             desc: "MANIPULA A PRESSÃO ATMOSFÉRICA EM UM PONTO ESPECÍFICO ATÉ CAUSAR UMA RUPTURA EXPLOSIVA."
-        },
-        {
-            name: "Prisão de Pedra",
-            rank: "Nv.1",
-            desc: "Cria uma Prisão de Pedra Usando o Terreno que Envolve e Prende o Alvo."
-        },
-        {
-            name: "Lança das Tempestades",
-            rank: "Nv.1",
-            desc: "Cria Lanças de Tempestade e Lança-as no Alvo Designado."
-        },
-        {
-            name: "Trovão Prismático",
-            rank: "Nv.1",
-            desc: "Cria um Prisma que Lança Raios no Alvo."
-        },
-        {
-            name: "Escudo Multicamas de Hiper-Escala",
-            rank: "Nv.100",
-            desc: "Cria um Escudo de Várias Camadas Hexagonais em Hiper-Escala."
-        },
-        {
-            name: "Barreira de Supressão Muscular",
-            rank: "Nv.1",
-            desc: "Cria Uma Barreira que Envolve o Alvo e Suprime Seus Movimentos."
         },
     ],
 };

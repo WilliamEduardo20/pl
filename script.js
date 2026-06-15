@@ -316,9 +316,7 @@ function renderizarMenu(tipo) {
                     <p class="habilidade equipado" style="opacity: 0.4; cursor: not-allowed;">
                         ${universo} <strong class="direita" style="color: #94a3b8;">[Escolhido]</strong>
                     </p>`;
-            } else {
-                menu.innerHTML += `<p class="habilidade" onclick="sincronizar('${nomeTratado}', '', 'universo')">${universo}</p>`;
-            }
+            } else { menu.innerHTML += `<p class="habilidade" onclick="sincronizar('${nomeTratado}', '', 'universo')">${universo}</p>`; }
         }
         return;
     }
@@ -361,36 +359,47 @@ function renderizarMenu(tipo) {
 
     if (listaElementos && listaElementos.length > 0) {
         
-        // ORDENAÇÃO APLICADA: 1º Raridade > 2º Nome > 3º Nível
-        const elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
-            const pesosA = obterPesosRank(a.rank);
-            const pesosB = obterPesosRank(b.rank);
-            
-            // 1° Regra: Por Raridade (Decrescente - EX > E)
-            if (pesosB.raridade !== pesosA.raridade) {
-                return pesosB.raridade - pesosA.raridade;
-            }
-            
-            // 2° Regra: Por Nome (Ordem Alfabética de A a Z)
-            const comparacaoNome = a.name.localeCompare(b.name);
-            if (comparacaoNome !== 0) {
-                return comparacaoNome;
-            }
-            
-            // 3° Regra: Por Nível (Decrescente - Nv.MAX > Nv.1)
-            // (Só chega aqui se a Raridade e o Nome forem exatamente iguais)
-            return pesosB.nivel - pesosA.nivel;
-        });
+        let elementosOrdenados = [];
 
-        // Loop de renderização (usando a lista ordenada)
+        // 1. VERIFICA SE É O UNIVERSO 3, 4 OU 5
+        // (Lembrando que os arrays em JavaScript começam do 0, então índice 3 é o 4º universo. 
+        //  Se quiser alterar os universos, basta mexer no array [3, 4, 5])
+        if ([3, 4, 5].includes(universoIndex)) {
+            // Não ordena, apenas filtra para garantir que tem o nome
+            elementosOrdenados = listaElementos.filter(item => item && item.name);
+        } else {
+            // ORDENAÇÃO APLICADA PADRÃO PARA OS OUTROS UNIVERSOS: 1º Raridade > 2º Nome > 3º Nível
+            elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
+                const pesosA = obterPesosRank(a.rank);
+                const pesosB = obterPesosRank(b.rank);
+                
+                if (pesosB.raridade !== pesosA.raridade) { return pesosB.raridade - pesosA.raridade; }
+                const comparacaoNome = a.name.localeCompare(b.name);
+                if (comparacaoNome !== 0) { return comparacaoNome; }
+                return pesosB.nivel - pesosA.nivel;
+            });
+        }
+
+        // Loop de renderização (usando a lista ordenada ou a lista na ordem original)
         for (let i = 0; i < elementosOrdenados.length; i++) {
             const item = elementosOrdenados[i];
+            
+            // ===== NOVA REGRA: DETECTAR ELEMENTO DE SEPARAÇÃO =====
+            // Se o item possuir o type "Seraparação", carrega o HTML desejado
+            if (item.type === "Seraparação") {
+                // Aqui usamos ${item.name} para pegar o texto do banco (ex: "Clonagem"),
+                // ou você pode colocar um texto fixo se preferir.
+                menu.innerHTML += `<div class="linha-com-texto">${item.name}</div>`;
+                continue; // Pula o resto do código e vai pro próximo elemento (para não criar uma habilidade clicável)
+            }
+            // ========================================================
             
             const nomeTratado = item.name.replace(/'/g, "\\'");
             let nomeExibido = item.name;
             if (nomeExibido.length > 40) nomeExibido = nomeExibido.substring(0, 40) + "...";
 
-            let classeRank = item.rank.replace(/[+\-]/g, '').trim();
+            // (item.rank || '') garante que o código não quebre caso algum item esqueça a propriedade rank no banco de dados
+            let classeRank = (item.rank || '').replace(/[+\-]/g, '').trim();
             if (['???', '??', '?'].includes(classeRank)) classeRank = 'Desconecido';
             if (['Lv.1', 'Lv.2'].includes(classeRank)) classeRank = 'Lv';
             if (classeRank === 'Lv.MAX') classeRank = 'MAX';
@@ -409,8 +418,8 @@ function renderizarMenu(tipo) {
                     </p>`;
             }
         }
-    } else {
-        menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">${configAtual.mensagemVazio}</p>`;
+    } else { 
+        menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">${configAtual.mensagemVazio}</p>`; 
     }
 }
 
