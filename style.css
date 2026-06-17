@@ -90,6 +90,11 @@ hr {
 .rankIncomum { color: #016604; text-shadow: rgba(1, 102, 4, 0.5) 0px 0px 6px; }
 .rankComum { color: #40464D; text-shadow: rgba(64, 70, 77, 0.5) 0px 0px 6px; }
 
+.rankSSR { color: #FFD700; text-shadow: rgba(255, 215, 0, 0.5) 0px 0px 6px; }
+.rankSR { color: #c445ff; text-shadow: rgba(214, 123, 255, 0.5) 0px 0px 6px; }
+.rankR { color: #47daff; text-shadow: rgba(0, 204, 255, 0.5) 0px 0px 6px; }
+.rankN { color: #A0A0A0; text-shadow: rgba(160, 160, 160, 0.5) 0px 0px 6px; }
+
 .estado {
     color: #ff3366;
     text-shadow: 0 0 5px rgba(255, 51, 102, 0.5);

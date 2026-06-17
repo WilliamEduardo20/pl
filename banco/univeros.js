@@ -4,5 +4,6 @@ export const universos = [
     "Climbing The Tower With a Time Stop Ability",
     "Solo Leveling",
     "Solo Leveling Ragnarok",
-    "Auto Hunting With My Clones"
+    "Auto Hunting With My Clones",
+    "I Become The Tyrant of a Tower Defense Game"
 ];

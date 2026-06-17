@@ -881,4 +881,61 @@ export const universeItens = {
             desc: "UM CRISTAL COM O ATRIBUTO DE FORÇA. \nCOMO USAR: ABSORVA ATIVANDO A SUA MANA. Ou Coma. \nEFEITO: A FORÇA AUMENTA PERMANENTEMENTE EM 0,005. \n\n※ ATENÇÃO: O ALVO SE TRANSFORMA EM UM MONSTRO EVENTUALMENTE SE OS CRISTAIS FOREM USADOS EXCESSIVAMENTE."
         },
     ],
+    6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
+        {
+            name: "Pergaminho de Invocação",
+            rank: "?",
+            desc: "TORRE DE AUTODEFESA \n&lt;Habilidade de Jogador&gt; \n\n※ O Poder da Torre Depende da Qualidade Dos Materias Utilizados Nela."
+        },
+        {
+            name: "Golpe de Sorte Nv.7",
+            rank: "SSR",
+            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Não Tirar Nenhum Numero Igual o Usuário Leva Uma Grande Quantidade de Dano."
+        },
+        {
+            name: "Artefato Canhão Ancestral de Mana",
+            rank: "SR",
+            desc: "Canhão Mágico que Dispara Balas Poderosas com Mana."
+        },
+        {
+            name: "Artefato de Campo Gravitacional",
+            rank: "SR",
+            desc: "Cria Uma Área Esferica onde a Gravidade é Aumentada, Por um Certo Periodo de Tempo."
+        },
+        {
+            name: "Artefato de Velocidade",
+            rank: "SR",
+            desc: "Velocidade de Movimento e de Ataque Aumentam em 5%. \nDurante 5 Minutos."
+        },
+        {
+            name: "Cristais Mágicos de Aranha Negra",
+            rank: "SR",
+            desc: "Estes Cristais Possuem uma Pureza Muita Alta de Mana."
+        },
+        {
+            name: "Artefato Amplificador de Mana",
+            rank: "R",
+            desc: "Aumenta o Poder Mágico de uma Unidade em 100%."
+        },
+        {
+            name: "Cortadora de Ratos Nv.15",
+            rank: "R",
+            desc: "Classe - ESPADA LONGA \nATAQUE - 20-25 \nDURABILIDADE - 25/25 \n\nAPLICA 25% DE DANO ADICIONAL AO ATACAR MONSTROS DO TIPO RATO. \n\n'VAMOS MATAR TODOS OS RATOS! QUII, QUII, QUII!' \n&lt;Um Certo Administrador de Esgoto&gt;"
+        },
+        {
+            name: "Bau de Rank",
+            rank: "R",
+            desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é R"
+        },
+        {
+            name: "Besta Comum Nv.10",
+            rank: "N",
+            desc: "ATAQUE - 10-15 \nDURABILIDADE - 30/30 \nBÔNUS - NENHUM"
+        },
+        {
+            name: "Bau de Rank",
+            rank: "N",
+            desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é N"
+        },
+    ]
 };

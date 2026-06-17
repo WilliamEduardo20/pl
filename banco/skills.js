@@ -1205,4 +1205,66 @@ export const universeSkills = {
             desc: "MANIPULA A PRESSÃO ATMOSFÉRICA EM UM PONTO ESPECÍFICO ATÉ CAUSAR UMA RUPTURA EXPLOSIVA."
         },
     ],
+    6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
+        {
+            name: "Olho de Mil Milhas",
+            rank: "?",
+            desc: "UMA CARACTERÍSTICA QUE SURGIU POR CAUSA DE UM ERRO DE DEUS. \n\nVOCÊ É CAPAZ DE VER E ACERTAR QUALQUER COISA QUE QUISER. \n\nPRECISÃO +999 \n\n※ Efeito Colateral: Quanto Maior a Distância do Disparo Maior será a Pessão nos Olhos, Uso Continuo Pode Causar Sangramento e Cegueira \n※ A Habilidade Ignora Diferença de Altitude, Distância e Inimigos no Caminho. O Tiro Acerta sem um Centímetro de Erro."
+        },
+        {
+            name: "Comandante Indomável",
+            rank: "EX",
+            desc: "UMA HABILIDADE CRIADA PELO ESPÍRITO NOBRE QUE NUNCA DESISTE EM QUAL QUER SITUAÇÃO. \n\nCONCEDE IMUNIDADE A DEBUFFS MENTAIS A TODOS OS ALIADOS DENTRO DE UM RAIO DE 10M."
+        },
+        {
+            name: "Criação de Mapa",
+            rank: "EX",
+            desc: "Permite Ver a Área Inteira na Forma de um Mini Mapa, Mostrando Inimigos como Pontos Vermelhos."
+        },
+        {
+            name: "Golpe de Determinação",
+            rank: "SSR",
+            desc: "UMA Habilidade que Acumula e Fica Mais Forte Quanto Mais Inimigos o Usuario Mata."
+        },
+        {
+            name: "Pele de Fogo",
+            rank: "SR",
+            desc: "UMA CARACTERÍSTICA CRIADA POR MEDO SUPREMO A ARMAS AFIADAS. \n\nÉ POSSÍVEL DESVIAR TODO O DANO FÍSICO TRANSFORMANDO SEU CORPO EM FOGO. \n\nTODO DESVIO CONSUMIRÁ Mana."
+        },
+        {
+            name: "Método de Sobrevivência de um Ladrãozinho",
+            rank: "SR",
+            desc: "HÁBITOS DE SEU TEMPO QUANDO ERA UM LADRÃOZINHO. \n\nVOCÊ CONSEGUE REDUZIR SUA PRESENÇA EM FRENTE AO PERIGO E EVITAR CHAMAR ATENÇÃO. \n\nCONSOME MUITOS Pontos de Vida QUANDO UTILIZADO."
+        },
+        {
+            name: "Zona de Clareamento",
+            rank: "SR",
+            desc: "Atrai e Lança Raios no Inimigo usando Mana. \n\nQuando o Raio Acerta uma vez Deixa uma Marca no Inimigo Acertado, Quando o Raio Acerta uma segunda vez Garante um Ataque Adicional no Inimigo Marcado."
+        },
+        {
+            name: "Símbolo de Ataque",
+            rank: "Nv.1",
+            desc: "AUMENTA O MORAL DOS ALIADOS APENAS POR ESTAR NO CAMPO DE BATALHA. \n\nPROVENDO UM BÔNUS DE ATAQUE DE 5% A TODOS OS ALIADOS."
+        },
+        {
+            name: "Símbolo de Defesa",
+            rank: "Nv.1",
+            desc: "AUMENTA O MORAL DOS ALIADOS APENAS POR ESTAR NO CAMPO DE BATALHA. \n\nPROVENDO UM BÔNUS DE DEFESA DE 5% A TODOS OS ALIADOS."
+        },
+        {
+            name: "Super Buffer",
+            rank: "Nv.1",
+            desc: "OS EFEITOS DOS BUFFS PROVIDOS PELAS UNIDADES DO COMANDANTE SÃO AUMENTADOS EM UM NÍVEL."
+        },
+        {
+            name: "Ordem Principal",
+            rank: "Nv.1",
+            desc: "A HABILIDADE DE DAR COMANDOS COM PRECISÃO NO CAMPO DE BATALHA. TRANSMITE AS INTENÇÕES DO COMANDANTE COM MAIS PRECISÃO, FAZENDO OS SUBORDINADOS AGIREM COMO UMA PARTE DO CORPO DO COMANDANTE."
+        },
+        {
+            name: "Sinergia de Grupo",
+            rank: "Nv.1",
+            desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%."
+        },
+    ]
 };
