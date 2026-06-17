@@ -883,14 +883,49 @@ export const universeItens = {
     ],
     6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
         {
-            name: "Pergaminho de Invocação",
+            name: "Pergaminho de Invocação - Torre de Defesa Automatica",
             rank: "?",
-            desc: "TORRE DE AUTODEFESA \n&lt;Habilidade de Jogador&gt; \n\n※ O Poder da Torre Depende da Qualidade Dos Materias Utilizados Nela."
+            desc: "Torre de Defesa Automatica \n&lt;Habilidade de Jogador&gt; \n\nAo Ser Usado o Jogador Aprende a Habilidade [Torre de Defesa Automatica]."
+        },
+        {
+            name: "Pergaminho de Invocação - Golem Gigante de Motor á Vapor",
+            rank: "?",
+            desc: "GOLEM GIGANTE DE MOTOR À VAPOR \n&lt;Habilidade de Jogador&gt; \n\nAo Ser Usado o Jogador Aprende a Habilidade [GOLEM GIGANTE DE MOTOR À VAPOR]."
         },
         {
             name: "Golpe de Sorte Nv.7",
             rank: "SSR",
-            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Não Tirar Nenhum Numero Igual o Usuário Leva Uma Grande Quantidade de Dano."
+            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos."
+        },
+        {
+            name: "Rainha Negra Nv.55",
+            rank: "SSR",
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 225-250 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS E MATA INIMIGOS NO LOCAL EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nA PROBABILIDADE AUMENTA PROPORCIONALMENTE À PROFICIÊNCIA DA PESSOA COM A ARMA. \n\nMAIS DETALHES ▼"
+        },
+        {
+            name: "Núcleo de Mana da Rainha Negra Nv.55",
+            rank: "SSR",
+            desc: "Núcleo de Mana da Poderosa Rainha Negra. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem a Vontade da Rainha Negra."
+        },
+        {
+            name: "Diabo da Lança Nv.35",
+            rank: "SSR",
+            desc: "TIPO: LANÇA \nATAQUE: 35-40 \nDURABILIDADE: 20/20 \n\nQUANDO VOCÊ ATINGE DIRETAMENTE O PONTO FRACO DO SEU OPONENTE, O Dano Causado Aumenta em 40%. \n\n※ Faz Parte do Conjunto 'DIABO E GIGANTE [1/2]': QUANDO AMBOS OS ITENS SÃO EQUIPADOS AO MESMO TEMPO, O EFEITO DE SUAS HABILIDADES ESPECIAIS AUMENTA EM 50%. \nA AURA DO MONSTRO...! DESAPARECEU...? \n&lt;Camarada de Algum Cavaleiro&gt;"
+        },
+        {
+            name: "Gigante do Escudo Nv.35",
+            rank: "SSR",
+            desc: "TIPO: ESCUDO \nDEFESA: 35-40 \nDURABILIDADE: 20/20 \n\nQUANDO VOCÊ BLOQUEIA DIRETAMENTE O ATAQUE DE UM OPONENTE, O DANO QUE VOCÊ RECEBE DIMINUI EM 30%."
+        },
+        {
+            name: "Ginsen de 100 Anos",
+            rank: "SSR",
+            desc: "Melhora o Físco para Melhor Controlar Mana e Aumenta a Quantidade de Mana."
+        },
+        {
+            name: "Tocha de Fogo Azul",
+            rank: "SR",
+            desc: "Uma Tocha de Fogo Azul Inextinguivel"
         },
         {
             name: "Artefato Canhão Ancestral de Mana",
@@ -908,9 +943,54 @@ export const universeItens = {
             desc: "Velocidade de Movimento e de Ataque Aumentam em 5%. \nDurante 5 Minutos."
         },
         {
+            name: "Artefato de Lança Chmas",
+            rank: "SR",
+            desc: "Lança Chamas em uma Grande Área. \nTempo de Recarga 10 Minutos."
+        },
+        {
+            name: "Lança da Família Cross Nv.30",
+            rank: "SR",
+            desc: "TIPO: LANÇA \nATAQUE: 25-30 \nDURABILIDADE: 30/30 \n\nARMA PESSOAL DO PERSONAGEM [EVANGELINE CROSS]. SEUS VERDADEIROS PODERES SERÃO DESBLOQUEADOS QUANDO APRIMORADOS. \n\n※ Faz Parte do Conjunto 'HERDEIRO DA FAMÍLIA CROSS [1/2]: EFEITO DE CONJUNTO PESSOAL DO PERSONAGEM [EVANGELINE CROSS]. \nQUANDO O PERSONAGEM EQUIPA AMBOS OS ITENS AO MESMO TEMPO, ELES OBTÊM A CARACTERÍSTICA PESSOAL [ENCRUZILHADA]."
+        },
+        {
+            name: "Escudo da Família Cross Nv.30",
+            rank: "SR",
+            desc: " TIPO: ESCUDO \nATAQUE: 25-30 \nDURABILIDADE: 30/30 \n\nESCUDO PESSOAL DO PERSONAGEM [EVANGELINE CROSS]. SEUS VERDADEIROS PODERES SERÃO DESBLOQUEADOS QUANDO APRIMORADOS. \n\n※ Faz Parte do Conjunto 'HERDEIRO DA FAMÍLIA CROSS [1/2]: EFEITO DE CONJUNTO PESSOAL DO PERSONAGEM [EVANGELINE CROSS]. \nQUANDO O PERSONAGEM EQUIPA AMBOS OS ITENS AO MESMO TEMPO, ELES OBTÊM A CARACTERÍSTICA PESSOAL [ENCRUZILHADA]."
+        },
+        {
+            name: "O Orbe dos Gritos Nv.30",
+            rank: "SR",
+            desc: "TIPO: ORBE MÁGICO \nATAQUE: 40-45 \nDURABILIDADE: 15/15 \n\nSEMPRE QUE VOCÊ DERROTA UM OPONENTE SUCESSIVAMENTE, O DANO DO PRÓXIMO ATAQUE AUMENTA EM 5%. ESSE EFEITO DURA 30 SEGUNDOS. \n\n※ Faz Parte do Conjunto 'VOCÊ DEVE GRITAR' [1/3]: QUANDO TODO O CONJUNTO FOR EQUIPADO, UM ESTADO DE MEDO SERÁ INDUZIDO EM UMA GRANDE ÁREA SEMPRE QUE UM INIMIGO FOR DERROTADO."
+        },
+        {
+            name: "Justiça do Caçador Lv.25",
+            rank: "SR",
+            desc: "CATEGORIA: ARMA DE MANA \nATAQUE: 50-75 \nDURABILIDADE: 5/5 \nCAPACIDADE: 10/10 \n\nAO ATACAR UM INIMIGO PELAS COSTAS, HÁ UM AUMENTO DE 10% NA CHANCE DE UM ATAQUE CRÍTICO \n\n※ Armas Mágicas São Instaveis, Dificeis de Mirar e Tem Pouca Munição."
+        },
+        {
+            name: "Armadura do Espectro Nv.30",
+            rank: "SR",
+            desc: "CLASSE - ARMADURA \nDEFESA - 50-55 \nDURABILIDADE - 12/12 \nAUMENTA A RESISTÊNCIA FÍSICA DA UNIDADE EM 33% \n\nA UNIDADE ADQUIRE A CARACTERÍSTICA [MODO ESPECTRO]."
+        },
+        {
+            name: "Botas Mágicas Nv.12",
+            rank: "SR",
+            desc: "CLASSE - ARMADURA \nDEFESA - 20-30 \nDURABILIDADE - 15/15 \nAUMENTA A Velocidade de Movimento."
+        },
+        {
+            name: "Gerador de Poções",
+            rank: "SR",
+            desc: "Gera Poções em um Intervalo Constante."
+        },
+        {
             name: "Cristais Mágicos de Aranha Negra",
             rank: "SR",
             desc: "Estes Cristais Possuem uma Pureza Muita Alta de Mana."
+        },
+        {
+            name: "Núcleo de Mana de Alta Qualidade",
+            rank: "SR",
+            desc: "Núcleo de Mana de Alta Qualidade com uma Alta Quantidade de Mana Pura."
         },
         {
             name: "Artefato Amplificador de Mana",
@@ -923,9 +1003,19 @@ export const universeItens = {
             desc: "Classe - ESPADA LONGA \nATAQUE - 20-25 \nDURABILIDADE - 25/25 \n\nAPLICA 25% DE DANO ADICIONAL AO ATACAR MONSTROS DO TIPO RATO. \n\n'VAMOS MATAR TODOS OS RATOS! QUII, QUII, QUII!' \n&lt;Um Certo Administrador de Esgoto&gt;"
         },
         {
+            name: "Núcleo Mágico",
+            rank: "R",
+            desc: "Núcleo Mágico com Grande Quantidade de Mana."
+        },
+        {
             name: "Bau de Rank",
             rank: "R",
             desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é R"
+        },
+        {
+            name: "Pica-Pau Nv.20",
+            rank: "N",
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 25-26 \nDURABILIDADE: 20/20 \n\nDEVIDO AO ERRO DO FABRICANTE, QUANDO ACIONADA, TODAS AS BALAS SERÃO DISPARADAS. \n\nQUANDO DISPARADO CONSECUTIVAMENTE, A PRECISÃO DIMINUI.  "
         },
         {
             name: "Besta Comum Nv.10",

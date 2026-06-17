@@ -1207,6 +1207,11 @@ export const universeSkills = {
     ],
     6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
         {
+            name: "Torre de Defesa Automatica",
+            rank: "?",
+            desc: "Permite Invocar uma Torre de Defesa em um Local Especificado Usando um Núcleo Mágico[N á SSR] e Materiais Como Madeira, Pedra, Metal, Entre Outros \n\nModo de Batalha: Quando Ativado a Eficiencia Dobra em Batalha, Mas não Pode ser Mantido Por Muito Tempo Devido ao uso Limitado de Mana \n\n※ O Poder da Torre Depende da Qualidade Dos Materias Utilizados Nela."
+        },
+        {
             name: "Olho de Mil Milhas",
             rank: "?",
             desc: "UMA CARACTERÍSTICA QUE SURGIU POR CAUSA DE UM ERRO DE DEUS. \n\nVOCÊ É CAPAZ DE VER E ACERTAR QUALQUER COISA QUE QUISER. \n\nPRECISÃO +999 \n\n※ Efeito Colateral: Quanto Maior a Distância do Disparo Maior será a Pessão nos Olhos, Uso Continuo Pode Causar Sangramento e Cegueira \n※ A Habilidade Ignora Diferença de Altitude, Distância e Inimigos no Caminho. O Tiro Acerta sem um Centímetro de Erro."
@@ -1222,9 +1227,29 @@ export const universeSkills = {
             desc: "Permite Ver a Área Inteira na Forma de um Mini Mapa, Mostrando Inimigos como Pontos Vermelhos."
         },
         {
+            name: "Golem Gigante de Motor á Vapor",
+            rank: "SSR",
+            desc: "Permite Invocar um GOLEM GIGANTE DE MOTOR À VAPOR \n\nO Usuário Pode Controlar o Golem a Distância, O Golem pode Gerar um Escudo Protetor, Priorizar Alvos e se Auto Destruir. \n\n※ O Golem só Pode ser Invocado uma Vez."
+        },
+        {
             name: "Golpe de Determinação",
             rank: "SSR",
             desc: "UMA Habilidade que Acumula e Fica Mais Forte Quanto Mais Inimigos o Usuario Mata."
+        },
+        {
+            name: "Encruzilhada",
+            rank: "SSR",
+            desc: "&lt;CARACTERÍSTICA PESSOAL&gt; \nEVANGELINE CROSS \n\nUMA CARACTERÍSTICA QUE É A PERSONIFICAÇÃO DA HISTÓRIA DA FAMÍLIA CROSS DE MATAR MONSTROS E PROTEGER PESSOAS. \n\nEM QUALQUER BATALHA, PERMITE AO USUÁRIO ENCONTRAR A MELHOR ESCOLHA DE CAMINHO E SE MOVER DE ACORDO. \n\nQUANDO ATIVADA, O MP É CONTINUAMENTE EXAURIDO."
+        },
+        {
+            name: "Absorção de Dano",
+            rank: "SSR",
+            desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
+        },
+        {
+            name: "Provocação em Área",
+            rank: "SR",
+            desc: "Atrai Inimigos Dentro de um Grande Raio Até a Sua Direção."
         },
         {
             name: "Pele de Fogo",
@@ -1240,6 +1265,11 @@ export const universeSkills = {
             name: "Zona de Clareamento",
             rank: "SR",
             desc: "Atrai e Lança Raios no Inimigo usando Mana. \n\nQuando o Raio Acerta uma vez Deixa uma Marca no Inimigo Acertado, Quando o Raio Acerta uma segunda vez Garante um Ataque Adicional no Inimigo Marcado."
+        },
+        {
+            name: "Modo Espectro",
+            rank: "Nv.1",
+            desc: "NÃO PODE SER INTERROMPIDO POR MEIOS FÍSICOS POR 5 SEGUNDOS. \n\nA UNIDADE SERÁ IMUNE A TODOS ATAQUES, MAS TAMBÉM NÃO PODERÁ ATACAR OUTRAS UNIDADES."
         },
         {
             name: "Símbolo de Ataque",
@@ -1264,7 +1294,7 @@ export const universeSkills = {
         {
             name: "Sinergia de Grupo",
             rank: "Nv.1",
-            desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%."
+            desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n※ Combinação 3 (CAVALEIROS Duplos [2 CAVALEIROS]): A DEFESA FÍSICA DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%."
         },
     ]
 };

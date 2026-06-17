@@ -41,5 +41,12 @@ export const universeConstitution = {
             "rank": "SS",
             "desc": "Sua Boca produz o Veneno do Caracol de Cone um dos Animais Venenos mais Mortais da Natureza. \n\n※ Ele se mistura com a mana dentro do corpo e fica concentrado, se tornando um veneno muito mais mortal."
         },
+    ],
+    6: [ //I Become The Tyrant of a Tower Defense Game
+        {
+            "name": "Jovenzinha Desajeitada",
+            "rank": "R",
+            "desc": "POR SER TÃO JOVEM E INEXPERIENTE, PODE VIR A COMETER ERROS ÀS VEZES. \n\nAS CHANCES DE COMETER ERROS MENORES OU MAIORES AUMENTAM NO CAMPO DE BATALHA \n\nAPÓS TER CONQUISTADO EXPERIÊNCIA CONTÍNUA O SUFICIENTE, ESSA CARACTERÍSTICA DESAPARECERÁ."
+        },
     ]
 }
