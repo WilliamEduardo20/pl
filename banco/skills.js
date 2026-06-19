@@ -150,6 +150,10 @@ export const universeSkills = {
             name: "Quero me Tornar como Você", 
             rank: "S+", 
             desc: "AUTOMATICAMENTE ATIVADA QUANDO FOR MORTO POR UM INIMIGO. VOCÊ COPIA UMA DAS HABILIDADES DO INIMIGO QUE TE MATOU E A ASSUME PARA SI. NÃO DÁ PARA COPIAR DUAS VEZES DO MESMO OPONENTE. A HABILIDADE COPIADA É SELECIONADA ALEATORIAMENTE. \n\n※ PORÉM, VOCÊ VAI MORRER!" },
+        {
+            name: "Historiador",
+            rank: "S",
+            desc: "Um bom historiador apenas observa e registra. Você se torna capaz de ler as memórias do alvo como se estivesse folheando um livro biográfico, assistindo aos eventos passados da vida dele com a clareza de um espectador em terceira pessoa.\n\n※ Requisito: O alvo precisa possuir memórias residuais ou conscientes para serem lidas.\n※ Limitação: A habilidade exibe a perspectiva do alvo. Se as memórias dele forem falhas, fragmentadas ou tiverem sido alteradas por terceiros, a 'história' lida também estará comprometida." },
         { 
             name: "Cortejo do Mestre Das Marionetes", 
             rank: "S", 
@@ -178,10 +182,14 @@ export const universeSkills = {
             name: "Ecos de um Coração em Prantos", 
             rank: "A+", 
             desc: "VOCÊ PODE FORTALECER SUA AURA UTILIZANDO SUAS EMOÇÕES COMO COMBUSTÍVEL. QUÃO MAIS FORTE FOREM AS EMOÇÕES, MAIS REATIVA SERÁ SUA AURA. RESSENTIMENTO, RAIVA, TRISTEZA, ALEGRIA, NÃO IMPORTA QUE EMOÇÃO SEJA. \nO FOGO QUEIMA SEM DISCRIMINAÇÃO TODA A MADEIRA QUE RECEBE. \n\n※ PORÉM, VOCÊ SE TORNARÁ CADA VEZ MAIS VICIADO NAS EMOÇÕES USADAS." },
+        {
+            name: "Revelação do Passado Sombrio",
+            rank: "A",
+            desc: "Todo ser vivo guarda segredos que prefere esquecer. Esta habilidade vasculha a mente do alvo e arranca à força seus arrependimentos mais profundos, traumas e pecados ocultos, fazendo com que ele reviva tudo em um instante de agonia mental. \n\n※ Requisito: É estritamente necessário que o alvo possua memórias para serem lidas." },
         { 
             name: "A Salvação da Deusa Dilacerada", 
             rank: "A+", 
-            desc: "HOUVE UM TEMPO EM QUE UMA DEUSA DEDICOU SUA EXISTÊNCIA A UM HERÓI. MESMO APÓS SER DILACERADA POR ELE, AINDA ANSIAVA POR PERMANECER AO SEU LADO. ENTÃO, DESCEU DOS CÉUS E SELOU A SI MESMA DENTRO DE UMA CARTA DE HABILIDADE. \nA DEUSA TRANSFORMA MEMÓRIAS EM PODER. AO OFERECER LEMBRANÇAS A ELA, VOCÊ PODE AMPLIAR SUA FORÇA E HABILIDADES. QUANTO MAIS PRECIOSA FOR A MEMÓRIA SACRIFICADA, MAIOR SERÁ O APRIMORAMENTO CONCEDIDO. \n\n※ PORÉM, ESSE PODER É EFÊMERO E NÃO DURA POR MUITO TEMPO." },
+            desc: "HOUVE UM TEMPO EM QUE UMA DEUSA DEDICOU SUA EXISTÊNCIA A UM HERÓI. MESMO APÓS SER DILACERADA POR ELE, AINDA ANSIAVA POR PERMANECER AO SEU LADO. ENTÃO, DESCEU DOS CÉUS E SELOU A SI MESMA DENTRO DE UMA CARTA DE HABILIDADE. \nA DEUSA TRANSFORMA MEMÓRIAS EM PODER. AO OFERECER LEMBRANÇAS A ELA, VOCÊ PODE AMPLIAR SUA FORÇA E HABILIDADES. QUANTO MAIS PRECIOSA FOR A MEMÓRIA SACRIFICADA, MAIOR SERÁ O APRIMORAMENTO CONCEDIDO. \n\n※ PORÉM, ESSE PODER É EFÊMERO E NÃO DURA POR MUITO TEMPO. \n\n※ A Ativação Consiste em Falar o Aspecto que Deseja Aprimorar e o Preço que Deseja Pagar. \n※ Ex: Maximizar Visão e Audição, Preço: Uma Hora de Sua Memória. \n※ Ex: Aprimoramento de Golpe Unico, Preço: Memorias Sobre a Beleza do Por do Sol. \n※ Ex: Aprimoramento de Golpe Unico, Preço: Memorias Sobre o Som da Chuva." },
         { 
             name: "Só você pode Prevenir o Fogo", 
             rank: "A", 

@@ -18,6 +18,11 @@ export const universeItens = {
             desc: "Como é que isso pode ter gosto de morango se nem tem morango na receita?! \n E que efeito é esse?! \nDesde que o estado de preservação esteja bom, até partes do corpo amputadas podem ser recolocadas sem efeitos colaterais!" 
         },
         { 
+            name: "Diário Infinito", 
+            rank: "Lendário", 
+            desc: "A reverenciada Relíquia Sagrada da Ordem da Cachorrinha. \nNão se deixe enganar por sua aparência comum, pois este livro abriga uma quantidade infinita de páginas. Para que o usuário navegue por essa vastidão sem se perder, o diário é dotado de um incrível sistema de busca em três níveis: simples, complementar e detalhada. \n\n※ O item está sempre à disposição, podendo ser invocado e desinvocado livremente a qualquer momento pelo seu portador e por suas respectivas cópias. \n※ É impossível que esta Relíquia Sagrada seja roubada e lida, pois possui uma escrita codificada em uma linguagem que somente o portador pode compreender."
+        },
+        { 
             name: "Espada Sagrada da Proteção de Laefanta Aegim", 
             rank: "Lendário", 
             desc: "A lenda diz que uma Deusa presenteou o próprio fundador do Império Aegim com esta arma. \nAntes de se tornar uma lenda viva na história, o fundador desapareceu misteriosamente e levou a espada junto, deixando para trás apenas uma profecia: \n'Quando o dia destinado chegar, aquele que brandará a espada sagrada também aparecerá.' \nAquele que possuir a Espada Sagrada da Proteção receberá a confiança e o apoio absoluto de todas as pessoas do Império Aegim." 
