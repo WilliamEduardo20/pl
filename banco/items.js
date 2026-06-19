@@ -898,19 +898,74 @@ export const universeItens = {
             desc: "GOLEM GIGANTE DE MOTOR À VAPOR \n&lt;Habilidade de Jogador&gt; \n\nAo Ser Usado o Jogador Aprende a Habilidade [GOLEM GIGANTE DE MOTOR À VAPOR]."
         },
         {
+            name: "Colar do Rebelde",
+            rank: "EX",
+            desc: "O COLAR DO 'JOGADOR' QUE SE REBELA CONTRA O DESTINO. \n\nVOCÊ PODE USAR OS PONTOS DE EXPERIÊNCIA ACUMULADOS PARA FAZER COMPRAS EM SUA LOJA PESSOAL."
+        },
+        {
+            name: "Rastreador de Evento Escuro",
+            rank: "EX",
+            desc: "SEMPRE QUE UM EVENTO ESCURO OCORRER DURANTE UM ESTÁGIO, ELE SERÁ DETECTADO E VOCÊ RECEBERÁ UM AVISO."
+        },
+        {
+            name: "Radar de Detecção de Chefe",
+            rank: "EX",
+            desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nQUANDO UM MONSTRO CHEFE ESTÁ PRÓXIMO, ENVIARÁ UM AVISO."
+        },
+        {
+            name: "Bomba de Fuga de Emergência",
+            rank: "EX",
+            desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nUM ATORDAMENTO FORÇADO É APLICADO NOS MONSTROS AO REDOR, E A VELOCIDADE DE MOVIMENTO DO GRUPO DO JOGADOR AUMENTA EM 100%. CONSOME 1 [PERGAMINHO DE TELETRANSPORTE DE FUGA DE DUNGEON]."
+        },
+        {
+            name: "Pedaço da Bandeira do Grande Comandante",
+            rank: "SSR",
+            desc: "UM PEDAÇO DA BANDEIRA DO GRANDE COMANDANTE [1/5] \n\nEQUIPAMENTO PESSOAL DE 'ASH'. UM DOS CINCO PEDAÇOS DA [BANDEIRA DO GRANDE COMANDANTE (EX)]. \n\nQUANDO TODOS OS CINCO PEDAÇOS FOREM UNIDOS, FORMARÃO UMA ÚNICA BANDEIRA."
+        },
+        {
+            name: "Artefato do Início de Novo!",
+            rank: "SSR",
+            desc: "A Cada Batalha de Defesa, em que os Inimigos Passarem Pelo Reflexo Dourado. Eles Serão Forçados a Teleportar de Volta Para o Início. \n\n※ O Prato de Ouro Não é Tão Grande, Então não da Para Forçar um Grande Numero de Seres Vivos Voltarem."
+        },
+        {
             name: "Golpe de Sorte Nv.7",
             rank: "SSR",
-            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos."
+            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos, Suas Mãos Não Serão Mais Como Eram Antes."
+        },
+        {
+            name: "Maestro Lv.35",
+            rank: "SSR",
+            desc: "TIPO: VARINHA \nATAQUE: 35-50 \nDURABILIDADE: 10/10 \n\nCRIA ESPADAS MÁGICAS E AS CONTROLA NO AR. \n\nSE VOCÊ ATACAR COM A VARINHA EM SI, VOCÊ INFLIGIRÁ 1% DE DANO AO HP DO ALVO E IRÁ CONJURAR UM BUFF ALEATÓRIO. \n\n'TOQUEM AGORA!' \n&lt;Algum Maestro Brutal&gt; \n\n※ A Cada 1 Pontos De Mana 1 Espada Pode Ser Invocada, Depois de 5 Golpes as Espadas vão se Quebrar."
         },
         {
             name: "Rainha Negra Nv.55",
             rank: "SSR",
-            desc: "TIPO: ARMA DE MANA \nATAQUE: 225-250 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS E MATA INIMIGOS NO LOCAL EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nA PROBABILIDADE AUMENTA PROPORCIONALMENTE À PROFICIÊNCIA DA PESSOA COM A ARMA. \n\nMAIS DETALHES ▼"
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 225-250 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS CAPAZES DE MATAR OS INIMIGOS NO LOCAL INSTANTANEAMENTE, EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nESSA PROBABILIDADE AUMENTA PROPORCIONALMENTE DE ACORDO COM A PROFICIÊNCIA DA PESSOA COM A ARMA. \n\n????? \n[OPÇÃO BLOQUEADA - MATE INIMIGOS COM A ARMA. FALTAM 3.] \n\n????? \n[OPÇÃO BLOQUEADA - MATE INIMIGOS COM A ARMA. FALTAM 3.]"
         },
         {
             name: "Núcleo de Mana da Rainha Negra Nv.55",
             rank: "SSR",
             desc: "Núcleo de Mana da Poderosa Rainha Negra. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem a Vontade da Rainha Negra."
+        },
+        {
+            name: "Núcleo de Mana da Gargula Dourada",
+            rank: "SSR",
+            desc: "Núcleo de Mana da Poderosa Gargula Dourada. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem Parte das Estatisticas e Habilidade da Gargula Dourada."
+        },
+        {
+            name: "Núcleo de Mana da Gargula Chefe",
+            rank: "SSR",
+            desc: "Núcleo de Mana da Gargula Chefe. Contém uma Mana Poderosa. Pode Ser Usada Para Forjar Otimos Equipamentos."
+        },
+        {
+            name: "Núcleo de Mana Comum Especial",
+            rank: "SSR",
+            desc: "Núcleo de Mana. Contém uma Mana Poderosa. Pode Ser Usada Para Forjar Otimos Equipamentos."
+        },
+        {
+            name: "Núcleo de Mana Padrão Especial",
+            rank: "SSR",
+            desc: "Núcleo de Mana. Contém uma Mana Poderosa. Pode Ser Usada Para Forjar Otimos Equipamentos."
         },
         {
             name: "Diabo da Lança Nv.35",
@@ -923,9 +978,49 @@ export const universeItens = {
             desc: "TIPO: ESCUDO \nDEFESA: 35-40 \nDURABILIDADE: 20/20 \n\nQUANDO VOCÊ BLOQUEIA DIRETAMENTE O ATAQUE DE UM OPONENTE, O DANO QUE VOCÊ RECEBE DIMINUI EM 30%."
         },
         {
+            name: "Armadura de Golem Nv.35",
+            rank: "SSR",
+            desc: "TIPO: ARMADURA \nDEFESA: 70-80 \nDURABILIDADE: 40/40 \nSTAMINA +25 \n\nCADA CAMADA ADICIONAL DE ARMADURA AUMENTA A RESISTÊNCIA FÍSICA E MÁGICA DO PORTADOR EM 5%. MAX [50%] \n\nCADA CAMADA ADICIONAL DE ARMADURA REDUZ A VELOCIDADE DE MOVIMENTO E ATAQUE DO PORTADOR EM 2%. MAX[20%]"
+        },
+        {
+            name: "Capa Inivisível Nv1",
+            rank: "SSR",
+            desc: "TIPO: EQUIPAMENTO DE SUPORTE \nATAQUE: 0 \nDURABILIDADE: 3/3 \n\nQUANDO EQUIPADA, FICA INVISÍVEL PARA O INIMIGO, E O USUÁRIO GANHA NV. 3 EM FURTIVIDADE. \n\nA FURTIVIDADE PODE SER EXPOSTA POR UMA MAGIA DE DETECÇÃO DE ALTO NÍVEL, SEXTO SENTIDO OU OUTRAS CIRCUNSTÂNCIAS. QUANDO A FURTIVIDADE É QUEBRADA, TODOS OS INIMIGOS EM ATÉ 15 METROS, IRÃO OLHAR PARA VOCÊ."
+        },
+        {
+            name: "Espada Longa Estrela-de-Prata da Mortalidade Nv.40",
+            rank: "SSR",
+            desc: "TIPO: ESPADA LONGA \nATAQUE: 40-50 \nDURABILIDADE: 10/10 \n\nCAUSA 100% DE DANO ADICIONAL A TODOS OS INIMIGOS PROFANOS \n\nAo Lidar com Inimigos Profanos, A Defesa Dele é IGNORA \n\nAplica 75% da Redução de Cura ao Acertar um Golpe"
+        },
+        {
+            name: "Devoradora de Karma Nv.45",
+            rank: "SSR",
+            desc: "TIPO: ESPADA LONGA \nATAQUE: 30-40 \nDURABILIDADE: 20/20 \nFORÇA +10, ESPÍRITO +10 \n\nESSA ESPADA É PARA ALGUÉM QUE SE ESFORÇA EM MODERAÇÃO. LUZ E ESCURIDÃO, CAOS E ORDEM, ELA DEVORA TUDO QUE CAI SOBRE UM LADO E CONVERTE EM PODER. \n\nUMA ESPADA DE AURA É CRIADA GASTANDO PONTOS DE DISPOSIÇÃO. A ESPADA DE AURA MULTIPLICA O DANO MÁGICO DA ARMA EM 2. QUANDO PONTOS DE DISPOSIÇÃO SÃO USADOS CHEGAM A 0, A ESPADA DE AURA NÃO PODE SER USADA. \n\nABRIR O CATÁLOGO DE PONTOS DE DISPOSIÇÃO UTILIZÁVEIS"
+        },
+        {
             name: "Ginsen de 100 Anos",
             rank: "SSR",
             desc: "Melhora o Físco para Melhor Controlar Mana e Aumenta a Quantidade de Mana."
+        },
+        {
+            name: "Mistilteinn",
+            rank: "SSR",
+            desc: "Um Visco Demoniaco que Cresce Somente no Nivel mais Profundo da Dungeon do Lago. \nPode ser Usado para Forjar uma Arma Amaldiçoada que Reduz Drasticamente a Habilidade de Cura do Inimigo."
+        },
+        {
+            name: "Pedaço de Estrela de Prata",
+            rank: "SSR",
+            desc: "Obtido nas Profundo da Dungeon do Lago. É uma Prata Vinda de Outro Mundo que Veios das Estrelas. \nPode ser Usado para Forjar Armas Que Causam Dano Adicional a Inimigos Profanos."
+        },
+        {
+            name: "Fragmento da Escuridão",
+            rank: "SSR",
+            desc: "TIPO: MATERIAL \n\nUM CRISTAL FORMADO DA ESCURIDÃO DAS PROFUNDEZAS DO INFERNO. \n\nÉ UM ITEM RARO ENCONTRADO DEPOIS DA ZONA 5 NAS DUNGEONS. \n\nÉ DITO QUE SE VOCÊ SEGURAR ELE PERTO DA SUA ORELHA, VOCÊ PODE ESCUTAR SUSSURROS TÊNUES VINDOS DELE."
+        },
+        {
+            name: "Pergaminho de Teletransporte de Fuga de Dungeon",
+            rank: "SR",
+            desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nAo Ser Usado Trás o Usuario de Volta da Dungeons do Lago Direto Para a Entrada Por Onde Entrou."
         },
         {
             name: "Tocha de Fogo Azul",
@@ -943,12 +1038,17 @@ export const universeItens = {
             desc: "Cria Uma Área Esferica onde a Gravidade é Aumentada, Por um Certo Periodo de Tempo."
         },
         {
+            name: "Artefato Barreira Antimíssil",
+            rank: "SR",
+            desc: "Desacelera Projeteis dos Inimigos e Reduz o Dano Tomado, Por um Certo Periodo de Tempo."
+        },
+        {
             name: "Artefato de Velocidade",
             rank: "SR",
             desc: "Velocidade de Movimento e de Ataque Aumentam em 5%. \nDurante 5 Minutos."
         },
         {
-            name: "Artefato de Lança Chmas",
+            name: "Artefato de Lança Chamas",
             rank: "SR",
             desc: "Lança Chamas em uma Grande Área. \nTempo de Recarga 10 Minutos."
         },
@@ -968,14 +1068,44 @@ export const universeItens = {
             desc: "TIPO: ORBE MÁGICO \nATAQUE: 40-45 \nDURABILIDADE: 15/15 \n\nSEMPRE QUE VOCÊ DERROTA UM OPONENTE SUCESSIVAMENTE, O DANO DO PRÓXIMO ATAQUE AUMENTA EM 5%. ESSE EFEITO DURA 30 SEGUNDOS. \n\n※ Faz Parte do Conjunto 'VOCÊ DEVE GRITAR' [1/3]: QUANDO TODO O CONJUNTO FOR EQUIPADO, UM ESTADO DE MEDO SERÁ INDUZIDO EM UMA GRANDE ÁREA SEMPRE QUE UM INIMIGO FOR DERROTADO."
         },
         {
+            name: "Manto dos Gritos Nv.30",
+            rank: "SR",
+            desc: "TIPO: PROTEÇÃO DE TECIDO \nDEFESA: 15-20 \nDURABILIDADE: 20/20 \n\nTODA VEZ QUE VOCÊ DERROTAR UN INIMIGO, VOCÊ RECUPERA 1% DO PODER MÁGICO QUE PERDEU. \n\n※ Faz Parte do Conjunto 'VOCÊ DEVE GRITAR' [1/3]: QUANDO TODO O CONJUNTO FOR EQUIPADO, UM ESTADO DE MEDO SERÁ INDUZIDO EM UMA GRANDE ÁREA SEMPRE QUE UM INIMIGO FOR DERROTADO."
+        },
+        {
+            name: "Luva dos Gritos Nv.30",
+            rank: "SR",
+            desc: "TIPO: EQUIPAMENTO AUXILIAR \nDEFESA: 5-10 \nDURABILIDADE: 5/5 \nESPÍRITO +5, PODER MÁGICO +5 \n\nCADA VEZ QUE DERROTAR UM INIMIGO CONSECUTIVAMENTE, SUA TAXA DE DANO MÁGICO CRÍTICO AUMENTA EM 1% \n\nO EFEITO DURA 30 SEGUNDOS. \n\n※ Faz Parte do Conjunto 'VOCÊ DEVE GRITAR' [1/3]: QUANDO TODO O CONJUNTO FOR EQUIPADO, UM ESTADO DE MEDO SERÁ INDUZIDO EM UMA GRANDE ÁREA SEMPRE QUE UM INIMIGO FOR DERROTADO."
+        },
+        {
             name: "Justiça do Caçador Lv.25",
             rank: "SR",
             desc: "CATEGORIA: ARMA DE MANA \nATAQUE: 50-75 \nDURABILIDADE: 5/5 \nCAPACIDADE: 10/10 \n\nAO ATACAR UM INIMIGO PELAS COSTAS, HÁ UM AUMENTO DE 10% NA CHANCE DE UM ATAQUE CRÍTICO \n\n※ Armas Mágicas São Instaveis, Dificeis de Mirar e Tem Pouca Munição."
         },
         {
+            name: "Dor Recorrente Lv.35",
+            rank: "SR",
+            desc: "TIPO: BESTA \nATAQUE: 35-45 \nDURABILIDADE: 15/15 \n\nAPLICA 15% DE REDUÇÃO DE CURA A CADA ACERTO. \n30% DE CHANCE DE CONJURAR UMA MALDIÇÃO A CADA ACERTO. AS MALDIÇÕES SÃO ESCOLHIDAS ALEATORIAMENTE. \n\n&lt;EXPANDIR APLICÁVEIS DE LISTA MALDIÇÕES&gt;"
+        },
+        {
+            name: "Núcleo de Mana do Rei Espectro",
+            rank: "SR",
+            desc: "Núcleo de Mana do Poderosa Rei Espectro. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem uma das Habilidade do Rei Espectro."
+        },
+        {
             name: "Armadura do Espectro Nv.30",
             rank: "SR",
             desc: "CLASSE - ARMADURA \nDEFESA - 50-55 \nDURABILIDADE - 12/12 \nAUMENTA A RESISTÊNCIA FÍSICA DA UNIDADE EM 33% \n\nA UNIDADE ADQUIRE A CARACTERÍSTICA [MODO ESPECTRO]."
+        },
+        {
+            name: "Pedaços da Armadura Dourada",
+            rank: "SR",
+            desc: "Pedaços Da Armadura da Grande Gargula Dourada. \nDaria para Fazer um Otimo Equipamento com Isso."
+        },
+        {
+            name: "Armadura de Ouro Reparada Nv.35",
+            rank: "SR",
+            desc: "TIPO: ARMADURA \nDEFESA: 35-40 \nDURABILIDADE: 15/15 \nESPIRITO +10, MAGIA +20 \n\nA RESISTÊNCIA MÁGICA DO PORTADOR AUMENTA EM 25%. \n\nA PROBABILIDADE DE OBTER DINHEIRO AUMENTA EM 5%. \n\nO PORTADOR RECEBE O TRAÇO NEGATIVO [ESCARAVELHO DE OURO]."
         },
         {
             name: "Botas Mágicas Nv.12",
@@ -998,14 +1128,39 @@ export const universeItens = {
             desc: "Núcleo de Mana de Alta Qualidade com uma Alta Quantidade de Mana Pura."
         },
         {
+            name: "Pergaminho de Encantamento de Chamas",
+            rank: "SR",
+            desc: "Ao Ser Rasgado Invoca uma Poderosa Chama."
+        },
+        {
             name: "Artefato Amplificador de Mana",
             rank: "R",
             desc: "Aumenta o Poder Mágico de uma Unidade em 100%."
         },
         {
+            name: "Artefato de Vento",
+            rank: "R",
+            desc: "Lança Rajadas de Vento em uma Grande Área No Alvo. \nDica: Quando uma Magia de Vento Inferior Encontra uma Mágia de Vento Superior a Magia Inferior é Consumida pela Superior, Use com Sabedoria."
+        },
+        {
+            name: "Espada Longa de Prata Lv.30",
+            rank: "R",
+            desc: "TIPO: ESPADA LONGA \nATAQUE: 20-40 \nDURABILIDADE: 3/3 \n\nCAUSA 100% DE DANO ADICIONAL AO LIDAR COM INIMIGOS PROFANOS.  "
+        },
+        {
+            name: "Nucleo de Mana do Homem Rato Campeão",
+            rank: "R",
+            desc: "Núcleo de Mana do Homem Rato Campeçao. Contém uma Grande Quantidade de Mana. Armas Forjadas Com Este Nucleo Adquirem Parte das Estatisticas e Habilidade do Homem Rato Campeão."
+        },
+        {
             name: "Cortadora de Ratos Nv.15",
             rank: "R",
             desc: "Classe - ESPADA LONGA \nATAQUE - 20-25 \nDURABILIDADE - 25/25 \n\nAPLICA 25% DE DANO ADICIONAL AO ATACAR MONSTROS DO TIPO RATO. \n\n'VAMOS MATAR TODOS OS RATOS! QUII, QUII, QUII!' \n&lt;Um Certo Administrador de Esgoto&gt;"
+        },
+        {
+            name: "Cerberus Nv.25",
+            rank: "R",
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 11-66 \nDURABILIDADE: 6/6 \nCAPACIDADE: 6/6 \n\nA ÚLTIMA BALA DE CADA PENTE SEMPRE SERÁ UM ACERTO CRÍTICO. "
         },
         {
             name: "Núcleo Mágico",
@@ -1015,12 +1170,17 @@ export const universeItens = {
         {
             name: "Bau de Rank",
             rank: "R",
-            desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é R"
+            desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é R."
+        },
+        {
+            name: "Pedra Mágica de Sangue de Familiar de Baixo Nivel",
+            rank: "R",
+            desc: "Pedra Mágica de Sangue de Familiar de Baixo Nivel, Contem Uma Pequena Quantidade de Mana."
         },
         {
             name: "Pica-Pau Nv.20",
             rank: "N",
-            desc: "TIPO: ARMA DE MANA \nATAQUE: 25-26 \nDURABILIDADE: 20/20 \n\nDEVIDO AO ERRO DO FABRICANTE, QUANDO ACIONADA, TODAS AS BALAS SERÃO DISPARADAS. \n\nQUANDO DISPARADO CONSECUTIVAMENTE, A PRECISÃO DIMINUI.  "
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 25-26 \nDURABILIDADE: 20/20 \n\nDEVIDO AO ERRO DO FABRICANTE, QUANDO ACIONADA, TODAS AS BALAS SERÃO DISPARADAS. \n\nQUANDO DISPARADO CONSECUTIVAMENTE, A PRECISÃO DIMINUI."
         },
         {
             name: "Besta Comum Nv.10",
@@ -1031,6 +1191,11 @@ export const universeItens = {
             name: "Bau de Rank",
             rank: "N",
             desc: "Pode Vir Qualquer de Qualquer Rank, Quanto Maior o Rank Mais Raro é a Chance do Item vir, o Rank Mínimo a vir é N"
+        },
+        {
+            name: "Poção de Cura Normal",
+            rank: "N",
+            desc: "Pode Curar Ferimentos Leves ao Ser Ingerida."
         },
     ]
 };

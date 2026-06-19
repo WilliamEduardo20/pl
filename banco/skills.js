@@ -130,6 +130,11 @@ export const universeSkills = {
             desc: "As pessoas o admiram." },
     ],
     1: [ // Universo 2: SSS Class Revival Hunter
+        {
+            name: "",
+            rank: "",
+            desc: ""
+        },
         { 
             name: "Relógio do Regressor", 
             rank: "EX", 
@@ -146,6 +151,10 @@ export const universeSkills = {
             name: "Reencarnação das Cem Almas", 
             rank: "SSS", 
             desc: "VOCÊ PODE INVOCAR AS PESSOAS QUE MATA. OS MORTOS NÃO HERDARÃO AS HABILIDADES QUE POSSUÍAM QUANDO ESTAVAM VIVOS. MAS, SE VOCÊ DESEJAR, ELES PODEM HERDAR A APARÊNCIA E AS MEMÓRIAS DA VIDA PASSADA. CASO CONTRÁRIO, ELES SÓ SERÃO INVOCADOS COMO MONSTROS. \n\n※ PORÉM, VOCÊ SÓ PODE FAZER UMA INVOCAÇÃO POR SEMANA." },
+        { 
+            name: "Cântico das Estrelas Afins", 
+            rank: "SS", 
+            desc: "UMA MAGIA DE SUPRESSÃO EM GRANDE ESCALA QUE EMPRESTA OS PODERES DE CONSTELAÇÕES SELADAS NO PORÃO DE CINCO TORRES E OS MANIFESTA POR MEIO DE CÂNTICOS. CRIA UMA GIGANTESCA ÁREA DE EFEITO, POPULARMENTE CONHECIDA COMO 'TEIA DE ARANHA', QUE PRENDE E DEBILITA SEUS ALVOS. QUEM É DESIGNADO COMO ALVO DENTRO DESSA ÁREA SOFRE UMA DESTRUIÇÃO DE STATUS COMPLETA: OS EFEITOS DA SUA AURA, MAGIA E DEFESA MENTAL SÃO INSTANTANEAMENTE REDUZIDOS PELA METADE. COMO SE NÃO BASTASSE, OS EFEITOS DE QUAISQUER PENALIDADES QUE O ALVO JÁ POSSUA SERÃO DUPLICADOS. \n\n※ PORÉM, COMO EXIGE TEMPO DE RECONHECIMENTO E CONJURAÇÃO, O USUÁRIO DEVE PERMANECER NA RETAGUARDA RECITANDO OS CÂNTICOS ENQUANTO DEPENDE DE UMA VANGUARDA PARA CERCAR E SEGURAR O INIMIGO." },
         { 
             name: "Quero me Tornar como Você", 
             rank: "S+", 
@@ -1230,6 +1239,16 @@ export const universeSkills = {
             desc: "UMA HABILIDADE CRIADA PELO ESPÍRITO NOBRE QUE NUNCA DESISTE EM QUAL QUER SITUAÇÃO. \n\nCONCEDE IMUNIDADE A DEBUFFS MENTAIS A TODOS OS ALIADOS DENTRO DE UM RAIO DE 10M."
         },
         {
+            name: "Olho do Comandante",
+            rank: "EX",
+            desc: "VOCÊ PODE CONTROLAR A MENTE DO ALVO QUE VOCÊ FIZER CONTATO VISUAL. \n\nQUANTO MENOR O PODER MÁGICO DO ALVO, MAIOR A CHANCE DE SUCESSO DA HABILIDADE E MAIS TEMPO ELA IRA DURAR. \n\nNÃO TEM EFEITO EM ALIADOS QUE ESTÃO SOB A INFLUÊNCIA DA HABILIDADE [COMANDANTE INDOMAVEL]. \n\n※ A Problabilidade de Sucesso Depende da Dificuldade do Comando e do Status do Alvo."
+        },
+        {
+            name: "Seja Meu!",
+            rank: "EX",
+            desc: "PERMANENTEMENTE TRANSFORMA UM MONSTRO SOB INFLUÊNCIA DO OLHO DO COMANDANTE, EM UM ALIADO. \n\nO MONSTRO GANHA 'LEALDADE'. \n\n※ SE A LEALDADE FOR BAIXA, AS COISAS PODEM SAIR DO CONTROLE DO JOGADOR. \n\n※ VOCÊ PODE USAR 'COMANDO ABSOLUTO' APENAS UMA VEZ NO MONSTRO. ESSA HABILIDADE PODE SER USADA UMA VEZ POR ESTÁGIO."
+        },
+        {
             name: "Criação de Mapa",
             rank: "EX",
             desc: "Permite Ver a Área Inteira na Forma de um Mini Mapa, Mostrando Inimigos como Pontos Vermelhos."
@@ -1245,14 +1264,34 @@ export const universeSkills = {
             desc: "UMA Habilidade que Acumula e Fica Mais Forte Quanto Mais Inimigos o Usuario Mata."
         },
         {
+            name: "Passo da Perseverança",
+            rank: "SSR",
+            desc: "ISSO PERMITE AO USUÁRIO VIAJAR UMA LONGA DISTÂNCIA EM DIREÇÃO AO ALVO EM UM INSTANTE como um Flash. \n\nA HABILIDADE NÃO POSSUI TEMPO DE RECARGA PARA O USO. \n\n※ A Habilidade Consome Muita Mana para ser Ativada."
+        },
+        {
             name: "Encruzilhada",
             rank: "SSR",
             desc: "&lt;CARACTERÍSTICA PESSOAL&gt; \nEVANGELINE CROSS \n\nUMA CARACTERÍSTICA QUE É A PERSONIFICAÇÃO DA HISTÓRIA DA FAMÍLIA CROSS DE MATAR MONSTROS E PROTEGER PESSOAS. \n\nEM QUALQUER BATALHA, PERMITE AO USUÁRIO ENCONTRAR A MELHOR ESCOLHA DE CAMINHO E SE MOVER DE ACORDO. \n\nQUANDO ATIVADA, O MP É CONTINUAMENTE EXAURIDO."
         },
         {
+            name: "Imparável",
+            rank: "SSR",
+            desc: "&lt;CARACTERÍSTICA PESSOAL&gt; \nEVANGELINE CROSS \n\nUMA CARACTERÍSTICA QUE Ignora Completamente Condições de Status que Prejudicam o Movimento. \n\nQUANDO ATIVADA, O MP É CONTINUAMENTE EXAURIDO."
+        },
+        {
             name: "Absorção de Dano",
             rank: "SSR",
             desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
+        },
+        {
+            name: "Transmutação",
+            rank: "SR",
+            desc: "Pode Transformar Qualquer Material no Formato Desejado Pelo Usuario ao Entrar em Contato com o Usuario. Principais Materias Para Serem Moldados Metal e Pedra."
+        },
+        {
+            name: "Telecinese",
+            rank: "SR",
+            desc: "Pode Levantar Itens Pesados Livremente, Mover Aliados e a Si Mesmo pelo Compo de Batalha, Além de Lançar Armas."
         },
         {
             name: "Provocação em Área",
@@ -1268,6 +1307,11 @@ export const universeSkills = {
             name: "Método de Sobrevivência de um Ladrãozinho",
             rank: "SR",
             desc: "HÁBITOS DE SEU TEMPO QUANDO ERA UM LADRÃOZINHO. \n\nVOCÊ CONSEGUE REDUZIR SUA PRESENÇA EM FRENTE AO PERIGO E EVITAR CHAMAR ATENÇÃO. \n\nCONSOME MUITOS Pontos de Vida QUANDO UTILIZADO."
+        },
+        {
+            name: "Toca da Raposa",
+            rank: "SR",
+            desc: "SEMPRE HÁ UM BURACO POR ONDE ESCAPAR. \n\nPARA TER UM TRUNFO OCULTO, VOCÊ ENGANA OS OUTROS SOBRE SUAS HABILIDADES. \n\n※ Diminue Seus Atributos e os Esconde, Juntos com Algumas Habilidade. \n※ A Habilidade Não Pode Ser Escondida Por Ela Própria."
         },
         {
             name: "Zona de Clareamento",
@@ -1302,7 +1346,7 @@ export const universeSkills = {
         {
             name: "Sinergia de Grupo",
             rank: "Nv.1",
-            desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n※ Combinação 3 (CAVALEIROS Duplos [2 CAVALEIROS]): A DEFESA FÍSICA DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%."
+            desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n※ Combinação 3 (CAVALEIROS Duplos [2 CAVALEIROS]): A DEFESA FÍSICA DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n\n※ Combinação 4 (MOZAMBIQUE DRILL [TRÊS ARQUEIROS]): O DANO CRÍTICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 30%."
         },
     ]
 };
