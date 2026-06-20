@@ -1,11 +1,18 @@
 import { staticSkills } from './banco/my.js';
 import { universos } from './banco/univeros.js';
+
+// Categorias
 import { universeSkills } from './banco/skills.js'; 
 import { universeItens } from './banco/items.js';
 import { universeConstitution } from './banco/const.js';
 
-var coluna = 0;
-var linha = 0; // Nova variável global para controlar a linha selecionada
+// Sub Categorias
+import { universeArmors } from './banco/armaduras.js';
+import { universeWepons } from './banco/armas.js';
+import { universeConsumibles } from './banco/consumiveis.js';
+import { universeMaterials } from './banco/materiais.js';
+
+var coluna = 0, linha = 0;
 const universosSelecionados = { 1: null, 2: null, 3: null };
 
 function openModal(tipo, escolha, numLinha) {
@@ -69,13 +76,21 @@ function openModal(tipo, escolha, numLinha) {
         coluna = colunaAlvo; 
         if (!universosSelecionados[coluna]) return; 
 
-        const universoAtual = universosSelecionados[coluna];
-        document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
-        document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
-
-        renderizarMenu('itens');
-
         document.getElementById('escCoisa').classList.remove('ativo');
+        setTimeout(() => { document.getElementById('escSubItens').classList.add('ativo'); }, 180);
+    }
+    else if (tipo === 'escFiltroItens') {
+        if (!universosSelecionados[coluna]) return; 
+
+        const universoAtual = universosSelecionados[coluna];
+        const nomeFormatado = escolha.charAt(0).toUpperCase() + escolha.slice(1); // Deixa primeira letra maiúscula
+        
+        document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
+        document.getElementById('descricao-escolha').textContent = `Selecione um(a) ${nomeFormatado.toLowerCase()} do registro para a linha [${linha}].`;
+
+        renderizarMenu(escolha); // O parâmetro 'escolha' contém: armas, armaduras, consumiveis ou materiais
+
+        document.getElementById('escSubItens').classList.remove('ativo');
         setTimeout(() => { document.getElementById('escHabilidade').classList.add('ativo'); }, 180);
     }
     else if (tipo === 'escConstituicoes') {
@@ -115,14 +130,19 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     const universoAtual = universosSelecionados[c];
     const universoIndex = universos.indexOf(universoAtual);
     
-    // Busca do banco correspondente ao clique
+    // Busca do banco correspondente baseando-se no novo sistema
     let listaAtual;
-    if (tipoCoisa === 'item') listaAtual = universeItens[universoIndex];
+    if (tipoCoisa === 'armadura') listaAtual = universeArmors[universoIndex];
+    else if (tipoCoisa === 'arma') listaAtual = universeWepons[universoIndex];
+    else if (tipoCoisa === 'consumivel') listaAtual = universeConsumibles[universoIndex];
+    else if (tipoCoisa === 'material') listaAtual = universeMaterials[universoIndex]; 
     else if (tipoCoisa === 'constituicao') listaAtual = universeConstitution[universoIndex];
-    else listaAtual = universeSkills[universoIndex];
+    else listaAtual = universeSkills[universoIndex]; // fallback para habilidade
+
+    // Impede erro caso a lista do universo ainda não exista
+    if (!listaAtual) return;
 
     const objeto = listaAtual.find(o => o.name === nomeCoisa);
-
     if (!objeto) return;
 
     const habilidade = objeto; 
@@ -132,8 +152,8 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     let rankColor = "#C5A344"; 
     if (habilidade.rank === 'EX' || habilidade.rank === 'Mítico') rankColor = "#23EEC4";
     if (habilidade.rank === 'SSS' || habilidade.rank === 'SS' || habilidade.rank === 'Lendário') rankColor = "#FFD700";
-    if (habilidade.rank === 'Único') rankColor = "#D946EF"; 
-
+    if (habilidade.rank === 'Único') rankColor = "#D946EF";
+    
     const modalWindow = document.getElementById('descHabilidade');
 
     // MUDANÇA: Verifica se é o Universo 2 e injeta a sua estrutura personalizada
@@ -297,14 +317,12 @@ function obterPesosRank(rankStr) {
 
 //3 Passos
 function renderizarMenu(tipo) {
-    // 1. LÓGICA EXCLUSIVA PARA O MENU DE UNIVERSOS
     if (tipo === 'universo') {
         const menu = document.getElementById("menu-sincronizacao");
         if (!menu) return;
         menu.innerHTML = ""; 
         const ocupados = Object.values(universosSelecionados);
 
-        // Universos organizados por ordem alfabética
         const universosOrdenados = [...universos].sort((a, b) => a.localeCompare(b));
 
         for (let i = 0; i < universosOrdenados.length; i++) {
@@ -316,12 +334,13 @@ function renderizarMenu(tipo) {
                     <p class="habilidade equipado" style="opacity: 0.4; cursor: not-allowed;">
                         ${universo} <strong class="direita" style="color: #94a3b8;">[Escolhido]</strong>
                     </p>`;
-            } else { menu.innerHTML += `<p class="habilidade" onclick="sincronizar('${nomeTratado}', '', 'universo')">${universo}</p>`; }
+            } else { 
+                menu.innerHTML += `<p class="habilidade" onclick="sincronizar('${nomeTratado}', '', 'universo')">${universo}</p>`; 
+            }
         }
         return;
     }
 
-    // 2. LÓGICA PARA HABILIDADES, ITENS E CONSTITUIÇÕES
     const menu = document.getElementById("menu-habilidades");
     if (!menu) return;
     menu.innerHTML = ""; 
@@ -329,22 +348,14 @@ function renderizarMenu(tipo) {
     const universoAtual = universosSelecionados[coluna];
     const universoIndex = universos.indexOf(universoAtual);
     
+    // ATUALIZAÇÃO: Agora as configurações apontam diretamente para os seus novos ficheiros importados!
     const configuracoes = {
-        habilidades: {
-            dados: universeSkills,
-            mensagemVazio: "Nenhuma habilidade cadastrada para este universo ainda.",
-            tipoSincronizacao: "habilidade"
-        },
-        itens: {
-            dados: universeItens,
-            mensagemVazio: "Nenhum item cadastrado para este universo ainda.",
-            tipoSincronizacao: "item"
-        },
-        constituicoes: {
-            dados: universeConstitution,
-            mensagemVazio: "Nenhuma constituição cadastrada para este universo ainda.",
-            tipoSincronizacao: "constituicao"
-        }
+        habilidades: { dados: universeSkills, mensagemVazio: "Nenhuma habilidade cadastrada...", tipoSincronizacao: "habilidade" },
+        constituicoes: { dados: universeConstitution, mensagemVazio: "Nenhuma constituição cadastrada...", tipoSincronizacao: "constituicao" },
+        armaduras: { dados: universeArmors, mensagemVazio: "Nenhuma armadura cadastrada...", tipoSincronizacao: "armadura" },
+        armas: { dados: universeWepons, mensagemVazio: "Nenhuma arma cadastrada...", tipoSincronizacao: "arma" },
+        consumiveis: { dados: universeConsumibles, mensagemVazio: "Nenhum consumível cadastrado...", tipoSincronizacao: "consumivel" },
+        materiais: { dados: universeMaterials, mensagemVazio: "Nenhum material cadastrado...", tipoSincronizacao: "material" }
     };
 
     const configAtual = configuracoes[tipo];
@@ -354,21 +365,15 @@ function renderizarMenu(tipo) {
         return;
     }
 
-    const listaElementos = configAtual.dados[universoIndex];
+    let listaElementos = configAtual.dados[universoIndex] || [];
     const equipados = obterEquipados(); 
 
     if (listaElementos && listaElementos.length > 0) {
-        
         let elementosOrdenados = [];
 
-        // 1. VERIFICA SE É O UNIVERSO 3, 4 OU 5
-        // (Lembrando que os arrays em JavaScript começam do 0, então índice 3 é o 4º universo. 
-        //  Se quiser alterar os universos, basta mexer no array [3, 4, 5])
         if ([3, 4, 5].includes(universoIndex)) {
-            // Não ordena, apenas filtra para garantir que tem o nome
             elementosOrdenados = listaElementos.filter(item => item && item.name);
         } else {
-            // ORDENAÇÃO APLICADA PADRÃO PARA OS OUTROS UNIVERSOS: 1º Raridade > 2º Nome > 3º Nível
             elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
                 const pesosA = obterPesosRank(a.rank);
                 const pesosB = obterPesosRank(b.rank);
@@ -380,25 +385,18 @@ function renderizarMenu(tipo) {
             });
         }
 
-        // Loop de renderização (usando a lista ordenada ou a lista na ordem original)
         for (let i = 0; i < elementosOrdenados.length; i++) {
             const item = elementosOrdenados[i];
             
-            // ===== NOVA REGRA: DETECTAR ELEMENTO DE SEPARAÇÃO =====
-            // Se o item possuir o type "Seraparação", carrega o HTML desejado
             if (item.type === "Seraparação") {
-                // Aqui usamos ${item.name} para pegar o texto do banco (ex: "Clonagem"),
-                // ou você pode colocar um texto fixo se preferir.
                 menu.innerHTML += `<div class="linha-com-texto">${item.name}</div>`;
-                continue; // Pula o resto do código e vai pro próximo elemento (para não criar uma habilidade clicável)
+                continue; 
             }
-            // ========================================================
             
             const nomeTratado = item.name.replace(/'/g, "\\'");
             let nomeExibido = item.name;
             if (nomeExibido.length > 40) nomeExibido = nomeExibido.substring(0, 40) + "...";
 
-            // (item.rank || '') garante que o código não quebre caso algum item esqueça a propriedade rank no banco de dados
             let classeRank = (item.rank || '').replace(/[+\-]/g, '').trim();
             if (['???', '??', '?'].includes(classeRank)) classeRank = 'Desconecido';
             if (['Lv.1', 'Lv.2'].includes(classeRank)) classeRank = 'Lv';
@@ -422,6 +420,7 @@ function renderizarMenu(tipo) {
         menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">${configAtual.mensagemVazio}</p>`; 
     }
 }
+window.renderizarMenu = renderizarMenu;
 
 function sincronizar(nome, rank, tipo) {
     const nomeTratado = nome.replace(/'/g, "\\'");
