@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="system.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gong-ja.css">
@@ -14,6 +15,7 @@
         <p class="nome"><strong>Nome:</strong> William Eduardo Di Martini Minorelli</p>
         <p class="jogador-nivel"><strong>Nível:</strong> 1</p>
         <p class="andar"><strong>Andar:</strong> 0</p>
+        <p class="adicional" onclick="openModal('descHabilidade', 'sobre_indice')">?</p>
 
         <hr>
 
@@ -97,6 +99,43 @@
                 <p class="habilidade" onclick="openModal('escHabilidade')">Habilidades</p>
                 <p class="habilidade" onclick="openModal('escItens')">Itens</p>
                 <p class="habilidade" onclick="openModal('escConstituicoes')">Constituições</p>
+            </div>
+
+            <p class="abrir-configuracao" onclick="openModal('configuracoes')"><i class="bi bi-pencil-square"></i></p>
+        </article>
+    </div>
+
+    <div class="modal" id="configuracoes">
+        <article class="selecao-universo">
+            <h1 id="descricao" class="titulo">Configurações do Sistema</h1>
+            <div class="cabecalho-config">
+                <p class="descricao">Configuração Básica</p>
+                <input type="checkbox" class="checkbox-sistema" checked>
+            </div>
+            <div class="opcoes">
+                <div class="opcao-item">
+                    <p class="andar">Separar Itens em Sub Classes</p>
+                    <input type="checkbox" class="checkbox-sistema" id="config-subclasses">
+                </div>
+                <div class="opcao-item">
+                    <p class="andar">Ativar Pesquisa Básica</p>
+                    <input type="checkbox" class="checkbox-sistema">
+                </div>
+            </div>
+            <hr>
+            <div class="cabecalho-config">
+                <p class="descricao" style="margin: 0;">Configuração Avançada</p>
+                <input type="checkbox" class="checkbox-sistema">
+            </div>
+            <div class="opcoes">
+                <div class="opcao-item">
+                    <p class="andar">Separar Itens em Sub Classes</p>
+                    <input type="checkbox" class="checkbox-sistema" id="config-subclasses">
+                </div>
+                <div class="opcao-item">
+                    <p class="andar">Ativar Pesquisa Avançada</p>
+                    <input type="checkbox" class="checkbox-sistema">
+                </div>
             </div>
         </article>
     </div>

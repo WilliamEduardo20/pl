@@ -10,19 +10,19 @@ export const staticSkills = {
             </ul>`
     },
     sobre_indice: {
-        title: "Sobre a Habilidade: Índice Multiversal",
+        title: "Detalhes Adicionais:",
         desc: "Diretrizes e restrições sistêmicas para a progressão e evolução do Índice Multiversal.",
         extra: `
-            <div class="sub-section-title">Regras de Sincronização</div>
+            <p style="margin-top: 10px; margin-bottom: 10px; font-size: 1.5em"><strong>Regras de Sincronização</strong></p>
             <ul class="penalty-list">
-                <li><strong>1.</strong> Esta habilidade não pode ser clonada, copiada ou anulada sob nenhuma circunstância.</li>
-                <li><strong>2.</strong> A cada 5 níveis do Índice Multiversal, um novo slot ou linha de tabela [3x3] é liberado.</li>
-                <li><strong>3.</strong> O nível máximo alcançável do Índice é [15].</li>
+                <li class="estado" style="font-size: 1.05em"><strong>1.</strong> Esta habilidade não pode ser clonada, copiada ou anulada sob nenhuma circunstância.</li>
+                <li class="estado" style="font-size: 1.05em"><strong>2.</strong> A cada 5 níveis do Índice Multiversal, um novo slot ou linha de tabela <strong class="nivel" style="margin: 0">[3x3]</strong> é liberado.</li>
+                <li class="estado" style="font-size: 1.05em"><strong>3.</strong> O nível máximo alcançável do Índice é <strong class="nivel" style="margin: 0">[15]</strong>.</li>
             </ul>
-            <div class="sub-section-title">Evolução de Ranks</div>
+            <p style="margin-top: 10px; margin-bottom: 10px; font-size: 1.5em"><strong>Evolução de Ranks</strong></p>
             <ul class="penalty-list">
-                <li>Habilidades equipadas na Matriz possuem nível máximo [5]. Ao atingirem o topo, necessitam de uma [Pedra de Promoção] para subir seu Rank de classificação.</li>
-                <li><strong>Escala Sábia:</strong> E &lt; D &lt; C &lt; B &lt; A &lt; S &lt; SS &lt; SSS &lt; EX</li>
+                <li>Habilidades possuem nível máximo <strong class="nivel" style="margin: 0">[5]</strong>. Ao atingirem nível máximo, necessitam de uma <strong class="nivel" style="margin: 0">[Pedra de Promoção]</strong> para subir seu Rank de classificação.</li>
+                <li><strong>Ranks:</strong> <strong class="rankE">E</strong> &lt; <strong class="rankD">D</strong> &lt; <strong class="rankC">C</strong> &lt; <strong class="rankB">B</strong> &lt; <strong class="rankA">A</strong> &lt; <strong class="rankS">S</strong> &lt; <strong class="rankSS">SS</strong> &lt; <strong class="rankSSS">SSS</strong> &lt; <strong class="rankEX">EX</strong></li>
             </ul>`
     },
     sobre_clone: {

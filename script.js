@@ -12,6 +12,26 @@ import { universeWepons } from './banco/armas.js';
 import { universeConsumibles } from './banco/consumiveis.js';
 import { universeMaterials } from './banco/materiais.js';
 
+// --- SISTEMA DE CONFIGURAÇÕES (LOCALSTORAGE) ---
+function inicializarConfiguracoes() {
+    const chkSubClasses = document.getElementById('config-subclasses');
+    if (!chkSubClasses) return;
+
+    // Busca na memória. Se não existir, o padrão será 'true' (separado)
+    const separarSalvo = localStorage.getItem('config_separar_itens');
+    const separarAtivo = separarSalvo !== 'false'; 
+    
+    chkSubClasses.checked = separarAtivo;
+
+    // Adiciona o evento para salvar automaticamente ao alterar
+    chkSubClasses.addEventListener('change', (e) => {
+        localStorage.setItem('config_separar_itens', e.target.checked);
+    });
+}
+
+// Inicializa as configurações assim que a janela carregar
+window.addEventListener('DOMContentLoaded', inicializarConfiguracoes);
+
 var coluna = 0, linha = 0;
 const universosSelecionados = { 1: null, 2: null, 3: null };
 
@@ -46,6 +66,10 @@ function openModal(tipo, escolha, numLinha) {
         
         modalElement.classList.add('ativo');
     } 
+    else if (tipo === 'configuracoes') {
+        document.getElementById('configuracoes').classList.toggle('ativo');
+        document.getElementById('descricao').textContent = `Personalize a Visualização das Informações.`;
+    }
     else if (tipo === 'escUniverso') {
         coluna = colunaAlvo; 
         document.getElementById('escUniverso').classList.toggle('ativo');
@@ -77,7 +101,24 @@ function openModal(tipo, escolha, numLinha) {
         if (!universosSelecionados[coluna]) return; 
 
         document.getElementById('escCoisa').classList.remove('ativo');
-        setTimeout(() => { document.getElementById('escSubItens').classList.add('ativo'); }, 180);
+        
+        // Verifica a configuração salva
+        const separarAtivo = localStorage.getItem('config_separar_itens') !== 'false';
+
+        setTimeout(() => { 
+            if (separarAtivo) {
+                // Comportamento original: Abre as subcategorias
+                document.getElementById('escSubItens').classList.add('ativo'); 
+            } else {
+                // Novo comportamento: Abre a lista com todos os itens misturados
+                const universoAtual = universosSelecionados[coluna];
+                document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
+                document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
+                
+                renderizarMenu('itens_gerais'); // Nova categoria unificada
+                document.getElementById('escHabilidade').classList.add('ativo');
+            }
+        }, 180);
     }
     else if (tipo === 'escFiltroItens') {
         if (!universosSelecionados[coluna]) return; 
@@ -137,6 +178,14 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     else if (tipoCoisa === 'consumivel') listaAtual = universeConsumibles[universoIndex];
     else if (tipoCoisa === 'material') listaAtual = universeMaterials[universoIndex]; 
     else if (tipoCoisa === 'constituicao') listaAtual = universeConstitution[universoIndex];
+    else if (tipoCoisa === 'item_geral') { // --- NOVA CHECAGEM ---
+        listaAtual = [
+            ...(universeArmors[universoIndex] || []),
+            ...(universeWepons[universoIndex] || []),
+            ...(universeConsumibles[universoIndex] || []),
+            ...(universeMaterials[universoIndex] || [])
+        ];
+    }
     else listaAtual = universeSkills[universoIndex]; // fallback para habilidade
 
     // Impede erro caso a lista do universo ainda não exista
@@ -279,7 +328,7 @@ function obterPesosRank(rankStr) {
     else if (texto.match(/\bS\b/) || texto.includes('MÍTICO') || texto.includes('MITICO')) raridade = 21;
 
     else if (texto.includes('A+') || texto.includes('LENDÁRIO+') || texto.includes('LENDARIO+')) raridade = 19;
-    else if (texto.includes('A-')) raridade = 17;
+    else if (texto.includes('A-') || texto.includes('SSR')) raridade = 17;
     else if (texto.match(/\bA\b/) || texto.includes('LENDÁRIO') || texto.includes('LENDARIO') || texto.includes('HEROICO') || texto.includes('HERÓICO')) raridade = 18;
     
     else if (texto.includes('ÚNICO+') || texto.includes('UNICO+')) raridade = 16.6;
@@ -287,11 +336,11 @@ function obterPesosRank(rankStr) {
 
     else if (texto.includes('B+') || texto.includes('ÉPICO+') || texto.includes('EPICO+')) raridade = 16;
     else if (texto.includes('B-')) raridade = 14;
-    else if (texto.match(/\bB\b/) || texto.includes('ÉPICO') || texto.includes('EPICO')) raridade = 15;
+    else if (texto.match(/\bB\b/) || texto.includes('ÉPICO') || texto.includes('EPICO') || texto.includes('SR')) raridade = 15;
 
     else if (texto.includes('C+')  || texto.includes('RARO+')) raridade = 13;
     else if (texto.includes('C-')) raridade = 11;
-    else if (texto.match(/\bC\b/) || texto.includes('RARO')) raridade = 12;
+    else if (texto.match(/\bC\b/) || texto.includes('RARO') || texto.includes('R')) raridade = 12;
     
     else if (texto.includes('D+')  || texto.includes('INCOMUM+')) raridade = 10;
     else if (texto.includes('D-')) raridade = 8;
@@ -299,7 +348,7 @@ function obterPesosRank(rankStr) {
     
     else if (texto.includes('E+')  || texto.includes('COMUM+')) raridade = 7;
     else if (texto.includes('E-')) raridade = 5;
-    else if (texto.match(/\bE\b/) || texto.includes('COMUM')) raridade = 6;
+    else if (texto.match(/\bE\b/) || texto.includes('COMUM') || texto.includes('N')) raridade = 6;
     
     else if (texto.includes('FFF')) raridade = 4; 
     else if (texto.includes('FF')) raridade = 3; 
@@ -355,7 +404,18 @@ function renderizarMenu(tipo) {
         armaduras: { dados: universeArmors, mensagemVazio: "Nenhuma armadura cadastrada...", tipoSincronizacao: "armadura" },
         armas: { dados: universeWepons, mensagemVazio: "Nenhuma arma cadastrada...", tipoSincronizacao: "arma" },
         consumiveis: { dados: universeConsumibles, mensagemVazio: "Nenhum consumível cadastrado...", tipoSincronizacao: "consumivel" },
-        materiais: { dados: universeMaterials, mensagemVazio: "Nenhum material cadastrado...", tipoSincronizacao: "material" }
+        materiais: { dados: universeMaterials, mensagemVazio: "Nenhum material cadastrado...", tipoSincronizacao: "material" },
+        // --- NOVA CONFIGURAÇÃO UNIFICADA ---
+        itens_gerais: { 
+            dados: universos.map((_, i) => [
+                ...(universeArmors[i] || []), 
+                ...(universeWepons[i] || []), 
+                ...(universeConsumibles[i] || []), 
+                ...(universeMaterials[i] || [])
+            ]), 
+            mensagemVazio: "Nenhum item cadastrado...", 
+            tipoSincronizacao: "item_geral" 
+        }
     };
 
     const configAtual = configuracoes[tipo];
@@ -370,8 +430,26 @@ function renderizarMenu(tipo) {
 
     if (listaElementos && listaElementos.length > 0) {
         let elementosOrdenados = [];
-
-        if ([3, 4, 5].includes(universoIndex)) {
+        
+        if (tipo === 'itens_gerais') {
+            // --- NOVA ORDENAÇÃO: Primeiro Rank, depois Nome ---
+            elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
+                const pesosA = obterPesosRank(a.rank);
+                const pesosB = obterPesosRank(b.rank);
+                
+                // 1º: Organiza pela Raridade (Rank Maior para o Menor)
+                if (pesosB.raridade !== pesosA.raridade) { return pesosB.raridade - pesosA.raridade; }
+                
+                // 2º: Se o Rank for igual, organiza pelo Nome (A a Z)
+                const comparacaoNome = a.name.localeCompare(b.name);
+                if (comparacaoNome !== 0) { return comparacaoNome; }
+                
+                // 3º: Critério de desempate por Nível (caso o item tenha)
+                return pesosB.nivel - pesosA.nivel;
+            });
+        } 
+        // Lógica de ordenação original para os outros casos
+        else if ([3, 4, 5].includes(universoIndex)) {
             elementosOrdenados = listaElementos.filter(item => item && item.name);
         } else {
             elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
@@ -388,6 +466,7 @@ function renderizarMenu(tipo) {
         for (let i = 0; i < elementosOrdenados.length; i++) {
             const item = elementosOrdenados[i];
             
+            // ... (resto do seu código continua exatamente igual a partir daqui)
             if (item.type === "Seraparação") {
                 menu.innerHTML += `<div class="linha-com-texto">${item.name}</div>`;
                 continue; 

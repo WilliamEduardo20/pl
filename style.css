@@ -18,10 +18,17 @@ body {
 .direita { margin-left: auto; }
 
 /* Informações */
-.nome, .jogador-nivel, .andar {
+.nome, .jogador-nivel, .andar, .adicional{
     color: #ffffff;
     text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
     font-size: 1.3em;
+}
+.adicional {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 50px 0 0;
+    cursor: pointer;
 }
 
 /* Divisoria */
@@ -68,7 +75,7 @@ hr {
     margin-left: 5px;
 }
 
-.rankDesconecido { color: rgb(240, 248, 255); text-shadow: rgba(240, 248, 255, 0.5) 0px 0px 6px; }
+.rankDesconecido { color: rgb(240, 248, 255); text-shadow: rgba(240, 248, 255, 0.8) 0px 0px 6px; }
 .rankEX { color: #23EEC4; text-shadow: rgba(35, 238, 196, 0.5) 0px 0px 6px; }
 .rankSSS { color: #FFD700;  text-shadow: rgba(255, 215, 0, 0.8) 0px 0px 8px; }
 .rankSS { color: #E8C340;  text-shadow: rgba(232, 195, 64, 0.6) 0px 0px 7px; }
@@ -305,20 +312,102 @@ hr {
 
 
 .linha-com-texto {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  margin-bottom: 15px;
-  gap: 16px; /* Define a distância entre o texto e as linhas */
-  
-  /* Estilos opcionais da fonte */
-  color: aliceblue;
-  font-family: Arial, sans-serif;
-  font-size: x-large;
-  font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 16px; /* Define a distância entre o texto e as linhas */
+    
+    /* Estilos opcionais da fonte */
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 .linha-com-texto::before,
 .linha-com-texto::after {
-  content: "";
-  border-top: 2px solid #ccc; /* Define a espessura e a cor da linha */
+    content: "";
+    border-top: 2px solid #ccc; /* Define a espessura e a cor da linha */
+}
+
+/* =========================================
+   ESTILIZAÇÃO DO MODAL DE CONFIGURAÇÕES
+========================================= */
+.abrir-configuracao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 33px;
+    color: aliceblue;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cabecalho-config {
+    display: flex;
+    justify-content: space-between; /* Empurra um item para cada lado */
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 100%; /* Garante que ocupe a linha inteira */
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.opcao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+.opcao-item:hover {
+    background: rgba(0, 210, 255, 0.05);
+    border-color: rgba(0, 210, 255, 0.3);
+}
+.opcao-item p.andar {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Transformando a Checkbox em um Toggle Switch (Interruptor) */
+.checkbox-sistema {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 44px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #475569;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.checkbox-sistema::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    background: #475569;
+    transition: all 0.3s ease;
+}
+.checkbox-sistema:checked {
+    background: rgba(0, 210, 255, 0.15);
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+.checkbox-sistema:checked::before {
+    left: 22px; /* Move a bolinha para a direita */
+    background: #00d2ff;
+    box-shadow: 0 0 8px #00d2ff;
 }
