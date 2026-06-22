@@ -44,6 +44,11 @@ export const universeConstitution = {
     ],
     6: [ //I Become The Tyrant of a Tower Defense Game
         {
+            name: "Sorte",
+            rank: "SSR",
+            desc: "Você Tem Muita Sorte. \nFalhas Criticas Absolutamente Não Ocorrem em Testes de Probabilidade."
+        },
+        {
             name: "Escaravelho de Ouro",
             rank: "SR",
             desc: "O Usuario se Sente Atrai por Ouro, Prata, Baus, Coisas Preciosas e Coisas Potencialmente Preciosos. Faz o Usuario Perder a Razão Mesmo em Batalha e Correr em Direção ao Espolio para Telo para si. \n\n※ Com Muito Controle o Impulso pode ser Controlado."

@@ -290,7 +290,7 @@ export const universeWepons = {
         {
             name: "Maestro Lv.35",
             rank: "SSR",
-            desc: "TIPO: VARINHA \nATAQUE: 35-50 \nDURABILIDADE: 10/10 \n\nCRIA ESPADAS MÁGICAS E AS CONTROLA NO AR. \n\nSE VOCÊ ATACAR COM A VARINHA EM SI, VOCÊ INFLIGIRÁ 1% DE DANO AO HP DO ALVO E IRÁ CONJURAR UM BUFF ALEATÓRIO. \n\n'TOQUEM AGORA!' \n&lt;Algum Maestro Brutal&gt; \n\n※ A Cada 1 Pontos De Mana 1 Espada Pode Ser Invocada, Depois de 5 Golpes as Espadas vão se Quebrar."
+            desc: "TIPO: VARINHA \nATAQUE: 35-50 \nDURABILIDADE: 10/10 \n\nCRIA ESPADAS MÁGICAS E AS CONTROLA NO AR. \n\nSE VOCÊ ATACAR COM A VARINHA EM SI, VOCÊ INFLIGIRÁ 1% DE DANO AO HP DO ALVO E IRÁ CONJURAR UM BUFF ALEATÓRIO. \n\n'TOQUEM AGORA!' \n&lt;Algum Maestro Brutal&gt; \n\n※ A Cada 1 Pontos De Mana 1 Espada Pode Ser Invocada, Depois de 5 Golpes as Espadas vão se Quebrar. \n※ A Tropa Só Pode Receber o Buff Uma Vez Por Dia. \n\n※ Tipos de Buffs de 3 minutos: \nNível Superior: Vigor Ilimitado \nAlto Nível: Consumo de Mana Reduzido Pela Metade, \nNível Intermediário: Aumenta o Dano Elemental em 20%, Todo o Dano Recebido Será Reduzido em 25% \nBaixo Nível: Defesa Aumentada em 10%, A Taxa de Penetração Física Aumenta em 10%, Aumenta a Recuperação Por Segundo em 3%"
         },
         {
             name: "Rainha Negra Nv.55",

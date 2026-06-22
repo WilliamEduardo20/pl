@@ -195,7 +195,51 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     if (!objeto) return;
 
     const habilidade = objeto; 
-    const descFormatada = habilidade.desc.replace(/\n/g, '<br>');
+    let descFormatada = habilidade.desc.replace(/\n/g, '<br>');
+    
+    // --- NOVA FUNCIONALIDADE: Tornar os movimentos da Espada do Vazio clicáveis ---
+    if (habilidade.name === "Espada do Vazio") {
+        // 1. Mapeamento dos movimentos específicos (Mude as strings da direita para as chaves exatas que estão no seu my.js)
+        const chavesMovimentos = {
+            "Técnica Aplicada [Diabo (魔)]": "zero_aplicado_diabo", // <- Ex: chave no my.js
+            "Vontade Profunda Aplicada [Sem Nome (無名)]": "zero_profunda_sem_nome",
+            "Vontade Profunda Vinculada [Diabo Zero (零魔)]": "zero_vinculada",
+            "Técnica Aplicada [Senhor (君)]": "rei_aplicado_senhor",
+            "Profundidade Aplicada [Imperador (帝)]": "rei_profunda_imperador",
+            "Técnica Aplicada [Preto (玄)]": "luz_aplicado", // Esta chave eu vi que você já tem no my.js!
+            "Profundidade Aplicada [Brilhante (明)]": "luz_profundidade", // Já existe no my.js!
+            "Técnica Aplicada [Rede (羅)]": "ceu_aplicado_rede",
+            "Técnica Aplicada [Destino (命)]": "ceu_aplicado_destino",
+            "Técnica Aplicada [Grande (大)]": "superior_aplicado_grande",
+            "Técnica Aplicada [Deus (神)]": "superior_aplicado_deus", // Já existe no my.js!
+            "Profundidade Final": "esperanca_final", // Já existe no my.js!
+            "Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)]": "esperanca_vinculada" // Já existe no my.js!
+        };
+
+        // Estilo visual do link clicável
+        const estiloLink = "color: black; text-decoration: none; cursor: pointer; font-weight: bold; text-shadow: 0 0 5px rgba(14,165,233,0.3);";
+
+        // Substitui os textos da array acima pelos links interativos
+        for (const [texto, chave] of Object.entries(chavesMovimentos)) {
+            // Escapa parênteses e colchetes para o Regex não quebrar a busca
+            const textoEscapado = texto.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(textoEscapado, 'g');
+            
+            descFormatada = descFormatada.replace(
+                regex, 
+                `<span style="${estiloLink}" onclick="openModal('descHabilidade', '${chave}')">${texto}</span>`
+            );
+        }
+        
+        // 2. Tratamento especial para as "Formas Básicas", já que o nome se repete em várias categorias, 
+        // a gente usa o contexto da palavra anterior para saber qual chave chamar.
+        descFormatada = descFormatada.replace(/Zero \(零\): <br> - Forma Básica/g, `Zero (零): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'zero_basico')">Forma Básica</span>`);
+        descFormatada = descFormatada.replace(/Rei \(王\): <br> - Forma Básica/g, `Rei (王): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'rei_basico')">Forma Básica</span>`);
+        descFormatada = descFormatada.replace(/Luz \(光\): <br> - Forma Básica/g, `Luz (光): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'luz_basico')">Forma Básica</span>`);
+        descFormatada = descFormatada.replace(/Céu \(天\): <br> - Forma Básica/g, `Céu (天): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'ceu_basico')">Forma Básica</span>`);
+        descFormatada = descFormatada.replace(/Superior \(上\): <br> - Forma Básica/g, `Superior (上): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'superior_basico')">Forma Básica</span>`);
+        descFormatada = descFormatada.replace(/Futuro \(未來\): <br> - Forma Básica/g, `Futuro (未來): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'futuro_basico')">Forma Básica</span>`); // futuro_basico já existe no my.js!
+    }
     
     // Suporte para Ranks
     let rankColor = "#C5A344"; 
@@ -275,9 +319,12 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                 </div>
             </div>`;
     } else {
-        // Se for qualquer outro Universo (Regressão, Solo Leveling, etc.), usa a estrutura padrão do sistema
+        // Verifica se a habilidade é a Espada do Vazio para injetar a classe
+        const classeEspecial = habilidade.name === "Espada do Vazio" ? " tema-vazio" : "";
+
+        // Se for qualquer outro Universo, usa a estrutura padrão do sistema
         modalWindow.innerHTML = `
-            <div class="moldura-habilidade">
+            <div class="moldura-habilidade${classeEspecial}">
                 <div class="linha-principal">
                     <h1 class="titulo" id="titulo-habilidade">
                         [${habilidade.name.toUpperCase()}] <br>
@@ -373,7 +420,6 @@ function renderizarMenu(tipo) {
         const ocupados = Object.values(universosSelecionados);
 
         const universosOrdenados = [...universos].sort((a, b) => a.localeCompare(b));
-
         for (let i = 0; i < universosOrdenados.length; i++) {
             const universo = universosOrdenados[i];
             const nomeTratado = universo.replace(/'/g, "\\'");
@@ -482,7 +528,6 @@ function renderizarMenu(tipo) {
             if (classeRank === 'Lv.MAX') classeRank = 'MAX';
             
             let rankClassFinal = classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico");
-
             if (equipados.includes(item.name)) {
                 menu.innerHTML += `
                     <p class="habilidade" style="opacity: 0.4; cursor: not-allowed;">
@@ -503,6 +548,7 @@ window.renderizarMenu = renderizarMenu;
 
 function sincronizar(nome, rank, tipo) {
     const nomeTratado = nome.replace(/'/g, "\\'");
+    const classeEspecial = nome === "Espada do Vazio" ? "tema-vazio-texto" : "";
 
     // 1. LÓGICA EXCLUSIVA DE SINCRONIZAÇÃO DE UNIVERSO
     if (tipo === 'universo') {
@@ -533,7 +579,7 @@ function sincronizar(nome, rank, tipo) {
         
         let rankClassFinal = classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico");
 
-        slotElemento.innerHTML = `<p>${nome} <strong class="rank${rankClassFinal}">${rank}</strong></p>`;
+        slotElemento.innerHTML = `<p class="${classeEspecial}">${nome} <strong class="rank${rankClassFinal}">${rank}</strong></p>`;
         slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${linha}, '${nomeTratado}', '${tipo}')`);
     }
 

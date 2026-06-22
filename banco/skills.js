@@ -1348,5 +1348,12 @@ export const universeSkills = {
             rank: "Nv.1",
             desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n※ Combinação 3 (CAVALEIROS Duplos [2 CAVALEIROS]): A DEFESA FÍSICA DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n\n※ Combinação 4 (MOZAMBIQUE DRILL [TRÊS ARQUEIROS]): O DANO CRÍTICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 30%."
         },
-    ]
+    ],
+    7: [
+        {
+            name: "Espada do Vazio",
+            rank: "Deus Criador",
+            desc: "O Apice das Técnicas de Assasinato. \n\nTécnicas: \nZero (零): \n - Forma Básica \n - Técnica Aplicada [Diabo (魔)] \n - Vontade Profunda Aplicada [Sem Nome (無名)] \n - Vontade Profunda Vinculada [Diabo Zero (零魔)] \nRei (王): \n - Forma Básica  \n - Técnica Aplicada [Senhor (君)] \n - Profundidade Aplicada [Imperador (帝)] \nLuz (光): \n - Forma Básica \n - Técnica Aplicada [Preto (玄)] \n - Profundidade Aplicada [Brilhante (明)] \nCéu (天): \n - Forma Básica \n - Técnica Aplicada [Rede (羅)] \n - Técnica Aplicada [Destino (命)] \nSuperior (上): \n - Forma Básica \n - Técnica Aplicada [Grande (大)] \n - Técnica Aplicada [Deus (神)] \nFuturo (未來): \n - Forma Básica \nEsperança (希望): \n - Profundidade Final \n - Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)]"
+        },
+    ],
 };

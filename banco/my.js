@@ -48,5 +48,82 @@ export const staticSkills = {
         title: "Criação [Nv-1]",
         desc: "Habilidade passiva. Permite que o usuário crie qualquer coisa física com maior facilidade que outros.",
         extra: `<div class="estado">&lt;Bloqueada&gt;</div>`
-    }
+    },
+    // A Regressor's Tale of Cultivation
+    zero_basico: {
+        title: "Sobre a Forma Básica do Movimento Zero (零)",
+        desc: "Uma técnica de abate que maximiza a 'Esfolagem', chegando até mesmo a cortar, rasgar e dilacerar."
+    },
+    zero_aplicado: {
+        title: "Sobre a Técnica Aplicada [Diabo (魔)]",
+        desc: "Uma espada diabólica que retrocede no tempo para reduzir o oponente a pó."
+    },
+    zero_vontade: {
+        title: "Sobre a Vontade Profunda Aplicada [Sem Nome (無名)]",
+        desc: "Uma técnica que transcende a causalidade e destrói tudo ao nível da rede de Indra."
+    },
+    zero_vontade_vinculada: {
+        title: "Sobre a Vontade Profunda Vinculada [Diabo Zero (零魔)]",
+        desc: "Uma coisa negra que reduz todos os Céus e a Terra a pó."
+    },
+    rei_basico: {
+        title: "Sobre a Forma Básica do Movimento Rei (王)",
+        desc: "Uma técnica de ataque que maximiza o 'golpe descendente', demonstrando grande força através do uso do próprio poder da atração."
+    },
+    rei_aplicado: {
+        title: "Sobre a Técnica Aplicada [Senhor (君)]",
+        desc: "Inúmeras repetições de Rei, uma enorme saraivada de golpes descendentes tão poderosos que chegam a arrancar a história, transformando-a em força ancestral, destruindo-a em seguida e transformando todos os atingidos em essência primordial."
+    },
+    rei_profundidade: {
+        title: "Sobre a Profundidade Aplicada [Imperador (帝)]",
+        desc: "Um golpe descendente é tão poderoso devido à assistência da gravidade. Como detentores da força de atração, se a aplicarem corretamente, qualquer movimento em qualquer direção ou forma se torna um golpe descendente. Deixar a essência original habitar a espada permite que qualquer golpe seja equivalente a uma Divindade Suprema, dando origem à sua própria alma."
+    },
+    luz_basico: {
+        title: "Sobre a Forma Básica do Movimento Luz (光)",
+        desc: "Uma técnica letal que maximiza a força de torção, explorando a própria 'rotação' da força."
+    },
+    luz_aplicado: {
+        title: "Sobre a Técnica Aplicada [Preto (玄)]",
+        desc: "Ao converter a causalidade absorvida em poder, um círculo se forma ao seu redor, tornando tudo negro e destruindo seus oponentes."
+    },
+    luz_profundidade: {
+        title: "Sobre a Profundidade Aplicada [Brilhante (明)]",
+        desc: "Deposita a Essência Original da Luz na Espada do Vazio e ferve e despedaça os arredores com luz."
+    },
+    ceu_basico: {
+        title: "Sobre a Forma Básica do Movimento Céu (天)",
+        desc: "Uma técnica de assassinato que maximiza o 'corte ascendente', atingindo uma propriedade que transcende o espaço-tempo através da força repulsiva, invertendo a força de atração."
+    },
+    ceu_aplicado: {
+        title: "Sobre a Técnica Aplicada [Rede (羅)]",
+        desc: "Espalhando golpes usando a força de repulsão em todas as direções, permitindo que Eles lancem o inimigo para outro mundo, um fora do Monte Sumeru."
+    },
+    ceu_aplicado_destino: {
+        title: "Sobre a Técnica Aplicada [Destino (命)]",
+        desc: "A força de repulsão transcende a força de atração e se transforma em um poder que personifica a destruição, e o Absoluto do Destino reside na espada, antes de ser derrotada. Supostamente poderosa o suficiente para despedaçar Vast Cold até a morte com um único golpe."
+    },
+    superior_basico: {
+        title: "Sobre a Forma Básica do Movimento Superior (上)",
+        desc: "Uma técnica de assassinato que maximiza a 'emissão de força' (發勁), expandindo o conceito até mesmo para técnicas de arremesso que disparam força."
+    },
+    superior_aplicado: {
+        title: "Sobre a Técnica Aplicada [Grande (大)]",
+        desc: "A Espada do Vazio é arremessada e se multiplica até ser suficiente para apagar a luz de múltiplos outros mundos."
+    },
+    superior_aplicado_deus: {
+        title: "Sobre a Técnica Aplicada [Deus (神)]",
+        desc: "Assim como a Técnica Aplicada Grande (大), a Espada do Vazio é arremessada, mas desta vez ela permeia inúmeros mundos e se concentra no alvo."
+    },
+    futuro_basico: {
+        title: "Sobre a Forma Básica do Movimento Futuro (未來)",
+        desc: "Uma técnica de assassinato que maximiza a 'aceleração', tornando-se ainda mais rápida do que um estado de imortalidade."
+    },
+    esperanca_final: {
+        title: "Sobre a Profundidade Final",
+        desc: "O ápice do controle da espada e a essência de Primeiro Passo Antes do Trono, um clone de golpe único levado além da transcendência. O princípio é simples: pegue a Gangue da Espada e sopre nela tudo o que você é, suas esperanças e sonhos, seu talento e história, suas emoções e possibilidades, e até mesmo partes da sua alma, e então modifique a personalidade até que seu único objetivo seja aniquilar o oponente. A uma velocidade próxima do infinito, ela deduz maneiras de matar o oponente, tornando-se mais letal com o tempo."
+    },
+    esperanca_vinculada: {
+        title: "Sobre a Profundidade Vinculada [Grande Céu Futuro Rei (上天未来王)]",
+        desc: "Uma combinação dos movimentos 2, 4, 5 e 6, bem como da Arte Divina/Grande Mantra do Futuro Rei, é capaz de destruir Deuses Criadores e seus mundos sem dificuldade."
+    },
 };

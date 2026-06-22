@@ -5,5 +5,6 @@ export const universos = [
     "Solo Leveling",
     "Solo Leveling Ragnarok",
     "Auto Hunting With My Clones",
-    "I Become The Tyrant of a Tower Defense Game"
+    "I Become The Tyrant of a Tower Defense Game",
+    "A Regressor's Tale of Cultivation"
 ];

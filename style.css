@@ -411,3 +411,36 @@ hr {
     background: #00d2ff;
     box-shadow: 0 0 8px #00d2ff;
 }
+
+/* =========================================
+   TEMA ESPECÍFICO: ESPADA DO VAZIO
+========================================= */
+.moldura-habilidade.tema-vazio .linha-principal {
+    background-color: aliceblue;
+    border-color: black;
+    color: black; /* Escurece o texto geral para dar leitura no fundo claro */
+}
+
+.moldura-habilidade.tema-vazio .canto {
+    background-color: aliceblue;
+    border-color: black;
+}
+
+.moldura-habilidade.tema-vazio .titulo {
+    color: black;
+    border-left-color: black; /* Combina a barrinha lateral do título com a nova borda */
+}
+
+/* Ajustes necessários para leitura dos botões e links no fundo aliceblue */
+.moldura-habilidade.tema-vazio .descricao span {
+    color: #0f172a !important; 
+    text-shadow: none !important;
+    text-decoration: underline; /* Destaca os links que agora perderam o brilho claro */
+}
+
+.moldura-habilidade.tema-vazio #extra-habilidade div {
+    color: #334155 !important; /* Escurece o texto de "ORIGEM" */
+}
+
+.rankDeus.Criador { color: #C5A344; text-shadow: 0 0 8px #C5A344aa; }
+.tema-vazio-texto { color: black; text-decoration: none; cursor: pointer; font-weight: bold; text-shadow: 0 0 5px rgba(14,165,233,0.3); }
