@@ -44,9 +44,24 @@ export const universeConstitution = {
     ],
     6: [ //I Become The Tyrant of a Tower Defense Game
         {
+            name: "Rei Vampiro",
+            rank: "SSR",
+            desc: "Você se Torna o Rei dos Vampiros. \nAdquirindo 1000 Vidas Podendo Compartilha-las Junto com Seus Familiares, Além Capacidade de Trasformar Outros em Vampiros Sobre o Seu Comando [Vampiros de Alto Nível e Carniçais (Baixo-Nível)], Além de [Magia de Sangue] e Um Grandioso Poder Regenerativo, Aumentando Sua Força Física a um Nível Incomparavel a de Humanos. Você se Torna Especialista no Campo da Mágia e da Força. \nSeu Novo Coração Se Torna um Núcleo Mágico. \n\n※ Você Se Torna Obrigado a Consumir Sangue Para Sobreviver."
+        },
+        {
+            name: "Vampiro",
+            rank: "SR",
+            desc: "Você se Torna um Vampiro. \nAdquirindo [Magia de Sangue] e Um Incrivel Poder Regenerativo, Aumentando Sua Força Física a um Nível Superior a de Humanos. Você Pode ser Aprimorar Escolhendo Seguir o Caminho da Mágia ou da Força. \nSeu Novo Coração Se Torna um Núcleo Mágico. \n\n※ Você Se Torna Obrigado a Consumir Sangue Para Sobreviver."
+        },
+        {
             name: "Sorte",
             rank: "SSR",
             desc: "Você Tem Muita Sorte. \nFalhas Criticas Absolutamente Não Ocorrem em Testes de Probabilidade."
+        },
+        {
+            name: "Vida Por Tempo Limitado",
+            rank: "SR",
+            desc: "NÃO HÁ MUITO TEMPO SOBRANDO. EXPECTATIVA DE VIDA: UM ANO OU MENOS. \n\nSEMPRE QUE O CORPO FOR FORÇADO, O TEMPO RESTANTE DIMINUI."
         },
         {
             name: "Escaravelho de Ouro",

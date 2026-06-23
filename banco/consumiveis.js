@@ -323,6 +323,11 @@ export const universeConsumibles = {
             desc: "GOLEM GIGANTE DE MOTOR À VAPOR \n&lt;Habilidade de Jogador&gt; \n\nAo Ser Usado o Jogador Aprende a Habilidade [GOLEM GIGANTE DE MOTOR À VAPOR]."
         },
         {
+            name: "Pergaminho de Invocação - Torre de Escudo",
+            rank: "?",
+            desc: "Torre de Escudo \n&lt;Habilidade de Jogador&gt; \n\nAo Ser Usado o Jogador Aprende a Habilidade [Torre de Escudo]."
+        },
+        {
             name: "Bomba de Fuga de Emergência",
             rank: "EX",
             desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nUM ATORDAMENTO FORÇADO É APLICADO NOS MONSTROS AO REDOR, E A VELOCIDADE DE MOVIMENTO DO GRUPO DO JOGADOR AUMENTA EM 100%. CONSOME 1 [PERGAMINHO DE TELETRANSPORTE DE FUGA DE DUNGEON]."

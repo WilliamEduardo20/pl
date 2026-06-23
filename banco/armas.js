@@ -283,6 +283,16 @@ export const universeWepons = {
     ],
     6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
         {
+            name: "Senhor Carmesin Nv.55",
+            rank: "SSR",
+            desc: "TIPO: CAJADO MÁGICO \nATQ: 149-151 \nDURABILIDADE: 10/10 \nINT +15, MAG +15 \n\nABSORVE UMA ESSÊNCIA POR CADA INIMIGO ABATIDO, ARMAZENANDO ATÉ 10. \n\nGASTA ESSÊNCIAS ARMAZENADAS PARA RECUPERAR HP OU MP. (10% POR ESSÊNCIA) \n\nAO GASTAR 10 ESSÊNCIAS DE UMA VEZ, PODE USAR O FEITIÇO DE SANGUE 'DEZENAS DE MILHÕES' UMA VEZ. \n\n-??? (DESBLOQUEADO COM BASE NO NÚMERO DE INIMIGOS ABATIDOS COM ESTA ARMA) \n-??? (DESBLOQUEADO COM BASE NO NÚMERO DE INIMIGOS ABATIDOS COM ESTA ARMA)"
+        },
+        {
+            name: "Adaga do Trovão",
+            rank: "SSR",
+            desc: "TIPO: Adaga \nATQ: 155-200 \nDURABILIDADE: 10/10 \n\nUma Adaga de Teletransporte Permite se Mover Instantaneamente Para Onde a Adaga Foi Lançada."
+        },
+        {
             name: "Golpe de Sorte Nv.7",
             rank: "SSR",
             desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos, Suas Mãos Não Serão Mais Como Eram Antes."
@@ -296,6 +306,21 @@ export const universeWepons = {
             name: "Rainha Negra Nv.55",
             rank: "SSR",
             desc: "TIPO: ARMA DE MANA \nATAQUE: 225-250 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS CAPAZES DE MATAR OS INIMIGOS NO LOCAL INSTANTANEAMENTE, EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nESSA PROBABILIDADE AUMENTA PROPORCIONALMENTE DE ACORDO COM A PROFICIÊNCIA DA PESSOA COM A ARMA. \n\n????? \n[OPÇÃO BLOQUEADA - MATE INIMIGOS COM A ARMA. FALTAM 3.] \n\n????? \n[OPÇÃO BLOQUEADA - MATE INIMIGOS COM A ARMA. FALTAM 3.]"
+        },
+        {
+            name: "Rainha Negra Nv.55 (Desbloqueada)",
+            rank: "SSR",
+            desc: "TIPO: ARMA DE MANA \nATAQUE: 225-250 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS CAPAZES DE MATAR OS INIMIGOS NO LOCAL INSTANTANEAMENTE, EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nESSA PROBABILIDADE AUMENTA PROPORCIONALMENTE DE ACORDO COM A PROFICIÊNCIA DA PESSOA COM A ARMA. \n\nCONTAGEM DE MORTES ALCANÇADA! HABILIDADE DA (RAINHA NEGRA) DESBLOQUEADA! \n\n(FÚRIA DE ORLOP) \nQUANTO MAIS VAZIO O CARREGADOR, MAIS FORTES FICAM AS BALAS. \nA SÉTIMA E ÚLTIMA BALA CAUSA O DOBRO DE DANO DA PRIMEIRA E GARANTE UM CRÍTICO. \n\n(FOME DE OLOP) \nO USUÁRIO É CONSUMIDO PELO PESADELO E REVELA SUA ESCURIDÃO INTERIOR. \nSE O USUÁRIO VENCER A LUTA DE CONTROLE CONTRA O PESADELO, A ESCURIDÃO DESAPARECE. \nSE PERDER, SERÁ COMPLETAMENTE DEVORADO PELA ESCURIDÃO."
+        },
+        {
+            name: "Assassina de Pesadelos",
+            rank: "SSR",
+            desc: "TIPO: Mosquete \nATAQUE: 250-300 \nDURABILIDADE 7/7 \nCapacidade: 7/7 \n\nESTE EQUIPAMENTO FOI PURIFICADO! \n\nESSA ARMA ATIRA BALAS AMALDIÇOADAS CAPAZES DE MATAR OS INIMIGOS NO LOCAL INSTANTANEAMENTE, EM TAXAS DE PROBABILIDADE CONSTANTES. \n\nESSA PROBABILIDADE AUMENTA PROPORCIONALMENTE DE ACORDO COM A PROFICIÊNCIA DA PESSOA COM A ARMA. \n\nCONTAGEM DE MORTES ALCANÇADA! HABILIDADE DA (RAINHA NEGRA) DESBLOQUEADA! \n\n(FÚRIA DE ORLOP) \nQUANTO MAIS VAZIO O CARREGADOR, MAIS FORTES FICAM AS BALAS. \nA SÉTIMA E ÚLTIMA BALA CAUSA O DOBRO DE DANO DA PRIMEIRA E GARANTE UM CRÍTICO. \n\nVITÓRIA NA DISPUTA DE CONTROLE CONTRA O PESADELO! \n(MODO MATADOR DE PESADELOS) \nTODAS AS BALAS RESTANTES DO CARREGADOR SÃO FUNDIDAS EM UM ÚNICO DISPARO MÁGICO. \nQUANTO MAIS BALAS FUNDIDAS, MAIOR O DANO BÔNUS, MAS MENOR A PRECISÃO. \n※ AO USAR, O ATIRADOR RECEBE DANO DE RECUO, Pode Machucar Severamente as Mãos do Usuario."
+        },
+        {
+            name: "Artefato Canhão Ancestral de Mana",
+            rank: "SSR",
+            desc: "Canhão Mágico que Dispara Balas Poderosas com Mana."
         },
         {
             name: "Diabo da Lança Nv.35",
@@ -318,9 +343,19 @@ export const universeWepons = {
             desc: "TIPO: ESPADA LONGA \nATAQUE: 30-40 \nDURABILIDADE: 20/20 \nFORÇA +10, ESPÍRITO +10 \n\nESSA ESPADA É PARA ALGUÉM QUE SE ESFORÇA EM MODERAÇÃO. LUZ E ESCURIDÃO, CAOS E ORDEM, ELA DEVORA TUDO QUE CAI SOBRE UM LADO E CONVERTE EM PODER. \n\nUMA ESPADA DE AURA É CRIADA GASTANDO PONTOS DE DISPOSIÇÃO. A ESPADA DE AURA MULTIPLICA O DANO MÁGICO DA ARMA EM 2. QUANDO PONTOS DE DISPOSIÇÃO SÃO USADOS CHEGAM A 0, A ESPADA DE AURA NÃO PODE SER USADA. \n\nABRIR O CATÁLOGO DE PONTOS DE DISPOSIÇÃO UTILIZÁVEIS"
         },
         {
-            name: "Artefato Canhão Ancestral de Mana",
+            name: "Esmagador de Espíritos Nv.1",
             rank: "SR",
-            desc: "Canhão Mágico que Dispara Balas Poderosas com Mana."
+            desc: "CLASSIFICAÇÃO: ADAGA \nATAQUE: 0 \nDURABILIDADE: 1/1 \n\nCAUSA UM GOLPE NA ALMA DO ALVO, DEIXANDO-O ATORDOADO. \n\nA DURAÇÃO DO ATORDOAMENTO É DE ATÉ 5 SEGUNDOS, REDUZIDA DE ACORDO COM O ATRIBUTO DE RESISTÊNCIA MÁGICA DO ALVO. \n\nEQUIPAMENTO REVERSO, DESCARTÁVEL."
+        },
+        {
+            name: "Assalto Armado",
+            rank: "SR",
+            desc: "CLASSIFICAÇÃO: Manoplas \nATAQUE: 50-60 \nDURABILIDADE: 12/12 \n\nAdiciona Dano Fixo Extra aos Ataques Básicos."
+        },
+        {
+            name: "Artefato Canhão de Mana",
+            rank: "SR",
+            desc: "Canhão Mágico que Dispara Balas Reforçadas com Mana."
         },
         {
             name: "Lança da Família Cross Nv.30",

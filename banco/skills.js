@@ -238,7 +238,11 @@ export const universeSkills = {
             rank: "???", 
             desc: "EFEITO: CONGELA O FLUXO DO TEMPO PARA TUDO E TODOS, VOCÊ NÂO PODE SE MOVER, MAS PODE PENSAR E OBSERVAR O AMBIENTE AO SEU REDOR. \n\n※ TODO DANO SOFRIDO DURANTE A PARADA DO TEMPO TODO SENTIDO E SENSAÇÃO É ANULADA E RETORNA SOMENTE QUANDO O FLUXO DO TEMPO VOLTAR AO NORMAL. \n\nCLASSIFICAÇÃO: ??? \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
         { 
-            name: "Arca", 
+            name: "Arca (10km)", 
+            rank: "?", 
+            desc: "EFEITO: DEFINE UM RAIO DE 10 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
+        { 
+            name: "Arca (3km)", 
             rank: "?", 
             desc: "EFEITO: DEFINE UM RAIO DE 3 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
         { 
@@ -277,6 +281,10 @@ export const universeSkills = {
             name: "Zona Ardente", 
             rank: "Raro+", 
             desc: "EFEITO: CRIA UMA ZONA DE QUEIMADURA COM 5 METROS DE RAIO EM UM RAIO DE 10 METROS. ALVOS QUE ENTRAREM NA ÁREA SOFRERÃO DANO DE QUEIMADURA CONTINUAMENTE. \n\n※ A CONJURAÇÃO REQUER 50 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 30 POR SEGUNDO \nTEMPO DE RECARGA: 1 MINUTO" },
+        { 
+            name: "Névoa Congelante", 
+            rank: "Raro+", 
+            desc: "EFEITO: Cria uma névoa congelante com um raio de 10 metros ao seu redor. Inimigos que entrarem na área serão afetados continuamente pelo gelo. \n\n※ A CONJURAÇÃO REQUER 50 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 35 POR SEGUNDO \nTEMPO DE RECARGA: 1 MINUTO" },
         { 
             name: "Sexto Sentido", 
             rank: "Raro+", 
@@ -1229,6 +1237,11 @@ export const universeSkills = {
             desc: "Permite Invocar uma Torre de Defesa em um Local Especificado Usando um Núcleo Mágico[N á SSR] e Materiais Como Madeira, Pedra, Metal, Entre Outros \n\nModo de Batalha: Quando Ativado a Eficiencia Dobra em Batalha, Mas não Pode ser Mantido Por Muito Tempo Devido ao uso Limitado de Mana \n\n※ O Poder da Torre Depende da Qualidade Dos Materias Utilizados Nela."
         },
         {
+            name: "Torre de Esudo",
+            rank: "?",
+            desc: "Permite Invocar uma Torre de Escudo em um Local Especificado Usando um Núcleo Mágico[N á SSR] e Materiais Como Madeira, Pedra, Metal, Entre Outros \n\nEla Não Tem Poder Ofensivo, Mas é uma Torre Especializada em Provocação e Absorção de Dano."
+        },
+        {
             name: "Olho de Mil Milhas",
             rank: "?",
             desc: "UMA CARACTERÍSTICA QUE SURGIU POR CAUSA DE UM ERRO DE DEUS. \n\nVOCÊ É CAPAZ DE VER E ACERTAR QUALQUER COISA QUE QUISER. \n\nPRECISÃO +999 \n\n※ Efeito Colateral: Quanto Maior a Distância do Disparo Maior será a Pessão nos Olhos, Uso Continuo Pode Causar Sangramento e Cegueira \n※ A Habilidade Ignora Diferença de Altitude, Distância e Inimigos no Caminho. O Tiro Acerta sem um Centímetro de Erro."
@@ -1254,9 +1267,34 @@ export const universeSkills = {
             desc: "Permite Ver a Área Inteira na Forma de um Mini Mapa, Mostrando Inimigos como Pontos Vermelhos."
         },
         {
+            name: "Fabricação de Balas Mágicas",
+            rank: "EX",
+            desc: "Consome Mana Para Criar Projéteis Mágicos."
+        },
+        {
             name: "Golem Gigante de Motor á Vapor",
             rank: "SSR",
             desc: "Permite Invocar um GOLEM GIGANTE DE MOTOR À VAPOR \n\nO Usuário Pode Controlar o Golem a Distância, O Golem pode Gerar um Escudo Protetor, Priorizar Alvos e se Auto Destruir. \n\n※ O Golem só Pode ser Invocado uma Vez."
+        },
+        {
+            name: "Destruição Elemental",
+            rank: "SSR",
+            desc: "&lt;HABILIDADE DE EXCLUSIVA FINAL JUNIOR JÚPITER&gt; \n\nCAUSA INTERFERÊNCIA EM TODAS MAGIAS ELEMENTARES AO REDOR DO ALVO, FORÇANDO A QUEBRA DE LAÇOS. \n\nO ALVO PERDE O CONTROLE DOS ELEMENTOS MÁGICOS \n\nO STATUS DE MAGIA DO ALVO CAI PARA 0 OU MENOS. \n\nO MÁXIMO DE QUEDA É DE -99."
+        },
+        {
+            name: "Descida da Divindade da Guerra",
+            rank: "SSR",
+            desc: "Duplica Todos os Atributos e Fortalece Todas as Suas Habilidade."
+        },
+        {
+            name: "Homem de Aço",
+            rank: "SSR",
+            desc: "A Defesa é Aumentada. Anula uma Vez um Dano Grave."
+        },
+        {
+            name: "Homem de Aço (Aprimorada)",
+            rank: "SSR",
+            desc: "A Defesa é Drasticamente Aumentada. Anula uma Vez um Dano Próximo da Morte."
         },
         {
             name: "Golpe de Determinação",
@@ -1264,9 +1302,19 @@ export const universeSkills = {
             desc: "UMA Habilidade que Acumula e Fica Mais Forte Quanto Mais Inimigos o Usuario Mata."
         },
         {
+            name: "Golpe de Determinação (Aprimorada)",
+            rank: "SSR",
+            desc: "UMA Habilidade que Acumula e Fica Mais Forte Quanto Mais Inimigos o Usuario Mata. O Ataque é Ampliado em Área"
+        },
+        {
             name: "Passo da Perseverança",
             rank: "SSR",
             desc: "ISSO PERMITE AO USUÁRIO VIAJAR UMA LONGA DISTÂNCIA EM DIREÇÃO AO ALVO EM UM INSTANTE como um Flash. \n\nA HABILIDADE NÃO POSSUI TEMPO DE RECARGA PARA O USO. \n\n※ A Habilidade Consome Muita Mana para ser Ativada."
+        },
+        {
+            name: "Passo da Perseverança (Aprimorada)",
+            rank: "SSR",
+            desc: "A Distância Percorrida é Aumentada em Mais Duas Vezes. A Velocidade de Movimento é Aumentada em Mais de Duas Vezes. \n\n※ A Habilidade Consome Muita Mana para ser Ativada."
         },
         {
             name: "Encruzilhada",
@@ -1282,6 +1330,31 @@ export const universeSkills = {
             name: "Absorção de Dano",
             rank: "SSR",
             desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
+        },
+        {
+            name: "Canhão de Fogo",
+            rank: "SR",
+            desc: "Crie Uma Grande Bola de Fogo e a Lança em Linha Reta."
+        },
+        {
+            name: "Mágia de Sangue",
+            rank: "SR",
+            desc: "Você Usa Seu Próprio Sangue e o Sangue Consumido Como Base Para Lançar as Suas Mágias. \n\nMágias: \nMissil de Sangue: Cria Uma Lotus que Dispara Misseis que Explodem ao Acertar o Alvo. Podendo Aumentar a Quantidade e Diminuir o Poder de Ataque ou o Contrario. \nFios de Sangue: Pode Criar Fios de Sangue Para Prender e Imobilizar Inimigos. O Missil Pode Ser Usado Para Espalhar Estes Fios. \nFuração de Sangue: Crie Um Furação Usando Mágia de Vento e o Reforça Usando Sangue. \nMeteoro de Sangue: Cria Grandes Porjeteis de Sangue e os Dispara em Grande Velocidade e Força."
+        },
+        {
+            name: "Esmagamento das Folhas de Bordo",
+            rank: "SR",
+            desc: "No Momento em que O Ataque Acerta o Alvo, A Energia Mágica Atravessa a Armadura Inimiga, Causando Dano Por Dentro."
+        },
+        {
+            name: "Queda das Folhas de Bordo",
+            rank: "SR",
+            desc: "Habilidade Passiva \n\nDepois de Anular o Ataque Inimigo, O Ataque é Contra-Atacado no Adversário."
+        },
+        {
+            name: "Folhas de Bordo",
+            rank: "SR",
+            desc: "Aplica um Buff de Aumento de Velocidade Para Todos os Movimentos e Adiciona Dano Extra."
         },
         {
             name: "Transmutação",
@@ -1347,6 +1420,16 @@ export const universeSkills = {
             name: "Sinergia de Grupo",
             rank: "Nv.1",
             desc: "ESPECIAL DA CLASSE COMANDANTE \n\n– DEPENDENDO DA COMPOSIÇÃO DE CLASSES DO GRUPO, ELE IRÁ RECEBER UM BÔNUS NOS ATRIBUTOS. \n\nTENTE DIFERENTES COMBINAÇÕES! \n\n※ Combinação 1 (GUARDA-COSTAS DO CAMPO DE BATALHA [1 COMANDANTE]): A Moral do Grupo Nunca Diminue. \n※ Combinação 2 (MAGOS DUPLOS [2 MAGOS]): O DANO MÁGICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n※ Combinação 3 (CAVALEIROS Duplos [2 CAVALEIROS]): A DEFESA FÍSICA DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 20%. \n\n※ Combinação 4 (MOZAMBIQUE DRILL [TRÊS ARQUEIROS]): O DANO CRÍTICO DE TODOS OS MEMBROS DO GRUPO AUMENTA EM 30%."
+        },
+        {
+            name: "Bala Mágica de Cura",
+            rank: "Nv.1",
+            desc: "Cria uma Bala Mágica Com Efeito Curativo que Cura o Alvo."
+        },
+        {
+            name: "Bala Mágica de Aniquilação",
+            rank: "Nv.1",
+            desc: "Cria uma Bala Mágica Com Grande Efeito Destrutivo que Aniquila o Alvo."
         },
     ],
     7: [

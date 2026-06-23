@@ -193,7 +193,17 @@ export const universeItens = {
             desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nQUANDO UM MONSTRO CHEFE ESTÁ PRÓXIMO, ENVIARÁ UM AVISO."
         },
         {
-            name: "Pedaço da Bandeira do Grande Comandante",
+            name: "Bomba de Fuga de Emergência!",
+            rank: "EX",
+            desc: "&lt;APENAS Para EXPLORAÇÃO LIVRE&gt; \nAPLICA UM ATORDOAMENTO FORÇADO NOS MONSTROS AO REDOR E AUMENTA A VELOCIDADE DE MOVIMENTO DO GRUPO DO JOGADOR EM 100%.  \n\n[EFEITO DE USO] \nCONSOME 1 PERGAMINHO DE TELETRANSPORTE DE FUGA DA DUNGEON."
+        },
+        {
+            name: "Pedaço da Bandeira do Grande Comandante (1)",
+            rank: "SSR",
+            desc: "UM PEDAÇO DA BANDEIRA DO GRANDE COMANDANTE [1/5] \n\nEQUIPAMENTO PESSOAL DE 'ASH'. UM DOS CINCO PEDAÇOS DA [BANDEIRA DO GRANDE COMANDANTE (EX)]. \n\nQUANDO TODOS OS CINCO PEDAÇOS FOREM UNIDOS, FORMARÃO UMA ÚNICA BANDEIRA."
+        },
+        {
+            name: "Pedaço da Bandeira do Grande Comandante (2)",
             rank: "SSR",
             desc: "UM PEDAÇO DA BANDEIRA DO GRANDE COMANDANTE [1/5] \n\nEQUIPAMENTO PESSOAL DE 'ASH'. UM DOS CINCO PEDAÇOS DA [BANDEIRA DO GRANDE COMANDANTE (EX)]. \n\nQUANDO TODOS OS CINCO PEDAÇOS FOREM UNIDOS, FORMARÃO UMA ÚNICA BANDEIRA."
         },
@@ -201,6 +211,11 @@ export const universeItens = {
             name: "Artefato do Início de Novo!",
             rank: "SSR",
             desc: "A Cada Batalha de Defesa, em que os Inimigos Passarem Pelo Reflexo Dourado. Eles Serão Forçados a Teleportar de Volta Para o Início. \n\n※ O Prato de Ouro Não é Tão Grande, Então não da Para Forçar um Grande Numero de Seres Vivos Voltarem."
+        },
+        {
+            name: "Flecha Estrela-de-Prata da Mortalidade",
+            rank: "SSR",
+            desc: "TIPO: Munição \n\nCAUSA 100% DE DANO ADICIONAL A TODOS OS INIMIGOS PROFANOS \n\nAo Lidar com Inimigos Profanos, A Defesa Dele é IGNORA \n\nAplica 75% da Redução de Cura ao Acertar um Golpe"
         },
         {
             name: "Tocha de Fogo Azul",

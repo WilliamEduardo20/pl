@@ -83,6 +83,11 @@ export const universeMaterials = {
     ],
     6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
         {
+            name: "Pérola de Jormugand",
+            rank: "EX",
+            desc: "Uma Esfera de Poder Que Contêm a Essência de Jormugand. É Usada Para Elevar o Nível de Existencia de um Ser."
+        },
+        {
             name: "Núcleo de Mana da Rainha Negra Nv.55",
             rank: "SSR",
             desc: "Núcleo de Mana da Poderosa Rainha Negra. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem a Vontade da Rainha Negra."
@@ -123,6 +128,11 @@ export const universeMaterials = {
             desc: "TIPO: MATERIAL \n\nUM CRISTAL FORMADO DA ESCURIDÃO DAS PROFUNDEZAS DO INFERNO. \n\nÉ UM ITEM RARO ENCONTRADO DEPOIS DA ZONA 5 NAS DUNGEONS. \n\nÉ DITO QUE SE VOCÊ SEGURAR ELE PERTO DA SUA ORELHA, VOCÊ PODE ESCUTAR SUSSURROS TÊNUES VINDOS DELE."
         },
         {
+            name: "Escama da Jormugand",
+            rank: "SSR",
+            desc: "TIPO: MATERIAL \n\nUMa Escama da Jormugand, Um Imugi que Não Consegui se Tornar um Dragão. \nUm Material Poderoso e Muito Resistente."
+        },
+        {
             name: "Núcleo de Mana do Rei Espectro",
             rank: "SR",
             desc: "Núcleo de Mana do Poderosa Rei Espectro. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem uma das Habilidade do Rei Espectro."
@@ -141,6 +151,11 @@ export const universeMaterials = {
             name: "Núcleo de Mana de Alta Qualidade",
             rank: "SR",
             desc: "Núcleo de Mana de Alta Qualidade com uma Alta Quantidade de Mana Pura."
+        },
+        {
+            name: "Barra de Aço Refinado",
+            rank: "SR",
+            desc: "Uma Barra de Aço Equilibradamente Refinado. Pode Ser Usado Para Forjar Ótimos Equipamentos."
         },
         {
             name: "Nucleo de Mana do Homem Rato Campeão",
