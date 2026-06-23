@@ -178,6 +178,11 @@ export const universeItens = {
     ],
     6: [ // Univeros 7: I Become The Tyrant of a Tower Defense Game
         {
+            name: "Ticket de Uso da Instalação Termal",
+            rank: "?",
+            desc: "Permite Você Entrar nas Fontes Termais da Dungeon do Lago."
+        },
+        {
             name: "Colar do Rebelde",
             rank: "EX",
             desc: "O COLAR DO 'JOGADOR' QUE SE REBELA CONTRA O DESTINO. \n\nVOCÊ PODE USAR OS PONTOS DE EXPERIÊNCIA ACUMULADOS PARA FAZER COMPRAS EM SUA LOJA PESSOAL."
@@ -216,6 +221,16 @@ export const universeItens = {
             name: "Flecha Estrela-de-Prata da Mortalidade",
             rank: "SSR",
             desc: "TIPO: Munição \n\nCAUSA 100% DE DANO ADICIONAL A TODOS OS INIMIGOS PROFANOS \n\nAo Lidar com Inimigos Profanos, A Defesa Dele é IGNORA \n\nAplica 75% da Redução de Cura ao Acertar um Golpe"
+        },
+        {
+            name: "Chave da Sala Dourada",
+            rank: "SSR",
+            desc: "Abre Uma Porta Para a Sala Dourada Com 3 Goblins Caregando Sacos de Ouro, Ao Serem Mortes Dropão Nucleos de Alta Qualidade e Ouro. Só é Possivel Coletar os Itens Durante um Tempo Curto, ao Final do Tempo um Slime de Ouro Aparece e Devora Todo o Tesouro Não Coletado."
+        },
+        {
+            name: "Chave da Sala Dos Slimes",
+            rank: "SR",
+            desc: "Abre Uma Porta Para uma Sala Cheia de Slimes. Pode Ser Usada Para Treinar Outros Personagens."
         },
         {
             name: "Tocha de Fogo Azul",

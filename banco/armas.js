@@ -295,7 +295,7 @@ export const universeWepons = {
         {
             name: "Golpe de Sorte Nv.7",
             rank: "SSR",
-            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos, Suas Mãos Não Serão Mais Como Eram Antes."
+            desc: "CLASSE - Par de LUVAS DE BATALHA \nATAQUE - 0~777 \nDURABILIDADE - 7/7 \n\nUM BÔNUS DE 1% É DADO A TODAS AS JOGADAS DE PROBABILIDADE. \n\n'É MEU DIA DE SORTE.' \n&lt;Fala de um Certo Apostador&gt; \n\n※ Se Tirar 3 Numeros Iguais Uma Enorne Quantidade de Dana é Causada, Se Tirar 2 Iguais Uma Grande Quantidade de Dano é Causada, Se Tirar Nenhum Número Igual Causa Dano, Se o Usuário Tirar 3 Zeros Leva Dano nas Mãos, A Quantidade de Dano Levado Varia."
         },
         {
             name: "Maestro Lv.35",
@@ -341,6 +341,11 @@ export const universeWepons = {
             name: "Devoradora de Karma Nv.45",
             rank: "SSR",
             desc: "TIPO: ESPADA LONGA \nATAQUE: 30-40 \nDURABILIDADE: 20/20 \nFORÇA +10, ESPÍRITO +10 \n\nESSA ESPADA É PARA ALGUÉM QUE SE ESFORÇA EM MODERAÇÃO. LUZ E ESCURIDÃO, CAOS E ORDEM, ELA DEVORA TUDO QUE CAI SOBRE UM LADO E CONVERTE EM PODER. \n\nUMA ESPADA DE AURA É CRIADA GASTANDO PONTOS DE DISPOSIÇÃO. A ESPADA DE AURA MULTIPLICA O DANO MÁGICO DA ARMA EM 2. QUANDO PONTOS DE DISPOSIÇÃO SÃO USADOS CHEGAM A 0, A ESPADA DE AURA NÃO PODE SER USADA. \n\nABRIR O CATÁLOGO DE PONTOS DE DISPOSIÇÃO UTILIZÁVEIS"
+        },
+        {
+            name: "Ponta de Lança de Prata",
+            rank: "SR",
+            desc: "CLASSIFICAÇÃO: Acessorio \nATAQUE: 0 \nDURABILIDADE: 3/3 \n\nCAUSA 100% DE DANO ADICIONAL A TODOS OS INIMIGOS PROFANOS \n\nAo Lidar com Inimigos Profanos, A Defesa Dele é IGNORA \n\nAplica 75% da Redução de Cura ao Acertar um Golpe"
         },
         {
             name: "Esmagador de Espíritos Nv.1",

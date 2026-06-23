@@ -88,6 +88,11 @@ export const universeMaterials = {
             desc: "Uma Esfera de Poder Que Contêm a Essência de Jormugand. É Usada Para Elevar o Nível de Existencia de um Ser."
         },
         {
+            name: "Núcleo de Mana de Calendion",
+            rank: "SSR",
+            desc: "Núcleo de Mana do Rei Vampiro Calendion. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem Parte dos Poderes de Calendion."
+        },
+        {
             name: "Núcleo de Mana da Rainha Negra Nv.55",
             rank: "SSR",
             desc: "Núcleo de Mana da Poderosa Rainha Negra. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem a Vontade da Rainha Negra."
@@ -138,6 +143,11 @@ export const universeMaterials = {
             desc: "Núcleo de Mana do Poderosa Rei Espectro. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem uma das Habilidade do Rei Espectro."
         },
         {
+            name: "Núcleo de Mana do General Vampiro",
+            rank: "SR",
+            desc: "Núcleo de Mana do Poderosa Rei Espectro. Contém uma Mana Poderosa. Armas Forjadas Com Este Nucleo Adquirem uma das Habilidade do General Vampiro."
+        },
+        {
             name: "Pedaços da Armadura Dourada",
             rank: "SR",
             desc: "Pedaços Da Armadura da Grande Gargula Dourada. \nDaria para Fazer um Otimo Equipamento com Isso."
@@ -156,6 +166,11 @@ export const universeMaterials = {
             name: "Barra de Aço Refinado",
             rank: "SR",
             desc: "Uma Barra de Aço Equilibradamente Refinado. Pode Ser Usado Para Forjar Ótimos Equipamentos."
+        },
+        {
+            name: "Nucleo de Mana de Vampiro",
+            rank: "R",
+            desc: "Núcleo de Mana de um Vampiro. Contém uma Grande Quantidade de Mana. Boas Armas Podem Ser Forjadas Com Este Nucleo."
         },
         {
             name: "Nucleo de Mana do Homem Rato Campeão",

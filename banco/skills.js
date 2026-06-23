@@ -1324,12 +1324,17 @@ export const universeSkills = {
         {
             name: "Imparável",
             rank: "SSR",
-            desc: "&lt;CARACTERÍSTICA PESSOAL&gt; \nEVANGELINE CROSS \n\nUMA CARACTERÍSTICA QUE Ignora Completamente Condições de Status que Prejudicam o Movimento. \n\nQUANDO ATIVADA, O MP É CONTINUAMENTE EXAURIDO."
+            desc: "&lt;CARACTERÍSTICA PESSOAL&gt; \nEVANGELINE CROSS \n\nUMA CARACTERÍSTICA QUE Ignora Completamente Condições de Status que Prejudicam o Movimento. \n\nQUANDO ATIVADA, O MP É CONTINUAMENTE EXAURIDO. \n\n※ Mas Montarias Ainda São Prejudicadas Pelo Peso."
         },
         {
             name: "Absorção de Dano",
             rank: "SSR",
             desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
+        },
+        {
+            name: "Olho de Identificação",
+            rank: "SR",
+            desc: "Permite Avaliar Qualquer Item. Identificando a Qualidade do Item."
         },
         {
             name: "Canhão de Fogo",
@@ -1339,7 +1344,7 @@ export const universeSkills = {
         {
             name: "Mágia de Sangue",
             rank: "SR",
-            desc: "Você Usa Seu Próprio Sangue e o Sangue Consumido Como Base Para Lançar as Suas Mágias. \n\nMágias: \nMissil de Sangue: Cria Uma Lotus que Dispara Misseis que Explodem ao Acertar o Alvo. Podendo Aumentar a Quantidade e Diminuir o Poder de Ataque ou o Contrario. \nFios de Sangue: Pode Criar Fios de Sangue Para Prender e Imobilizar Inimigos. O Missil Pode Ser Usado Para Espalhar Estes Fios. \nFuração de Sangue: Crie Um Furação Usando Mágia de Vento e o Reforça Usando Sangue. \nMeteoro de Sangue: Cria Grandes Porjeteis de Sangue e os Dispara em Grande Velocidade e Força."
+            desc: "Você Usa Seu Próprio Sangue e o Sangue Consumido Como Base Para Lançar as Suas Mágias. \n\nMágias: \nMissil de Sangue: Cria Uma Lotus que Dispara Misseis que Explodem ao Acertar o Alvo. Podendo Aumentar a Quantidade e Diminuir o Poder de Ataque ou o Contrario. \nFios de Sangue: Pode Criar Fios de Sangue Para Prender e Imobilizar Inimigos. O Missil Pode Ser Usado Para Espalhar Estes Fios. \nFuração de Sangue: Crie Um Furação Usando Mágia de Vento e o Reforça Usando Sangue. \nMeteoro de Sangue: Cria Grandes Porjeteis de Sangue e os Dispara em Grande Velocidade e Força. \nNévoa de Sangue: Cria Uma Névoa de Sangue."
         },
         {
             name: "Esmagamento das Folhas de Bordo",
