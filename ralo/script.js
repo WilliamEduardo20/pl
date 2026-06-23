@@ -15,27 +15,17 @@ import { universeMaterials } from './banco/materiais.js';
 // --- SISTEMA DE CONFIGURAÇÕES (LOCALSTORAGE) ---
 function inicializarConfiguracoes() {
     const chkSubClasses = document.getElementById('config-subclasses');
-    const chkTitulos = document.getElementById('config-titulos');
-    if (!chkSubClasses || !chkTitulos) return;
+    if (!chkSubClasses) return;
 
-    // Busca o modo salvo. Se não existir, o padrão será 'subclasses'
-    const tipoSalvo = localStorage.getItem('config_separar_itens_tipo') || 'subclasses';
+    // Busca na memória. Se não existir, o padrão será 'true' (separado)
+    const separarSalvo = localStorage.getItem('config_separar_itens');
+    const separarAtivo = separarSalvo !== 'false'; 
     
-    if (tipoSalvo === 'titulos') {
-        chkTitulos.checked = true;
-        chkSubClasses.checked = false;
-    } else {
-        chkSubClasses.checked = true;
-        chkTitulos.checked = false;
-    }
+    chkSubClasses.checked = separarAtivo;
 
-    // Ouvintes para salvar dinamicamente a opção ativa nos Radio Buttons
+    // Adiciona o evento para salvar automaticamente ao alterar
     chkSubClasses.addEventListener('change', (e) => {
-        if (e.target.checked) localStorage.setItem('config_separar_itens_tipo', 'subclasses');
-    });
-
-    chkTitulos.addEventListener('change', (e) => {
-        if (e.target.checked) localStorage.setItem('config_separar_itens_tipo', 'titulos');
+        localStorage.setItem('config_separar_itens', e.target.checked);
     });
 }
 
@@ -112,20 +102,20 @@ function openModal(tipo, escolha, numLinha) {
 
         document.getElementById('escCoisa').classList.remove('ativo');
         
-        // Verifica a nova configuração de exibição salva
-        const tipoSalvo = localStorage.getItem('config_separar_itens_tipo') || 'subclasses';
+        // Verifica a configuração salva
+        const separarAtivo = localStorage.getItem('config_separar_itens') !== 'false';
 
         setTimeout(() => { 
-            if (tipoSalvo === 'subclasses') {
-                // Comportamento original: Abre o menu das subcategorias por modal
+            if (separarAtivo) {
+                // Comportamento original: Abre as subcategorias
                 document.getElementById('escSubItens').classList.add('ativo'); 
             } else {
-                // Comportamento igual Universo 6: Carrega a lista inteira unificada de uma vez só
+                // Novo comportamento: Abre a lista com todos os itens misturados
                 const universoAtual = universosSelecionados[coluna];
                 document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
                 document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
                 
-                renderizarMenu('itens_gerais'); 
+                renderizarMenu('itens_gerais'); // Nova categoria unificada
                 document.getElementById('escHabilidade').classList.add('ativo');
             }
         }, 180);
@@ -134,12 +124,12 @@ function openModal(tipo, escolha, numLinha) {
         if (!universosSelecionados[coluna]) return; 
 
         const universoAtual = universosSelecionados[coluna];
-        const nomeFormatado = escolha.charAt(0).toUpperCase() + escolha.slice(1); 
+        const nomeFormatado = escolha.charAt(0).toUpperCase() + escolha.slice(1); // Deixa primeira letra maiúscula
         
         document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
         document.getElementById('descricao-escolha').textContent = `Selecione um(a) ${nomeFormatado.toLowerCase()} do registro para a linha [${linha}].`;
 
-        renderizarMenu(escolha); 
+        renderizarMenu(escolha); // O parâmetro 'escolha' contém: armas, armaduras, consumiveis ou materiais
 
         document.getElementById('escSubItens').classList.remove('ativo');
         setTimeout(() => { document.getElementById('escHabilidade').classList.add('ativo'); }, 180);
@@ -176,18 +166,19 @@ function obterEquipados() {
     return equipados;
 }
 
-// --- VER DETALHES E DESVINCULAR ---
+// --- NOVAS FUNÇÕES: VER DETALHES E DESVINCULAR ---
 function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     const universoAtual = universosSelecionados[c];
     const universoIndex = universos.indexOf(universoAtual);
     
+    // Busca do banco correspondente baseando-se no novo sistema
     let listaAtual;
     if (tipoCoisa === 'armadura') listaAtual = universeArmors[universoIndex];
     else if (tipoCoisa === 'arma') listaAtual = universeWepons[universoIndex];
     else if (tipoCoisa === 'consumivel') listaAtual = universeConsumibles[universoIndex];
     else if (tipoCoisa === 'material') listaAtual = universeMaterials[universoIndex]; 
     else if (tipoCoisa === 'constituicao') listaAtual = universeConstitution[universoIndex];
-    else if (tipoCoisa === 'item_geral') { 
+    else if (tipoCoisa === 'item_geral') { // --- NOVA CHECAGEM ---
         listaAtual = [
             ...(universeArmors[universoIndex] || []),
             ...(universeWepons[universoIndex] || []),
@@ -195,8 +186,9 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
             ...(universeMaterials[universoIndex] || [])
         ];
     }
-    else listaAtual = universeSkills[universoIndex]; 
+    else listaAtual = universeSkills[universoIndex]; // fallback para habilidade
 
+    // Impede erro caso a lista do universo ainda não exista
     if (!listaAtual) return;
 
     const objeto = listaAtual.find(o => o.name === nomeCoisa);
@@ -205,26 +197,31 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     const habilidade = objeto; 
     let descFormatada = habilidade.desc.replace(/\n/g, '<br>');
     
+    // --- NOVA FUNCIONALIDADE: Tornar os movimentos da Espada do Vazio clicáveis ---
     if (habilidade.name === "Espada do Vazio") {
+        // 1. Mapeamento dos movimentos específicos (Mude as strings da direita para as chaves exatas que estão no seu my.js)
         const chavesMovimentos = {
-            "Técnica Aplicada [Diabo (魔)]": "zero_aplicado_diabo", 
+            "Técnica Aplicada [Diabo (魔)]": "zero_aplicado_diabo", // <- Ex: chave no my.js
             "Vontade Profunda Aplicada [Sem Nome (無名)]": "zero_profunda_sem_nome",
             "Vontade Profunda Vinculada [Diabo Zero (零魔)]": "zero_vinculada",
             "Técnica Aplicada [Senhor (君)]": "rei_aplicado_senhor",
             "Profundidade Aplicada [Imperador (帝)]": "rei_profunda_imperador",
-            "Técnica Aplicada [Preto (玄)]": "luz_aplicado", 
-            "Profundidade Aplicada [Brilhante (明)]": "luz_profundidade", 
+            "Técnica Aplicada [Preto (玄)]": "luz_aplicado", // Esta chave eu vi que você já tem no my.js!
+            "Profundidade Aplicada [Brilhante (明)]": "luz_profundidade", // Já existe no my.js!
             "Técnica Aplicada [Rede (羅)]": "ceu_aplicado_rede",
             "Técnica Aplicada [Destino (命)]": "ceu_aplicado_destino",
             "Técnica Aplicada [Grande (大)]": "superior_aplicado_grande",
-            "Técnica Aplicada [Deus (神)]": "superior_aplicado_deus", 
-            "Profundidade Final": "esperanca_final", 
-            "Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)]": "esperanca_vinculada" 
+            "Técnica Aplicada [Deus (神)]": "superior_aplicado_deus", // Já existe no my.js!
+            "Profundidade Final": "esperanca_final", // Já existe no my.js!
+            "Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)]": "esperanca_vinculada" // Já existe no my.js!
         };
 
+        // Estilo visual do link clicável
         const estiloLink = "color: black; text-decoration: none; cursor: pointer; font-weight: bold; text-shadow: 0 0 5px rgba(14,165,233,0.3);";
 
+        // Substitui os textos da array acima pelos links interativos
         for (const [texto, chave] of Object.entries(chavesMovimentos)) {
+            // Escapa parênteses e colchetes para o Regex não quebrar a busca
             const textoEscapado = texto.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
             const regex = new RegExp(textoEscapado, 'g');
             
@@ -234,14 +231,17 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
             );
         }
         
+        // 2. Tratamento especial para as "Formas Básicas", já que o nome se repete em várias categorias, 
+        // a gente usa o contexto da palavra anterior para saber qual chave chamar.
         descFormatada = descFormatada.replace(/Zero \(零\): <br> - Forma Básica/g, `Zero (零): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'zero_basico')">Forma Básica</span>`);
         descFormatada = descFormatada.replace(/Rei \(王\): <br> - Forma Básica/g, `Rei (王): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'rei_basico')">Forma Básica</span>`);
         descFormatada = descFormatada.replace(/Luz \(光\): <br> - Forma Básica/g, `Luz (光): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'luz_basico')">Forma Básica</span>`);
         descFormatada = descFormatada.replace(/Céu \(天\): <br> - Forma Básica/g, `Céu (天): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'ceu_basico')">Forma Básica</span>`);
         descFormatada = descFormatada.replace(/Superior \(上\): <br> - Forma Básica/g, `Superior (上): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'superior_basico')">Forma Básica</span>`);
-        descFormatada = descFormatada.replace(/Futuro \(未來\): <br> - Forma Básica/g, `Futuro (未來): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'futuro_basico')">Forma Básica</span>`); 
+        descFormatada = descFormatada.replace(/Futuro \(未來\): <br> - Forma Básica/g, `Futuro (未來): <br> - <span style="${estiloLink}" onclick="openModal('descHabilidade', 'futuro_basico')">Forma Básica</span>`); // futuro_basico já existe no my.js!
     }
     
+    // Suporte para Ranks
     let rankColor = "#C5A344"; 
     if (habilidade.rank === 'EX' || habilidade.rank === 'Mítico') rankColor = "#23EEC4";
     if (habilidade.rank === 'SSS' || habilidade.rank === 'SS' || habilidade.rank === 'Lendário') rankColor = "#FFD700";
@@ -249,16 +249,20 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     
     const modalWindow = document.getElementById('descHabilidade');
 
+    // MUDANÇA: Verifica se é o Universo 2 e injeta a sua estrutura personalizada
     if (universoAtual === "SSS Class Revival Hunter") {
         modalWindow.innerHTML = `
             <div class="ui-container">
                 <div class="top-bracket"></div>
+
                 <div class="card-outer">
                     <div class="card-middle">
                         <div class="card-inner">
                             <div class="skill-title">[${habilidade.name.toUpperCase()}]</div>
                             <div class="skill-rank">RANK: ${habilidade.rank.toUpperCase()}</div>
+                            
                             <div class="skill-description">${descFormatada}</div>
+
                             <div style="margin-top: 25px; display: flex; gap: 10px; width: 100%;">
                                 <button style="flex: 1; padding: 10px; background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; font-weight: 700; cursor: pointer;" onclick="fecharModalDetalhes()">FECHAR</button>
                                 <button style="flex: 1; padding: 10px; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l})">DESVINCULAR</button>
@@ -269,17 +273,24 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
             </div>
         `;
     } else if (universoAtual === "Climbing The Tower With a Time Stop Ability") {
+        // Formata dinamicamente as palavras-chave do banco de dados para ficarem em destaque e com a linha tracejada
         let descClimbing = descFormatada
             .replace(/EFEITO:/g, '<span style="color: #0f172a; font-weight: 800;">EFEITO:</span>')
             .replace(/<br><br>CLASSIFICAÇÃO:/g, '<div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #cbd5e1;"><span style="color: #0f172a; font-weight: 800;">CLASSIFICAÇÃO:</span>')
             .replace(/CUSTO DE FORÇA DE VONTADE:/g, '<span style="color: #0f172a; font-weight: 800;">CUSTO DE FORÇA DE VONTADE:</span>')
             .replace(/TEMPO DE RECARGA:/g, '<span style="color: #0f172a; font-weight: 800;">TEMPO DE RECARGA:</span>');
             
+        // Fecha a div gerada pela CLASSIFICAÇÃO para não quebrar o layout
         if (descClimbing.includes('border-top')) descClimbing += '</div>';
 
         modalWindow.innerHTML = `
             <div class="system-window-wrapper">
-                <div class="top-tab-outer"><div class="top-tab-middle"><div class="top-tab-inner"></div></div></div>
+                <div class="top-tab-outer">
+                    <div class="top-tab-middle">
+                        <div class="top-tab-inner"></div>
+                    </div>
+                </div>
+
                 <div class="main-body-outer">
                     <div class="main-body-middle">
                         <div class="main-body-inner" style="background-color: #f8fafc; padding: 20px;">
@@ -287,8 +298,10 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                                 <div class="skill-title" style="font-size: 24px; font-weight: 700; color: #0f172a; text-align: center; margin-bottom: 20px; letter-spacing: 0.5px;">
                                     [SKILL: ${habilidade.name.toUpperCase()} <span>(${habilidade.rank.toUpperCase()})</span>]
                                 </div>
+                                
                                 <div style="font-size: 14px; color: #475569; line-height: 1.7; text-align: justify; text-transform: uppercase; font-weight: 600; letter-spacing: 0.2px;">
                                     <div class="text-block" style="margin-bottom: 15px;">${descClimbing}</div>
+
                                     <div style="display: flex; gap: 10px; width: 100%; border-top: 1px dashed #cbd5e1; padding-top: 15px; margin-top: 15px;">
                                         <button class="close-btn" style="flex: 1; padding: 10px; margin: 0; background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; font-family: 'Segoe UI', sans-serif; font-weight: 700; cursor: pointer;" onclick="fecharModalDetalhes()">FECHAR</button>
                                         <button class="close-btn" style="flex: 1; padding: 10px; margin: 0; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-family: 'Segoe UI', sans-serif; font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l})">DESVINCULAR</button>
@@ -298,11 +311,18 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                         </div>
                     </div>
                 </div>
-                <div class="bottom-tab-outer"><div class="bottom-tab-middle"><div class="bottom-tab-inner"></div></div></div>
+
+                <div class="bottom-tab-outer">
+                    <div class="bottom-tab-middle">
+                        <div class="bottom-tab-inner"></div>
+                    </div>
+                </div>
             </div>`;
     } else {
+        // Verifica se a habilidade é a Espada do Vazio para injetar a classe
         const classeEspecial = habilidade.name === "Espada do Vazio" ? " tema-vazio" : "";
 
+        // Se for qualquer outro Universo, usa a estrutura padrão do sistema
         modalWindow.innerHTML = `
             <div class="moldura-habilidade${classeEspecial}">
                 <div class="linha-principal">
@@ -321,7 +341,10 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                         </div>
                     </div>
                 </div>
-                <div class="canto tl"></div><div class="canto tr"></div><div class="canto bl"></div><div class="canto br"></div>
+                <div class="canto tl"></div>
+                <div class="canto tr"></div>
+                <div class="canto bl"></div>
+                <div class="canto br"></div>
             </div>
         `;
     }
@@ -333,6 +356,7 @@ window.abrirDetalhes = abrirDetalhes;
 function fecharModalDetalhes() { document.getElementById('descHabilidade').classList.remove('ativo'); }
 window.fecharModalDetalhes = fecharModalDetalhes;
 
+// Função auxiliar: Lê o rank em formato de texto e transforma em números
 function obterPesosRank(rankStr) {
     if (!rankStr) return { raridade: 0, nivel: 0 };
     let texto = rankStr.toUpperCase(); 
@@ -344,29 +368,39 @@ function obterPesosRank(rankStr) {
     else if (texto.includes('EX') || texto.includes('EXOTICO') || texto.includes('EXÓTICO')) raridade = 25;
     else if (texto.includes('SSS')) raridade = 24;
     else if (texto.includes('SS')) raridade = 23;
+
+    // SEMPRE checar o + e o - antes da letra pura
     else if (texto.includes('S+')) raridade = 22;
     else if (texto.includes('S-')) raridade = 20;
     else if (texto.match(/\bS\b/) || texto.includes('MÍTICO') || texto.includes('MITICO')) raridade = 21;
+
     else if (texto.includes('A+') || texto.includes('LENDÁRIO+') || texto.includes('LENDARIO+')) raridade = 19;
     else if (texto.includes('A-') || texto.includes('SSR')) raridade = 17;
     else if (texto.match(/\bA\b/) || texto.includes('LENDÁRIO') || texto.includes('LENDARIO') || texto.includes('HEROICO') || texto.includes('HERÓICO')) raridade = 18;
+    
     else if (texto.includes('ÚNICO+') || texto.includes('UNICO+')) raridade = 16.6;
     else if (texto.includes('ÚNICO') || texto.includes('UNICO')) raridade = 16.5;
+
     else if (texto.includes('B+') || texto.includes('ÉPICO+') || texto.includes('EPICO+')) raridade = 16;
     else if (texto.includes('B-')) raridade = 14;
     else if (texto.match(/\bB\b/) || texto.includes('ÉPICO') || texto.includes('EPICO') || texto.includes('SR')) raridade = 15;
+
     else if (texto.includes('C+')  || texto.includes('RARO+')) raridade = 13;
     else if (texto.includes('C-')) raridade = 11;
     else if (texto.match(/\bC\b/) || texto.includes('RARO') || texto.includes('R')) raridade = 12;
+    
     else if (texto.includes('D+')  || texto.includes('INCOMUM+')) raridade = 10;
     else if (texto.includes('D-')) raridade = 8;
     else if (texto.match(/\bD\b/) || texto.includes('INCOMUM')) raridade = 9;
+    
     else if (texto.includes('E+')  || texto.includes('COMUM+')) raridade = 7;
     else if (texto.includes('E-')) raridade = 5;
     else if (texto.match(/\bE\b/) || texto.includes('COMUM') || texto.includes('N')) raridade = 6;
+    
     else if (texto.includes('FFF')) raridade = 4; 
     else if (texto.includes('FF')) raridade = 3; 
     else if (texto.match(/\bF\b/)) raridade = 2; 
+    
     else if (texto.includes('NENHUMA') || texto.includes('NENHUM')) raridade = 1;
 
     let nivel = 0;
@@ -377,6 +411,7 @@ function obterPesosRank(rankStr) {
     return { raridade, nivel };
 }
 
+//3 Passos
 function renderizarMenu(tipo) {
     if (tipo === 'universo') {
         const menu = document.getElementById("menu-sincronizacao");
@@ -408,6 +443,7 @@ function renderizarMenu(tipo) {
     const universoAtual = universosSelecionados[coluna];
     const universoIndex = universos.indexOf(universoAtual);
     
+    // ATUALIZAÇÃO: Agora as configurações apontam diretamente para os seus novos ficheiros importados!
     const configuracoes = {
         habilidades: { dados: universeSkills, mensagemVazio: "Nenhuma habilidade cadastrada...", tipoSincronizacao: "habilidade" },
         constituicoes: { dados: universeConstitution, mensagemVazio: "Nenhuma constituição cadastrada...", tipoSincronizacao: "constituicao" },
@@ -415,6 +451,7 @@ function renderizarMenu(tipo) {
         armas: { dados: universeWepons, mensagemVazio: "Nenhuma arma cadastrada...", tipoSincronizacao: "arma" },
         consumiveis: { dados: universeConsumibles, mensagemVazio: "Nenhum consumível cadastrado...", tipoSincronizacao: "consumivel" },
         materiais: { dados: universeMaterials, mensagemVazio: "Nenhum material cadastrado...", tipoSincronizacao: "material" },
+        // --- NOVA CONFIGURAÇÃO UNIFICADA ---
         itens_gerais: { 
             dados: universos.map((_, i) => [
                 ...(universeArmors[i] || []), 
@@ -434,22 +471,34 @@ function renderizarMenu(tipo) {
         return;
     }
 
+    let listaElementos = configAtual.dados[universoIndex] || [];
     const equipados = obterEquipados(); 
-    let elementosOrdenados = [];
 
-    // LÓGICA CORRIGIDA: Trata o menu geral separando e ordenando por subcategoria antes de juntar tudo
-    if (tipo === 'itens_gerais') {
-        const armadurasRaw = universeArmors[universoIndex] || [];
-        const armasRaw = universeWepons[universoIndex] || [];
-        const consumiveisRaw = universeConsumibles[universoIndex] || [];
-        const materiaisRaw = universeMaterials[universoIndex] || [];
-
-        // Função interna para reaproveitar a lógica de ordenação oficial por Rank e Nome
-        const ordenarSubLista = (lista) => {
-            if ([3, 4, 5].includes(universoIndex)) {
-                return lista.filter(item => item && item.name);
-            }
-            return lista.filter(item => item && item.name).sort((a, b) => {
+    if (listaElementos && listaElementos.length > 0) {
+        let elementosOrdenados = [];
+        
+        if (tipo === 'itens_gerais') {
+            // --- NOVA ORDENAÇÃO: Primeiro Rank, depois Nome ---
+            elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
+                const pesosA = obterPesosRank(a.rank);
+                const pesosB = obterPesosRank(b.rank);
+                
+                // 1º: Organiza pela Raridade (Rank Maior para o Menor)
+                if (pesosB.raridade !== pesosA.raridade) { return pesosB.raridade - pesosA.raridade; }
+                
+                // 2º: Se o Rank for igual, organiza pelo Nome (A a Z)
+                const comparacaoNome = a.name.localeCompare(b.name);
+                if (comparacaoNome !== 0) { return comparacaoNome; }
+                
+                // 3º: Critério de desempate por Nível (caso o item tenha)
+                return pesosB.nivel - pesosA.nivel;
+            });
+        } 
+        // Lógica de ordenação original para os outros casos
+        else if ([3, 4, 5].includes(universoIndex)) {
+            elementosOrdenados = listaElementos.filter(item => item && item.name);
+        } else {
+            elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
                 const pesosA = obterPesosRank(a.rank);
                 const pesosB = obterPesosRank(b.rank);
                 
@@ -458,56 +507,12 @@ function renderizarMenu(tipo) {
                 if (comparacaoNome !== 0) { return comparacaoNome; }
                 return pesosB.nivel - pesosA.nivel;
             });
-        };
+        }
 
-        const armadurasOrd = ordenarSubLista(armadurasRaw);
-        const armasOrd = ordenarSubLista(armasRaw);
-        const consumiveisOrd = ordenarSubLista(consumiveisRaw);
-        const materiaisOrd = ordenarSubLista(materiaisRaw);
-
-        // Injeta os títulos divisores ("Seraparação") dinamicamente apenas se a categoria tiver itens
-        if (armadurasOrd.length > 0) {
-            elementosOrdenados.push({ type: "Seraparação", name: "Armaduras" });
-            elementosOrdenados.push(...armadurasOrd);
-        }
-        if (armasOrd.length > 0) {
-            elementosOrdenados.push({ type: "Seraparação", name: "Armas" });
-            elementosOrdenados.push(...armasOrd);
-        }
-        if (consumiveisOrd.length > 0) {
-            elementosOrdenados.push({ type: "Seraparação", name: "Consumíveis" });
-            elementosOrdenados.push(...consumiveisOrd);
-        }
-        if (materiaisOrd.length > 0) {
-            elementosOrdenados.push({ type: "Seraparação", name: "Materiais" });
-            elementosOrdenados.push(...materiaisOrd);
-        }
-    } else {
-        // Comportamento padrão mantido para Habilidades, Constituições e filtros normais
-        let listaElementos = configAtual.dados[universoIndex] || [];
-        if (listaElementos && listaElementos.length > 0) {
-            if ([3, 4, 5].includes(universoIndex)) {
-                elementosOrdenados = listaElementos.filter(item => item && item.name);
-            } else {
-                elementosOrdenados = listaElementos.filter(item => item && item.name).sort((a, b) => {
-                    const pesosA = obterPesosRank(a.rank);
-                    const pesosB = obterPesosRank(b.rank);
-                    
-                    if (pesosB.raridade !== pesosA.raridade) { return pesosB.raridade - pesosA.raridade; }
-                    const comparacaoNome = a.name.localeCompare(b.name);
-                    if (comparacaoNome !== 0) { return comparacaoNome; }
-                    return pesosB.nivel - pesosA.nivel;
-                });
-            }
-        }
-    }
-
-    // Renderização dos elementos processados na lista final
-    if (elementosOrdenados.length > 0) {
         for (let i = 0; i < elementosOrdenados.length; i++) {
             const item = elementosOrdenados[i];
             
-            // Deteta o objeto injetado de separação e cria a div do layout correto
+            // ... (resto do seu código continua exatamente igual a partir daqui)
             if (item.type === "Seraparação") {
                 menu.innerHTML += `<div class="linha-com-texto">${item.name}</div>`;
                 continue; 
@@ -539,13 +544,15 @@ function renderizarMenu(tipo) {
         menu.innerHTML = `<p class="descricao" style="text-align:center; padding: 20px;">${configAtual.mensagemVazio}</p>`; 
     }
 }
+window.renderizarMenu = renderizarMenu;
 
 function sincronizar(nome, rank, tipo) {
     const nomeTratado = nome.replace(/'/g, "\\'");
     const classeEspecial = nome === "Espada do Vazio" ? "tema-vazio-texto" : "";
 
+    // 1. LÓGICA EXCLUSIVA DE SINCRONIZAÇÃO DE UNIVERSO
     if (tipo === 'universo') {
-        universosSelecionados[coluna] = nome; 
+        universosSelecionados[coluna] = nome; // No caso do universo, o 'nome' é a própria string do universo
         const id = `col${coluna}-universo`;
         const elemento = document.getElementById(id);
         
@@ -553,9 +560,11 @@ function sincronizar(nome, rank, tipo) {
         
         const escUniverso = document.getElementById('escUniverso');
         if (escUniverso) escUniverso.classList.remove('ativo');
-        return; 
+        
+        return; // Encerra aqui
     }
 
+    // 2. LÓGICA DE SINCRONIZAÇÃO DE ITENS, HABILIDADES E CONSTS
     const slotId = `col${coluna}-habilidade${linha}`;
     const slotElemento = document.getElementById(slotId);
     
@@ -584,10 +593,12 @@ function desvincular(c, l) {
 
     if (slotElemento) {
         slotElemento.classList.remove('preenchido');
-        slotElemento.removeAttribute('data-nome'); 
+        slotElemento.removeAttribute('data-nome'); // LINHA NOVA
         slotElemento.innerHTML = '[Selecionar]';
         slotElemento.setAttribute('onclick', `openModal('escCoisa', 'col${c}', ${l})`);
     }
+    
+    // Fecha o modal logo após desvincular
     fecharModalDetalhes();
 }
 

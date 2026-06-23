@@ -110,12 +110,16 @@
             <h1 id="descricao" class="titulo">Configurações do Sistema</h1>
             <div class="cabecalho-config">
                 <p class="descricao">Configuração Básica</p>
-                <input type="checkbox" class="checkbox-sistema" checked>
+                <input type="radio" name="configuracao-tipo" class="checkbox-sistema" checked>
             </div>
             <div class="opcoes">
                 <div class="opcao-item">
                     <p class="andar">Separar Itens em Sub Classes</p>
-                    <input type="checkbox" class="checkbox-sistema" id="config-subclasses">
+                    <input type="radio" name="separacao-itens" class="checkbox-sistema" id="config-subclasses">
+                </div>
+                <div class="opcao-item">
+                    <p class="andar">Separar Itens em Titulos</p>
+                    <input type="radio" name="separacao-itens" class="checkbox-sistema" id="config-titulos">
                 </div>
                 <div class="opcao-item">
                     <p class="andar">Ativar Pesquisa Básica</p>
@@ -125,7 +129,7 @@
             <hr>
             <div class="cabecalho-config">
                 <p class="descricao" style="margin: 0;">Configuração Avançada</p>
-                <input type="checkbox" class="checkbox-sistema">
+                <input type="radio" name="configuracao-tipo" class="checkbox-sistema">
             </div>
             <div class="opcoes">
                 <div class="opcao-item">
