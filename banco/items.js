@@ -228,6 +228,16 @@ export const universeItens = {
             desc: "Abre Uma Porta Para a Sala Dourada Com 3 Goblins Caregando Sacos de Ouro, Ao Serem Mortes Dropão Nucleos de Alta Qualidade e Ouro. Só é Possivel Coletar os Itens Durante um Tempo Curto, ao Final do Tempo um Slime de Ouro Aparece e Devora Todo o Tesouro Não Coletado."
         },
         {
+            name: "Navio Imperial Alcatraz",
+            rank: "SSR",
+            desc: "O Grandioso Navio de Guerra Imperial Alcatraz do de Everblack. Construido com Magia Anciã Existem Poucos em Todo o Continente. Capaz de Acabar com Execitos Massivos em Poucos Segundos Somente com Seu Armamento Mágico Interno."
+        },
+        {
+            name: "Navio de Guerra",
+            rank: "SR",
+            desc: "O Magnifico Navio de Guerra de Everblack. Construido com Magia Anciã Existem Poucos em Todo o Continente. Capaz de Acabar com Inimigos Facilmente Somente com Seu Armamento Mágico Interno."
+        },
+        {
             name: "Chave da Sala Dos Slimes",
             rank: "SR",
             desc: "Abre Uma Porta Para uma Sala Cheia de Slimes. Pode Ser Usada Para Treinar Outros Personagens."
@@ -271,6 +281,16 @@ export const universeItens = {
             name: "Artefato de Vento",
             rank: "R",
             desc: "Lança Rajadas de Vento em uma Grande Área No Alvo. \nDica: Quando uma Magia de Vento Inferior Encontra uma Mágia de Vento Superior a Magia Inferior é Consumida pela Superior, Use com Sabedoria."
+        },
+        {
+            name: "Broca de Mão",
+            rank: "R",
+            desc: "Uma Broca de Mão Utilizada Para Minerar Menerais Resistentes."
+        },
+        {
+            name: "Gancho",
+            rank: "N",
+            desc: "Um Lança Gancho de Braço, Que Permite Escalar Grandes Objetos e se Pedendurar. \nCuidade a Corda Não é Muito Resistente."
         },
     ]
 };

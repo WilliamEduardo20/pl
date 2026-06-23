@@ -358,6 +358,11 @@ export const universeWepons = {
             desc: "CLASSIFICAÇÃO: Manoplas \nATAQUE: 50-60 \nDURABILIDADE: 12/12 \n\nAdiciona Dano Fixo Extra aos Ataques Básicos."
         },
         {
+            name: "Grande Espada do Cavaleiro Espectro Nv.30",
+            rank: "SR",
+            desc: "CLASSE - GRANDE ESPADA \nATAQUE - 140-160 \nDURABILIDADE - 15/15 \nAUMENTA O DANO FÍSICO DA UNIDADE EM 35% \n\nA UNIDADE QUE A EMPUNHAR ADQUIRE A HABILIDADE DE SEUS ATAQUES Terem UMA ALTA CHANCE DE TRAZER [MEDO] AOS INIMIGOS, REDUZINDO SUAS ESTATÍSTICAS DE COMBATE."
+        },
+        {
             name: "Artefato Canhão de Mana",
             rank: "SR",
             desc: "Canhão Mágico que Dispara Balas Reforçadas com Mana."

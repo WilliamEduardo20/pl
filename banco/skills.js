@@ -1332,6 +1332,21 @@ export const universeSkills = {
             desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
         },
         {
+            name: "Sintonização de Elementos",
+            rank: "SSR",
+            desc: "CONCEDE AO USUÁRIO A CAPACIDADE DE CONJURAR E CONTROLAR QUALQUER ATRIBUTO MÁGICO SEM RESTRIÇÕES DE AFINIDADE. \n\nALÉM DISSO, REDUZ PASSIVAMENTE O CUSTO DE MANA DE TODAS AS SUAS MAGIAS ELEMENTARES."
+        },
+        {
+            name: "Fusão Elemental",
+            rank: "SSR",
+            desc: "MESCLA À FORÇA DOIS ELEMENTOS MÁGICOS PARA CRIAR UMA REAÇÃO DEVASTADORA. \nLançando Um Poderosos ATAQUE Onde DANO MÁGICO É DUPLICADO ou Mais Dependendo dos Elementos Mesclados. \n\n※ Requer alta concentração e a Quantidade Mana Consumida Depende dos Elementos que Estão Sendo Fundidos."
+        },
+        {
+            name: "Explosão Elemental",
+            rank: "SR",
+            desc: "COMPRIME A ENERGIA MÁGICA AO SEU REDOR E A DISPARA COMO UMA PODEROSA DETONAÇÃO Elemental EM ÁREA. \nQue CAUSA DANO MÁGICO MASSIVO A TODOS OS INIMIGOS DENTRO DE UM RAIO DE 15 METROS. \nO TIPO DE DANO É DETERMINADO PELO ELEMENTO Usado. \n※ Consome uma grande quantidade de Mana para ser ativada."
+        },
+        {
             name: "Olho de Identificação",
             rank: "SR",
             desc: "Permite Avaliar Qualquer Item. Identificando a Qualidade do Item."
