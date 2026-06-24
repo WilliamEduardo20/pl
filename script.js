@@ -18,7 +18,6 @@ function inicializarConfiguracoes() {
     const chkTitulos = document.getElementById('config-titulos');
     if (!chkSubClasses || !chkTitulos) return;
 
-    // Busca o modo salvo. Se não existir, o padrão será 'subclasses'
     const tipoSalvo = localStorage.getItem('config_separar_itens_tipo') || 'subclasses';
     
     if (tipoSalvo === 'titulos') {
@@ -29,7 +28,6 @@ function inicializarConfiguracoes() {
         chkTitulos.checked = false;
     }
 
-    // Ouvintes para salvar dinamicamente a opção ativa nos Radio Buttons
     chkSubClasses.addEventListener('change', (e) => {
         if (e.target.checked) localStorage.setItem('config_separar_itens_tipo', 'subclasses');
     });
@@ -39,17 +37,23 @@ function inicializarConfiguracoes() {
     });
 }
 
-// Inicializa as configurações assim que a janela carregar
 window.addEventListener('DOMContentLoaded', inicializarConfiguracoes);
+
+// --- CONTROLE DINÂMICO DE UPGRADE DO ÍNDICE MULTIVERSAL ---
+let maxColunas = 3;
+let maxLinhas = 3;
+let nivelIndice = 1;
+let escolhasFeitas = 0;
 
 var coluna = 0, linha = 0;
 const universosSelecionados = { 1: null, 2: null, 3: null };
 
 function openModal(tipo, escolha, numLinha) {
     let colunaAlvo = coluna; 
-    if (escolha === 'col1') colunaAlvo = 1;
-    if (escolha === 'col2') colunaAlvo = 2;
-    if (escolha === 'col3') colunaAlvo = 3;
+    // Correção: Agora detecta dinamicamente qualquer número de coluna (ex: col4, col5...)
+    if (typeof escolha === 'string' && escolha.startsWith('col')) {
+        colunaAlvo = parseInt(escolha.replace('col', ''), 10);
+    }
 
     if (tipo === 'descHabilidade') {
         const modalElement = document.getElementById('descHabilidade');
@@ -62,10 +66,7 @@ function openModal(tipo, escolha, numLinha) {
                         <p class="descricao" id="descricao-habilidade"></p>
                         <div id="extra-habilidade"></div>
                     </div>
-                    <div class="canto tl"></div>
-                    <div class="canto tr"></div>
-                    <div class="canto bl"></div>
-                    <div class="canto br"></div>
+                    <div class="canto tl"></div><div class="canto tr"></div><div class="canto bl"></div><div class="canto br"></div>
                 </div>
             `;
         }
@@ -111,16 +112,12 @@ function openModal(tipo, escolha, numLinha) {
         if (!universosSelecionados[coluna]) return; 
 
         document.getElementById('escCoisa').classList.remove('ativo');
-        
-        // Verifica a nova configuração de exibição salva
         const tipoSalvo = localStorage.getItem('config_separar_itens_tipo') || 'subclasses';
 
         setTimeout(() => { 
             if (tipoSalvo === 'subclasses') {
-                // Comportamento original: Abre o menu das subcategorias por modal
                 document.getElementById('escSubItens').classList.add('ativo'); 
             } else {
-                // Comportamento igual Universo 6: Carrega a lista inteira unificada de uma vez só
                 const universoAtual = universosSelecionados[coluna];
                 document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
                 document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
@@ -159,14 +156,16 @@ function openModal(tipo, escolha, numLinha) {
     }
 }
 window.openModal = openModal;
+
 window.addEventListener('click', function(event) {
     if (event.target.classList.contains('modal')) { event.target.classList.remove('ativo'); }
 });
 
 function obterEquipados() {
     const equipados = [];
-    for (let c = 1; c <= 3; c++) {
-        for (let l = 1; l <= 3; l++) {
+    // Correção: Loops adaptados para ler as novas dimensões dinâmicas da matriz
+    for (let c = 1; c <= maxColunas; c++) {
+        for (let l = 1; l <= maxLinhas; l++) {
             const slot = document.getElementById(`col${c}-habilidade${l}`);
             if (slot && slot.hasAttribute('data-nome')) {
                 equipados.push(slot.getAttribute('data-nome'));
@@ -176,7 +175,6 @@ function obterEquipados() {
     return equipados;
 }
 
-// --- VER DETALHES E DESVINCULAR ---
 function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
     const universoAtual = universosSelecionados[c];
     const universoIndex = universos.indexOf(universoAtual);
@@ -437,14 +435,12 @@ function renderizarMenu(tipo) {
     const equipados = obterEquipados(); 
     let elementosOrdenados = [];
 
-    // LÓGICA CORRIGIDA: Trata o menu geral separando e ordenando por subcategoria antes de juntar tudo
     if (tipo === 'itens_gerais') {
         const armadurasRaw = universeArmors[universoIndex] || [];
         const armasRaw = universeWepons[universoIndex] || [];
         const consumiveisRaw = universeConsumibles[universoIndex] || [];
         const materiaisRaw = universeMaterials[universoIndex] || [];
 
-        // Função interna para reaproveitar a lógica de ordenação oficial por Rank e Nome
         const ordenarSubLista = (lista) => {
             if ([3, 4, 5].includes(universoIndex)) {
                 return lista.filter(item => item && item.name);
@@ -465,7 +461,6 @@ function renderizarMenu(tipo) {
         const consumiveisOrd = ordenarSubLista(consumiveisRaw);
         const materiaisOrd = ordenarSubLista(materiaisRaw);
 
-        // Injeta os títulos divisores ("Seraparação") dinamicamente apenas se a categoria tiver itens
         if (armadurasOrd.length > 0) {
             elementosOrdenados.push({ type: "Seraparação", name: "Armaduras" });
             elementosOrdenados.push(...armadurasOrd);
@@ -483,7 +478,6 @@ function renderizarMenu(tipo) {
             elementosOrdenados.push(...materiaisOrd);
         }
     } else {
-        // Comportamento padrão mantido para Habilidades, Constituições e filtros normais
         let listaElementos = configAtual.dados[universoIndex] || [];
         if (listaElementos && listaElementos.length > 0) {
             if ([3, 4, 5].includes(universoIndex)) {
@@ -502,12 +496,10 @@ function renderizarMenu(tipo) {
         }
     }
 
-    // Renderização dos elementos processados na lista final
     if (elementosOrdenados.length > 0) {
         for (let i = 0; i < elementosOrdenados.length; i++) {
             const item = elementosOrdenados[i];
             
-            // Deteta o objeto injetado de separação e cria a div do layout correto
             if (item.type === "Seraparação") {
                 menu.innerHTML += `<div class="linha-com-texto">${item.name}</div>`;
                 continue; 
@@ -594,3 +586,177 @@ function desvincular(c, l) {
 window.renderizarMenu = renderizarMenu;
 window.sincronizar = sincronizar;
 window.desvincular = desvincular;
+
+// Função de Alterar Nível
+function alterarNivel(event, habilidade, mudanca) {
+    event.stopPropagation();
+    if (habilidade === 'indice') {
+        const elementoNivel = document.getElementById('nivel-indice');
+        let nivelAtual = parseInt(
+            elementoNivel.textContent.match(/\d+/)[0]
+        );
+
+        let novoNivel = nivelAtual + mudanca;
+        if (novoNivel >= 1 && novoNivel <= 15) {
+            elementoNivel.textContent = `[Nv-${novoNivel}]`;
+
+            const btnInc = document.getElementById('incrementar');
+            const btnDec = document.getElementById('decrementar');
+
+            if (btnDec) btnDec.classList.toggle('desapareca', novoNivel <= 1);
+            if (btnInc) btnInc.classList.toggle('desapareca', novoNivel >= 15);
+            
+            // Atualiza os pontos caso o nível alterado atinja um novo patamar
+            verificarPontosUpgrade();
+        }
+    }
+}
+window.alterarNivel = alterarNivel;
+
+// --- NOVO: GERENCIAMENTO DE UPGRADES DA MATRIZ ---
+function verificarPontosUpgrade() {
+    // A cada 5 níveis se ganha 1 ponto (Nv 5 = 1, Nv 10 = 2, Nv 15 = 3)
+    const totalDisponivel = Math.floor(nivelIndice / 5);
+    const pontosAtuais = totalDisponivel - escolhasFeitas;
+    
+    const btnColuna = document.getElementById('btn-upgrade-coluna');
+    const btnLinha = document.getElementById('btn-upgrade-linha');
+    const trLinha = document.getElementById('linha-btn-upgrade'); // Pega a linha (tr) inteira do botão
+    
+    if (pontosAtuais > 0) {
+        // Mostra os botões se houver pontos
+        if (btnColuna) { 
+            btnColuna.style.display = ''; // Volta a aparecer (comportamento normal da tabela)
+            btnColuna.innerHTML = `Aumentar<br>Coluna (${pontosAtuais})`;
+        }
+        if (trLinha) { 
+            trLinha.style.display = ''; // Volta a exibir a linha inferior
+        }
+        if (btnLinha) { 
+            btnLinha.innerHTML = `Aumentar Linha (${pontosAtuais})`;
+        }
+    } else {
+        // Oculta os botões completamente se não houver pontos
+        if (btnColuna) { 
+            btnColuna.style.display = 'none'; 
+        }
+        if (trLinha) { 
+            trLinha.style.display = 'none'; 
+        } else if (btnLinha) {
+            btnLinha.style.display = 'none'; // Fallback caso a TR não seja encontrada
+        }
+    }
+}
+
+function expandirColuna() {
+    maxColunas++;
+    const tabela = document.querySelector('.matriz-multiversal table');
+    if (!tabela) return;
+
+    // 1. Adiciona a célula de Universo ANTES do botão lateral de Aumentar Coluna
+    const linhaUniverso = tabela.querySelector('tr.universo');
+    const btnColuna = document.getElementById('btn-upgrade-coluna');
+    if (linhaUniverso && btnColuna) {
+        const th = document.createElement('th');
+        th.setAttribute('onclick', `openModal('escUniverso', 'col${maxColunas}')`);
+        th.setAttribute('id', `col${maxColunas}-universo`);
+        th.textContent = '[Selecione o Universo]';
+        linhaUniverso.insertBefore(th, btnColuna);
+    }
+
+    // 2. Adiciona células TD vazias em todas as linhas regulares (ignorando cabeçalho e botão de linha)
+    const linhasRegulares = tabela.querySelectorAll('tr:not(.universo):not(#linha-btn-upgrade)');
+    linhasRegulares.forEach((tr, index) => {
+        const numLinha = index + 1;
+        const td = document.createElement('td');
+        td.setAttribute('onclick', `openModal('escCoisa', 'col${maxColunas}', ${numLinha})`);
+        td.setAttribute('id', `col${maxColunas}-habilidade${numLinha}`);
+        td.textContent = '[Selecionar]';
+        tr.appendChild(td);
+    });
+
+    // 3. Aumenta a largura do botão "Aumentar Linha" (colspan) na base da tabela
+    const btnLinha = document.getElementById('btn-upgrade-linha');
+    if (btnLinha) btnLinha.setAttribute('colspan', maxColunas);
+
+    // Inicializa a memória da nova coluna
+    universosSelecionados[maxColunas] = null;
+}
+
+function expandirLinha() {
+    maxLinhas++;
+    const tabela = document.querySelector('.matriz-multiversal table');
+    const linhaBtnUpgrade = document.getElementById('linha-btn-upgrade');
+    if (!tabela || !linhaBtnUpgrade) return;
+
+    // 1. Cria nova linha e preenche com a quantidade atual de colunas
+    const tr = document.createElement('tr');
+    for (let c = 1; c <= maxColunas; c++) {
+        const td = document.createElement('td');
+        td.setAttribute('onclick', `openModal('escCoisa', 'col${c}', ${maxLinhas})`);
+        td.setAttribute('id', `col${c}-habilidade${maxLinhas}`);
+        td.textContent = '[Selecionar]';
+        tr.appendChild(td);
+    }
+    
+    // 2. CORREÇÃO: Insere a nova linha logo ANTES do botão usando o parentNode
+    // Isso resolve o problema do navegador ter criado um <tbody> invisível
+    linhaBtnUpgrade.parentNode.insertBefore(tr, linhaBtnUpgrade);
+
+    // 3. Aumenta a altura do botão "Aumentar Coluna" (rowspan) na lateral
+    const btnColuna = document.getElementById('btn-upgrade-coluna');
+    if (btnColuna) btnColuna.setAttribute('rowspan', maxLinhas + 1);
+}
+
+// --- CONTROLE DOS OUVINTES DE BOTÕES ---
+window.addEventListener('DOMContentLoaded', () => {
+    verificarPontosUpgrade(); // Garante o carregamento com os visuais desativados se Nv < 5
+
+    const btnInc = document.querySelector('.habilidade .incrementar');
+    const btnDec = document.querySelector('.habilidade .decrementar');
+    const txtNivel = document.getElementById('nivel-indice');
+
+    if (btnInc && btnDec && txtNivel) {
+        btnInc.addEventListener('click', (e) => {
+            if (nivelIndice < 15) {
+                nivelIndice++;
+                txtNivel.textContent = `[Nv-${nivelIndice}]`;
+                verificarPontosUpgrade();
+            }
+        });
+
+        btnDec.addEventListener('click', (e) => {
+            // Previne a regressão se um ponto já tiver sido gasto e o novo Nível não o suportar
+            const tierAnterior = Math.floor((nivelIndice - 1) / 5);
+            if (tierAnterior < escolhasFeitas) {
+                alert("Ação Bloqueada: Você já gastou o ponto de expansão fornecido por este patamar!");
+                return;
+            }
+
+            if (nivelIndice > 1) {
+                nivelIndice--;
+                txtNivel.textContent = `[Nv-${nivelIndice}]`;
+                verificarPontosUpgrade();
+            }
+        });
+    }
+
+    // Botões físicos na tabela Multiversal
+    document.getElementById('btn-upgrade-coluna')?.addEventListener('click', () => {
+        const totalDisponivel = Math.floor(nivelIndice / 5);
+        if (escolhasFeitas < totalDisponivel) {
+            expandirColuna();
+            escolhasFeitas++;
+            verificarPontosUpgrade();
+        }
+    });
+
+    document.getElementById('btn-upgrade-linha')?.addEventListener('click', () => {
+        const totalDisponivel = Math.floor(nivelIndice / 5);
+        if (escolhasFeitas < totalDisponivel) {
+            expandirLinha();
+            escolhasFeitas++;
+            verificarPontosUpgrade();
+        }
+    });
+});
