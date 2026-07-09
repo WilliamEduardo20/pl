@@ -40,11 +40,6 @@ export const universeConsumibles = {
             desc: "Selecione uma habilidade e promova-a para uma habilidade de nível superior da próxima categoria com 90% de chance de sucesso. Se falhar, a categoria da habilidade cai um nível. Desaparece após um único uso."
         },
         {
-            name: "Escalas da Vida",
-            rank: "Exotico",
-            desc: "Ofereça sua expectativa de vida e receba uma recompensa proporcional. Você pode oferecer de um mínimo de 1% a um máximo de 99% da sua expectativa de vida restante. Após um uso, a balança se quebra e sua expectativa de vida restante é exibida."
-        },
-        {
             name: "Pergaminho de Efeito de Habilidade 300%",
             rank: "Exotico",
             desc: "Selecione uma habilidade de qualquer tipo e aumente seu efeito em 300%. Pode ser usado rasgando o pergaminho. (Acumulável) \nAumento de 300% no efeito de uma habilidade."
@@ -58,6 +53,21 @@ export const universeConsumibles = {
             name: "Grande Interruptor de Incineração",
             rank: "Exotico",
             desc: "Pressione o botão para executar uma grande incineração. Chamas poderosas eliminarão todos os golens. E você também, é claro!"
+        },
+        {
+            name: "Escalas de Vida",
+            rank: "Lendário+",
+            desc: "Ofereça sua expectativa de vida e receba uma recompensa proporcional. Você pode oferecer de um mínimo de 1% a um máximo de 99% da sua expectativa de vida restante. Após um uso, a balança se quebra e sua expectativa de vida restante é exibida. \n\n ※ Ao ser Usado Sua Espectitaiva de Vida é Sugada na Forma de uma Energia vermelha sendo levada a uma balança balança. Então, uma energia negra começa a fluir da Balança formando um Ceifador, e ele lhe concedera uma recompensa o mais próxima possível do seu desejo, equivalente ao tempo de vida que você ofereceu. E Pesara o Seu Desejo com Sua Espectativa de Vida Verificando se o Pedido é Valido. \n※ Quanto Maior o Pedido Maior a Espectativa de Vida deve ser Dada."
+        },
+        {
+            name: "Escalas de Vida Quebrada",
+            rank: "Lendário+",
+            desc: "Sacrifica o tempo de vida restante do usuário para obter uma recompensa equivalente. Você pode oferecer um mínimo de 1% e um máximo de 99% do seu tempo de vida restante atual. Após o uso, a Balança quebra e o tempo de vida restante do usuário é exibido. \n(Este item já foi usado.) \n\nTempo de vida restante: XXX dias, XX horas, XX minutos e XX segundos"
+        },
+        {
+            name: "Pedra de Habilidade: Encarnação Radiante",
+            rank: "Lendária+",
+            desc: "Use para aprender 'Habilidade: Encarnação Radiante (Lendária+)'."
         },
         {
             name: "Sangue de Hidra Congelado",
@@ -88,6 +98,11 @@ export const universeConsumibles = {
             name: "Pedra de Habilidade: Subespaço",
             rank: "Épico",
             desc: "Use para aprender 'Habilidade: Subespaço (Épico)'."
+        },
+        {
+            name: "Pedra de Habilidade: Passo Aéreo",
+            rank: "Épico",
+            desc: "Use para aprender 'Habilidade: Passo Aéreo (Épico)'."
         },
         { 
             name: "Grimório de Malfaders", 

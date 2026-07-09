@@ -50,7 +50,6 @@ const universosSelecionados = { 1: null, 2: null, 3: null };
 
 function openModal(tipo, escolha, numLinha) {
     let colunaAlvo = coluna; 
-    // Correção: Agora detecta dinamicamente qualquer número de coluna (ex: col4, col5...)
     if (typeof escolha === 'string' && escolha.startsWith('col')) {
         colunaAlvo = parseInt(escolha.replace('col', ''), 10);
     }
@@ -99,8 +98,10 @@ function openModal(tipo, escolha, numLinha) {
         if (!universosSelecionados[coluna]) return; 
 
         const universoAtual = universosSelecionados[coluna];
+        const nomeLinha = linha === '-extra' ? 'Extra' : linha;
+        
         document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
-        document.getElementById('descricao-escolha').textContent = `Selecione uma habilidade do registro para a linha [${linha}].`;
+        document.getElementById('descricao-escolha').textContent = `Selecione uma habilidade do registro para a linha [${nomeLinha}].`;
 
         renderizarMenu('habilidades');
 
@@ -119,8 +120,10 @@ function openModal(tipo, escolha, numLinha) {
                 document.getElementById('escSubItens').classList.add('ativo'); 
             } else {
                 const universoAtual = universosSelecionados[coluna];
+                const nomeLinha = linha === '-extra' ? 'Extra' : linha;
+                
                 document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
-                document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${linha}].`;
+                document.getElementById('descricao-escolha').textContent = `Selecione um item do registro para a linha [${nomeLinha}].`;
                 
                 renderizarMenu('itens_gerais'); 
                 document.getElementById('escHabilidade').classList.add('ativo');
@@ -132,9 +135,10 @@ function openModal(tipo, escolha, numLinha) {
 
         const universoAtual = universosSelecionados[coluna];
         const nomeFormatado = escolha.charAt(0).toUpperCase() + escolha.slice(1); 
+        const nomeLinha = linha === '-extra' ? 'Extra' : linha;
         
         document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
-        document.getElementById('descricao-escolha').textContent = `Selecione um(a) ${nomeFormatado.toLowerCase()} do registro para a linha [${linha}].`;
+        document.getElementById('descricao-escolha').textContent = `Selecione um(a) ${nomeFormatado.toLowerCase()} do registro para a linha [${nomeLinha}].`;
 
         renderizarMenu(escolha); 
 
@@ -146,8 +150,10 @@ function openModal(tipo, escolha, numLinha) {
         if (!universosSelecionados[coluna]) return; 
 
         const universoAtual = universosSelecionados[coluna];
+        const nomeLinha = linha === '-extra' ? 'Extra' : linha;
+        
         document.getElementById('titulo-universo').textContent = `Sincronizado: ${universoAtual}`;
-        document.getElementById('descricao-escolha').textContent = `Selecione uma constituição do registro para a linha [${linha}].`;
+        document.getElementById('descricao-escolha').textContent = `Selecione uma constituição do registro para a linha [${nomeLinha}].`;
 
         renderizarMenu('constituicoes');
 
@@ -163,13 +169,16 @@ window.addEventListener('click', function(event) {
 
 function obterEquipados() {
     const equipados = [];
-    // Correção: Loops adaptados para ler as novas dimensões dinâmicas da matriz
     for (let c = 1; c <= maxColunas; c++) {
         for (let l = 1; l <= maxLinhas; l++) {
             const slot = document.getElementById(`col${c}-habilidade${l}`);
             if (slot && slot.hasAttribute('data-nome')) {
                 equipados.push(slot.getAttribute('data-nome'));
             }
+        }
+        const slotExtra = document.getElementById(`col${c}-habilidade-extra`);
+        if (slotExtra && slotExtra.hasAttribute('data-nome')) {
+            equipados.push(slotExtra.getAttribute('data-nome'));
         }
     }
     return equipados;
@@ -259,7 +268,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                             <div class="skill-description">${descFormatada}</div>
                             <div style="margin-top: 25px; display: flex; gap: 10px; width: 100%;">
                                 <button style="flex: 1; padding: 10px; background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; font-weight: 700; cursor: pointer;" onclick="fecharModalDetalhes()">FECHAR</button>
-                                <button style="flex: 1; padding: 10px; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l})">DESVINCULAR</button>
+                                <button style="flex: 1; padding: 10px; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l === '-extra' ? "'-extra'" : l})">DESVINCULAR</button>
                             </div>
                         </div>
                     </div>
@@ -289,7 +298,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                                     <div class="text-block" style="margin-bottom: 15px;">${descClimbing}</div>
                                     <div style="display: flex; gap: 10px; width: 100%; border-top: 1px dashed #cbd5e1; padding-top: 15px; margin-top: 15px;">
                                         <button class="close-btn" style="flex: 1; padding: 10px; margin: 0; background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; font-family: 'Segoe UI', sans-serif; font-weight: 700; cursor: pointer;" onclick="fecharModalDetalhes()">FECHAR</button>
-                                        <button class="close-btn" style="flex: 1; padding: 10px; margin: 0; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-family: 'Segoe UI', sans-serif; font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l})">DESVINCULAR</button>
+                                        <button class="close-btn" style="flex: 1; padding: 10px; margin: 0; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.05); font-family: 'Segoe UI', sans-serif; font-weight: 700; cursor: pointer;" onclick="desvincular(${c}, ${l === '-extra' ? "'-extra'" : l})">DESVINCULAR</button>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +324,7 @@ function abrirDetalhes(c, l, nomeCoisa, tipoCoisa = 'habilidade') {
                         </div>
                         <div style="margin-top: 25px; display: flex; gap: 10px; width: 100%;">
                             <button style="flex: 1; padding: 10px; background: #1e293b; color: #f8fafc; border: 1px solid #475569; cursor: pointer; font-weight: bold; text-transform: uppercase;" onclick="fecharModalDetalhes()">Fechar</button>
-                            <button style="flex: 1; padding: 10px; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.1); cursor: pointer; font-weight: bold; text-transform: uppercase; box-shadow: inset 0 0 10px rgba(255,51,102,0.1);" onclick="desvincular(${c}, ${l})">Desvincular</button>
+                            <button style="flex: 1; padding: 10px; border: 1px solid #ff3366; color: #ff3366; background: rgba(255,51,102,0.1); cursor: pointer; font-weight: bold; text-transform: uppercase; box-shadow: inset 0 0 10px rgba(255,51,102,0.1);" onclick="desvincular(${c}, ${l === '-extra' ? "'-extra'" : l})">Desvincular</button>
                         </div>
                     </div>
                 </div>
@@ -532,6 +541,40 @@ function renderizarMenu(tipo) {
     }
 }
 
+// Lógica para verificar e gerenciar o display e rowspan dos Slots Extras
+function atualizarSlotsExtras() {
+    const linhaExtra = document.getElementById('linha-extra');
+    if (!linhaExtra) return;
+
+    let algumCompleto = false;
+    for (let c = 1; c <= maxColunas; c++) {
+        const universo = universosSelecionados[c];
+        const slotExtra = document.getElementById(`col${c}-habilidade-extra`);
+        if (!slotExtra) continue;
+
+        if (universo && universo.includes('Completo')) {
+            algumCompleto = true;
+            slotExtra.classList.remove('inativo');
+            if (!slotExtra.hasAttribute('data-nome')) {
+                slotExtra.innerHTML = '[Slot Extra]';
+            }
+        } else {
+            slotExtra.classList.add('inativo');
+            slotExtra.removeAttribute('data-nome');
+            slotExtra.classList.remove('preenchido');
+            slotExtra.innerHTML = '';
+        }
+    }
+
+    linhaExtra.style.display = algumCompleto ? '' : 'none';
+    
+    const btnColuna = document.getElementById('btn-upgrade-coluna');
+    if (btnColuna) {
+        const extraSpan = algumCompleto ? 1 : 0;
+        btnColuna.setAttribute('rowspan', 1 + maxLinhas + extraSpan);
+    }
+}
+
 function sincronizar(nome, rank, tipo) {
     const nomeTratado = nome.replace(/'/g, "\\'");
     const classeEspecial = nome === "Espada do Vazio" ? "tema-vazio-texto" : "";
@@ -541,10 +584,12 @@ function sincronizar(nome, rank, tipo) {
         const id = `col${coluna}-universo`;
         const elemento = document.getElementById(id);
         
-        if (elemento) elemento.textContent = nome;
+        if (elemento) elemento.innerHTML = nome; // innerHTML para manter <i Completo> funcional
         
         const escUniverso = document.getElementById('escUniverso');
         if (escUniverso) escUniverso.classList.remove('ativo');
+
+        atualizarSlotsExtras();
         return; 
     }
 
@@ -563,7 +608,9 @@ function sincronizar(nome, rank, tipo) {
         let rankClassFinal = classeRank.replace(/Nv\.\d+/g, "Lv").replace("Nv.MAX", "Épico");
 
         slotElemento.innerHTML = `<p class="${classeEspecial}">${nome} <strong class="rank${rankClassFinal}">${rank}</strong></p>`;
-        slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${linha}, '${nomeTratado}', '${tipo}')`);
+        
+        let paramL = linha === '-extra' ? "'-extra'" : linha;
+        slotElemento.setAttribute('onclick', `abrirDetalhes(${coluna}, ${paramL}, '${nomeTratado}', '${tipo}')`);
     }
 
     const escHabilidade = document.getElementById('escHabilidade');
@@ -577,8 +624,9 @@ function desvincular(c, l) {
     if (slotElemento) {
         slotElemento.classList.remove('preenchido');
         slotElemento.removeAttribute('data-nome'); 
-        slotElemento.innerHTML = '[Selecionar]';
-        slotElemento.setAttribute('onclick', `openModal('escCoisa', 'col${c}', ${l})`);
+        slotElemento.innerHTML = l === '-extra' ? '[Slot Extra]' : '[Selecionar]';
+        const paramL = l === '-extra' ? "'-extra'" : l;
+        slotElemento.setAttribute('onclick', `openModal('escCoisa', 'col${c}', ${paramL})`);
     }
     fecharModalDetalhes();
 }
@@ -664,8 +712,8 @@ function expandirColuna() {
         linhaUniverso.insertBefore(th, btnColuna);
     }
 
-    // 2. Adiciona células TD vazias em todas as linhas regulares (ignorando cabeçalho e botão de linha)
-    const linhasRegulares = tabela.querySelectorAll('tr:not(.universo):not(#linha-btn-upgrade)');
+    // 2. Adiciona células TD vazias em todas as linhas regulares (ignorando cabeçalho, linha extra e botão)
+    const linhasRegulares = tabela.querySelectorAll('tr:not(.universo):not(#linha-btn-upgrade):not(#linha-extra)');
     linhasRegulares.forEach((tr, index) => {
         const numLinha = index + 1;
         const td = document.createElement('td');
@@ -675,19 +723,30 @@ function expandirColuna() {
         tr.appendChild(td);
     });
 
-    // 3. Aumenta a largura do botão "Aumentar Linha" (colspan) na base da tabela
+    // 3. Adiciona a célula correspondente ao Slot Extra
+    const linhaExtra = document.getElementById('linha-extra');
+    if (linhaExtra) {
+        const tdExtra = document.createElement('td');
+        tdExtra.setAttribute('onclick', `openModal('escCoisa', 'col${maxColunas}', '-extra')`);
+        tdExtra.setAttribute('id', `col${maxColunas}-habilidade-extra`);
+        tdExtra.className = 'slot-extra inativo';
+        linhaExtra.appendChild(tdExtra);
+    }
+
+    // 4. Aumenta a largura do botão "Aumentar Linha" (colspan) na base da tabela
     const btnLinha = document.getElementById('btn-upgrade-linha');
     if (btnLinha) btnLinha.setAttribute('colspan', maxColunas);
 
     // Inicializa a memória da nova coluna
     universosSelecionados[maxColunas] = null;
+    atualizarSlotsExtras();
 }
 
 function expandirLinha() {
     maxLinhas++;
     const tabela = document.querySelector('.matriz-multiversal table');
-    const linhaBtnUpgrade = document.getElementById('linha-btn-upgrade');
-    if (!tabela || !linhaBtnUpgrade) return;
+    const linhaExtra = document.getElementById('linha-extra');
+    if (!tabela) return;
 
     // 1. Cria nova linha e preenche com a quantidade atual de colunas
     const tr = document.createElement('tr');
@@ -699,13 +758,11 @@ function expandirLinha() {
         tr.appendChild(td);
     }
     
-    // 2. CORREÇÃO: Insere a nova linha logo ANTES do botão usando o parentNode
-    // Isso resolve o problema do navegador ter criado um <tbody> invisível
-    linhaBtnUpgrade.parentNode.insertBefore(tr, linhaBtnUpgrade);
+    // 2. CORREÇÃO: Insere a nova linha logo ANTES da linha Extra (ou do botão, se ela não existir)
+    const refNode = linhaExtra ? linhaExtra : document.getElementById('linha-btn-upgrade');
+    refNode.parentNode.insertBefore(tr, refNode);
 
-    // 3. Aumenta a altura do botão "Aumentar Coluna" (rowspan) na lateral
-    const btnColuna = document.getElementById('btn-upgrade-coluna');
-    if (btnColuna) btnColuna.setAttribute('rowspan', maxLinhas + 1);
+    atualizarSlotsExtras(); // Atualiza rowspan após adicionar linha
 }
 
 // --- CONTROLE DOS OUVINTES DE BOTÕES ---

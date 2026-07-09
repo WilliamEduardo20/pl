@@ -236,15 +236,23 @@ export const universeSkills = {
         { 
             name: "Parar o Tempo", 
             rank: "???", 
-            desc: "EFEITO: CONGELA O FLUXO DO TEMPO PARA TUDO E TODOS, VOCÊ NÂO PODE SE MOVER, MAS PODE PENSAR E OBSERVAR O AMBIENTE AO SEU REDOR. \n\n※ TODO DANO SOFRIDO DURANTE A PARADA DO TEMPO TODO SENTIDO E SENSAÇÃO É ANULADA E RETORNA SOMENTE QUANDO O FLUXO DO TEMPO VOLTAR AO NORMAL. \n\nCLASSIFICAÇÃO: ??? \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
+            desc: "EFEITO: CONGELA O FLUXO DO TEMPO PARA TUDO E TODOS, VOCÊ NÂO PODE SE MOVER, MAS PODE PENSAR E OBSERVAR O AMBIENTE AO SEU REDOR. \n\n※ TODO DANO SOFRIDO DURANTE A PARADA DO TEMPO TODO SENTIDO E SENSAÇÃO É ANULADA E RETORNA SOMENTE QUANDO O FLUXO DO TEMPO VOLTAR AO NORMAL. \n\nCLASSIFICAÇÃO: ??? \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" 
+        },
         { 
             name: "Arca (10km)", 
             rank: "?", 
-            desc: "EFEITO: DEFINE UM RAIO DE 10 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
+            desc: "EFEITO: DEFINE UM RAIO DE 10 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" 
+        },
         { 
             name: "Arca (3km)", 
             rank: "?", 
-            desc: "EFEITO: DEFINE UM RAIO DE 3 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" },
+            desc: "EFEITO: DEFINE UM RAIO DE 3 QUILÔMETROS COMO O DOMÍNIO DA ARCA. A ARCA BLOQUEIA COMPLETAMENTE AMEAÇAS EXTERNAS, INCLUINDO OS DECAÍDOS, E HUMANOS DENTRO DO DOMÍNIO SÃO IMUNES À MALDIÇÃO DA TORRE. \n\n※ SOMENTE HUMANOS AUTORIZADOS PELO CONJURADOR DA HABILIDADE PODEM ENTRAR NO DOMÍNIO DA ARCA. \n※ A HABILIDADE PODE SER ATIVADA OU DESATIVADA LIVREMENTE E, UMA VEZ ATIVADA, A ARCA DURA PARA SEMPRE. \n\nCLASSIFICAÇÃO: TIPO ESPECIAL \nCUSTO DE FORÇA DE VONTADE: NENHUM \nTEMPO DE RECARGA: NENHUM" 
+        },
+        { 
+            name: "Encarnação Radiante", 
+            rank: "Lendária+", 
+            desc: "EFEITO: Utiliza o poder da radiação sagrada para transformar seu corpo em luz. Enquanto a habilidade estiver ativa, você não sofre nenhum dano e se torna capaz de se mover em todas as direções na velocidade da luz. A conjuração requer 1 hora de concentração mental. A habilidade pode ser mantida por no máximo 10 minutos. \n\nCLASSIFICAÇÃO: Mágica \nCusto de Força de Vontade: 5.000 por segundo \nTEMPO DE RECARGA: 72 horas" 
+        },
         { 
             name: "Raio da Destruição", 
             rank: "Épico+", 
@@ -260,7 +268,13 @@ export const universeSkills = {
         { 
             name: "Subespaço", 
             rank: "Épico", 
-            desc: "EFEITO: CRIA UM SUBESPAÇO ONDE VOCÊ PODE ARMAZENAR E RECUPERAR OBJETOS. PARA ARMAZENAR UM OBJETO, VOCÊ PRECISA ESTAR EM CONTATO DIRETO COM ELE, E PARA RECUPERÁ-LO, VOCÊ PODE INVOCÁ-LO EM UM RAIO DE 1 METRO. \n\n※ SERES VIVOS OU ENTIDADES ESPIRITUAIS NÃO PODEM SER ARMAZENADOS. \n※ VOCÊ PODE ARMAZENAR ATÉ 100 QUILOS. A ATIVAÇÃO REQUER 3 MINUTOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 300 \nTEMPO DE RECARGA: NENHUM" },
+            desc: "EFEITO: CRIA UM SUBESPAÇO ONDE VOCÊ PODE ARMAZENAR E RECUPERAR OBJETOS. PARA ARMAZENAR UM OBJETO, VOCÊ PRECISA ESTAR EM CONTATO DIRETO COM ELE, E PARA RECUPERÁ-LO, VOCÊ PODE INVOCÁ-LO EM UM RAIO DE 1 METRO. \n\n※ SERES VIVOS OU ENTIDADES ESPIRITUAIS NÃO PODEM SER ARMAZENADOS. \n※ VOCÊ PODE ARMAZENAR ATÉ 100 QUILOS. A ATIVAÇÃO REQUER 3 MINUTOS DE CONCENTRAÇÃO MENTAL. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 300 \nTEMPO DE RECARGA: NENHUM" 
+        },
+        { 
+            name: "Passo Aéreo", 
+            rank: "Épico", 
+            desc: "Deslize pelo ar e mova-se livremente. \n\nCLASSIFICAÇÃO: Física \nCusto de Força de Vontade: 50 \nTEMPO DE RECARGA: Nenhum" 
+        },
         { 
             name: "Espada da Luz", 
             rank: "Raro+", 
@@ -1332,6 +1346,11 @@ export const universeSkills = {
             desc: "Absorve o Dano Recebido e Então Libera o Dano Absorvido nos Inimigos como um Poderoso Ataque. \n\nHá Um Limite de Dano que Pode ser Absorvido!"
         },
         {
+            name: "ÚLTIMA FORTALEZA",
+            rank: "SSR",
+            desc: "CONCEDE O EFEITO DE [Absorção de Dano] PARA TODOS OS MEMBROS DA EQUIPE."
+        },
+        {
             name: "Sintonização de Elementos",
             rank: "SSR",
             desc: "CONCEDE AO USUÁRIO A CAPACIDADE DE CONJURAR E CONTROLAR QUALQUER ATRIBUTO MÁGICO SEM RESTRIÇÕES DE AFINIDADE. \n\nALÉM DISSO, REDUZ PASSIVAMENTE O CUSTO DE MANA DE TODAS AS SUAS MAGIAS ELEMENTARES."
@@ -1456,7 +1475,29 @@ export const universeSkills = {
         {
             name: "Espada do Vazio",
             rank: "Deus Criador",
-            desc: "O Apice das Técnicas de Assasinato. \n\nTécnicas: \nZero (零): \n - Forma Básica \n - Técnica Aplicada [Diabo (魔)] \n - Vontade Profunda Aplicada [Sem Nome (無名)] \n - Vontade Profunda Vinculada [Diabo Zero (零魔)] \nRei (王): \n - Forma Básica  \n - Técnica Aplicada [Senhor (君)] \n - Profundidade Aplicada [Imperador (帝)] \nLuz (光): \n - Forma Básica \n - Técnica Aplicada [Preto (玄)] \n - Profundidade Aplicada [Brilhante (明)] \nCéu (天): \n - Forma Básica \n - Técnica Aplicada [Rede (羅)] \n - Técnica Aplicada [Destino (命)] \nSuperior (上): \n - Forma Básica \n - Técnica Aplicada [Grande (大)] \n - Técnica Aplicada [Deus (神)] \nFuturo (未來): \n - Forma Básica \nEsperança (希望): \n - Profundidade Final \n - Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)]"
+            desc: "O Apice das Técnicas de Assasinato Espada do Vazio ou Heuk Sa. \n\nTécnicas: \nZero (零): \n - Forma Básica \n - Técnica Aplicada [Diabo (魔)] \n - Vontade Profunda Aplicada [Sem Nome (無名)] \n - Vontade Profunda Vinculada [Diabo Zero (零魔)] \nRei (王): \n - Forma Básica  \n - Técnica Aplicada [Senhor (君)] \n - Profundidade Aplicada [Imperador (帝)] \nLuz (光): \n - Forma Básica \n - Técnica Aplicada [Preto (玄)] \n - Profundidade Aplicada [Brilhante (明)] \nCéu (天): \n - Forma Básica \n - Técnica Aplicada [Rede (羅)] \n - Técnica Aplicada [Destino (命)] \nSuperior (上): \n - Forma Básica \n - Técnica Aplicada [Grande (大)] \n - Técnica Aplicada [Deus (神)] \nFuturo (未來): \n - Forma Básica \nEsperança (希望): \n - Profundidade Final \n - Profundidade Vinculada [Superior Céu Futuro Rei (上天未来王)] \n\n※ Quando um Ser Ve Essa Tecnica o acesso às técnicas e artes marciais que passou a vida inteira construindo São Inutilizadas Pois Ao Contemplar Tal Tecnica o Inimigo Perda a Vontade de Segurar uma Arma Pois Jamais Podera Alcançar Tal Nivel de Maestria. PS: Essa Condição Pode Ser Liberado com Esforço e Perseverança, se o Inimigo Conseguir Replicar o Circulo."
+        },
+        {
+            "name": "Mundo das Trevas",
+            "rank": "Deus Criador",
+            "desc": "O Apice dos Métodos de Energia Interna. \n\nO núcleo da técnica é o consumo da causalidade (인과율). O Mundo das Trevas suga implacavelmente as leis de causa e efeito ao redor do usuário como um buraco negro, convertendo energia, intenção e destino direcionados ao usuário em poder bruto manifestado como uma escuridão absoluta. \n\n※ Isolamento das Leis Universais: Cria uma Dimensão Negra Que Absorve Toda Luz uma anomalia espacial e conceitual que isola o praticante das leis da realidade, permitindo operar milagres e ignorar ataques que seriam fatais.\n※ Neutralização Instantânea: Ativação rápida no tempo de um único suspiro, capaz de desarmar e neutralizar instantaneamente habilidades supremas de outros cultivadores de nível transcendental."
+        },
+        {
+            "name": "Céu Negro",
+            "rank": "Deus Criador",
+            "desc": "O Apice das Técnicas de Movimento. \n\nPermite o Usuário se Mover na Velocidade da Luz sem Problemas a Qualquer Hora, e se o Usuário se Tornar Completamente 'Vazio' Pode ser Mover Numa Velocidade Superior a Luz uma Velocidade Infinita."
+        },
+    ],
+    8: [ //The Police Do a Better Job Than Heroes
+        {
+            name: "Manipulação das Sombras",
+            rank: "SSS",
+            desc: "Permite se Mover Pelas Sombras, Dobrar a Escuridão a Sua Propria Vontade e Engolir o Proprio Espaço. Permite Manipular as Sombras Tornando-as Fisicas para Atacar e Defender. Ao Engolir o Espaço e Manipula-lo Pode-se Mover Pelas Sombras Percorendo Grandes Distancias em Instantes."
+        },
+        {
+            name: "Transformação Doce",
+            rank: "E",
+            desc: "Permite se transformar em qualquer Bolo ou Donut que Imaginar. \n\n※ Só Pode se Transformar em Bolo ou Donut. \n※ Você Pode se Mover Mesmo Transformado \n※ Dica: Cuidado Para Não Perceberem Sua Respiração."
         },
     ],
 };
