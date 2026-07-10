@@ -40,9 +40,39 @@ export const universeItens = {
             desc: "Este é um brinco muito apreciado por Rosalia, a filha mais velha de uma prestigiosa casa nobre. \nA força de vontade aumenta em 20%."
         },
         {
+            name: "Coroa de Gingoa",
+            rank: "?",
+            desc: "Esta Coroa Prova o Usuario ela Automaticamente se Aloja na Cabeça e testa o Usuario. \nSe ele Não Tomar a Essência do Ouro dentro do Tempo Limite a Coroa Apertara a Sua Cabeça Cada vez Mais Até Explodi-la. \nSe ele Tomar a Essência do Ouro, ele será Aprovado e se Tornará o Rei dos Macacos de Pedra."
+        },
+        {
+            name: "Pergaminho de Gingoa",
+            rank: "?",
+            desc: "Escrita com tinta preta em papel branco. [Ser mortal, se desejas obter a aprovação de Gingoa, engole a Essência do Ouro. \nSe você conquistar a aprovação de Gingoa, os macacos de pedra o coroarão rei. \nSe você não conseguir a aprovação de Gingoa, Gingoa lhe tirará a vida como preço por sua ganância. \nSe Gingoa for destruída, um milhão de macacos de pedra despertarão.]"
+        },
+        {
+            name: "Frasco de Gingoa",
+            rank: "?",
+            desc: "Permite Armazenar a Essência dos Macacos de Pedra. \n\n※ A Essência do Ouro é um líquido dourado que Vem da Essencia do Macaco Dourado. \n\n※ A Essência da Pedra é um líquido Venenoso que vem da Essencia dos Macacos de Pedra."
+        },
+        {
+            name: "Frasco de Gingoa: Essência do Ouro",
+            rank: "?",
+            desc: "Permite Armazenar a Essência dos Macacos de Pedra. \n\nContém a Essência do Ouro que Vem da Essencia do Macaco Dourado. Permite Passar no Teste de Gingoa."
+        },
+        {
+            name: "Frasco de Gingoa: Essência da Pedra",
+            rank: "?",
+            desc: "Permite Armazenar a Essência dos Macacos de Pedra. \n\nContém a Essência da Pedra é um líquido Venenoso que vem da Essencia dos Macacos de Pedra. Pode Matar quem a Beber."
+        },
+        {
             name: "Dispositivo de Dobra de Alta Qualidade",
             rank: "Exotico",
             desc: "Um dispositivo de dobra espacial que incorpora a tecnologia de engenharia mágica do Império Dateiano. \nPode ser ativada carregando Força de Vontade e permite mover-se 10 metros por ponto de Força de Vontade. Você pode se mover usando um ponto salvo ou definindo uma direção e usando-a. É possível salvar até um ponto. No entanto, o movimento entre o interior e o exterior da Torre é impossível. A ativação leva 10 minutos. \n\nCarga atual: 0/1.000.000"
+        },
+        {
+            name: "Ampulheta da Aceleração",
+            rank: "Exotico",
+            desc: "Selecione um dos seguintes efeitos para aplicar permanentemente. Uma vez escolhido, o efeito não poderá ser alterado. \n\n1. Reduz o tempo de recarga de todas as habilidades possuídas em 70%. \n2. Zera o tempo de recarga de uma habilidade aleatória para 0 segundos."
         },
         {
             name: "Pulseira Escama de Chama",

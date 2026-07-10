@@ -251,7 +251,7 @@ export const universeSkills = {
         { 
             name: "Encarnação Radiante", 
             rank: "Lendária+", 
-            desc: "EFEITO: Utiliza o poder da radiação sagrada para transformar seu corpo em luz. Enquanto a habilidade estiver ativa, você não sofre nenhum dano e se torna capaz de se mover em todas as direções na velocidade da luz. A conjuração requer 1 hora de concentração mental. A habilidade pode ser mantida por no máximo 10 minutos. \n\nCLASSIFICAÇÃO: Mágica \nCusto de Força de Vontade: 5.000 por segundo \nTEMPO DE RECARGA: 72 horas" 
+            desc: "EFEITO: Utiliza o poder da radiação sagrada para transformar seu corpo em luz. Enquanto a habilidade estiver ativa, você não sofre nenhum dano e se torna capaz de se mover em todas as direções na velocidade da luz. A conjuração requer 1 hora de concentração mental. A habilidade pode ser mantida por no máximo 10 minutos. \n\nCLASSIFICAÇÃO: Mágica \nCusto de Força de Vontade: 5.000 por segundo \nTEMPO DE RECARGA: 72 horas \n\n※ Durante o Estado não Corporeo, é Possivel Lançar Habilidades do Tipo Mágica. Mas Habilidades do Tipo Física se Tornam Impossiveis de Ativar." 
         },
         { 
             name: "Raio da Destruição", 
