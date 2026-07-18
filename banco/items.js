@@ -85,6 +85,11 @@ export const universeItens = {
             desc: "Uma relíquia sagrada perdida da Ordem Paeli. Quando usada, toca uma melodia que acalma o corpo e a mente. Pode ser usada consumindo 1 ponto de Força de Vontade por segundo."
         },
         {
+            name: "Pérola do Monarca da Névoa",
+            rank: "Épico+",
+            desc: "Esta é uma pérola que contém o poder do Monarca da Névoa. Quando usada, espalha névoa em um raio de 100 metros por 3 minutos. Dentro da névoa, o usuário pode se teletransportar. Pode ser usada novamente 24 horas após o uso."
+        },
+        {
             name: "Tiara de São Landahil",
             rank: "Épico+",
             desc: "O Tiara de São Landahil é uma relíquia que se diz ter sido perdida pela Ordem Paeli em tempos remotos. A habilidade desta tiara é emitir um brilho vermelho quando uma entidade maligna está por perto."

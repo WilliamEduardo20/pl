@@ -57,7 +57,7 @@ export const universeConsumibles = {
         {
             name: "Escalas de Vida",
             rank: "Lendário+",
-            desc: "Ofereça sua expectativa de vida e receba uma recompensa proporcional. Você pode oferecer de um mínimo de 1% a um máximo de 99% da sua expectativa de vida restante. Após um uso, a balança se quebra e sua expectativa de vida restante é exibida. \n\n ※ Ao ser Usado Sua Espectitaiva de Vida é Sugada na Forma de uma Energia vermelha sendo levada a uma balança balança. Então, uma energia negra começa a fluir da Balança formando um Ceifador, e ele lhe concedera uma recompensa o mais próxima possível do seu desejo, equivalente ao tempo de vida que você ofereceu. E Pesara o Seu Desejo com Sua Espectativa de Vida Verificando se o Pedido é Valido. \n※ Quanto Maior o Pedido Maior a Espectativa de Vida deve ser Dada."
+            desc: "Ofereça sua expectativa de vida e receba uma recompensa proporcional. Você pode oferecer de um mínimo de 1% a um máximo de 99% da sua expectativa de vida restante. Após um uso, a balança se quebra e sua expectativa de vida restante é exibida. \n\n※ Ao ser Usado Sua Espectitaiva de Vida é Sugada na Forma de uma Energia vermelha sendo levada a uma balança balança. Então, uma energia negra começa a fluir da Balança formando um Ceifador, e ele lhe concedera uma recompensa o mais próxima possível do seu desejo, equivalente ao tempo de vida que você ofereceu. E Pesara o Seu Desejo com Sua Espectativa de Vida Verificando se o Pedido é Valido. \n※ Quanto Maior o Pedido Maior a Espectativa de Vida deve ser Dada."
         },
         {
             name: "Escalas de Vida Quebrada",
@@ -104,6 +104,11 @@ export const universeConsumibles = {
             rank: "Épico",
             desc: "Use para aprender 'Habilidade: Passo Aéreo (Épico)'."
         },
+        {
+            name: "Pedra de Habilidade: Percepção de Pontos Fracos",
+            rank: "Épico",
+            desc: "Use para aprender 'Habilidade: Percepção de Pontos Fracos (Épico)'."
+        },
         { 
             name: "Grimório de Malfaders", 
             rank: "Raro+", 
@@ -122,7 +127,7 @@ export const universeConsumibles = {
         {
             name: "Pedra de Aprimoramento de Habilidade",
             rank: "Raro+",
-            desc: "Ao ser usada, você pode aprimorar uma habilidade de nível Raro+."
+            desc: "Ao ser usada, você pode aprimorar uma habilidade de nível Raro+. \n\n※ Uma Habilidade Pode ser Aprimorada apenas 5 vezes. \n\n※ Quando a Habilidade for aprimorada 5 vezes o usuário ganha uma habilidade de nivel superior do mesmo tipo da aprimorada."
         },
         {
             name: "Pedra de Habilidade: Golpe Flamejante",
@@ -135,14 +140,14 @@ export const universeConsumibles = {
             desc: "Use para aprender 'Habilidade: Exaltação (Rara)'."
         },
         {
-            name: "Pedra rara de aprimoramento de habilidades",
+            name: "Pedra de aprimoramento de habilidades",
             rank: "Raro",
-            desc: "Pode aprimorar uma habilidade de nível Raro."
+            desc: "Pode aprimorar uma habilidade de nível Raro. \n\n※ Uma Habilidade Pode ser Aprimorada apenas 5 vezes. \n\n※ Quando a Habilidade for aprimorada 5 vezes o usuário ganha uma habilidade de nivel superior do mesmo tipo da aprimorada."
         },
         {
             name: "Pedra de Aprimoramento de Habilidade",
             rank: "Comum+",
-            desc: "Pode aprimorar uma habilidade de nível Comum+."
+            desc: "Pode aprimorar uma habilidade de nível Comum+. \n\n※ Uma Habilidade Pode ser Aprimorada apenas 5 vezes. \n\n※ Quando a Habilidade for aprimorada 5 vezes o usuário ganha uma habilidade de nivel superior do mesmo tipo da aprimorada."
         },
     ],
     3: [ // Universo 3: Solo Leveling
@@ -377,5 +382,17 @@ export const universeConsumibles = {
             rank: "N",
             desc: "Pode Curar Ferimentos Leves ao Ser Ingerida."
         },
-    ]
+    ],
+    8: [ //The Police Do a Better Job Than Heroes
+        {
+            name: "Orbe de Invocação da Chama Negra",
+            rank: "S",
+            desc: "Uma esfera de vidro que contem uma chama negra dentro. Se quebrada invoca o Vilão de Rank 1 Blackflame."
+        },
+        {
+            name: "Amplificador de Mana",
+            rank: "D",
+            desc: "Uma droga ilegal que amplifica a quantidade de mana que o usuário pode usar. Usado para amplificar habilidades. \n\n※ ATENÇÃO: O uso excessivo pode causar danos ao corpo."
+        },
+    ],
 };

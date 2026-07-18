@@ -256,11 +256,23 @@ export const universeSkills = {
         { 
             name: "Raio da Destruição", 
             rank: "Épico+", 
-            desc: "EFEITO: CONDENSA O PODER DA DESTRUIÇÃO E O DISPARA EM LINHA RETA. \n\n※ O USO DESSA HABILIDADE REQUER DE 30 A 300 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIS PODEROSA A HABILIDADE SE TORNA. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 1.000 \nTEMPO DE RECARGA: 3 MINUTOS" },
+            desc: "EFEITO: CONDENSA O PODER DA DESTRUIÇÃO E O DISPARA EM LINHA RETA. \n\n※ O USO DESSA HABILIDADE REQUER DE 30 A 300 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIS PODEROSA A HABILIDADE SE TORNA. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 1.000 \nTEMPO DE RECARGA: 3 MINUTOS" 
+        },
+        { 
+            "name": "Barreira Espelhada", 
+            "rank": "Épico", 
+            "desc": "Gera uma barreira espelhada em um raio de 3 metros. A barreira reflete os ataques do oponente, e força de vontade igual ao poder refletido é consumida adicionalmente. Ataques que excedam sua força de vontade não podem ser refletidos, e a barreira é destruída. A conjuração requer 3 minutos de concentração mental. \n\nCLASSIFICAÇÃO: Mágica \nCusto de Força de Vontade: 50 por segundo \nTEMPO DE RECARGA: 5 minutos após a destruição" 
+        },
+        { 
+            "name": "Percepção de Pontos Fracos", 
+            "rank": "Épico", 
+            "desc": "Revela as fraquezas do oponente. \n\nCLASSIFICAÇÃO: Físico (Passivo) \nCusto de Força de Vontade: Nenhum \nTEMPO DE RECARGA: Nenhuma \n\n※ A fraqueza aparece como um tenue névoa vermelha no maior ponto fraco. \n\n※ No +1 a névoa Fica mais clara e leves traços vermelhos tambem aparecem em outros pontos fracos menos criticos." 
+        },
         { 
             "name": "Erupção de Fogo Infernal", 
             "rank": "Épico", 
-            "desc": "EFEITO: ECLODE UMA PODEROSA COLUNA DE FOGO INFERNAL EM UM RAIO DE 20 METROS. \n\n※ A CONJURAÇÃO REQUER DE 30 A 150 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIOR O PODER E O ALCANCE DA HABILIDADE. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 700 \nTEMPO DE RECARGA: 2 MINUTOS" },
+            "desc": "EFEITO: ECLODE UMA PODEROSA COLUNA DE FOGO INFERNAL EM UM RAIO DE 20 METROS. \n\n※ A CONJURAÇÃO REQUER DE 30 A 150 SEGUNDOS DE CONCENTRAÇÃO MENTAL. \n※ QUANTO MAIOR O TEMPO DE CONCENTRAÇÃO, MAIOR O PODER E O ALCANCE DA HABILIDADE. \n\nCLASSIFICAÇÃO: TIPO MÁGICO \nCUSTO DE FORÇA DE VONTADE: 700 \nTEMPO DE RECARGA: 2 MINUTOS" 
+        },
         { 
             name: "Rugido da Leão", 
             rank: "Épico", 
@@ -1492,12 +1504,72 @@ export const universeSkills = {
         {
             name: "Manipulação das Sombras",
             rank: "SSS",
-            desc: "Permite se Mover Pelas Sombras, Dobrar a Escuridão a Sua Propria Vontade e Engolir o Proprio Espaço. Permite Manipular as Sombras Tornando-as Fisicas para Atacar e Defender. Ao Engolir o Espaço e Manipula-lo Pode-se Mover Pelas Sombras Percorendo Grandes Distancias em Instantes."
+            desc: "Permite se Mover Pelas Sombras, Dobrar a Escuridão a Sua Propria Vontade e Engolir o Proprio Espaço. Permite Manipular as Sombras Tornando-as Fisicas para Atacar e Defender. Ao Engolir o Espaço e Manipula-lo Pode-se Mover Pelas Sombras Percorendo Grandes Distancias em Instantes. \n\n※ É possivel usar as sombras como se fossem seus olhos."
+        },
+        {
+            name: "Memória Espacial",
+            rank: "A",
+            desc: "É possivel sincronizar seus sentidos (Visão, Tato e Audição) com um local especifico em um momento específico, permitindo ver tudo com tanta nitidez como se estivesse lá pessoalmente. Podendo avançar ou retroceder  no tempo, e o prórprio espaço é reconstruido para ser exatamente identico ao momento do passado. \nÉ possivel levar até 5 pessoas consigo para vivenciar o momento juntas. \n\n※ Não é possivel reproduzir o paladar e o olfato."
+        },
+        {
+            name: "Marionete",
+            rank: "B",
+            desc: "É possivel transformar as pessoas em marionetes por lavagem cerebral, se mantir a pele nua em contato com o alvo por mais de 10 segundos. Após isso, se define-se uma palavra-gatilho com uma sugestão especifica no cerebro do alvo. \nDiga essa palavra mais tarde e poderá controlar o alvo durante um determinado periodo de tempo. \n\n※ Uma vez concluida a lavagem cerebral não é mais possivel pronunciar a palavra. Cuidado a pessoa que disser a palavra-chave detem o poder de comandar o alvo. \n※ Lavagem cerebral causa um leve tremor nas palpebras, pele seca. Além de causar mudanças nos pequenos habitos do alvo."
+        },
+        {
+            name: "Ler Emoções",
+            rank: "C",
+            desc: "É possivel ler as emoções de outras pessoas. \nAs pessoas podem esconder suas expressões, esconder suas ações, mas não conseguem esconder direito o que realmente sentem. A ansiedade de um suspeito mentiroso. A sede de sangue de um criminoso violento. A hostilidade escondida por trás do rosto de um homem de aparência inofensiva. \nÉ possivel ler todos os tipos de emoções do alvo, até mesmo ao menores e mais escondidas. \n\n※ Mas quanto mais forte a emoção, mais precisa e certera a leitura. \n※ Se a emoção for muito fraca é possivel confundir o tipo dela. EX: Confundir medo ou tensão com amor."
+        },
+        {
+            name: "Boneco de Barro",
+            rank: "C",
+            desc: "Permite moldar argila em figuras que se parecem exatamente como pessoas reais. As figuras não conseguem manter uma conversa ou realizar movimentos delicados, mas podem seguir instruções simples. \nÉ possivel sincronizar seus sentidos com o do boneco."
+        },
+        {
+            name: "Frio",
+            rank: "C",
+            desc: "Permite manipular o frio a distancia para congelar locais ou gerar gelo. \nNão é possivel regular naturalmente a temperatura corporal adequadamente, então o usuário sente frio independente da temperatura do ambiente. \n\n※ Para usar o poder pelas mãos, não se pode te-las cobertas"
+        },
+        {
+            name: "Distinguir Mentiras de Verdades",
+            rank: "C",
+            desc: "Permite ao usuário discernir a veracidade das palavras faladas por um alvo. \n\n※ Não detecta a intenção por trás da mentira, apenas se é verdade ou mentira. \n※ Quanto mais consciente o alvo estiver de que está mentindo, maior a precisão da habilidade."
+        },
+        {
+            name: "Ler Mentes",
+            rank: "C",
+            desc: "Concede a capacidade de acessar a superfície dos pensamentos de um indivíduo através de contato visual direto. \n\n※ Não permite acessar memórias profundas ou segredos enterrados, apenas o fluxo de pensamento atual."
+        },
+        {
+            name: "Invisibilidade",
+            rank: "C",
+            desc: "Permite se tornar invisível. \n\n※ Mas é possivel perceber a presença do usuário através de distorções no ar, sons ou vibrações."
+        },
+        {
+            name: "Transmissão Térmica",
+            rank: "E+",
+            desc: "Permite aumentar Temperatura de objetos e seres vivos à distância, elevando sua temperatura de forma gradual ou súbita. \n\n※ A eficiência do aquecimento é inversamente proporcional à distância do alvo. \n※ Requer contato visual ou percepção precisa da localização do alvo."
+        },
+        {
+            name: "Transmissão Telepata",
+            rank: "E",
+            desc: "Não é possivel ler mentes nem manter dialogos por telepatia, mas é possivel transmitir palavras curtas ou ruidos diretamente para o cerebro do alvo. \n\n※ Se Aprimorada, é Possivel transmitir mensagens mais longas ou ruidos prolongados. \n※ Exposição telepática prolongada causa dores de cabeça."
         },
         {
             name: "Transformação Doce",
             rank: "E",
             desc: "Permite se transformar em qualquer Bolo ou Donut que Imaginar. \n\n※ Só Pode se Transformar em Bolo ou Donut. \n※ Você Pode se Mover Mesmo Transformado \n※ Dica: Cuidado Para Não Perceberem Sua Respiração."
+        },
+        {
+            name: "Repelente",
+            rank: "E",
+            desc: "Permite afastar insetos usando sua vontade."
+        },
+        {
+            name: "Simpátia Felina",
+            rank: "E",
+            desc: "Permite ganhar minimamente a simpátia dos gatos."
         },
     ],
 };
