@@ -182,5 +182,12 @@ export const universeArmors = {
             rank: "SR",
             desc: "TIPO: Armadura \nDEFESA: 15-20 \nDURABILIDADE: 15/15 \nVELOCIDADE DE MOVIMENTO +5% \n\nO SOM DOS SEUS PASSOS É REDUZIDO A ZERO, TORNANDO QUASE IMPOSSÍVEL QUE INIMIGOS O RASTREIEM ATRAVÉS DA AUDIÇÃO. \n\n※ Faz Parte do Conjunto 'Amanhecer Secreto' [4/4]: QUANDO O CONJUNTO INTEIRO É EQUIPADO, CADA INIMIGO QUE MATAR, VOCÊ SE TORNA INDETECTÁVEL PARA OS INIMIGOS POR 10 SEGUNDOS. \n[ESSE EFEITO PODE SER ATIVADO UMA VEZ A CADA 10 MINUTOS]."
         }
-    ]
+    ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "Colete a Prova de Balas",
+            rank: "Normal",
+            desc: "Um colete a prova de balas comum, feito de materiais resistentes. Oferece proteção básica contra projéteis e ataques físicos."
+        },
+    ],
 };

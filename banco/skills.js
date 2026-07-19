@@ -1576,7 +1576,7 @@ export const universeSkills = {
         {
             name: "Mutante",
             rank: "Mutante",
-            desc: "O Usuário se torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. \nAumenta Todos os Atrbutos Físicos. \n\n※ O Usuário se Torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. \n\n※ Aumenta Todos os Atrbutos Físicos."
+            desc: "O Usuário se torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. \nAumenta Todos os Atrbutos Físicos. \n\n※ O Usuário se Torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. [Fusão de (Corpo Mutante) e (Músculo Mutante)] \n\n※ Aumenta Todos os Atrbutos Físicos."
         },
         {
             name: "Corpo Mutante",
@@ -1589,7 +1589,27 @@ export const universeSkills = {
             desc: "Torna os Musculos dos Braços Maiores e Mais Fortes. [Fusão de (Coração de Mana) e (Força)]"
         },
         {
-            name: "Respiração Profunda",
+            name: "Chute",
+            rank: "Normal",
+            desc: "O Usuário pode usar suas pernas para dar poderosos chutes. [Classe Mutante: Cervo]"
+        },
+        {
+            name: "Movimento Estereoscópio",
+            rank: "Normal",
+            desc: "O Usuário pode usar a elasticidade incrivel de suas pernas para se mover livremente em qualquer direção. [Classe Mutante: Cervo]"
+        },
+        {
+            name: "Fingir de Morto",
+            rank: "Normal",
+            desc: "Permite fingir de morto para evitar detecção."
+        },
+        {
+            name: "Visão Noturna",
+            rank: "Normal",
+            desc: "Permite ver em ambientes escuros."
+        },
+        {
+            name: "Regeneração de Mana",
             rank: "Normal",
             desc: "Concede maior regeneração de Mana."
         },
