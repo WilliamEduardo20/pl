@@ -97,7 +97,7 @@ export const universeConstitution = {
         },
         {
             name: "Febre Divina",
-            rank: "Especial",
+            rank: "8",
             desc: "Você irá Sofrer de uma dor cauterizada e infinita como punição por recusar o batismo. \n\n※ A Febre Divina Pode ser Superada sendo Batizado ou Sendo Ingerido o [Néctar]. \n\n※ A Febre Divina é uma doença que não pode ser curada por meios normais. \n\n※ A Febre Divina é uma doença que não pode ser curada por meios normais."
         },
     ],

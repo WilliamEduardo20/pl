@@ -1605,7 +1605,7 @@ export const universeSkills = {
         },
         {
             name: "Vicio em Remédios",
-            rank: "1",
+            rank: "Normal",
             desc: "O Dano Recebido e o Consumo de Mana Aumentam, Mas os Efeitos dos Remédios são Aumentados de forma Anormal."
         },
         {
@@ -1635,12 +1635,12 @@ export const universeSkills = {
         },
         {
             name: "Evasão",
-            rank: "1",
+            rank: "Normal",
             desc: "Aumenta a velocidade de evasão."
         },
         {
             name: "Proteger",
-            rank: "1",
+            rank: "Normal",
             desc: "Reduz o dano de ataques defendidos."
         },
         {
