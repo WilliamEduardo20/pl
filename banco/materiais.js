@@ -190,9 +190,14 @@ export const universeMaterials = {
     ],
     9: [ // Universo 10: Trait Hoarder
         {
-            name: "",
-            rank: "",
-            desc: ""
+            name: "Núcleo de Mana (Nv 2)",
+            rank: "1",
+            desc: "Núcleo de Mana de um Mutante de Nível 1. Aprimorado por materiais externos."
+        },
+        {
+            name: "Núcleo de Mana (Nv 1)",
+            rank: "1",
+            desc: "Núcleo de Mana de um Mutante de Nível 1."
         },
     ],
 };

@@ -397,9 +397,9 @@ export const universeConsumibles = {
     ],
     9: [ // Universo 10: Trait Hoarder
         {
-            name: "",
-            rank: "",
-            desc: ""
+            name: "Néctar",
+            rank: "Raro",
+            desc: "Uma poção rara. \n\n※ Pode Acabar com a [Febre Divina]."
         },
     ],
 };

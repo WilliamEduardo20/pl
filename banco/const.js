@@ -73,5 +73,32 @@ export const universeConstitution = {
             "rank": "R",
             "desc": "POR SER TÃO JOVEM E INEXPERIENTE, PODE VIR A COMETER ERROS ÀS VEZES. \n\nAS CHANCES DE COMETER ERROS MENORES OU MAIORES AUMENTAM NO CAMPO DE BATALHA \n\nAPÓS TER CONQUISTADO EXPERIÊNCIA CONTÍNUA O SUFICIENTE, ESSA CARACTERÍSTICA DESAPARECERÁ."
         },
-    ]
+    ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "Despertado Nv 8 (6 Camadas)",
+            rank: "8",
+            desc: "Você se torna um Super Humano de Nível 8, Com um Circuito de Habilidades de 6 Camadas. \nGanha o Poder Comparável a um esquadrão de Porta Aviões, Uma Super Arma Ambulante de Nivel Nacional."
+        },
+        {
+            name: "Despertado Nv 1 (6 Camadas)",
+            rank: "1",
+            desc: "Você se torna um Super Humano, Com um Circuito de Habilidades de 6 Camadas."
+        },
+        {
+            name: "Despertado Nv 1 (Super Humano)",
+            rank: "1",
+            desc: "Você se torna um Super Humano."
+        },
+        {
+            name: "Despertado Nv 1 (Super Humano: Cervo)",
+            rank: "1",
+            desc: "Você se torna um Super Humano Cervo. Ganha Pernas e Chifres de Cervo, Ganhando as Habilidades [Chute] e [Movimento Estereoscópio]."
+        },
+        {
+            name: "Febre Divina",
+            rank: "Especial",
+            desc: "Você irá Sofrer de uma dor cauterizada e infinita como punição por recusar o batismo. \n\n※ A Febre Divina Pode ser Superada sendo Batizado ou Sendo Ingerido o [Néctar]. \n\n※ A Febre Divina é uma doença que não pode ser curada por meios normais. \n\n※ A Febre Divina é uma doença que não pode ser curada por meios normais."
+        },
+    ],
 }

@@ -1589,6 +1589,76 @@ export const universeSkills = {
             desc: "Torna os Musculos dos Braços Maiores e Mais Fortes. [Fusão de (Coração de Mana) e (Força)]"
         },
         {
+            name: "Um Com a Espada",
+            rank: "5",
+            desc: "O usuario entra em um estado em que a espada se torna a pessoa."
+        },
+        {
+            name: "Esgrima Destruidora de Montanhas",
+            rank: "4",
+            desc: "Permite o Usuario chegar ao Nível 4 Sem nenhuma Dificuldade."
+        },
+        {
+            name: "Absorção de Dano",
+            rank: "1",
+            desc: "O Usuario Pode Absorver Dano que Outros Sofrem."
+        },
+        {
+            name: "Vicio em Remédios",
+            rank: "1",
+            desc: "O Dano Recebido e o Consumo de Mana Aumentam, Mas os Efeitos dos Remédios são Aumentados de forma Anormal."
+        },
+        {
+            name: "Regeneração de Mana",
+            rank: "1",
+            desc: "Concede maior regeneração de Mana."
+        },
+        {
+            name: "Furtividade",
+            rank: "1",
+            desc: "Permite se mover em silêncio e evadir da detecção."
+        },
+        {
+            name: "Escudo em Área",
+            rank: "2",
+            desc: "Gera um escudo dentro da área designada. \nVersão Aprimorada da [Barreira de Mana] \n\n※ O Escudo em Área Pode Prevenir a [Febre Divina] de Afetar os Aliados Dentro da Área, Empurando a Febre para Fora do Escudo."
+        },
+        {
+            name: "Barreira de Mana",
+            rank: "1",
+            desc: "Cria uma barreira de mana ao redor do corpo do usuário, protegendo-o de ataques. \n\n※ A barreira de mana pode previnir a [Febre Divina] de afetar o usuário."
+        },
+        {
+            name: "Ressistencia Divina",
+            rank: "1",
+            desc: "Voce ganha resistencia a poderes divinos."
+        },
+        {
+            name: "Evasão",
+            rank: "1",
+            desc: "Aumenta a velocidade de evasão."
+        },
+        {
+            name: "Proteger",
+            rank: "1",
+            desc: "Reduz o dano de ataques defendidos."
+        },
+        {
+            name: "Regeneração",
+            rank: "1",
+            desc: "A versão Evoluida da Característica [Recuperação de Ferimentos]."
+        },
+        {
+            name: "Combo",
+            rank: "Normal",
+            desc: "Aumanta o Poder dos Combos."
+        },
+        {
+            name: "Ataque",
+            rank: "Normal",
+            desc: "Aumanta o Poder de Ataque com Armas."
+        },
+        {
             name: "Chute",
             rank: "Normal",
             desc: "O Usuário pode usar suas pernas para dar poderosos chutes. [Classe Mutante: Cervo]"
@@ -1609,7 +1679,7 @@ export const universeSkills = {
             desc: "Permite ver em ambientes escuros."
         },
         {
-            name: "Regeneração de Mana",
+            name: "Respiração Profunda",
             rank: "Normal",
             desc: "Concede maior regeneração de Mana."
         },

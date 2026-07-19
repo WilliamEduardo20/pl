@@ -11,4 +11,11 @@ export const universeClasse = {
             desc: "Habilidade de Classe: \n - [Passiva] Fabricação de Balas Mágicas \n - Bala Mágica de Cura Nv.1 \n - Bala Mágica de Aniquilação Nv.1 " 
         },
     ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "Sacerdote",
+            rank: "Especial",
+            desc: ""
+        },
+    ],
 }

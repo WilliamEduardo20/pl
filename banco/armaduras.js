@@ -185,6 +185,11 @@ export const universeArmors = {
     ],
     9: [ // Universo 10: Trait Hoarder
         {
+            name: "Luva Seladora de Mana",
+            rank: "Rara",
+            desc: "Sela a Mana do Usuario. Não Permite o Uso de Habilidades de Mana. \n\n※ Pode Prevenir a [Febre Divina] de Afetar o Usuario."
+        },
+        {
             name: "Colete a Prova de Balas",
             rank: "Normal",
             desc: "Um colete a prova de balas comum, feito de materiais resistentes. Oferece proteção básica contra projéteis e ataques físicos."
