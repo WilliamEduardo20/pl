@@ -1620,8 +1620,8 @@ export const universeSkills = {
         },
         {
             name: "Escudo em Área",
-            rank: "2",
-            desc: "Gera um escudo dentro da área designada. \nVersão Aprimorada da [Barreira de Mana] \n\n※ O Escudo em Área Pode Prevenir a [Febre Divina] de Afetar os Aliados Dentro da Área, Empurando a Febre para Fora do Escudo."
+            rank: "1",
+            desc: "Gera um escudo dentro da área designada. \nHabilodade Derivada da [Barreira de Mana] \n\n※ O Escudo em Área Pode Prevenir a [Febre Divina] de Afetar os Aliados Dentro da Área, Empurando a Febre para Fora do Escudo."
         },
         {
             name: "Barreira de Mana",
