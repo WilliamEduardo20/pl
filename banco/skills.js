@@ -1483,7 +1483,7 @@ export const universeSkills = {
             desc: "Cria uma Bala Mágica Com Grande Efeito Destrutivo que Aniquila o Alvo."
         },
     ],
-    7: [
+    7: [ // Universo 8: A Regressor's Tale of Cultivation
         {
             name: "Espada do Vazio",
             rank: "Deus Criador",
@@ -1500,7 +1500,7 @@ export const universeSkills = {
             "desc": "O Apice das Técnicas de Movimento. \n\nPermite o Usuário se Mover na Velocidade da Luz sem Problemas a Qualquer Hora, e se o Usuário se Tornar Completamente 'Vazio' Pode ser Mover Numa Velocidade Superior a Luz uma Velocidade Infinita."
         },
     ],
-    8: [ //The Police Do a Better Job Than Heroes
+    8: [ // Universo 9: The Police Do a Better Job Than Heroes
         {
             name: "Manipulação das Sombras",
             rank: "SSS",
@@ -1570,6 +1570,68 @@ export const universeSkills = {
             name: "Simpátia Felina",
             rank: "E",
             desc: "Permite ganhar minimamente a simpátia dos gatos."
+        },
+    ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "Mutante",
+            rank: "Mutante",
+            desc: "O Usuário se torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. \nAumenta Todos os Atrbutos Físicos. \n\n※ O Usuário se Torna um Monstro Mutante que Perde a Razão Facilmente que Ataca Todos. \n\n※ Aumenta Todos os Atrbutos Físicos."
+        },
+        {
+            name: "Corpo Mutante",
+            rank: "Mutante",
+            desc: "Torna o Corpo Maior e Mais Forte."
+        },
+        {
+            name: "Músculo Mutante",
+            rank: "Mutante",
+            desc: "Torna os Musculos dos Braços Maiores e Mais Fortes. [Fusão de (Coração de Mana) e (Força)]"
+        },
+        {
+            name: "Respiração Profunda",
+            rank: "Normal",
+            desc: "Concede maior regeneração de Mana."
+        },
+        {
+            name: "Absorção de Mana",
+            rank: "Normal",
+            desc: "Permite Absorver Mana."
+        },
+        {
+            name: "Ressistencia",
+            rank: "Normal",
+            desc: "Amplifica a Defesa em Dez Vezes. \nReduz todo o dano tomado."
+        },
+        {
+            name: "Coração de Mana",
+            rank: "Normal",
+            desc: "Ajuda a Controlar a Mana."
+        },
+        {
+            name: "Força",
+            rank: "Normal",
+            desc: "Amplifica o Poder em Dez Vezes"
+        },
+        {
+            name: "Vigor",
+            rank: "Normal",
+            desc: "Amplifica a Energia em Dez Vezes."
+        },
+        {
+            name: "Ressistencia a Contaminação",
+            rank: "Normal",
+            desc: "Você ganha resistência a mana contaminada. \nDesenvolve Ressistencia a Mana Contaminada."
+        },
+        {
+            name: "Caçador de Tesouros",
+            rank: "Normal",
+            desc: "Você pode achar o ponto fraco dos seus oponentes."
+        },
+        {
+            name: "Regeneração de Ferimentos",
+            rank: "Normal",
+            desc: "Você pode regenerar ferimentos normais."
         },
     ],
 };

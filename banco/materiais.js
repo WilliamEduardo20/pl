@@ -187,5 +187,12 @@ export const universeMaterials = {
             rank: "R",
             desc: "Pedra Mágica de Sangue de Familiar de Baixo Nivel, Contem Uma Pequena Quantidade de Mana."
         },
-    ]
+    ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "",
+            rank: "",
+            desc: ""
+        },
+    ],
 };

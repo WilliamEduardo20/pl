@@ -327,5 +327,19 @@ export const universeItens = {
             rank: "N",
             desc: "Um Lança Gancho de Braço, Que Permite Escalar Grandes Objetos e se Pedendurar. \nCuidade a Corda Não é Muito Resistente."
         },
-    ]
+    ],
+    8: [ //The Police Do a Better Job Than Heroes
+        {
+            name: "Supressor de Habilidades",
+            rank: "A",
+            desc: "Suprime as Habilidades de um Despertado."
+        },
+    ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "",
+            rank: "",
+            desc: ""
+        },
+    ],
 };

@@ -395,4 +395,11 @@ export const universeConsumibles = {
             desc: "Uma droga ilegal que amplifica a quantidade de mana que o usuário pode usar. Usado para amplificar habilidades. \n\n※ ATENÇÃO: O uso excessivo pode causar danos ao corpo."
         },
     ],
+    9: [ // Universo 10: Trait Hoarder
+        {
+            name: "",
+            rank: "",
+            desc: ""
+        },
+    ],
 };
